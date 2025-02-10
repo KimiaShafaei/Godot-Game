@@ -56,3 +56,7 @@ func play_idle():
 		anim.play("Idle_up")
 	else :
 		anim.play("Idle")
+
+
+func _on_tile_map_changed() -> void:
+	pass # Replace with function body.

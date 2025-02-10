@@ -12,8 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://cp4lox46u3kbx" path="res://player_10.png" id="10_7t5lq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_maouh"]
-radius = 45.0
-height = 118.0
+radius = 0.274753
+height = 0.549506
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
 animations = [{
@@ -85,14 +85,17 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_2tcqa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(42, 52)
+position = Vector2(26, 28)
+scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(40.5, 43)
-scale = Vector2(1.23438, 1.25)
+position = Vector2(26, 26)
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_no5v7")
 animation = &"Idle"
