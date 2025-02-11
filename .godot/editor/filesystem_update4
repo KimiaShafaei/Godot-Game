@@ -1,5 +1,6 @@
-res://world.tscn
+res://enemy.tscn
 res://enemy.gd
 res://player.tscn
 res://tile_map_layer.tscn
-res://enemy.tscn
+res://world.tscn
+res://player.gd
