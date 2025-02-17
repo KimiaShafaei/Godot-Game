@@ -1,3 +1,5 @@
+TileMapLayer
+TileMap
 Sprite2D
 Node2D
 Timer
@@ -5,7 +7,5 @@ NavigationAgent2D
 CollisionShape2D
 CharacterBody2D
 ColorRect
-TileMap
 Camera2D
-TileMapLayer
 AnimatedSprite2D
