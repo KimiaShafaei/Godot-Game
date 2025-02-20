@@ -36,13 +36,13 @@ func _physics_process(delta):
 		
 		_update_animation(direction)
 			
-		if global_position.distance_to(target) < 4:
+		if global_position.distance_to(target) < 16:
 			print("Reached target")
 			_current_index += 1
 		move_and_slide()
 	else:
 		velocity = Vector2.ZERO
-		anim.play("Idle")
+		_play_idle()
 
 func _update_animation(direction):
 	if abs(direction.x) > abs(direction.y):
