@@ -1,0 +1,7 @@
+res://player.tscn
+res://world.tscn
+res://enemy.tscn
+res://audio_stream_player.tscn
+res://gameover.tscn
+res://area_2d.tscn
+res://player.gd

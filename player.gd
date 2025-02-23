@@ -1,16 +1,17 @@
 extends CharacterBody2D
 
-@export var speed = 400
+@export var speed = 100
 @onready var anim = $AnimatedSprite2D
 @onready var tile_map = $"../TileMapLayer"
 
 var _path : Array = []
 var _current_index = 0
 var _last_side: String= "Idle"
+var end_point: Vector2
 
 func _ready():
 	anim.play("Idle")
-	
+	end_point = tile_map.map_to_local(Vector2i(9, 1))
 	
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -39,6 +40,10 @@ func _physics_process(delta):
 		if global_position.distance_to(target) < 16:
 			print("Reached target")
 			_current_index += 1
+			
+		if global_position.distance_to(end_point) < 16:
+			print("Reached to endpoind. The game is over!")
+			get_tree().quit()
 		move_and_slide()
 	else:
 		velocity = Vector2.ZERO
