@@ -1,25 +1,25 @@
 [gd_scene load_steps=13 format=3 uid="uid://c84l74ckv5wpw"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_2tcqa"]
-[ext_resource type="Texture2D" uid="uid://bvp1ay8erlfcu" path="res://player_05.png" id="2_cg70g"]
-[ext_resource type="Texture2D" uid="uid://43jskyla8dsd" path="res://player_11.png" id="3_7yhwb"]
-[ext_resource type="Texture2D" uid="uid://blk6lremd8rt3" path="res://player_08.png" id="4_5ynwx"]
-[ext_resource type="Texture2D" uid="uid://unxqsyj51o1v" path="res://player_06.png" id="5_kercr"]
-[ext_resource type="Texture2D" uid="uid://c3c2s67858knw" path="res://player_07.png" id="6_0xncv"]
-[ext_resource type="Texture2D" uid="uid://v0i5vju508gd" path="res://player_12.png" id="7_oqg8h"]
-[ext_resource type="Texture2D" uid="uid://1whsevqx7868" path="res://player_13.png" id="8_ihxlc"]
-[ext_resource type="Texture2D" uid="uid://dxvq0eiib4d7" path="res://player_09.png" id="9_gnoec"]
-[ext_resource type="Texture2D" uid="uid://cp4lox46u3kbx" path="res://player_10.png" id="10_7t5lq"]
+[ext_resource type="Texture2D" uid="uid://dt0jxtds6krlt" path="res://InShot_20250220_222440953.png" id="2_5jd8c"]
+[ext_resource type="Texture2D" uid="uid://bntlg1li1x4vv" path="res://InShot_20250221_132442284.png" id="3_k5sf4"]
+[ext_resource type="Texture2D" uid="uid://ds2d6prd4l6cs" path="res://InShot_20250221_163952847.png" id="4_dvjgx"]
+[ext_resource type="Texture2D" uid="uid://do17vgh1ahj1p" path="res://InShot_20250220_222941843.png" id="5_kny8v"]
+[ext_resource type="Texture2D" uid="uid://dne54itf3tmhi" path="res://InShot_20250220_222539513.png" id="6_i6814"]
+[ext_resource type="Texture2D" uid="uid://br7k2uipjvdrv" path="res://InShot_20250221_132130162.png" id="7_qhb64"]
+[ext_resource type="Texture2D" uid="uid://xawmcso7vw1e" path="res://InShot_20250221_163914602.png" id="8_ltllw"]
+[ext_resource type="Texture2D" uid="uid://drsfa1itfsnx2" path="res://InShot_20250221_163802300.png" id="9_3pbur"]
+[ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Music/صدای پوتین.mp3" id="10_3pem5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_maouh"]
-radius = 0.240409
+radius = 0.188533
 height = 0.480818
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_cg70g")
+"texture": ExtResource("2_5jd8c")
 }],
 "loop": true,
 "name": &"Idle",
@@ -27,7 +27,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_7yhwb")
+"texture": ExtResource("3_k5sf4")
 }],
 "loop": true,
 "name": &"Idle_side",
@@ -35,7 +35,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_5ynwx")
+"texture": ExtResource("4_dvjgx")
 }],
 "loop": true,
 "name": &"Idle_up",
@@ -43,13 +43,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_cg70g")
+"texture": ExtResource("2_5jd8c")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_kercr")
+"texture": ExtResource("5_kny8v")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_0xncv")
+"texture": ExtResource("6_i6814")
 }],
 "loop": true,
 "name": &"Walk_down",
@@ -57,13 +57,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_7yhwb")
+"texture": ExtResource("3_k5sf4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_oqg8h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_ihxlc")
+"texture": ExtResource("7_qhb64")
 }],
 "loop": true,
 "name": &"Walk_side",
@@ -71,13 +68,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_5ynwx")
+"texture": ExtResource("4_dvjgx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_gnoec")
+"texture": ExtResource("8_ltllw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_7t5lq")
+"texture": ExtResource("9_3pbur")
 }],
 "loop": true,
 "name": &"Walk_up",
@@ -88,6 +85,7 @@ animations = [{
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_2tcqa")
+metadata/_edit_horizontal_guides_ = [-107.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(24, 23)
@@ -95,7 +93,11 @@ scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(23.75, 23.364)
-scale = Vector2(0.757812, 0.738625)
+position = Vector2(22, 22)
+scale = Vector2(0.132911, 0.116667)
 sprite_frames = SubResource("SpriteFrames_no5v7")
 animation = &"Idle"
+frame_progress = 0.264732
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_3pem5")

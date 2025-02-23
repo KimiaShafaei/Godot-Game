@@ -15,6 +15,10 @@ run/main_scene="res://world.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalAudioStreamPlayer="*res://audio_stream_player.tscn"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"

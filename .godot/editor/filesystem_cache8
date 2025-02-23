@@ -1,29 +1,87 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739984288
-enemy.gd::GDScript::-1::1739282051::0::1::::<>CharacterBody2D<>::
-enemy.tscn::PackedScene::5502783119072552829::1739902149::0::1::::<><>::uid://bvp1ay8erlfcu::::res://player_05.png<>res://enemy.gd
-icon.svg::CompressedTexture2D::6591016406112388207::1739051360::1739051401::1::::<><>::
-pathFinding_tiles.png::CompressedTexture2D::7436978054082931217::1739132624::1739132652::1::::<><>::
-player.gd::GDScript::-1::1739902149::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7149666721384777452::1739902149::0::1::::<><>::res://player.gd<>uid://bvp1ay8erlfcu::::res://player_05.png<>uid://43jskyla8dsd::::res://player_11.png<>uid://blk6lremd8rt3::::res://player_08.png<>uid://unxqsyj51o1v::::res://player_06.png<>uid://c3c2s67858knw::::res://player_07.png<>uid://v0i5vju508gd::::res://player_12.png<>uid://1whsevqx7868::::res://player_13.png<>uid://dxvq0eiib4d7::::res://player_09.png<>uid://cp4lox46u3kbx::::res://player_10.png
-player_05.png::CompressedTexture2D::3892932019958452628::1739051904::1739051904::1::::<><>::
-player_06.png::CompressedTexture2D::1432039830045188241::1739051907::1739051907::1::::<><>::
-player_07.png::CompressedTexture2D::6743930927052574976::1739051909::1739051909::1::::<><>::
-player_08.png::CompressedTexture2D::3181044511387490846::1739051912::1739051912::1::::<><>::
-player_09.png::CompressedTexture2D::259352168445264386::1739051914::1739051914::1::::<><>::
-player_10.png::CompressedTexture2D::5886235119132239393::1739051917::1739051917::1::::<><>::
-player_11.png::CompressedTexture2D::2093858202651697371::1739051920::1739051920::1::::<><>::
-player_12.png::CompressedTexture2D::1526115587852865339::1739051923::1739051923::1::::<><>::
-player_13.png::CompressedTexture2D::1870783651711103219::1739051926::1739051927::1::::<><>::
-tile_map.gd::GDScript::-1::1739468182::0::1::::<>TileMap<>::
-tile_map_layer.gd::GDScript::-1::1739636578::0::1::::<>TileMapLayer<>::
-tile_map_layer.tscn::PackedScene::3873723746419380338::1739282896::0::1::::<><>::uid://dd7r7a7fmrhw8::::res://pathFinding_tiles.png
-world.tscn::PackedScene::7964873378079581642::1739902149::0::1::::<><>::uid://dd7r7a7fmrhw8::::res://pathFinding_tiles.png<>uid://c84l74ckv5wpw::::res://player.tscn<>res://tile_map_layer.gd<>uid://cknubfkrmt55r::::res://enemy.tscn
-::res://addons/::1739051489
-::res://addons/godot-git-plugin/::1739051490
-git_plugin.gdextension::GDExtension::-1::1739051489::0::1::::<><>::
-plugin.cfg::TextFile::-1::1739051490::0::1::::<><>::
-THIRDPARTY.md::TextFile::-1::1739051490::0::1::::<><>::
-::res://addons/godot-git-plugin/linux/::1739051490
-::res://addons/godot-git-plugin/macos/::1739051490
-::res://addons/godot-git-plugin/win64/::1739051490
+::res://::1740333949
+area_2d.tscn::PackedScene::5250875329426171467::1740172263::0::1::::<><>::
+audio_stream_player.tscn::PackedScene::3428276109164341753::1740169427::0::1::::<><>::uid://lpu8kdgb4v7s::::res://Music/MMD.mp3
+collision_shape_2d.tscn::PackedScene::8579980121577088752::1740154899::0::1::::<><>::uid://dtvcvceitkh6j::::res://asset/Drawing 7.png
+enemy.gd::GDScript::-1::1739901659::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::5502783119072552829::1740169427::0::1::::<><>::uid://bvp1ay8erlfcu::::res://player_05.png<>res://enemy.gd
+gameover.gd::GDScript::-1::1740166319::0::1::::<>CanvasLayer<>::
+gameover.tscn::PackedScene::7442830171268843501::1740169427::0::1::::<><>::res://gameover.gd
+icon.svg::CompressedTexture2D::6591016406112388207::1739042334::1740074715::1::::<><>::
+InShot_20250220_222317676.png::CompressedTexture2D::2715259300716937265::1740080770::1740148507::1::::<><>::
+InShot_20250220_222440953.png::CompressedTexture2D::8545048053685866765::1740080770::1740148507::1::::<><>::
+InShot_20250220_222539513.png::CompressedTexture2D::8081848276999639646::1740080771::1740148507::1::::<><>::
+InShot_20250220_222941843.png::CompressedTexture2D::8197560456193179615::1740080771::1740148507::1::::<><>::
+InShot_20250220_223141690.png::CompressedTexture2D::4390843481563709927::1740080771::1740148507::1::::<><>::
+InShot_20250221_110211531.png::CompressedTexture2D::2700941260758443606::1740144607::1740148506::1::::<><>::
+InShot_20250221_110242228.png::CompressedTexture2D::6916196353574895570::1740144608::1740148506::1::::<><>::
+InShot_20250221_111143380.png::CompressedTexture2D::6590109961438357148::1740144606::1740148506::1::::<><>::
+InShot_20250221_111313227.png::CompressedTexture2D::6750108167181995393::1740144606::1740148506::1::::<><>::
+InShot_20250221_132130162.png::CompressedTexture2D::3646347563552487291::1740144605::1740148506::1::::<><>::
+InShot_20250221_132442284.png::CompressedTexture2D::3338778812997636971::1740144604::1740148506::1::::<><>::
+InShot_20250221_163619493.png::CompressedTexture2D::8659937144365213269::1740144627::1740148505::1::::<><>::
+InShot_20250221_163714779.png::CompressedTexture2D::3800712028511515087::1740144626::1740148505::1::::<><>::
+InShot_20250221_163802300.png::CompressedTexture2D::8389936156298979101::1740144625::1740148505::1::::<><>::
+InShot_20250221_163850589.png::CompressedTexture2D::8905109669908484516::1740144626::1740148505::1::::<><>::
+InShot_20250221_163914602.png::CompressedTexture2D::1615700740575355960::1740144625::1740148505::1::::<><>::
+InShot_20250221_163952847.png::CompressedTexture2D::8478637760800306714::1740144601::1740148505::1::::<><>::
+pathFinding_tiles.png::CompressedTexture2D::7436978054082931217::1739209968::1740074715::1::::<><>::
+photo_2025-02-13_06-36-36.jpg::CompressedTexture2D::1211547279876979376::1739471816::1740155230::1::::<><>::
+player.gd::GDScript::-1::1740157088::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7149666721384777452::1740169416::0::1::::<><>::res://player.gd<>uid://dt0jxtds6krlt::::res://InShot_20250220_222440953.png<>uid://bntlg1li1x4vv::::res://InShot_20250221_132442284.png<>uid://ds2d6prd4l6cs::::res://InShot_20250221_163952847.png<>uid://do17vgh1ahj1p::::res://InShot_20250220_222941843.png<>uid://dne54itf3tmhi::::res://InShot_20250220_222539513.png<>uid://br7k2uipjvdrv::::res://InShot_20250221_132130162.png<>uid://xawmcso7vw1e::::res://InShot_20250221_163914602.png<>uid://drsfa1itfsnx2::::res://InShot_20250221_163802300.png<>uid://bfuyme3c1hnjh::::res://Music/صدای پوتین.mp3
+player_05.png::CompressedTexture2D::3892932019958452628::1739209968::1740074715::1::::<><>::
+player_06.png::CompressedTexture2D::1432039830045188241::1739209968::1740074715::1::::<><>::
+player_07.png::CompressedTexture2D::6743930927052574976::1739209968::1740074715::1::::<><>::
+player_08.png::CompressedTexture2D::3181044511387490846::1739209968::1740074715::1::::<><>::
+player_09.png::CompressedTexture2D::259352168445264386::1739209968::1740074715::1::::<><>::
+player_10.png::CompressedTexture2D::5886235119132239393::1739209968::1740074715::1::::<><>::
+player_11.png::CompressedTexture2D::2093858202651697371::1739209968::1740074715::1::::<><>::
+player_12.png::CompressedTexture2D::1526115587852865339::1739209968::1740074715::1::::<><>::
+player_13.png::CompressedTexture2D::1870783651711103219::1739209968::1740074715::1::::<><>::
+Props.png::CompressedTexture2D::6640546377622906013::1670948554::1740158383::1::::<><>::
+tile_map_layer.gd::GDScript::-1::1740074672::0::1::::<>TileMapLayer<>::
+tile_map_layer.tscn::PackedScene::3873723746419380338::1739901659::0::1::::<><>::uid://dd7r7a7fmrhw8::::res://pathFinding_tiles.png
+world.tscn::PackedScene::7964873378079581642::1740172255::0::1::::<><>::uid://dd7r7a7fmrhw8::::res://pathFinding_tiles.png<>uid://8j36sa4okw1j::::res://asset/map1.png<>uid://c84l74ckv5wpw::::res://player.tscn<>res://tile_map_layer.gd<>uid://b4l7eecvadvj1::::res://asset/Drawing 2.png<>uid://dtvcvceitkh6j::::res://asset/Drawing 7.png<>uid://ri5ahy7qwrnc::::res://photo_2025-02-13_06-36-36.jpg<>uid://c1uy3f6ad6qsr::::res://Props.png<>uid://bfuyme3c1hnjh::::res://Music/صدای پوتین.mp3
+::res://addons/::1739209968
+::res://addons/godot-git-plugin/::1739209968
+git_plugin.gdextension::GDExtension::-1::1739209968::0::1::::<><>::
+plugin.cfg::TextFile::-1::1739209968::0::1::::<><>::
+THIRDPARTY.md::TextFile::-1::1739209968::0::1::::<><>::
+::res://addons/godot-git-plugin/linux/::1739209968
+::res://addons/godot-git-plugin/macos/::1739209968
+::res://addons/godot-git-plugin/win64/::1740333938
+::res://asset/::1740151898
+Drawing 2.png::CompressedTexture2D::4446555605572139992::1739797469::1740151898::1::::<><>::
+Drawing 3.png::CompressedTexture2D::4601646042806487132::1739797468::1740151898::1::::<><>::
+Drawing 7.png::CompressedTexture2D::8536361060309903427::1739797467::1740151898::1::::<><>::
+map1.png::CompressedTexture2D::2336567622007177381::1530779131::1740151898::1::::<><>::
+::res://Music/::1740157999
+02-CARPET_2.WAV::AudioStreamWAV::1368781890440554274::1584007355::1740149177::1::::<><>::
+03-FOREST.WAV::AudioStreamWAV::2701882528518186755::1584007361::1740149177::1::::<><>::
+04-GRAVEL_1.WAV::AudioStreamWAV::5949832293644833621::1584007368::1740149177::1::::<><>::
+05-GRAVEL_2.WAV::AudioStreamWAV::9081046995942874726::1584007371::1740149177::1::::<><>::
+06-METAL.WAV::AudioStreamWAV::3273770035926239685::1584007393::1740149177::1::::<><>::
+07-PAVEMNT1.WAV::AudioStreamWAV::6762190322352625717::1584007230::1740149177::1::::<><>::
+08-PAVEMNT2.WAV::AudioStreamWAV::4381317505032880874::1584007239::1740149177::1::::<><>::
+09-PAVEMNT3.WAV::AudioStreamWAV::6811507526695912202::1584007248::1740149177::1::::<><>::
+10-SKIBOOTS.WAV::AudioStreamWAV::3078979363331646886::1584007254::1740149177::1::::<><>::
+11-SNOW.WAV::AudioStreamWAV::3914184862137785197::1584007260::1740149177::1::::<><>::
+12-SNOW_ICE.WAV::AudioStreamWAV::9156422472948688314::1584007265::1740149177::1::::<><>::
+13-STAIRS_1.WAV::AudioStreamWAV::1524689808856349917::1584007270::1740149177::1::::<><>::
+14-STAIRS_2.WAV::AudioStreamWAV::5234552968921860062::1584007275::1740149177::1::::<><>::
+15-STAIRS_3.WAV::AudioStreamWAV::2875950031966524330::1584007280::1740149177::1::::<><>::
+16-TONE_1.WAV::AudioStreamWAV::2663747920576726492::1584007284::1740149177::1::::<><>::
+17-TONE_2.WAV::AudioStreamWAV::8328603993329150676::1584007289::1740149177::1::::<><>::
+18-WATER.WAV::AudioStreamWAV::2999693829465625396::1584007294::1740149177::1::::<><>::
+19-WETGRASS.WAV::AudioStreamWAV::4089612100711729130::1584007296::1740149177::1::::<><>::
+20-WETRUBBR.WAV::AudioStreamWAV::3978027682594846916::1584007300::1740149177::1::::<><>::
+21-WETSHOES.WAV::AudioStreamWAV::8970477151529103634::1584007305::1740149177::1::::<><>::
+22-WOOD_1.WAV::AudioStreamWAV::6670577017233208218::1584007310::1740149177::1::::<><>::
+23-WOOD_2.WAV::AudioStreamWAV::5912833127231125255::1584007318::1740149177::1::::<><>::
+24-WOOD_3.WAV::AudioStreamWAV::768672707323232526::1584007322::1740149177::1::::<><>::
+162_68309343471937.mp3::AudioStreamMP3::6269435264771561265::1739471923::1740149177::1::::<><>::
+MMD.mp3::AudioStreamMP3::804316747526472478::1740157910::1740157999::1::::<><>::
+Soot sandogh1.mp3::AudioStreamMP3::8373545074410481127::1739995194::1740149177::1::::<><>::
+Soot sandogh2.mp3::AudioStreamMP3::9055565677869401856::1739995193::1740149177::1::::<><>::
+Success (1).mp3::AudioStreamMP3::5968411957136293593::1739471901::1740149177::1::::<><>::
+صدای پوتین.mp3::AudioStreamMP3::2780131347791542661::1740002953::1740149177::1::::<><>::
