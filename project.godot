@@ -11,18 +11,29 @@ config_version=5
 [application]
 
 config/name="Godot-Game"
-run/main_scene="res://world.tscn"
+run/main_scene="res://scence/world.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-GlobalAudioStreamPlayer="*res://audio_stream_player.tscn"
+GlobalAudioStreamPlayer="*res://scence/audio_stream_player.tscn"
 
 [editor]
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[file_customization]
+
+folder_colors={
+"res://Music/": "purple",
+"res://asset/": "green",
+"res://character/": "red",
+"res://scence/": "blue",
+"res://scripts/": "blue",
+"res://sound effects/": "yellow"
+}
 
 [rendering]
 

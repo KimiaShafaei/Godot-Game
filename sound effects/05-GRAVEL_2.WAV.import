@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d2m6rt7uwirhu"
+path="res://.godot/imported/05-GRAVEL_2.WAV-3bfd1b927a12822b0bded29e72d7501a.sample"
+
+[deps]
+
+source_file="res://sound effects/05-GRAVEL_2.WAV"
+dest_files=["res://.godot/imported/05-GRAVEL_2.WAV-3bfd1b927a12822b0bded29e72d7501a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
