@@ -43,6 +43,8 @@ func _physics_process(delta):
 			
 		if global_position.distance_to(end_point) < 16:
 			print("Reached to endpoind. The game is over!")
+			open_box()
+			await get_tree().create_timer(2.0).timeout
 			get_tree().quit()
 		move_and_slide()
 	else:
@@ -77,3 +79,25 @@ func _play_idle():
 		anim.play("Idle_up")
 	else :
 		anim.play("Idle")
+
+func open_box():
+	var box_node = get_node("../box")
+	if box_node:
+		print("opening box")
+		box_node.play("opening_box")
+		await box_node.animation_finished
+		print("box opened")
+		#show_game_over()
+	else:
+		print("error for opening box")
+
+func show_game_over():
+	var dialog = $FinishGame
+	print("show finish the game")
+	dialog.dialog_text = "This level of the game is over."
+	dialog.window_title = "Game finished"
+	dialog.ok_button_text = "OK"
+	dialog.popup_centered()
+	
+	await dialog.confirmed
+	get_tree().quit()

@@ -1,14 +1,13 @@
 extends TileMapLayer
 
 const Cell_size = Vector2i(16, 16)
-const base_line_width = 3.0
-const draw_color = Color.WHITE * Color(1, 1, 1, 0.5)
 
 var _astar = AStarGrid2D.new()
 
 var _start_point = Vector2i()
 var _end_point = Vector2i()
-var _path = PackedVector2Array()
+
+@onready var path_drawer = $PathDrawer
 
 func _ready():
 	_astar.region = Rect2i(0, 0, 20, 10)
@@ -31,17 +30,6 @@ func _ready():
 				print("Setting obstacle at:", pos)
 				_astar.set_point_solid(pos)
 			
-func _draw():
-	if _path.is_empty():
-		return
-	
-	var last_point = _path[0]
-	for index in range(1, len(_path)):
-		var curr_point = _path[index]
-		draw_line(last_point, curr_point, draw_color, base_line_width, true)
-		draw_circle(curr_point, base_line_width * 2.0, draw_color)
-		last_point = curr_point
-		
 
 func round_local_position(local_position):
 	return map_to_local(local_to_map(local_position))
@@ -53,10 +41,9 @@ func is_point_walkable(local_position):
 	return false
 	
 func clear_path():
-	if not _path.is_empty():
-		_path.clear()
-		queue_redraw()
-
+	path_drawer.update_path(PackedVector2Array())
+	
+	
 func set_custom_data(tile_coords: Vector2i, layer_name: String, value):
 	var tile_data = get_cell_tile_data(tile_coords)
 	if tile_data:
@@ -67,12 +54,14 @@ func find_path(local_start_point, local_end_point):
 	
 	_start_point = local_to_map(local_start_point)
 	_end_point = local_to_map(local_end_point)
-	_path = _astar.get_id_path(_start_point, _end_point)
+	var _path = _astar.get_id_path(_start_point, _end_point)
 	
 	if not _path.is_empty():
 		set_custom_data(_start_point, "type", "start")
 		set_custom_data(_end_point, "type", "end")
-			
+		
+		path_drawer.update_path(PackedVector2Array(_path.map(func(p): return map_to_local(p))))
+	
 	queue_redraw()
 	return _path.duplicate()
 	

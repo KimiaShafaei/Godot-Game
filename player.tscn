@@ -12,7 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Music/صدای پوتین.mp3" id="10_3pem5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_maouh"]
-radius = 0.188533
+radius = 0.204244
 height = 0.480818
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
@@ -88,7 +88,7 @@ script = ExtResource("1_2tcqa")
 metadata/_edit_horizontal_guides_ = [-107.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(24, 23)
+position = Vector2(25, 22)
 scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 

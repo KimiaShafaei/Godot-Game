@@ -1,6 +1,6 @@
-[gd_scene load_steps=17 format=4 uid="uid://dlqikh11tsanq"]
+[gd_scene load_steps=22 format=4 uid="uid://dlqikh11tsanq"]
 
-[ext_resource type="Texture2D" uid="uid://dd7r7a7fmrhw8" path="res://pathFinding_tiles.png" id="1_pgkge"]
+[ext_resource type="Script" path="res://world.gd" id="1_rwqpn"]
 [ext_resource type="Texture2D" uid="uid://8j36sa4okw1j" path="res://asset/map1.png" id="2_663sd"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://player.tscn" id="2_g68k2"]
 [ext_resource type="Script" path="res://tile_map_layer.gd" id="2_w7irr"]
@@ -9,9 +9,14 @@
 [ext_resource type="Texture2D" uid="uid://ri5ahy7qwrnc" path="res://photo_2025-02-13_06-36-36.jpg" id="5_h0qvi"]
 [ext_resource type="Texture2D" uid="uid://c1uy3f6ad6qsr" path="res://Props.png" id="6_6ibyw"]
 [ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Music/صدای پوتین.mp3" id="8_cr1qg"]
+[ext_resource type="Script" path="res://path_drawer.gd" id="8_pttu6"]
+[ext_resource type="Texture2D" uid="uid://c2b00r6j3au4q" path="res://Screenshot 2025-02-25 at 03.37.57.png" id="9_lrper"]
+[ext_resource type="Texture2D" uid="uid://7xl58ptfd0x8" path="res://Screenshot 2025-02-25 at 03.37.59.png" id="10_ld3gw"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o587a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6cj4w"]
-texture = ExtResource("1_pgkge")
+texture = SubResource("CompressedTexture2D_o587a")
 0:0/0 = 0
 0:0/0/custom_data_0 = "obstacle"
 1:0/0 = 0
@@ -36715,8 +36720,12 @@ texture = ExtResource("6_6ibyw")
 0:13/0 = 0
 1:13/0 = 0
 2:13/0 = 0
+3:13/next_alternative_id = 4
 3:13/0 = 0
+3:13/1 = 1
+4:13/next_alternative_id = 4
 4:13/0 = 0
+4:13/1 = 1
 5:13/0 = 0
 6:13/0 = 0
 7:13/0 = 0
@@ -36753,9 +36762,24 @@ sources/3 = SubResource("TileSetAtlasSource_y6ij8")
 sources/4 = SubResource("TileSetAtlasSource_84jlv")
 sources/5 = SubResource("TileSetAtlasSource_gln45")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_kdr0v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_lrper")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ld3gw")
+}],
+"loop": false,
+"name": &"opening_box",
+"speed": 5.0
+}]
+
 [node name="World" type="Node2D"]
 position = Vector2(17, 0)
 scale = Vector2(0.988572, 1.01257)
+script = ExtResource("1_rwqpn")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -98.1213
@@ -36769,6 +36793,9 @@ tile_map_data = PackedByteArray("AAAAAAAAAgB2ADsAAAATAAAAAgB2ADsAAAAAAAkAAgB2ADs
 tile_set = SubResource("TileSet_xq51w")
 script = ExtResource("2_w7irr")
 
+[node name="PathDrawer" type="Node2D" parent="TileMapLayer"]
+script = ExtResource("8_pttu6")
+
 [node name="Player" parent="." instance=ExtResource("2_g68k2")]
 position = Vector2(144.653, 134.312)
 scale = Vector2(0.365945, 0.278814)
@@ -36778,10 +36805,13 @@ position = Vector2(160.838, 79.0069)
 scale = Vector2(-0.578035, 3.2912)
 zoom = Vector2(3.4, 3.4)
 
-[node name="PathFindingTiles" type="Sprite2D" parent="."]
-position = Vector2(-50.578, 150.113)
-scale = Vector2(0.0385931, 0.117831)
-texture = ExtResource("1_pgkge")
-
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("8_cr1qg")
+
+[node name="box" type="AnimatedSprite2D" parent="."]
+position = Vector2(152.746, 23.7021)
+sprite_frames = SubResource("SpriteFrames_kdr0v")
+animation = &"opening_box"
+speed_scale = 0.1
+
+[node name="FinishGame" type="AcceptDialog" parent="."]
