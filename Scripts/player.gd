@@ -37,11 +37,17 @@ func _physics_process(delta):
 		
 		_update_animation(direction)
 			
-		if global_position.distance_to(target) < 16:
+		if global_position.distance_to(target) < 2:
 			print("Reached target")
 			_current_index += 1
 			
-		if global_position.distance_to(end_point) < 16:
+		if _current_index >= _path.size():
+			print("reach final point")
+			tile_map.clear_path()
+			_path.clear()
+			_current_index = 0
+			
+		if global_position.distance_to(end_point) < 2:
 			print("Reached to endpoind. The game is over!")
 			open_box()
 			await get_tree().create_timer(2.0).timeout

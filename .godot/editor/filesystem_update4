@@ -1,0 +1,4 @@
+res://Scenes/Levels/world.tscn
+res://Scripts/path_drawer.gd
+res://Scripts/player.gd
+res://Scenes/Prefabs/player.tscn

@@ -36776,7 +36776,6 @@ animations = [{
 }]
 
 [node name="World" type="Node2D"]
-position = Vector2(17, 0)
 scale = Vector2(0.988572, 1.01257)
 
 [node name="ColorRect" type="ColorRect" parent="."]

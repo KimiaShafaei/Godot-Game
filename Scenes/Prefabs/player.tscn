@@ -88,12 +88,12 @@ script = ExtResource("1_2tcqa")
 metadata/_edit_horizontal_guides_ = [-107.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(25, 22)
+position = Vector2(-1.90735e-06, 1.90735e-06)
 scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(22, 22)
+position = Vector2(0, 4.54747e-13)
 scale = Vector2(0.132911, 0.116667)
 sprite_frames = SubResource("SpriteFrames_no5v7")
 animation = &"Idle"
