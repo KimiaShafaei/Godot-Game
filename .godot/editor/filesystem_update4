@@ -1,6 +1,2 @@
 res://world.tscn
-res://player.gd
-res://player.tscn
-res://enemy.tscn
-res://path_drawer.gd
-res://tile_map_layer.gd
+res://Scenes/Levels/world.tscn

@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo3xha42gbhvl"]
-
-[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Music/MMD.mp3" id="1_8phhr"]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
-stream = ExtResource("1_8phhr")
-autoplay = true
