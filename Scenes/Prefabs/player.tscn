@@ -1,15 +1,19 @@
-[gd_scene load_steps=13 format=3 uid="uid://c84l74ckv5wpw"]
+[gd_scene load_steps=17 format=3 uid="uid://c84l74ckv5wpw"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_2tcqa"]
-[ext_resource type="Texture2D" uid="uid://dutdolr12p6ug" path="res://Assets/Sprites/Tiles/New Piskel-3.png.png" id="2_om3uj"]
 [ext_resource type="Texture2D" uid="uid://dmrwx1c46q4hv" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png" id="3_lep2e"]
+[ext_resource type="Texture2D" uid="uid://s7dmf7p3rboj" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (2).png" id="3_yjsi3"]
 [ext_resource type="Texture2D" uid="uid://cqytpv6t1r58i" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png.png" id="4_4dm2x"]
 [ext_resource type="Texture2D" uid="uid://cxg2kfkbcsriu" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (5).png" id="5_x1jye"]
 [ext_resource type="Texture2D" uid="uid://dsqfuxndlraw1" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (3).png" id="6_q0uq2"]
+[ext_resource type="Texture2D" uid="uid://cvg24a6tvds0m" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (7).png" id="7_7v32m"]
 [ext_resource type="Texture2D" uid="uid://btppqdvpx6ll8" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (2).png" id="7_hwvv8"]
 [ext_resource type="Texture2D" uid="uid://bv12scf10y47a" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (5).png" id="8_g7sfn"]
 [ext_resource type="Texture2D" uid="uid://bgnayqy52myf3" path="res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png" id="9_s1d1u"]
+[ext_resource type="Texture2D" uid="uid://vrek7vooxryt" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (4).png" id="9_xp01s"]
 [ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/صدای پوتین.mp3" id="10_3pem5"]
+[ext_resource type="Texture2D" uid="uid://drvxwed2xsxym" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (4).png" id="10_affym"]
+[ext_resource type="Texture2D" uid="uid://dwxuw71tiitgj" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (1).png" id="12_sac56"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_maouh"]
 radius = 0.64109
@@ -19,10 +23,18 @@ height = 1.28218
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_om3uj")
+"texture": ExtResource("5_x1jye")
 }],
 "loop": true,
-"name": &"Idle",
+"name": &"Idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yjsi3")
+}],
+"loop": true,
+"name": &"Idle_left",
 "speed": 5.0
 }, {
 "frames": [{
@@ -30,7 +42,7 @@ animations = [{
 "texture": ExtResource("3_lep2e")
 }],
 "loop": true,
-"name": &"Idle_side",
+"name": &"Idle_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -47,9 +59,26 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("6_q0uq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7v32m")
 }],
 "loop": true,
 "name": &"Walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yjsi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xp01s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_affym")
+}],
+"loop": true,
+"name": &"Walk_left",
 "speed": 5.0
 }, {
 "frames": [{
@@ -58,9 +87,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("7_hwvv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_sac56")
 }],
 "loop": true,
-"name": &"Walk_side",
+"name": &"Walk_right",
 "speed": 5.0
 }, {
 "frames": [{
@@ -91,8 +123,7 @@ shape = SubResource("CapsuleShape2D_maouh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_no5v7")
-animation = &"Idle"
-frame_progress = 0.0704392
+animation = &"Idle_left"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_3pem5")

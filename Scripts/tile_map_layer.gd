@@ -10,7 +10,6 @@ var _end_point = Vector2i()
 @onready var path_drawer = $PathDrawer
 
 func _ready():
-	# If you want to define playing area you just need adjusting below arguments
 	_astar.region = Rect2i(0, 0, 25, 13)
 	_astar.cell_size = Cell_size
 	_astar.offset = Cell_size * 0.5

@@ -62,29 +62,30 @@ func _update_animation(direction):
 		if direction.x > 0:
 			anim.flip_h = false
 			_last_side = "right"
+			anim.play("Walk_right")
 		else:
-			anim.flip_h = true
+			anim.flip_h = false
 			_last_side = "left"
-		anim.play("Walk_side")
+			anim.play("Walk_left")
 	else :
 		if direction.y > 0:
 			anim.play("Walk_down")
 			_last_side = "down"
 		else :
-			anim.play("Idle_up")
+			anim.play("Walk_up")
 			_last_side = "up"
 
 func _play_idle():
 	if _last_side == "right":
 		anim.flip_h = false
-		anim.play("Idle_side")
+		anim.play("Idle_right")
 	elif _last_side == "left":
-		anim.flip_h = true
-		anim.play("Idle_side")
+		anim.flip_h = false
+		anim.play("Idle_left")
 	elif _last_side == "up":
 		anim.play("Idle_up")
 	else :
-		anim.play("Idle")
+		anim.play("Idle_down")
 
 func open_box():
 	var box_node = get_node("../box")
