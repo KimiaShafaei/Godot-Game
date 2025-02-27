@@ -1,9 +1,14 @@
 extends Node2D
 
 
+@onready var menu_music = $AudioStreamPlayer
+
 
 func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Levels/world.tscn")
+	if menu_music.palying:
+		menu_music.stop()
+	
 
 
 

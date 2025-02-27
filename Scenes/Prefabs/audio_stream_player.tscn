@@ -1,7 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://bo3xha42gbhvl"]
 
-[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_8phhr"]
+[ext_resource type="AudioStream" uid="uid://bj1hdioalkekl" path="res://Assets/Musics/action-music.mp3" id="1_ne3mp"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
-stream = ExtResource("1_8phhr")
+stream = ExtResource("1_ne3mp")
+volume_db = -1.6
 autoplay = true
