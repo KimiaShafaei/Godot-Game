@@ -8,8 +8,8 @@
 [ext_resource type="Script" path="res://Scripts/tile_map_layer.gd" id="6_reppp"]
 [ext_resource type="Script" path="res://Scripts/path_drawer.gd" id="7_pn24p"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/player.tscn" id="8_8kclb"]
-[ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/صدای پوتین.mp3" id="9_2lsdb"]
 [ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="10_v650i"]
+[ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="11_21nxo"]
 [ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="11_kel83"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o587a"]
@@ -36769,10 +36769,10 @@ sources/5 = SubResource("TileSetAtlasSource_gln45")
 [sub_resource type="SpriteFrames" id="SpriteFrames_kdr0v"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("10_v650i")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": ExtResource("11_kel83")
 }],
 "loop": false,
@@ -36797,6 +36797,14 @@ script = ExtResource("6_reppp")
 [node name="PathDrawer" type="Node2D" parent="TileMapLayer"]
 script = ExtResource("7_pn24p")
 
+[node name="box" type="AnimatedSprite2D" parent="."]
+position = Vector2(398.555, 7.90069)
+scale = Vector2(0.0543319, 0.0472575)
+sprite_frames = SubResource("SpriteFrames_kdr0v")
+animation = &"opening_box"
+frame_progress = 0.99963
+speed_scale = 0.1
+
 [node name="Player" parent="." instance=ExtResource("8_8kclb")]
 position = Vector2(403.612, 376.27)
 scale = Vector2(0.608714, 0.634351)
@@ -36807,14 +36815,7 @@ rotation = 3.14159
 scale = Vector2(0.213871, -5.42438)
 zoom = Vector2(1.1, 1)
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("9_2lsdb")
-
-[node name="box" type="AnimatedSprite2D" parent="."]
-position = Vector2(398.555, 7.90069)
-scale = Vector2(0.0543319, 0.0472575)
-sprite_frames = SubResource("SpriteFrames_kdr0v")
-animation = &"opening_box"
-speed_scale = 0.1
-
 [node name="FinishGame" type="AcceptDialog" parent="."]
+
+[node name="open_box" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_21nxo")
