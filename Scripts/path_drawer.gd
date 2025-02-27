@@ -1,8 +1,8 @@
 extends Node2D
 
-const base_line_width = 1.0
+const base_line_width = 2.0
 const draw_color = Color.ORANGE_RED * Color(1, 1, 0, 0.8)
-const end_marker_size = 3.0
+const end_marker_size = 5.0
 const marker_rotation = -90.0
 
 var _path = PackedVector2Array()

@@ -1,3 +1,4 @@
+Camera2D
 Node2D
 AcceptDialog
 AnimatedSprite2D
@@ -11,4 +12,3 @@ AudioStreamPlayer2D
 Sprite2D
 TileMapLayer
 TileMap
-Timer

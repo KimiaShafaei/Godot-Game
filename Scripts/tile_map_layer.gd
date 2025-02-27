@@ -1,6 +1,6 @@
 extends TileMapLayer
 
-const Cell_size = Vector2i(16, 16)
+const Cell_size = Vector2i(32, 32)
 
 var _astar = AStarGrid2D.new()
 
