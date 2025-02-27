@@ -1,5 +1,5 @@
-res://Scenes/Prefabs/player.tscn
 res://Scenes/Levels/world.tscn
+res://Scripts/intro_ui.gd
+res://Scenes/Prefabs/player.tscn
 res://Scenes/Levels/intro_ui.tscn
-res://Scripts/player.gd
-res://Scripts/tile_map_layer.gd
+res://Scenes/Prefabs/audio_stream_player.tscn
