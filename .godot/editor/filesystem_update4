@@ -3,3 +3,5 @@ res://Scripts/player.gd
 res://Scenes/Prefabs/player.tscn
 res://Scripts/path_drawer.gd
 res://Scripts/tile_map_layer.gd
+res://Scenes/Levels/intro_ui.tscn
+res://Scripts/intro_ui.gd
