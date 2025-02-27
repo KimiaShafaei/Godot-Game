@@ -1,14 +1,14 @@
+Camera2D
+TileMapLayer
+Button
 Node2D
 AcceptDialog
 AnimatedSprite2D
 CollisionShape2D
 Area2D
-Button
 Label
 CanvasLayer
 AudioStreamPlayer
 AudioStreamPlayer2D
 Sprite2D
-TileMapLayer
 TileMap
-Timer
