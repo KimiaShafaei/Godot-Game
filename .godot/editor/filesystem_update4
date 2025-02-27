@@ -1,7 +1,8 @@
 res://Scenes/Levels/world.tscn
-res://Scripts/player.gd
 res://Scenes/Prefabs/player.tscn
-res://Scripts/path_drawer.gd
-res://Scripts/tile_map_layer.gd
 res://Scenes/Levels/intro_ui.tscn
+res://Scripts/enemy.gd
 res://Scripts/intro_ui.gd
+res://Scripts/path_drawer.gd
+res://Scripts/player.gd
+res://Scripts/tile_map_layer.gd

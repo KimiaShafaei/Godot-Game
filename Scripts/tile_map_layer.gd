@@ -10,7 +10,8 @@ var _end_point = Vector2i()
 @onready var path_drawer = $PathDrawer
 
 func _ready():
-	_astar.region = Rect2i(0, 0, 20, 10)
+	# If you want to define playing area you just need adjusting below arguments
+	_astar.region = Rect2i(0, 0, 25, 13)
 	_astar.cell_size = Cell_size
 	_astar.offset = Cell_size * 0.5
 	_astar.default_compute_heuristic = AStarGrid2D.HEURISTIC_MANHATTAN
@@ -25,9 +26,7 @@ func _ready():
 			var tile_type = "empty"
 			if tile_data:
 				tile_type = tile_data.get_custom_data("type")
-			print("Tile at", pos, "has type:", tile_type)
 			if tile_type == "obstacle":
-				print("Setting obstacle at:", pos)
 				_astar.set_point_solid(pos)
 			
 
@@ -51,11 +50,11 @@ func set_custom_data(tile_coords: Vector2i, layer_name: String, value):
 		
 func find_path(local_start_point, local_end_point):
 	clear_path()
-	
+
 	_start_point = local_to_map(local_start_point)
 	_end_point = local_to_map(local_end_point)
 	var _path = _astar.get_id_path(_start_point, _end_point)
-	
+	print("path", _path)
 	if not _path.is_empty():
 		set_custom_data(_start_point, "type", "start")
 		set_custom_data(_end_point, "type", "end")
