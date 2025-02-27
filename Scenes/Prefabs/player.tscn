@@ -1,25 +1,25 @@
 [gd_scene load_steps=13 format=3 uid="uid://c84l74ckv5wpw"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_2tcqa"]
-[ext_resource type="Texture2D" uid="uid://dt0jxtds6krlt" path="res://Assets/Sprites/Characters/Player/InShot_20250220_222440953.png" id="2_5jd8c"]
-[ext_resource type="Texture2D" uid="uid://bntlg1li1x4vv" path="res://Assets/Sprites/Characters/Player/InShot_20250221_132442284.png" id="3_k5sf4"]
-[ext_resource type="Texture2D" uid="uid://ds2d6prd4l6cs" path="res://Assets/Sprites/Characters/Player/InShot_20250221_163952847.png" id="4_dvjgx"]
-[ext_resource type="Texture2D" uid="uid://do17vgh1ahj1p" path="res://Assets/Sprites/Characters/Player/InShot_20250220_222941843.png" id="5_kny8v"]
-[ext_resource type="Texture2D" uid="uid://dne54itf3tmhi" path="res://Assets/Sprites/Characters/Player/InShot_20250220_222539513.png" id="6_i6814"]
-[ext_resource type="Texture2D" uid="uid://br7k2uipjvdrv" path="res://Assets/Sprites/Characters/Player/InShot_20250221_132130162.png" id="7_qhb64"]
-[ext_resource type="Texture2D" uid="uid://xawmcso7vw1e" path="res://Assets/Sprites/Characters/Player/InShot_20250221_163914602.png" id="8_ltllw"]
-[ext_resource type="Texture2D" uid="uid://drsfa1itfsnx2" path="res://Assets/Sprites/Characters/Player/InShot_20250221_163802300.png" id="9_3pbur"]
+[ext_resource type="Texture2D" uid="uid://dutdolr12p6ug" path="res://Assets/Sprites/Tiles/New Piskel-3.png.png" id="2_om3uj"]
+[ext_resource type="Texture2D" uid="uid://dmrwx1c46q4hv" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png" id="3_lep2e"]
+[ext_resource type="Texture2D" uid="uid://cqytpv6t1r58i" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png.png" id="4_4dm2x"]
+[ext_resource type="Texture2D" uid="uid://cxg2kfkbcsriu" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (5).png" id="5_x1jye"]
+[ext_resource type="Texture2D" uid="uid://dsqfuxndlraw1" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (3).png" id="6_q0uq2"]
+[ext_resource type="Texture2D" uid="uid://btppqdvpx6ll8" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (2).png" id="7_hwvv8"]
+[ext_resource type="Texture2D" uid="uid://bv12scf10y47a" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (5).png" id="8_g7sfn"]
+[ext_resource type="Texture2D" uid="uid://bgnayqy52myf3" path="res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png" id="9_s1d1u"]
 [ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/صدای پوتین.mp3" id="10_3pem5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_maouh"]
-radius = 0.204244
-height = 0.480818
+radius = 0.64109
+height = 1.28218
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_5jd8c")
+"texture": ExtResource("2_om3uj")
 }],
 "loop": true,
 "name": &"Idle",
@@ -27,7 +27,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_k5sf4")
+"texture": ExtResource("3_lep2e")
 }],
 "loop": true,
 "name": &"Idle_side",
@@ -35,7 +35,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_dvjgx")
+"texture": ExtResource("4_4dm2x")
 }],
 "loop": true,
 "name": &"Idle_up",
@@ -43,13 +43,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_5jd8c")
+"texture": ExtResource("5_x1jye")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_kny8v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_i6814")
+"texture": ExtResource("6_q0uq2")
 }],
 "loop": true,
 "name": &"Walk_down",
@@ -57,10 +54,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_k5sf4")
+"texture": ExtResource("3_lep2e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_qhb64")
+"texture": ExtResource("7_hwvv8")
 }],
 "loop": true,
 "name": &"Walk_side",
@@ -68,13 +65,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_dvjgx")
+"texture": ExtResource("4_4dm2x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_ltllw")
+"texture": ExtResource("8_g7sfn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_3pbur")
+"texture": ExtResource("9_s1d1u")
 }],
 "loop": true,
 "name": &"Walk_up",
@@ -93,11 +90,11 @@ scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, 4.54747e-13)
-scale = Vector2(0.132911, 0.116667)
+position = Vector2(0, -4)
+scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_no5v7")
 animation = &"Idle"
-frame_progress = 0.264732
+frame_progress = 0.0704392
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_3pem5")
