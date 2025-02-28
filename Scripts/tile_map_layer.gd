@@ -10,7 +10,7 @@ var _end_point = Vector2i()
 @onready var path_drawer = $PathDrawer
 
 func _ready():
-	_astar.region = Rect2i(0, 0, 25, 13)
+	_astar.region = Rect2i(0, 0, 33, 18)
 	_astar.cell_size = Cell_size
 	_astar.offset = Cell_size * 0.5
 	_astar.default_compute_heuristic = AStarGrid2D.HEURISTIC_MANHATTAN
