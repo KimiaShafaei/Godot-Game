@@ -5,4 +5,3 @@
 [node name="AudioStreamPlayer" type="AudioStreamPlayer"]
 stream = ExtResource("1_ne3mp")
 volume_db = -1.6
-autoplay = true

@@ -1,2 +1,4 @@
+res://Scenes/Levels/world.tscn
 res://Scenes/Levels/intro_ui.tscn
-res://Scripts/intro_ui.gd
+res://Scenes/Prefabs/audio_stream_player.tscn
+res://Scenes/Prefabs/player.tscn

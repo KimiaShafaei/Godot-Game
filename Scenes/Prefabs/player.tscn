@@ -123,8 +123,10 @@ shape = SubResource("CapsuleShape2D_maouh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_no5v7")
-animation = &"Walk_left"
-frame_progress = 0.138472
+animation = &"Walk_up"
+frame = 2
+frame_progress = 0.076402
 
 [node name="walking" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_3pem5")
+autoplay = true

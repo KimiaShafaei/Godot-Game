@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://8j36sa4okw1j" path="res://Assets/Sprites/Tiles/map1.png" id="1_tipan"]
 [ext_resource type="Script" path="res://Scripts/intro_ui.gd" id="1_uyahb"]
-[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="3_3utb8"]
+[ext_resource type="AudioStream" uid="uid://bj1hdioalkekl" path="res://Assets/Musics/action-music.mp3" id="3_yg1hd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wdgxp"]
 texture = ExtResource("1_tipan")
@@ -935,8 +935,8 @@ scale = Vector2(2.04, 1.76)
 zoom = Vector2(1.2, 1)
 
 [node name="start_music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_3utb8")
-autoplay = true
+stream = ExtResource("3_yg1hd")
+volume_db = -4.194
 
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="menu" to="." method="_on_menu_pressed"]
