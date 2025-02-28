@@ -6,6 +6,7 @@ extends CharacterBody2D
 @onready var walking_sound = $walking
 @onready var success_sound = $"../success"
 @onready var open_box_sound = $"../open_box"
+@onready var background_sound = $"../background"
 
 var _path : Array = []
 var _current_index = 0
@@ -15,6 +16,7 @@ var end_point: Vector2
 func _ready():
 	anim.play("Idle")
 	end_point = tile_map.map_to_local(Vector2i(12, 1))
+	background_sound.play()
 	
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -55,8 +57,8 @@ func _physics_process(delta):
 			if open_box_sound and not open_box_sound.playing:
 				open_box_sound.play()
 			open_box()
+			success_sound.play()
 			await get_tree().create_timer(1.0).timeout
-			get_tree().quit()
 		move_and_slide()
 	else:
 		velocity = Vector2.ZERO
@@ -105,7 +107,8 @@ func open_box():
 		box_node.play("opening_box")
 		await box_node.animation_finished
 		print("box opened")
-		#show_game_over()
+		background_sound.stop()
+		get_tree().quit()
 	else:
 		print("error for opening box")
 

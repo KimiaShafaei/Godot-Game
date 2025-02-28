@@ -36783,6 +36783,9 @@ animations = [{
 [node name="World" type="Node2D"]
 scale = Vector2(0.988572, 1.01257)
 
+[node name="background" type="AudioStreamPlayer2D" parent="."]
+volume_db = -17.382
+
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -155.0
 offset_top = -154.0
@@ -36819,3 +36822,5 @@ zoom = Vector2(1.1, 1)
 
 [node name="open_box" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_21nxo")
+
+[node name="success" type="AudioStreamPlayer2D" parent="."]
