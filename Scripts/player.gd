@@ -10,11 +10,11 @@ extends CharacterBody2D
 
 var _path : Array = []
 var _current_index = 0
-var _last_side: String= "Idle"
+var _last_side: String= "Idle_down"
 var end_point: Vector2
 
 func _ready():
-	anim.play("Idle")
+	anim.play("Idle_down")
 	end_point = tile_map.map_to_local(Vector2i(12, 1))
 	background_sound.play()
 	
