@@ -33,7 +33,7 @@ func _input(event):
 			else:
 				print("No path found")
 				
-func _physics_process(delta):
+func _physics_process(_delta):
 	if _path.size() > 0 and _current_index < _path.size():
 		var target = tile_map.map_to_local(_path[_current_index])
 		var direction = (target - global_position).normalized()
