@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="11_kel83"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="12_p5ejj"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_37ioa"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7y76f"]
 texture = ExtResource("4_2qah4")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -1041,7 +1041,7 @@ texture_region_size = Vector2i(32, 32)
 30:31/0 = 0
 31:31/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7tdy0"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v4l51"]
 texture = ExtResource("5_m10ni")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -2068,7 +2068,7 @@ texture_region_size = Vector2i(32, 32)
 30:31/0 = 0
 31:31/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ja25w"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_60wdy"]
 texture = ExtResource("7_3awuc")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
@@ -3101,9 +3101,9 @@ texture_region_size = Vector2i(32, 32)
 tile_size = Vector2i(32, 32)
 custom_data_layer_0/name = "type"
 custom_data_layer_0/type = 4
-sources/0 = SubResource("TileSetAtlasSource_37ioa")
-sources/1 = SubResource("TileSetAtlasSource_7tdy0")
-sources/2 = SubResource("TileSetAtlasSource_ja25w")
+sources/0 = SubResource("TileSetAtlasSource_7y76f")
+sources/1 = SubResource("TileSetAtlasSource_v4l51")
+sources/2 = SubResource("TileSetAtlasSource_60wdy")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kdr0v"]
 animations = [{
@@ -3158,8 +3158,6 @@ position = Vector2(396.532, 221.219)
 rotation = 3.14159
 scale = Vector2(0.213871, -5.42438)
 zoom = Vector2(1.17, 1.064)
-
-[node name="FinishGame" type="AcceptDialog" parent="."]
 
 [node name="open_box" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_21nxo")
