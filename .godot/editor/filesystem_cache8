@@ -1,18 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741372760
+::res://::1741373223
 icon.svg::CompressedTexture2D::6591016406112388207::1740741399::1741372395::1::::<><>::
-New Piskel-1.png (14).png::CompressedTexture2D::6003493149304480017::1741372692::1741372692::1::::<><>::
-New Piskel-1.png (15).png::CompressedTexture2D::6887714018727927906::1741372753::1741372753::1::::<><>::
-New Piskel-2.png (15).png::CompressedTexture2D::2688917713990265652::1741372481::1741372482::1::::<><>::
-New Piskel-2.png (16).png::CompressedTexture2D::5899891098445122418::1741372757::1741372757::1::::<><>::
-New Piskel-3.png (8).png::CompressedTexture2D::1208619654441685068::1741372700::1741372700::1::::<><>::
-New Piskel-3.png (9).png::CompressedTexture2D::2575929191589876965::1741372760::1741372760::1::::<><>::
-New Piskel-4.png (2).png::CompressedTexture2D::4231799005461750478::1741372716::1741372716::1::::<><>::
-New Piskel-4.png (3).png::CompressedTexture2D::697730734165107150::1741372745::1741372745::1::::<><>::
-New Piskel-5.png (1).png::CompressedTexture2D::7555651240968987450::1741372748::1741372748::1::::<><>::
-New Piskel-5.png.png::CompressedTexture2D::4847571564099500122::1741372711::1741372711::1::::<><>::
-New Piskel-6.png (1).png::CompressedTexture2D::5064909619938555771::1741372740::1741372740::1::::<><>::
-New Piskel-6.png.png::CompressedTexture2D::430259664654142746::1741372729::1741372705::1::::<><>::
 README.MD::TextFile::-1::1740741399::0::1::::<><>::
 ::res://addons/::1740741399
 ::res://addons/godot-git-plugin/::1740741399
@@ -21,7 +9,7 @@ plugin.cfg::TextFile::-1::1740741399::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1740741399::0::1::::<><>::
 ::res://addons/godot-git-plugin/linux/::1740741399
 ::res://addons/godot-git-plugin/macos/::1740741399
-::res://addons/godot-git-plugin/win64/::1741372385
+::res://addons/godot-git-plugin/win64/::1741373106
 ::res://Assets/::1740741399
 ::res://Assets/Musics/::1741372397
 02-CARPET_2.WAV::AudioStreamWAV::1368781890440554274::1740741398::1741372397::1::::<><>::
@@ -60,7 +48,7 @@ taviz-kheshab.mp3::AudioStreamMP3::8770599939880124287::1741372363::1741372394::
 صدای پوتین.mp3::AudioStreamMP3::2780131347791542661::1740741399::1741372394::1::::<><>::
 ::res://Assets/Sprites/::1740741399
 ::res://Assets/Sprites/Characters/::1740741399
-::res://Assets/Sprites/Characters/Player/::1741372397
+::res://Assets/Sprites/Characters/Player/::1741373656
 InShot_20250220_222317676.png::CompressedTexture2D::2715259300716937265::1740741399::1741372396::1::::<><>::
 InShot_20250220_222440953.png::CompressedTexture2D::8545048053685866765::1740741399::1741372396::1::::<><>::
 InShot_20250220_222539513.png::CompressedTexture2D::8081848276999639646::1740741399::1741372396::1::::<><>::
@@ -81,15 +69,27 @@ InShot_20250221_163952847.png::CompressedTexture2D::8478637760800306714::1740741
 New Piskel-1.png (2).png::CompressedTexture2D::8038000813711811719::1740741399::1741372395::1::::<><>::
 New Piskel-1.png (4).png::CompressedTexture2D::8397260320046686264::1740741399::1741372395::1::::<><>::
 New Piskel-1.png (5).png::CompressedTexture2D::6401228532442679480::1740741399::1741372395::1::::<><>::
+New Piskel-1.png (14).png::CompressedTexture2D::6003493149304480017::1741373637::1741373637::1::::<><>::
+New Piskel-1.png (15).png::CompressedTexture2D::6887714018727927906::1741373642::1741373642::1::::<><>::
 New Piskel-2.png (2).png::CompressedTexture2D::3751913897445030091::1740741399::1741372395::1::::<><>::
 New Piskel-2.png (4).png::CompressedTexture2D::1509322577971637535::1740741399::1741372395::1::::<><>::
 New Piskel-2.png (5).png::CompressedTexture2D::3915731838778747652::1740741399::1741372395::1::::<><>::
 New Piskel-2.png (7).png::CompressedTexture2D::6260884545917589934::1740741399::1741372395::1::::<><>::
+New Piskel-2.png (15).png::CompressedTexture2D::2688917713990265652::1741373646::1741373203::1::::<><>::
+New Piskel-2.png (16).png::CompressedTexture2D::5899891098445122418::1741373650::1741373650::1::::<><>::
 New Piskel-3.png (1).png::CompressedTexture2D::8752152648567047233::1740741399::1741372395::1::::<><>::
 New Piskel-3.png (2).png::CompressedTexture2D::1329663166889764497::1740741399::1741372395::1::::<><>::
 New Piskel-3.png (3).png::CompressedTexture2D::8456031809741958366::1740741399::1741372395::1::::<><>::
+New Piskel-3.png (8).png::CompressedTexture2D::1208619654441685068::1741373653::1741373653::1::::<><>::
+New Piskel-3.png (9).png::CompressedTexture2D::2575929191589876965::1741373656::1741373656::1::::<><>::
 New Piskel-3.png.png::CompressedTexture2D::5946589493241302826::1740741399::1741372395::1::::<><>::
 New Piskel-4.png (1).png::CompressedTexture2D::2834434394226341622::1740741399::1741372395::1::::<><>::
+New Piskel-4.png (2).png::CompressedTexture2D::4231799005461750478::1741372716::1741373214::1::::<><>::
+New Piskel-4.png (3).png::CompressedTexture2D::697730734165107150::1741372745::1741373216::1::::<><>::
+New Piskel-5.png (1).png::CompressedTexture2D::7555651240968987450::1741372748::1741373217::1::::<><>::
+New Piskel-5.png.png::CompressedTexture2D::4847571564099500122::1741372711::1741373219::1::::<><>::
+New Piskel-6.png (1).png::CompressedTexture2D::5064909619938555771::1741372740::1741373222::1::::<><>::
+New Piskel-6.png.png::CompressedTexture2D::430259664654142746::1741373483::1741373224::1::::<><>::
 ::res://Assets/Sprites/Tiles/::1741372395
 Drawing 2.png::CompressedTexture2D::4446555605572139992::1740741399::1741372395::1::::<><>::
 Drawing 3.png::CompressedTexture2D::4601646042806487132::1740741399::1741372395::1::::<><>::
@@ -120,9 +120,9 @@ Screenshot 2025-02-25 at 03.37.57.png::CompressedTexture2D::6671568034266169946:
 Screenshot 2025-02-25 at 03.37.59.png::CompressedTexture2D::2294246902810712475::1740741399::1741372395::1::::<><>::
 ::res://Godot-Game/::1740741399
 ::res://Scenes/::1740741399
-::res://Scenes/Levels/::1741372363
+::res://Scenes/Levels/::1741372791
 intro_ui.tscn::PackedScene::8659900962438994922::1741372363::0::1::::<><>::res://Scripts/intro_ui.gd<>uid://b5nsjd0gp7qv3::::res://Assets/Sprites/Tiles/New Piskel (6).png<>uid://bj1hdioalkekl::::res://Assets/Musics/action-music.mp3
-level_2.tscn::PackedScene::6415986084678339293::1741372363::0::1::::<><>::uid://lpu8kdgb4v7s::::res://Assets/Musics/MMD.mp3<>uid://b5nsjd0gp7qv3::::res://Assets/Sprites/Tiles/New Piskel (6).png<>uid://c1vx61phkr7du::::res://Assets/Sprites/Tiles/New Piskel (7).png<>uid://dpgdg44xtftbu::::res://Assets/Sprites/Tiles/New Piskel (11).png<>res://Scripts/tile_map_layer.gd<>res://Scripts/path_drawer.gd<>uid://r7dalvdcab4::::res://Assets/Sprites/Tiles/New Piskel-1.png (3).png<>uid://b5t6yr0w1am1e::::res://Assets/Sprites/Tiles/New Piskel-2.png (3).png<>uid://c84l74ckv5wpw::::res://Scenes/Prefabs/player.tscn<>uid://drkhcf7438sbv::::res://Assets/Musics/Soot sandogh1.mp3<>uid://crbe4xd7wjrmv::::res://Assets/Musics/Success (1).mp3<>uid://dy1yfnp1t85kc::::res://Scenes/Prefabs/enemy.tscn<>res://Scripts/Enemy.gd
+level_2.tscn::PackedScene::6415986084678339293::1741372791::0::1::::<><>::uid://lpu8kdgb4v7s::::res://Assets/Musics/MMD.mp3<>uid://b5nsjd0gp7qv3::::res://Assets/Sprites/Tiles/New Piskel (6).png<>uid://c1vx61phkr7du::::res://Assets/Sprites/Tiles/New Piskel (7).png<>uid://dpgdg44xtftbu::::res://Assets/Sprites/Tiles/New Piskel (11).png<>res://Scripts/tile_map_layer.gd<>res://Scripts/path_drawer.gd<>uid://r7dalvdcab4::::res://Assets/Sprites/Tiles/New Piskel-1.png (3).png<>uid://b5t6yr0w1am1e::::res://Assets/Sprites/Tiles/New Piskel-2.png (3).png<>uid://c84l74ckv5wpw::::res://Scenes/Prefabs/player.tscn<>uid://drkhcf7438sbv::::res://Assets/Musics/Soot sandogh1.mp3<>uid://crbe4xd7wjrmv::::res://Assets/Musics/Success (1).mp3<>uid://dy1yfnp1t85kc::::res://Scenes/Prefabs/enemy.tscn<>res://Scripts/Enemy.gd
 world.tscn::PackedScene::7964873378079581642::1741372363::0::1::::<><>::uid://lpu8kdgb4v7s::::res://Assets/Musics/MMD.mp3<>uid://b5nsjd0gp7qv3::::res://Assets/Sprites/Tiles/New Piskel (6).png<>uid://c1vx61phkr7du::::res://Assets/Sprites/Tiles/New Piskel (7).png<>res://Scripts/tile_map_layer.gd<>uid://dpgdg44xtftbu::::res://Assets/Sprites/Tiles/New Piskel (11).png<>res://Scripts/path_drawer.gd<>uid://c84l74ckv5wpw::::res://Scenes/Prefabs/player.tscn<>uid://r7dalvdcab4::::res://Assets/Sprites/Tiles/New Piskel-1.png (3).png<>uid://drkhcf7438sbv::::res://Assets/Musics/Soot sandogh1.mp3<>uid://b5t6yr0w1am1e::::res://Assets/Sprites/Tiles/New Piskel-2.png (3).png<>uid://crbe4xd7wjrmv::::res://Assets/Musics/Success (1).mp3
 ::res://Scenes/Prefabs/::1741372363
 audio_stream_player.tscn::PackedScene::3428276109164341753::1741372363::0::1::::<><>::uid://bj1hdioalkekl::::res://Assets/Musics/action-music.mp3

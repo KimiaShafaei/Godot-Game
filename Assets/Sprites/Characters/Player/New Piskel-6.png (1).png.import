@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfwaqbxh12ugg"
-path="res://.godot/imported/New Piskel-5.png (1).png-bddb9c4c33cc28dbc75d5931fc978b9f.ctex"
+uid="uid://cefqk6ugkrwq2"
+path="res://.godot/imported/New Piskel-6.png (1).png-75344770d61023ba280e3c414d857016.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://New Piskel-5.png (1).png"
-dest_files=["res://.godot/imported/New Piskel-5.png (1).png-bddb9c4c33cc28dbc75d5931fc978b9f.ctex"]
+source_file="res://Assets/Sprites/Characters/Player/New Piskel-6.png (1).png"
+dest_files=["res://.godot/imported/New Piskel-6.png (1).png-75344770d61023ba280e3c414d857016.ctex"]
 
 [params]
 
