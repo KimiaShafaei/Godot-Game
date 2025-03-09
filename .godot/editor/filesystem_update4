@@ -1,1 +1,4 @@
+res://Scenes/Prefabs/enemy.tscn
 res://Scenes/Levels/level_2.tscn
+res://Scenes/Levels/world.tscn
+res://Scenes/Prefabs/player.tscn
