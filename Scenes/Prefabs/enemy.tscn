@@ -1,14 +1,14 @@
 [gd_scene load_steps=12 format=3 uid="uid://dy1yfnp1t85kc"]
 
-[ext_resource type="Texture2D" uid="uid://b1j6d1ymgdupi" path="res://Assets/Sprites/Characters/Player/New Piskel-4.png (2).png" id="1_6n5kn"]
-[ext_resource type="Texture2D" uid="uid://c5epv48kig5by" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (15).png" id="2_0awg4"]
-[ext_resource type="Texture2D" uid="uid://dfwaqbxh12ugg" path="res://Assets/Sprites/Characters/Player/New Piskel-5.png (1).png" id="3_2ck7p"]
-[ext_resource type="Texture2D" uid="uid://cefqk6ugkrwq2" path="res://Assets/Sprites/Characters/Player/New Piskel-6.png (1).png" id="4_giqoo"]
-[ext_resource type="Texture2D" uid="uid://geokw1gpqwas" path="res://Assets/Sprites/Characters/Player/New Piskel-6.png.png" id="5_08c0o"]
-[ext_resource type="Texture2D" uid="uid://j68r145o2sy5" path="res://Assets/Sprites/Characters/Player/New Piskel-4.png (3).png" id="5_k2xaq"]
-[ext_resource type="Texture2D" uid="uid://bcx2gbeae8b54" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (9).png" id="6_a3fna"]
-[ext_resource type="Texture2D" uid="uid://cbcg2brit5683" path="res://Assets/Sprites/Characters/Player/New Piskel-5.png.png" id="6_nm7kt"]
-[ext_resource type="Texture2D" uid="uid://cqb7lyes28vqg" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (16).png" id="7_g4xnb"]
+[ext_resource type="Texture2D" uid="uid://b1j6d1ymgdupi" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-4.png (2).png" id="1_6n5kn"]
+[ext_resource type="Texture2D" uid="uid://c5epv48kig5by" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-1.png (15).png" id="2_0awg4"]
+[ext_resource type="Texture2D" uid="uid://dfwaqbxh12ugg" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-5.png (1).png" id="3_2ck7p"]
+[ext_resource type="Texture2D" uid="uid://cefqk6ugkrwq2" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-6.png (1).png" id="4_giqoo"]
+[ext_resource type="Texture2D" uid="uid://geokw1gpqwas" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-6.png.png" id="5_08c0o"]
+[ext_resource type="Texture2D" uid="uid://j68r145o2sy5" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-4.png (3).png" id="5_k2xaq"]
+[ext_resource type="Texture2D" uid="uid://bcx2gbeae8b54" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-3.png (9).png" id="6_a3fna"]
+[ext_resource type="Texture2D" uid="uid://cbcg2brit5683" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-5.png.png" id="6_nm7kt"]
+[ext_resource type="Texture2D" uid="uid://cqb7lyes28vqg" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-2.png (16).png" id="7_g4xnb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk7jn"]
 radius = 32.0
