@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 @export var speed = 200
+@export var runnig_speed = 400
+
 @onready var anim = $AnimatedSprite2D
 @onready var tile_map = $"../TileMapLayer"
 @onready var walking_sound = $walking
@@ -12,6 +14,7 @@ var _path : Array = []
 var _current_index = 0
 var _last_side: String= "Idle_down"
 var end_point: Vector2
+var start_chasing = false
 
 func _ready():
 	anim.play("Idle_down")
@@ -100,6 +103,10 @@ func _play_idle():
 	if walking_sound.playing:
 		walking_sound.stop()
 
+func start_running():
+	start_chasing = true
+	speed = runnig_speed
+	
 func open_box():
 	var box_node = get_node("../box")
 	if box_node:
@@ -111,14 +118,3 @@ func open_box():
 		get_tree().quit()
 	else:
 		print("error for opening box")
-
-func show_game_over():
-	var dialog = $FinishGame
-	print("show finish the game")
-	dialog.dialog_text = "This level of the game is over."
-	dialog.window_title = "Game finished"
-	dialog.ok_button_text = "OK"
-	dialog.popup_centered()
-	
-	await dialog.confirmed
-	get_tree().quit()

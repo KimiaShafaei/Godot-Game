@@ -3149,7 +3149,7 @@ sprite_frames = SubResource("SpriteFrames_tmkdp")
 animation = &"opening_box"
 speed_scale = 0.1
 
-[node name="Player" parent="." instance=ExtResource("9_0tae3")]
+[node name="Player" parent="." groups=["player"] instance=ExtResource("9_0tae3")]
 position = Vector2(404.624, 410.836)
 scale = Vector2(0.608714, 0.634351)
 
@@ -3170,3 +3170,5 @@ stream = ExtResource("11_x6a6w")
 position = Vector2(48, 80)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("13_3oxvx")
+
+[node name="understanding" type="AudioStreamPlayer2D" parent="."]
