@@ -1,13 +1,16 @@
-[gd_scene load_steps=12 format=3 uid="uid://dy1yfnp1t85kc"]
+[gd_scene load_steps=15 format=3 uid="uid://dy1yfnp1t85kc"]
 
-[ext_resource type="Texture2D" uid="uid://b1j6d1ymgdupi" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-4.png (2).png" id="1_6n5kn"]
+[ext_resource type="Texture2D" uid="uid://bmge0u6qam3x0" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-4.png (2).png" id="1_6n5kn"]
+[ext_resource type="Texture2D" uid="uid://rhp13h378esq" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-3.png (8).png" id="1_xtbi6"]
 [ext_resource type="Texture2D" uid="uid://c5epv48kig5by" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-1.png (15).png" id="2_0awg4"]
 [ext_resource type="Texture2D" uid="uid://dfwaqbxh12ugg" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-5.png (1).png" id="3_2ck7p"]
 [ext_resource type="Texture2D" uid="uid://cefqk6ugkrwq2" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-6.png (1).png" id="4_giqoo"]
-[ext_resource type="Texture2D" uid="uid://geokw1gpqwas" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-6.png.png" id="5_08c0o"]
+[ext_resource type="Texture2D" uid="uid://crsewjh833hsr" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-1.png (14).png" id="5_0p45e"]
+[ext_resource type="Texture2D" uid="uid://bcpiymcmvic3v" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-6.png.png" id="5_08c0o"]
 [ext_resource type="Texture2D" uid="uid://j68r145o2sy5" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-4.png (3).png" id="5_k2xaq"]
 [ext_resource type="Texture2D" uid="uid://bcx2gbeae8b54" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-3.png (9).png" id="6_a3fna"]
-[ext_resource type="Texture2D" uid="uid://cbcg2brit5683" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-5.png.png" id="6_nm7kt"]
+[ext_resource type="Texture2D" uid="uid://beksc1w0ntwcq" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-2.png (15).png" id="6_hlua6"]
+[ext_resource type="Texture2D" uid="uid://bj4pgdojc45d7" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-5.png.png" id="6_nm7kt"]
 [ext_resource type="Texture2D" uid="uid://cqb7lyes28vqg" path="res://Assets/Sprites/Characters/Player/enemy/New Piskel-2.png (16).png" id="7_g4xnb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk7jn"]
@@ -18,7 +21,7 @@ height = 96.0
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_6n5kn")
+"texture": ExtResource("1_xtbi6")
 }],
 "loop": true,
 "name": &"Idle_down",
@@ -50,13 +53,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_6n5kn")
+"texture": ExtResource("1_xtbi6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_nm7kt")
+"texture": ExtResource("5_0p45e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_08c0o")
+"texture": ExtResource("6_hlua6")
 }],
 "loop": true,
 "name": &"Walk_down",
@@ -113,4 +116,4 @@ shape = SubResource("CapsuleShape2D_rk7jn")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
-animation = &"Walk_up"
+animation = &"Idle_down"
