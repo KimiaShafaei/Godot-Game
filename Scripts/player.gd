@@ -29,6 +29,7 @@ func _physics_process(_delta):
 	if _path.size() > 0 and _current_index < _path.size():
 		var target = tile_map.map_to_local(_path[_current_index])
 		var direction = (target - global_position).normalized()
+		
 		velocity = direction * speed
 		
 		_update_animation(direction)
@@ -83,6 +84,8 @@ func _play_idle():
 		walking_sound.stop()
 
 func start_running():
+	print("start running...")
 	start_chasing = true
 	speed = runnig_speed
+	
 	

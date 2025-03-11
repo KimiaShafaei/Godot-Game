@@ -3164,6 +3164,7 @@ shape = SubResource("RectangleShape2D_tmhtp")
 [node name="Player" parent="." groups=["player"] instance=ExtResource("9_0tae3")]
 position = Vector2(404.624, 410.836)
 scale = Vector2(0.608714, 0.634351)
+runnig_speed = 600
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(396.532, 221.219)

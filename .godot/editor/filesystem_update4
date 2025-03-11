@@ -5,3 +5,6 @@ res://Scenes/Prefabs/enemy.tscn
 res://Scenes/Prefabs/player.tscn
 res://Scripts/player.gd
 res://Scripts/tile_map_layer.gd
+res://Scripts/enemy_path_follow_2d.gd
+res://Scenes/Prefabs/enemy_path_2d.tscn
+res://Scripts/enemy.gd

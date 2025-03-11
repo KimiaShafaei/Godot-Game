@@ -3,8 +3,9 @@ extends PathFollow2D
 @export var speed: float = 50
 @export var chase_speed:float = 80
 @export var detect_range: float = 100
-
+@export var chase_range_multiple:float = 5
 @onready var enemy_anim = $Enemy/AnimatedSprite2D
+@onready var raycast = $Enemy/RayCast2D
 
 var player = null
 var chasing = false
@@ -16,7 +17,10 @@ func _ready() :
 	
 func _process(delta: float) -> void:
 	if player and player.position.distance_to(global_position) < detect_range:
-		chasing = true
+		if not chasing:
+			chasing = true
+			raycast.target_position *= chase_range_multiple
+			player.start_running()
 	else :
 		chasing = false
 	
@@ -28,7 +32,7 @@ func _process(delta: float) -> void:
 		progress += speed * delta
 		_update_animation(global_position - last_position)
 	last_position = global_position
-		
+
 func _update_animation(direction:  Vector2):
 	if abs(direction.x) > abs(direction.y):
 		if direction.x > 0:
