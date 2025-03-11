@@ -25,6 +25,7 @@ func _on_body_entered(body: Node2D) -> void:
 		await get_tree().create_timer(1.5).timeout
 		
 		if next_level and next_level != "":
-			get_tree().change_scene_to_file("res://Scenes/Levels/level_2.tscn")
+			get_tree().change_scene_to_file(next_level)
 		else:
 			print("No next level")
+			get_tree().quit()

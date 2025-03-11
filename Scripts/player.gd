@@ -20,33 +20,23 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
 		var click_position = tile_map.round_local_position(get_global_mouse_position())
-		print("Click Position:", click_position)
 
 		if tile_map.is_point_walkable(click_position):
 			_path = tile_map.find_path(global_position, click_position)
-			print("Generated Path:", _path)
-			
 			_current_index = 0
-			if _path.size() > 1:
-				print("Path found", _path)
-			else:
-				print("No path found")
 				
 func _physics_process(_delta):
 	if _path.size() > 0 and _current_index < _path.size():
 		var target = tile_map.map_to_local(_path[_current_index])
 		var direction = (target - global_position).normalized()
-		print("Target:", target, "Direction", direction)
 		velocity = direction * speed
 		
 		_update_animation(direction)
 			
 		if global_position.distance_to(target) < 10:
-			print("Reached target")
 			_current_index += 1
 			
 		if _current_index >= _path.size():
-			print("reach final point")
 			tile_map.clear_path()
 			_path.clear()
 			_current_index = 0

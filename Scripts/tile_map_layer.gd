@@ -53,11 +53,7 @@ func find_path(local_start_point, local_end_point):
 	_start_point = local_to_map(local_start_point)
 	_end_point = local_to_map(local_end_point)
 	var _path = _astar.get_id_path(_start_point, _end_point)
-	print("path", _path)
 	if not _path.is_empty():
-		set_custom_data(_start_point, "type", "start")
-		set_custom_data(_end_point, "type", "end")
-		
 		path_drawer.update_path(PackedVector2Array(_path.map(func(p): return map_to_local(p))))
 	
 	queue_redraw()
