@@ -1,8 +1,9 @@
+CollisionShape2D
+Area2D
 PathFollow2D
 Path2D
 AudioStreamPlayer2D
 Sprite2D
-CollisionShape2D
 CharacterBody2D
 AudioListener2D
 Camera2D
@@ -11,5 +12,3 @@ Button
 Node2D
 AcceptDialog
 AnimatedSprite2D
-Area2D
-Label

@@ -6,19 +6,15 @@ extends CharacterBody2D
 @onready var anim = $AnimatedSprite2D
 @onready var tile_map = $"../TileMapLayer"
 @onready var walking_sound = $walking
-@onready var success_sound = $"../success"
-@onready var open_box_sound = $"../open_box"
 @onready var background_sound = $"../background"
 
 var _path : Array = []
 var _current_index = 0
 var _last_side: String= "Idle_down"
-var end_point: Vector2
 var start_chasing = false
 
 func _ready():
 	anim.play("Idle_down")
-	end_point = tile_map.map_to_local(Vector2i(12, 1))
 	background_sound.play()
 	
 func _input(event):
@@ -55,14 +51,6 @@ func _physics_process(_delta):
 			_path.clear()
 			_current_index = 0
 			
-		if global_position.distance_to(end_point) < 10:
-			print("Reached to endpoind. The game is over!")
-			if open_box_sound and not open_box_sound.playing:
-				open_box_sound.play()
-			open_box()
-			success_sound.play()
-			await get_tree().create_timer(1.0).timeout
-			get_tree().change_scene_to_file("res://Scenes/Levels/level_2.tscn")
 		move_and_slide()
 	else:
 		velocity = Vector2.ZERO
@@ -108,14 +96,3 @@ func start_running():
 	start_chasing = true
 	speed = runnig_speed
 	
-func open_box():
-	var box_node = get_node("../box")
-	if box_node:
-		print("opening box")
-		box_node.play("opening_box")
-		await box_node.animation_finished
-		print("box opened")
-		background_sound.stop()
-		get_tree().quit()
-	else:
-		print("error for opening box")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://cxn7matdxw82d"]
+[gd_scene load_steps=22 format=4 uid="uid://cxn7matdxw82d"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Texture2D" uid="uid://b5nsjd0gp7qv3" path="res://Assets/Sprites/Tiles/New Piskel (6).png" id="2_ehtba"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="7_a0xsu"]
 [ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="8_sqati"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/player.tscn" id="9_0tae3"]
+[ext_resource type="Script" path="res://Scripts/area_2d.gd" id="9_1toud"]
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="10_8c7mm"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/enemy.tscn" id="12_5rpil"]
@@ -3121,6 +3122,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmhtp"]
+size = Vector2(984.689, 698.302)
+
 [sub_resource type="Curve2D" id="Curve2D_k2md1"]
 _data = {
 "points": PackedVector2Array(63.0359, 51.1206, -63.0359, -51.1206, 112, 48, -26.9056, -68.8014, 26.9056, 68.8014, 0, 120, 47.2769, 91.4789, -47.2769, -91.4789, 112, 48)
@@ -3155,6 +3159,15 @@ sprite_frames = SubResource("SpriteFrames_tmkdp")
 animation = &"opening_box"
 speed_scale = 0.1
 
+[node name="Area2D" type="Area2D" parent="box"]
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("9_1toud")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="box/Area2D"]
+position = Vector2(-5.61328, 160.806)
+shape = SubResource("RectangleShape2D_tmhtp")
+
 [node name="Player" parent="." groups=["player"] instance=ExtResource("9_0tae3")]
 position = Vector2(404.624, 410.836)
 scale = Vector2(0.608714, 0.634351)
@@ -3187,3 +3200,5 @@ script = ExtResource("12_aukap")
 [node name="Enemy" parent="Path2D/EnemyPathFollow2D" instance=ExtResource("12_5rpil")]
 rotation = 2.46091
 scale = Vector2(0.5, 0.5)
+
+[connection signal="body_entered" from="box/Area2D" to="box/Area2D" method="_on_body_entered"]
