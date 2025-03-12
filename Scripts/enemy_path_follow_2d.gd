@@ -17,9 +17,8 @@ func _ready() :
 func _process(delta: float) -> void:
 	if player:
 		if not chasing and enemy.detect_player():
-			print("player go to detect range")
-			chasing = true
-			enemy.increase_raycast(chase_range_multiple)
+			print("player go to visibility detect range")
+			start_chasing()
 			player.start_running()
 
 	if player and chasing:
@@ -30,3 +29,9 @@ func _process(delta: float) -> void:
 		progress += speed * delta
 		enemy._update_animation(global_position - last_position)
 	last_position = global_position
+
+func start_chasing():
+	if not chasing:
+		print("start chasing")
+		chasing = true
+		enemy.increase_raycast(chase_range_multiple)
