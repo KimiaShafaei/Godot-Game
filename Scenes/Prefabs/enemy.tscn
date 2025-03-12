@@ -120,6 +120,14 @@ animation = &"Walk_down"
 frame = 1
 frame_progress = 0.566747
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(100, 0)
+[node name="RayCast2D2_Front" type="RayCast2D" parent="."]
+target_position = Vector2(0, 200)
+collision_mask = 2
+
+[node name="RayCast2D_Right" type="RayCast2D" parent="."]
+target_position = Vector2(200, 0)
+collision_mask = 2
+
+[node name="RayCast2D_Left" type="RayCast2D" parent="."]
+target_position = Vector2(-200, 0)
 collision_mask = 2
