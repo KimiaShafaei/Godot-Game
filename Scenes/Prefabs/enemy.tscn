@@ -124,15 +124,15 @@ frame = 1
 frame_progress = 0.566747
 
 [node name="RayCast2D2_Front" type="RayCast2D" parent="."]
-target_position = Vector2(0, 200)
+target_position = Vector2(0, 272)
 collision_mask = 2
 
 [node name="RayCast2D_Right" type="RayCast2D" parent="."]
-target_position = Vector2(200, 0)
+target_position = Vector2(384, 8)
 collision_mask = 2
 
 [node name="RayCast2D_Left" type="RayCast2D" parent="."]
-target_position = Vector2(-200, 0)
+target_position = Vector2(-440, 0)
 collision_mask = 2
 
 [node name="HearingArea2D" type="Area2D" parent="."]
