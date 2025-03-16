@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dy1yfnp1t85kc"]
+[gd_scene load_steps=39 format=3 uid="uid://dy1yfnp1t85kc"]
 
 [ext_resource type="Texture2D" uid="uid://bmge0u6qam3x0" path="res://Assets/Sprites/Characters/enemy/New Piskel-4.png (2).png" id="1_6n5kn"]
 [ext_resource type="Texture2D" uid="uid://c5epv48kig5by" path="res://Assets/Sprites/Characters/enemy/New Piskel-1.png (15).png" id="2_0awg4"]
@@ -34,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://ymqwtun8164k" path="res://Assets/Sprites/Characters/enemy/w.r.1.png" id="31_1jsl8"]
 [ext_resource type="Texture2D" uid="uid://cfqlagbh5wibs" path="res://Assets/Sprites/Characters/enemy/w.r.2.png" id="32_exv8i"]
 [ext_resource type="Texture2D" uid="uid://dwt2n757fxq4s" path="res://Assets/Sprites/Characters/enemy/w.r.3.png" id="33_vbya6"]
+[ext_resource type="AudioStream" uid="uid://bklldq5tvcorp" path="res://Assets/Musics/Effect-sedaye-Tajoob.mp3" id="35_lxvne"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk7jn"]
 radius = 32.0
@@ -227,3 +228,14 @@ collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HearingArea2D"]
 shape = SubResource("CircleShape2D_fghf7")
+
+[node name="understanding" type="AudioStreamPlayer2D" parent="HearingArea2D"]
+stream = ExtResource("35_lxvne")
+
+[node name="ShootingRayCast2D" type="RayCast2D" parent="."]
+enabled = false
+collision_mask = 2
+
+[node name="ChasingTimer" type="Timer" parent="."]
+
+[node name="ShootingTimer" type="Timer" parent="."]

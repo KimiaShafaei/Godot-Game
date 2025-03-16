@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 200
 @export var runnig_speed = 400
+@export var healths = 3
 
 @onready var anim = $AnimatedSprite2D
 @onready var tile_map = $"../TileMapLayer"
@@ -106,5 +107,19 @@ func start_running():
 	print("start running...")
 	start_chasing = true
 	speed = runnig_speed
-	
-	
+
+func take_damage():
+	healths -= 1
+	print("decrease 1 helth", healths)
+	if healths > 0:
+		print("platy hit player animation")
+		anim.play("Hit")
+	else:
+		print("play die player animation")
+		die()
+
+func die():
+	anim.play("Die")
+	await anim.animation_finished
+	print("Game over so play this level again")
+	get_tree().change_scene_to_file("res://Scenes/Levels/level_2.tscn")

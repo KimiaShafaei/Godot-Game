@@ -1,3 +1,5 @@
+Timer
+RayCast2D
 CollisionShape2D
 StaticBody2D
 AudioStreamPlayer2D
@@ -7,8 +9,6 @@ Sprite2D
 Area2D
 Path2D
 ShapeCast2D
-RayCast2D
 PathFollow2D
 AudioListener2D
 Camera2D
-TileMapLayer

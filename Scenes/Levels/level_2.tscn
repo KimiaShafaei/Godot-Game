@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://cxn7matdxw82d"]
+[gd_scene load_steps=38 format=4 uid="uid://cxn7matdxw82d"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Texture2D" uid="uid://b5nsjd0gp7qv3" path="res://Assets/Sprites/Tiles/New Piskel (6).png" id="2_ehtba"]
@@ -16,7 +16,6 @@
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="10_8c7mm"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
 [ext_resource type="PackedScene" uid="uid://bh57wf0npfylg" path="res://Scenes/Prefabs/enemy_path_2d.tscn" id="13_lr1w7"]
-[ext_resource type="AudioStream" uid="uid://bklldq5tvcorp" path="res://Assets/Musics/Effect-sedaye-Tajoob.mp3" id="13_yiupi"]
 [ext_resource type="Texture2D" uid="uid://6g306lvsx0ra" path="res://Assets/Sprites/Tiles/New Piskel-11.png.png" id="14_1rby6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hh0aw"]
@@ -6341,9 +6340,6 @@ autoplay = true
 
 [node name="success" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_x6a6w")
-
-[node name="understanding" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("13_yiupi")
 
 [node name="Path2D" parent="." instance=ExtResource("13_lr1w7")]
 position = Vector2(-24, 16)
