@@ -48,22 +48,41 @@ func _physics_process(_delta):
 		_play_idle()
 
 func _update_animation(direction):
-	if abs(direction.x) > abs(direction.y):
-		if direction.x > 0:
-			anim.flip_h = false
-			_last_side = "right"
-			anim.play("Walk_right")
+	if direction.length() > 0:
+		if start_chasing:
+			if abs(direction.x) > abs(direction.y):
+				if direction.x > 0:
+					anim.flip_h = false
+					_last_side = "right"
+					anim.play("Run_right")
+				else:
+					anim.flip_h = false
+					_last_side = "left"
+					anim.play("Run_left")
+			else:
+				if direction.y > 0:
+					anim.play("Run_down")
+					_last_side = "down"
+				else:
+					anim.play("Run_up")
+					_last_side = "up"
 		else:
-			anim.flip_h = false
-			_last_side = "left"
-			anim.play("Walk_left")
-	else :
-		if direction.y > 0:
-			anim.play("Walk_down")
-			_last_side = "down"
-		else :
-			anim.play("Walk_up")
-			_last_side = "up"
+			if abs(direction.x) > abs(direction.y):
+				if direction.x > 0:
+					anim.flip_h = false
+					_last_side = "right"
+					anim.play("Walk_right")
+				else:
+					anim.flip_h = false
+					_last_side = "left"
+					anim.play("Walk_left")
+			else :
+				if direction.y > 0:
+					anim.play("Walk_down")
+					_last_side = "down"
+				else :
+					anim.play("Walk_up")
+					_last_side = "up"
 	
 	if direction.length() > 0 and not walking_sound.playing:
 		walking_sound.play()

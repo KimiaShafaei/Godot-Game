@@ -1,10 +1,9 @@
-[gd_scene load_steps=19 format=4 uid="uid://dlqikh11tsanq"]
+[gd_scene load_steps=18 format=4 uid="uid://dlqikh11tsanq"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_xrb6k"]
 [ext_resource type="Texture2D" uid="uid://b5nsjd0gp7qv3" path="res://Assets/Sprites/Tiles/New Piskel (6).png" id="4_2qah4"]
 [ext_resource type="Texture2D" uid="uid://c1vx61phkr7du" path="res://Assets/Sprites/Tiles/New Piskel (7).png" id="5_m10ni"]
 [ext_resource type="Script" path="res://Scripts/tile_map_layer.gd" id="6_reppp"]
-[ext_resource type="Texture2D" uid="uid://dpgdg44xtftbu" path="res://Assets/Sprites/Tiles/New Piskel (11).png" id="7_3awuc"]
 [ext_resource type="Script" path="res://Scripts/path_drawer.gd" id="7_pn24p"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/player.tscn" id="8_8kclb"]
 [ext_resource type="Script" path="res://Scripts/area_2d.gd" id="9_k052u"]
@@ -2070,7 +2069,6 @@ texture_region_size = Vector2i(32, 32)
 31:31/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_60wdy"]
-texture = ExtResource("7_3awuc")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
