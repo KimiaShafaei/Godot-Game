@@ -80,24 +80,18 @@ animations = [{
 "texture": ExtResource("5_x1jye")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_q0uq2")
+"texture": ExtResource("7_7v32m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_7v32m")
+"texture": ExtResource("6_q0uq2")
 }],
 "loop": true,
-"name": &"Walk_down",
+"name": &"Run_down",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_yjsi3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_4au7a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_m5mwg")
 }, {
 "duration": 1.0,
 "texture": ExtResource("10_ssbvl")
@@ -122,29 +116,14 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("17_dtpbc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_ipmuk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_2ksi7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_63pdo")
 }],
 "loop": true,
-"name": &"Walk_left",
+"name": &"Run_left",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("3_lep2e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_i8t3o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_cf0ap")
 }, {
 "duration": 1.0,
 "texture": ExtResource("20_jiaef")
@@ -169,6 +148,45 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("27_j36ma")
+}],
+"loop": true,
+"name": &"Run_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_4dm2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_g7sfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_s1d1u")
+}],
+"loop": true,
+"name": &"Run_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yjsi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ipmuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2ksi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_63pdo")
+}],
+"loop": true,
+"name": &"W_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lep2e")
 }, {
 "duration": 1.0,
 "texture": ExtResource("31_u68xg")
@@ -178,6 +196,48 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("33_emv0f")
+}],
+"loop": true,
+"name": &"W_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_x1jye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_q0uq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7v32m")
+}],
+"loop": true,
+"name": &"Walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yjsi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4au7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_m5mwg")
+}],
+"loop": true,
+"name": &"Walk_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lep2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_i8t3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cf0ap")
 }],
 "loop": true,
 "name": &"Walk_right",
@@ -211,7 +271,7 @@ shape = SubResource("CapsuleShape2D_maouh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_no5v7")
-animation = &"Walk_right"
+animation = &"W_left"
 
 [node name="walking" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_3pem5")
