@@ -1,14 +1,9 @@
 [gd_scene load_steps=38 format=4 uid="uid://cxn7matdxw82d"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
-[ext_resource type="Texture2D" uid="uid://b5nsjd0gp7qv3" path="res://Assets/Sprites/Tiles/New Piskel (6).png" id="2_ehtba"]
-[ext_resource type="Texture2D" uid="uid://c1vx61phkr7du" path="res://Assets/Sprites/Tiles/New Piskel (7).png" id="3_7wcjm"]
-[ext_resource type="Texture2D" uid="uid://b5qb8h2kneuaq" path="res://Assets/Sprites/Tiles/New Piskel-3.png (8).png" id="5_d7v14"]
 [ext_resource type="Script" path="res://Scripts/tile_map_layer.gd" id="5_paps5"]
 [ext_resource type="Script" path="res://Scripts/path_drawer.gd" id="6_o2037"]
-[ext_resource type="Texture2D" uid="uid://ds7j14x7ee0q1" path="res://Assets/Sprites/Tiles/New Piskel-6.png.png" id="6_op8wl"]
 [ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="7_a0xsu"]
-[ext_resource type="Texture2D" uid="uid://djn473moix1oh" path="res://Assets/Sprites/Tiles/New Piskel-5.png.png" id="7_hyjc4"]
 [ext_resource type="Texture2D" uid="uid://ri5ahy7qwrnc" path="res://Assets/Sprites/Tiles/photo_2025-02-13_06-36-36.jpg" id="8_2ptt4"]
 [ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="8_sqati"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/player.tscn" id="9_0tae3"]
@@ -16,10 +11,12 @@
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="10_8c7mm"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
 [ext_resource type="PackedScene" uid="uid://bh57wf0npfylg" path="res://Scenes/Prefabs/enemy_path_2d.tscn" id="13_lr1w7"]
-[ext_resource type="Texture2D" uid="uid://6g306lvsx0ra" path="res://Assets/Sprites/Tiles/New Piskel-11.png.png" id="14_1rby6"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_okilr"]
+load_path = "res://.godot/imported/New Piskel (6).png-4b26d726107964f2cb66eae3c40f4c39.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hh0aw"]
-texture = ExtResource("2_ehtba")
+texture = SubResource("CompressedTexture2D_okilr")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -1047,8 +1044,11 @@ texture_region_size = Vector2i(32, 32)
 30:31/0 = 0
 31:31/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y1pua"]
+load_path = "res://.godot/imported/New Piskel (7).png-fbd0c528c6cc52d53239df2c3e8f2666.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oslqo"]
-texture = ExtResource("3_7wcjm")
+texture = SubResource("CompressedTexture2D_y1pua")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -3102,8 +3102,11 @@ texture_region_size = Vector2i(32, 32)
 30:31/0 = 0
 31:31/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x8idl"]
+load_path = "res://.godot/imported/New Piskel-3.png (8).png-0cf31e6cd1d248d15689b05a13c134b7.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a8wp0"]
-texture = ExtResource("5_d7v14")
+texture = SubResource("CompressedTexture2D_x8idl")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -4130,8 +4133,11 @@ texture_region_size = Vector2i(32, 32)
 30:31/0 = 0
 31:31/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7urbf"]
+load_path = "res://.godot/imported/New Piskel-6.png.png-d45e68f98fd9ff0d4c243ef8d6c53883.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r18mu"]
-texture = ExtResource("6_op8wl")
+texture = SubResource("CompressedTexture2D_7urbf")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -5159,8 +5165,11 @@ texture_region_size = Vector2i(32, 32)
 30:31/0 = 0
 31:31/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_re8xa"]
+load_path = "res://.godot/imported/New Piskel-5.png.png-a96910ec282f3b5ff5820fb7406f0a73.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_04oek"]
-texture = ExtResource("7_hyjc4")
+texture = SubResource("CompressedTexture2D_re8xa")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -6224,6 +6233,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tmhtp"]
 size = Vector2(984.689, 698.302)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8fwqr"]
+load_path = "res://.godot/imported/New Piskel-11.png.png-641d145b4ed6b6bdae0ec8b7af43a2e3.ctex"
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lpl4k"]
 size = Vector2(128, 120)
 
@@ -6295,32 +6307,32 @@ shape = SubResource("RectangleShape2D_tmhtp")
 physics_interpolation_mode = 2
 position = Vector2(95.9999, 262)
 scale = Vector2(0.131772, 0.117089)
-texture = ExtResource("6_op8wl")
+texture = SubResource("CompressedTexture2D_7urbf")
 
 [node name="obstacle2" type="Sprite2D" parent="."]
 position = Vector2(126, 361)
 scale = Vector2(0.0810547, 0.0740025)
-texture = ExtResource("14_1rby6")
+texture = SubResource("CompressedTexture2D_8fwqr")
 
 [node name="obstacle3" type="Sprite2D" parent="."]
 position = Vector2(423.562, 259.687)
 scale = Vector2(0.22937, 0.129516)
-texture = ExtResource("6_op8wl")
+texture = SubResource("CompressedTexture2D_7urbf")
 
 [node name="obstacle4" type="Sprite2D" parent="."]
 position = Vector2(608.879, 232.026)
 scale = Vector2(0.128764, 0.0726524)
-texture = ExtResource("14_1rby6")
+texture = SubResource("CompressedTexture2D_8fwqr")
 
 [node name="obstacle5" type="Sprite2D" parent="."]
 position = Vector2(748.537, 262.401)
 scale = Vector2(0.149343, 0.133982)
-texture = ExtResource("6_op8wl")
+texture = SubResource("CompressedTexture2D_7urbf")
 
 [node name="obstacle6" type="Sprite2D" parent="."]
 position = Vector2(609, 159.001)
 scale = Vector2(0.190919, 0.0650377)
-texture = ExtResource("14_1rby6")
+texture = SubResource("CompressedTexture2D_8fwqr")
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("9_0tae3")]
 position = Vector2(385, 409)
