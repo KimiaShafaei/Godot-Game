@@ -42,8 +42,12 @@ func _physics_process(_delta):
 			tile_map.clear_path()
 			_path.clear()
 			_current_index = 0
-			
+		
+		var prev_position = global_position
 		move_and_slide()
+		if global_position.distance_to(prev_position) < 1:
+			_play_idle()
+			
 	else:
 		velocity = Vector2.ZERO
 		_play_idle()
