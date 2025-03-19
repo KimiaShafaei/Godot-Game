@@ -1,9 +1,4 @@
-res://Scenes/Levels/level_2.tscn
-res://Scripts/tile_map_layer.gd
-res://Scenes/Prefabs/enemy_path_2d.tscn
 res://Scenes/Prefabs/player.tscn
 res://Scenes/Prefabs/enemy.tscn
-res://Scenes/Levels/world.tscn
-res://Scripts/player.gd
-res://Scripts/enemy.gd
-res://Scripts/enemy_path_follow_2d.gd
+res://Scenes/Levels/level_2.tscn
+res://Scenes/Prefabs/enemy_path_2d.tscn

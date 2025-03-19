@@ -1,15 +1,26 @@
-[gd_scene load_steps=39 format=3 uid="uid://c84l74ckv5wpw"]
+[gd_scene load_steps=73 format=3 uid="uid://c84l74ckv5wpw"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_2tcqa"]
+[ext_resource type="Texture2D" uid="uid://4065ixse7n2c" path="res://Assets/Sprites/Characters/Player/attack/att.b.1.png" id="2_cnmpy"]
+[ext_resource type="Texture2D" uid="uid://dwu8iwwvw8oe0" path="res://Assets/Sprites/Characters/Player/attack/att.b.2.png" id="3_d5yhc"]
 [ext_resource type="Texture2D" uid="uid://dmrwx1c46q4hv" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png" id="3_lep2e"]
 [ext_resource type="Texture2D" uid="uid://s7dmf7p3rboj" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (2).png" id="3_yjsi3"]
 [ext_resource type="Texture2D" uid="uid://cqytpv6t1r58i" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png.png" id="4_4dm2x"]
+[ext_resource type="Texture2D" uid="uid://cwl5ihsapfkgt" path="res://Assets/Sprites/Characters/Player/attack/att.b.3.png" id="4_eqcgk"]
 [ext_resource type="Texture2D" uid="uid://cxg2kfkbcsriu" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (5).png" id="5_x1jye"]
+[ext_resource type="Texture2D" uid="uid://bvdlt7y3xax2c" path="res://Assets/Sprites/Characters/Player/attack/att.l.1.png" id="6_1ituc"]
+[ext_resource type="Texture2D" uid="uid://senqi8m2x4nd" path="res://Assets/Sprites/Characters/Player/attack/att.r.1.png" id="6_he60f"]
 [ext_resource type="Texture2D" uid="uid://dsqfuxndlraw1" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (3).png" id="6_q0uq2"]
 [ext_resource type="Texture2D" uid="uid://cvg24a6tvds0m" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (7).png" id="7_7v32m"]
+[ext_resource type="Texture2D" uid="uid://b0pnav60tilyb" path="res://Assets/Sprites/Characters/Player/attack/att.r.2.png" id="7_dbsbi"]
+[ext_resource type="Texture2D" uid="uid://tv8glqiur7py" path="res://Assets/Sprites/Characters/Player/attack/att.l.2.png" id="7_g6i4p"]
 [ext_resource type="Texture2D" uid="uid://hebmp7cphiic" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (8).png" id="8_4au7a"]
+[ext_resource type="Texture2D" uid="uid://c6n4whkf3xcjt" path="res://Assets/Sprites/Characters/Player/attack/att.l.3.png" id="8_aartd"]
 [ext_resource type="Texture2D" uid="uid://bv12scf10y47a" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (5).png" id="8_g7sfn"]
+[ext_resource type="Texture2D" uid="uid://dgubb5rspeggx" path="res://Assets/Sprites/Characters/Player/attack/att.r.3.png" id="8_i2ed7"]
+[ext_resource type="Texture2D" uid="uid://dvdkh67q5sewf" path="res://Assets/Sprites/Characters/Player/attack/att.l.4.png" id="9_cgejy"]
 [ext_resource type="Texture2D" uid="uid://g5tupbnxqbu3" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (14).png" id="9_m5mwg"]
+[ext_resource type="Texture2D" uid="uid://2mvrpir4w2bh" path="res://Assets/Sprites/Characters/Player/attack/att.r.4.png" id="9_pxrhn"]
 [ext_resource type="Texture2D" uid="uid://bgnayqy52myf3" path="res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png" id="9_s1d1u"]
 [ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/صدای پوتین.mp3" id="10_3pem5"]
 [ext_resource type="Texture2D" uid="uid://dyeygbdjyh4p4" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (15).png" id="10_i8t3o"]
@@ -19,23 +30,46 @@
 [ext_resource type="Texture2D" uid="uid://eidn1mpju732" path="res://Assets/Sprites/Characters/Player/r.l.3.png" id="12_cdk7s"]
 [ext_resource type="Texture2D" uid="uid://bogfc4us6l2tv" path="res://Assets/Sprites/Characters/Player/r.l.4.png" id="13_0686p"]
 [ext_resource type="Texture2D" uid="uid://cfxwk45idw7q3" path="res://Assets/Sprites/Characters/Player/r.l.5.png" id="14_dv8y1"]
+[ext_resource type="Texture2D" uid="uid://btcg6ce8qbesq" path="res://Assets/Sprites/Characters/Player/attack/att.f.1.png" id="15_4idxp"]
 [ext_resource type="Texture2D" uid="uid://c0gnuvj7qxqin" path="res://Assets/Sprites/Characters/Player/r.l.6.png" id="15_ollcx"]
+[ext_resource type="Texture2D" uid="uid://lckru3usk4pa" path="res://Assets/Sprites/Characters/Player/attack/att.f.2.png" id="16_k0gb3"]
 [ext_resource type="Texture2D" uid="uid://bbc3ajwdl1qpx" path="res://Assets/Sprites/Characters/Player/r.l.7.png" id="16_tunvm"]
+[ext_resource type="Texture2D" uid="uid://bryqix2q52is4" path="res://Assets/Sprites/Characters/Player/attack/att.f.3.png" id="17_4m8lb"]
 [ext_resource type="Texture2D" uid="uid://ck67wujsxqgt4" path="res://Assets/Sprites/Characters/Player/r.l.8.png" id="17_dtpbc"]
+[ext_resource type="Texture2D" uid="uid://b1qrw8dj748tf" path="res://Assets/Sprites/Characters/Player/death/dea.b.1.png" id="18_7jeu2"]
 [ext_resource type="Texture2D" uid="uid://b7xk3v2uytyu0" path="res://Assets/Sprites/Characters/Player/w.l.1.png" id="18_ipmuk"]
 [ext_resource type="Texture2D" uid="uid://chvya843q73bh" path="res://Assets/Sprites/Characters/Player/w.l.2.png" id="19_2ksi7"]
+[ext_resource type="Texture2D" uid="uid://crfl7chaqf6hp" path="res://Assets/Sprites/Characters/Player/death/dea.b.2.png" id="19_s2ky1"]
+[ext_resource type="Texture2D" uid="uid://c3v63eg2amcov" path="res://Assets/Sprites/Characters/Player/death/dea.b.3.png" id="20_4u4wv"]
 [ext_resource type="Texture2D" uid="uid://bt5ubh874juun" path="res://Assets/Sprites/Characters/Player/w.l.3.png" id="20_63pdo"]
 [ext_resource type="Texture2D" uid="uid://c28tsp1gopwix" path="res://Assets/Sprites/Characters/Player/r.r.1.png" id="20_jiaef"]
+[ext_resource type="Texture2D" uid="uid://2015bk37ypkb" path="res://Assets/Sprites/Characters/Player/death/dea.b.4.png" id="21_1vuvb"]
 [ext_resource type="Texture2D" uid="uid://d3ryofbgm2qhg" path="res://Assets/Sprites/Characters/Player/r.r.2.png" id="21_iyvee"]
+[ext_resource type="Texture2D" uid="uid://cpumffbpikgcj" path="res://Assets/Sprites/Characters/Player/death/dea.b.5.png" id="22_5biv7"]
 [ext_resource type="Texture2D" uid="uid://cggmbf6wt83uf" path="res://Assets/Sprites/Characters/Player/r.r.3.png" id="22_k26t1"]
 [ext_resource type="Texture2D" uid="uid://ctq1s18x06qja" path="res://Assets/Sprites/Characters/Player/r.r.4.png" id="23_7kab7"]
+[ext_resource type="Texture2D" uid="uid://b2872r63q1p1a" path="res://Assets/Sprites/Characters/Player/death/dea.b.6.png" id="23_f1pqe"]
 [ext_resource type="Texture2D" uid="uid://cpchm4cvd8avs" path="res://Assets/Sprites/Characters/Player/r.r.5.png" id="24_0to0v"]
+[ext_resource type="Texture2D" uid="uid://csu18qsp7knlp" path="res://Assets/Sprites/Characters/Player/death/dea.r.1.png" id="24_gela3"]
 [ext_resource type="Texture2D" uid="uid://qdbps1ebd44g" path="res://Assets/Sprites/Characters/Player/r.r.6.png" id="25_bemal"]
+[ext_resource type="Texture2D" uid="uid://b3u8cykm2i3r5" path="res://Assets/Sprites/Characters/Player/death/dea.r.2.png" id="25_e1t1a"]
 [ext_resource type="Texture2D" uid="uid://d1dj4eaxlo5vu" path="res://Assets/Sprites/Characters/Player/r.r.7.png" id="26_8auhd"]
+[ext_resource type="Texture2D" uid="uid://itjv773jcgvc" path="res://Assets/Sprites/Characters/Player/death/dea.r.3.png" id="26_uimke"]
 [ext_resource type="Texture2D" uid="uid://ddtw2cer017m8" path="res://Assets/Sprites/Characters/Player/r.r.8.png" id="27_j36ma"]
+[ext_resource type="Texture2D" uid="uid://dsv1tgpf6psdn" path="res://Assets/Sprites/Characters/Player/death/dea.r.4.png" id="27_jqrr6"]
+[ext_resource type="Texture2D" uid="uid://davbs7nu67gj5" path="res://Assets/Sprites/Characters/Player/death/dea.l.1.png" id="28_d12xv"]
+[ext_resource type="Texture2D" uid="uid://ddnmftr0st2t4" path="res://Assets/Sprites/Characters/Player/death/dea.l.2.png" id="29_xwp85"]
+[ext_resource type="Texture2D" uid="uid://1qrh2fqftlne" path="res://Assets/Sprites/Characters/Player/death/dea.l.3.png" id="30_oyfvi"]
+[ext_resource type="Texture2D" uid="uid://24u2elfq6obl" path="res://Assets/Sprites/Characters/Player/death/dea.l.4.png" id="31_qy18e"]
 [ext_resource type="Texture2D" uid="uid://cxu7y6517jbwu" path="res://Assets/Sprites/Characters/Player/w.r.1.png" id="31_u68xg"]
+[ext_resource type="Texture2D" uid="uid://c310xxwgniiv4" path="res://Assets/Sprites/Characters/Player/death/dea.f.1.png" id="32_8y3vb"]
 [ext_resource type="Texture2D" uid="uid://bnybpd5afh1tp" path="res://Assets/Sprites/Characters/Player/w.r.2.png" id="32_dxns7"]
 [ext_resource type="Texture2D" uid="uid://nf6dlroaaxdo" path="res://Assets/Sprites/Characters/Player/w.r.3.png" id="33_emv0f"]
+[ext_resource type="Texture2D" uid="uid://ckimru01x5oxo" path="res://Assets/Sprites/Characters/Player/death/dea.f.2.png" id="33_h7s0b"]
+[ext_resource type="Texture2D" uid="uid://7hdiljxo3ha5" path="res://Assets/Sprites/Characters/Player/death/dea.f.3.png" id="34_cayuc"]
+[ext_resource type="Texture2D" uid="uid://cs6y3lkafiwl7" path="res://Assets/Sprites/Characters/Player/death/dea.f.4.png" id="35_ni1l4"]
+[ext_resource type="Texture2D" uid="uid://dcfo740mvxesr" path="res://Assets/Sprites/Characters/Player/death/dea.f.5.png" id="36_myory"]
+[ext_resource type="Texture2D" uid="uid://mivph8ymgeea" path="res://Assets/Sprites/Characters/Player/death/dea.f.6.png" id="37_u1rul"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_maouh"]
 radius = 0.64109
@@ -43,6 +77,154 @@ height = 1.28218
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cnmpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_d5yhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_eqcgk")
+}],
+"loop": true,
+"name": &"Attack_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yjsi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_1ituc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g6i4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_aartd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cgejy")
+}],
+"loop": true,
+"name": &"Attack_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_lep2e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_he60f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dbsbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_i2ed7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pxrhn")
+}],
+"loop": true,
+"name": &"Attack_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_4idxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_k0gb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4m8lb")
+}],
+"loop": true,
+"name": &"Attack_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_7jeu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_s2ky1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_4u4wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1vuvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5biv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_f1pqe")
+}],
+"loop": true,
+"name": &"Death_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_gela3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_e1t1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_uimke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_jqrr6")
+}],
+"loop": true,
+"name": &"Death_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_d12xv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xwp85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_oyfvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_qy18e")
+}],
+"loop": true,
+"name": &"Death_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_8y3vb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_h7s0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_cayuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ni1l4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_myory")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_u1rul")
+}],
+"loop": true,
+"name": &"Death_up",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("5_x1jye")
@@ -271,7 +453,7 @@ shape = SubResource("CapsuleShape2D_maouh")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_no5v7")
-animation = &"W_left"
+animation = &"Death_up"
 
 [node name="walking" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_3pem5")
