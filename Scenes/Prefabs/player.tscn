@@ -1,6 +1,6 @@
-[gd_scene load_steps=69 format=3 uid="uid://c84l74ckv5wpw"]
+[gd_scene load_steps=85 format=3 uid="uid://c84l74ckv5wpw"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_2tcqa"]
+[ext_resource type="Script" uid="uid://3pgnqgkea6kq" path="res://Scripts/player.gd" id="1_2tcqa"]
 [ext_resource type="Texture2D" uid="uid://4065ixse7n2c" path="res://Assets/Sprites/Characters/Player/attack/att.b.1.png" id="2_cnmpy"]
 [ext_resource type="Texture2D" uid="uid://dwu8iwwvw8oe0" path="res://Assets/Sprites/Characters/Player/attack/att.b.2.png" id="3_d5yhc"]
 [ext_resource type="Texture2D" uid="uid://dmrwx1c46q4hv" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png" id="3_lep2e"]
@@ -66,10 +66,24 @@
 [ext_resource type="Texture2D" uid="uid://cs6y3lkafiwl7" path="res://Assets/Sprites/Characters/Player/death/dea.f.4.png" id="35_ni1l4"]
 [ext_resource type="Texture2D" uid="uid://dcfo740mvxesr" path="res://Assets/Sprites/Characters/Player/death/dea.f.5.png" id="36_myory"]
 [ext_resource type="Texture2D" uid="uid://mivph8ymgeea" path="res://Assets/Sprites/Characters/Player/death/dea.f.6.png" id="37_u1rul"]
+[ext_resource type="Texture2D" uid="uid://cj3c0ms66ixl5" path="res://Assets/Sprites/Characters/blood/blood.1.png" id="67_wduf8"]
+[ext_resource type="Texture2D" uid="uid://keyn0b81l5h" path="res://Assets/Sprites/Characters/blood/blood.2.png" id="68_aera5"]
+[ext_resource type="Texture2D" uid="uid://bntv1himmyxnr" path="res://Assets/Sprites/Characters/blood/blood.3.png" id="69_qesqy"]
+[ext_resource type="Texture2D" uid="uid://dkguv12q0i75x" path="res://Assets/Sprites/Characters/blood/blood.4.png" id="70_57ycm"]
+[ext_resource type="Texture2D" uid="uid://b8q7njd2aule" path="res://Assets/Sprites/Characters/blood/blood.5.png" id="71_jnlp3"]
+[ext_resource type="Texture2D" uid="uid://b8hv148uwvtrx" path="res://Assets/Sprites/Characters/blood/blood.6.png" id="72_73ior"]
+[ext_resource type="Texture2D" uid="uid://cijmm4akyflfi" path="res://Assets/Sprites/Characters/blood/blood.7.png" id="73_03t5v"]
+[ext_resource type="Texture2D" uid="uid://cp0mm1b75gg7u" path="res://Assets/Sprites/Characters/blood/blood.8.png" id="74_gte1j"]
+[ext_resource type="Texture2D" uid="uid://by568w6pe0sx6" path="res://Assets/Sprites/Characters/blood/b.1.png" id="75_xkg7u"]
+[ext_resource type="Texture2D" uid="uid://bpsnvy5ys0xmm" path="res://Assets/Sprites/Characters/blood/b.2.png" id="76_mvr4d"]
+[ext_resource type="Texture2D" uid="uid://canesbpoq73vu" path="res://Assets/Sprites/Characters/blood/b.3.png" id="77_xxtuj"]
+[ext_resource type="Texture2D" uid="uid://br3fjtg8i0jic" path="res://Assets/Sprites/Characters/blood/b.4.png" id="78_dlbfr"]
+[ext_resource type="Texture2D" uid="uid://cn3h2tfqoxwgr" path="res://Assets/Sprites/Characters/blood/b.5.png" id="79_1fnl5"]
+[ext_resource type="Texture2D" uid="uid://c2gww3a4xxv40" path="res://Assets/Sprites/Characters/blood/b.6.png" id="80_yvch3"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_maouh"]
-radius = 0.64109
-height = 1.28218
+radius = 0.366337
+height = 0.732675
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
 animations = [{
@@ -408,6 +422,65 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_b005l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("67_wduf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_aera5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_qesqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_57ycm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_jnlp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_73ior")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_03t5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_gte1j")
+}],
+"loop": true,
+"name": &"Blood",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("75_xkg7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_mvr4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_xxtuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_dlbfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_1fnl5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_yvch3")
+}],
+"loop": true,
+"name": &"Blood2",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ab0jv"]
+radius = 16.0
+height = 32.0
+
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 3
@@ -419,10 +492,22 @@ scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.0859375, 0.101562)
+position = Vector2(-2.14577e-06, -4)
+scale = Vector2(0.0625, 0.0703125)
 sprite_frames = SubResource("SpriteFrames_no5v7")
 animation = &"Walk_right"
 
 [node name="walking" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_3pem5")
 autoplay = true
+
+[node name="Blood" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 9.53674e-07)
+scale = Vector2(0.0390625, 0.0390625)
+sprite_frames = SubResource("SpriteFrames_b005l")
+animation = &"Blood"
+frame = 1
+frame_progress = 0.556737
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ab0jv")

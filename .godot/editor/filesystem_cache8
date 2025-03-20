@@ -1,265 +1,265 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1742457106
-icon.svg::CompressedTexture2D::6591016406112388207::1742456999::1742457106::1::::<><>::
-player_runnig.tscn::PackedScene::5126665353439965769::1742456999::0::1::::<><>::uid://cxg2kfkbcsriu::::res://Assets/Sprites/Characters/Player/New Piskel-1.png (5).png<>uid://s7dmf7p3rboj::::res://Assets/Sprites/Characters/Player/New Piskel-3.png (2).png<>uid://dmrwx1c46q4hv::::res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png<>uid://cqytpv6t1r58i::::res://Assets/Sprites/Characters/Player/New Piskel-3.png.png<>uid://cvg24a6tvds0m::::res://Assets/Sprites/Characters/Player/New Piskel-2.png (7).png<>uid://dsqfuxndlraw1::::res://Assets/Sprites/Characters/Player/New Piskel-3.png (3).png<>uid://8bkyvf2snik6::::res://Assets/Sprites/Characters/Player/r.l.1.png<>uid://bfj8xq6j1di43::::res://Assets/Sprites/Characters/Player/r.l.2.png<>uid://eidn1mpju732::::res://Assets/Sprites/Characters/Player/r.l.3.png<>uid://bogfc4us6l2tv::::res://Assets/Sprites/Characters/Player/r.l.4.png<>uid://cfxwk45idw7q3::::res://Assets/Sprites/Characters/Player/r.l.5.png<>uid://c0gnuvj7qxqin::::res://Assets/Sprites/Characters/Player/r.l.6.png<>uid://bbc3ajwdl1qpx::::res://Assets/Sprites/Characters/Player/r.l.7.png<>uid://ck67wujsxqgt4::::res://Assets/Sprites/Characters/Player/r.l.8.png<>uid://c28tsp1gopwix::::res://Assets/Sprites/Characters/Player/r.r.1.png<>uid://d3ryofbgm2qhg::::res://Assets/Sprites/Characters/Player/r.r.2.png<>uid://cggmbf6wt83uf::::res://Assets/Sprites/Characters/Player/r.r.3.png<>uid://ctq1s18x06qja::::res://Assets/Sprites/Characters/Player/r.r.4.png<>uid://cpchm4cvd8avs::::res://Assets/Sprites/Characters/Player/r.r.5.png<>uid://qdbps1ebd44g::::res://Assets/Sprites/Characters/Player/r.r.6.png<>uid://d1dj4eaxlo5vu::::res://Assets/Sprites/Characters/Player/r.r.7.png<>uid://ddtw2cer017m8::::res://Assets/Sprites/Characters/Player/r.r.8.png<>uid://bv12scf10y47a::::res://Assets/Sprites/Characters/Player/New Piskel-2.png (5).png<>uid://bgnayqy52myf3::::res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png<>uid://bfuyme3c1hnjh::::res://Assets/Musics/صدای پوتین.mp3
-README.MD::TextFile::-1::1742456999::0::1::::<><>::
-::res://addons/::1742456999
-::res://addons/godot-git-plugin/::1742456999
-git_plugin.gdextension::GDExtension::-1::1742456999::0::1::::<><>::
-plugin.cfg::TextFile::-1::1742456999::0::1::::<><>::
-THIRDPARTY.md::TextFile::-1::1742456999::0::1::::<><>::
-::res://addons/godot-git-plugin/linux/::1742456999
-::res://addons/godot-git-plugin/macos/::1742456999
-::res://addons/godot-git-plugin/win64/::1742457096
-::res://Assets/::1742456998
-::res://Assets/Musics/::1742457109
-02-CARPET_2.WAV::AudioStreamWAV::1368781890440554274::1742456998::1742457109::1::::<><>::
-03-FOREST.WAV::AudioStreamWAV::2701882528518186755::1742456998::1742457109::1::::<><>::
-04-GRAVEL_1.WAV::AudioStreamWAV::5949832293644833621::1742456998::1742457109::1::::<><>::
-05-GRAVEL_2.WAV::AudioStreamWAV::9081046995942874726::1742456998::1742457109::1::::<><>::
-06-METAL.WAV::AudioStreamWAV::3273770035926239685::1742456998::1742457109::1::::<><>::
-07-PAVEMNT1.WAV::AudioStreamWAV::6762190322352625717::1742456998::1742457109::1::::<><>::
-08-PAVEMNT2.WAV::AudioStreamWAV::4381317505032880874::1742456998::1742457109::1::::<><>::
-09-PAVEMNT3.WAV::AudioStreamWAV::6811507526695912202::1742456998::1742457109::1::::<><>::
-10-SKIBOOTS.WAV::AudioStreamWAV::3078979363331646886::1742456998::1742457109::1::::<><>::
-11-SNOW.WAV::AudioStreamWAV::3914184862137785197::1742456998::1742457109::1::::<><>::
-12-SNOW_ICE.WAV::AudioStreamWAV::9156422472948688314::1742456998::1742457109::1::::<><>::
-13-STAIRS_1.WAV::AudioStreamWAV::1524689808856349917::1742456998::1742457109::1::::<><>::
-14-STAIRS_2.WAV::AudioStreamWAV::5234552968921860062::1742456998::1742457109::1::::<><>::
-15-STAIRS_3.WAV::AudioStreamWAV::2875950031966524330::1742456998::1742457109::1::::<><>::
-16-TONE_1.WAV::AudioStreamWAV::2663747920576726492::1742456998::1742457109::1::::<><>::
-17-TONE_2.WAV::AudioStreamWAV::8328603993329150676::1742456998::1742457109::1::::<><>::
-18-WATER.WAV::AudioStreamWAV::2999693829465625396::1742456998::1742457109::1::::<><>::
-19-WETGRASS.WAV::AudioStreamWAV::4089612100711729130::1742456998::1742457109::1::::<><>::
-20-WETRUBBR.WAV::AudioStreamWAV::3978027682594846916::1742456998::1742457109::1::::<><>::
-21-WETSHOES.WAV::AudioStreamWAV::8970477151529103634::1742456998::1742457109::1::::<><>::
-22-WOOD_1.WAV::AudioStreamWAV::6670577017233208218::1742456998::1742457109::1::::<><>::
-23-WOOD_2.WAV::AudioStreamWAV::5912833127231125255::1742456998::1742457109::1::::<><>::
-24-WOOD_3.WAV::AudioStreamWAV::768672707323232526::1742456998::1742457109::1::::<><>::
-162_68309343471937.mp3::AudioStreamMP3::6269435264771561265::1742456998::1742457105::1::::<><>::
-action-music.mp3::AudioStreamMP3::3072224916201187311::1742456998::1742457105::1::::<><>::
-chagho-zadan-Sound-Effect.mp3::AudioStreamMP3::2310322271430568595::1742456998::1742457105::1::::<><>::
-Effect-sedaye-Tajoob.mp3::AudioStreamMP3::3111691407279394505::1742456998::1742457105::1::::<><>::
-MMD.mp3::AudioStreamMP3::804316747526472478::1742456998::1742457105::1::::<><>::
-shlik.mp3::AudioStreamMP3::4208527791584564130::1742456998::1742457105::1::::<><>::
-Soot sandogh1.mp3::AudioStreamMP3::8373545074410481127::1742456998::1742457105::1::::<><>::
-Soot sandogh2.mp3::AudioStreamMP3::9055565677869401856::1742456998::1742457105::1::::<><>::
-Success (1).mp3::AudioStreamMP3::5968411957136293593::1742456998::1742457105::1::::<><>::
-taviz-kheshab.mp3::AudioStreamMP3::8770599939880124287::1742456998::1742457105::1::::<><>::
-صدای پوتین.mp3::AudioStreamMP3::2780131347791542661::1742456998::1742457105::1::::<><>::
-::res://Assets/Sprites/::1742456999
-::res://Assets/Sprites/Characters/::1742457226
-::res://Assets/Sprites/Characters/blood/::1742457246
-b.1.png::CompressedTexture2D::4134826625692814493::1742457246::1742457246::1::::<><>::
-b.2.png::CompressedTexture2D::3477240268434679400::1742457246::1742457246::1::::<><>::
-b.3.png::CompressedTexture2D::4799953366804517710::1742457246::1742457246::1::::<><>::
-b.4.png::CompressedTexture2D::3637754268485833886::1742457246::1742457246::1::::<><>::
-b.5.png::CompressedTexture2D::5743573153593374221::1742457246::1742457246::1::::<><>::
-b.6.png::CompressedTexture2D::6681702945447301391::1742457246::1742457246::1::::<><>::
-blood.1.png::CompressedTexture2D::5462510275612269824::1742457246::1742457246::1::::<><>::
-blood.2.png::CompressedTexture2D::20930226079613551::1742457246::1742457246::1::::<><>::
-blood.3.png::CompressedTexture2D::3339420696388398631::1742457246::1742457246::1::::<><>::
-blood.4.png::CompressedTexture2D::7874790003588868387::1742457246::1742457247::1::::<><>::
-blood.5.png::CompressedTexture2D::139342623690427546::1742457246::1742457247::1::::<><>::
-blood.6.png::CompressedTexture2D::4718426230610866925::1742457246::1742457247::1::::<><>::
-blood.7.png::CompressedTexture2D::5353683073380845382::1742457246::1742457247::1::::<><>::
-blood.8.png::CompressedTexture2D::5878034867894414268::1742457246::1742457247::1::::<><>::
-::res://Assets/Sprites/Characters/enemy/::1742457109
-New Piskel-1.png (14).png::CompressedTexture2D::6003493149304480017::1742456998::1742457108::1::::<><>::
-New Piskel-1.png (15).png::CompressedTexture2D::6887714018727927906::1742456998::1742457108::1::::<><>::
-New Piskel-2.png (15).png::CompressedTexture2D::2688917713990265652::1742456998::1742457108::1::::<><>::
-New Piskel-2.png (16).png::CompressedTexture2D::5899891098445122418::1742456998::1742457108::1::::<><>::
-New Piskel-3.png (8).png::CompressedTexture2D::1208619654441685068::1742456998::1742457108::1::::<><>::
-New Piskel-3.png (9).png::CompressedTexture2D::2575929191589876965::1742456998::1742457109::1::::<><>::
-New Piskel-4.png (2).png::CompressedTexture2D::3241361685775947959::1742456998::1742457108::1::::<><>::
-New Piskel-4.png (3).png::CompressedTexture2D::697730734165107150::1742456998::1742457109::1::::<><>::
-New Piskel-5.png (1).png::CompressedTexture2D::7555651240968987450::1742456998::1742457109::1::::<><>::
-New Piskel-5.png.png::CompressedTexture2D::3078908880568130726::1742456998::1742457109::1::::<><>::
-New Piskel-6.png (1).png::CompressedTexture2D::5064909619938555771::1742456998::1742457109::1::::<><>::
-New Piskel-6.png.png::CompressedTexture2D::2558293266219328101::1742456998::1742457109::1::::<><>::
-r.l.1.png::CompressedTexture2D::4178283958509127097::1742456999::1742457109::1::::<><>::
-r.l.2.png::CompressedTexture2D::6774024870969526226::1742456999::1742457109::1::::<><>::
-r.l.3.png::CompressedTexture2D::8949489430312951349::1742456999::1742457109::1::::<><>::
-r.l.4.png::CompressedTexture2D::162209545314733802::1742456999::1742457109::1::::<><>::
-r.l.5.png::CompressedTexture2D::346113910438776051::1742456999::1742457109::1::::<><>::
-r.l.6.png::CompressedTexture2D::5677927918093641605::1742456999::1742457109::1::::<><>::
-r.l.7.png::CompressedTexture2D::6670586171179371833::1742456999::1742457108::1::::<><>::
-r.l.8.png::CompressedTexture2D::1592864674061003485::1742456999::1742457108::1::::<><>::
-r.r.1.png::CompressedTexture2D::4097420326926140731::1742456999::1742457108::1::::<><>::
-r.r.2.png::CompressedTexture2D::7477134695066271821::1742456999::1742457108::1::::<><>::
-r.r.3.png::CompressedTexture2D::1496577325359046701::1742456999::1742457108::1::::<><>::
-r.r.4.png::CompressedTexture2D::2084642589723102446::1742456999::1742457108::1::::<><>::
-r.r.5.png::CompressedTexture2D::3795112738979347287::1742456999::1742457108::1::::<><>::
-r.r.6.png::CompressedTexture2D::4141457990345105348::1742456999::1742457108::1::::<><>::
-r.r.7.png::CompressedTexture2D::7877054402773211545::1742456999::1742457108::1::::<><>::
-r.r.8.png::CompressedTexture2D::2682761409205729251::1742456999::1742457108::1::::<><>::
-w.l.1.png::CompressedTexture2D::6348385109898951238::1742456999::1742457108::1::::<><>::
-w.l.2.png::CompressedTexture2D::972173419139335158::1742456999::1742457108::1::::<><>::
-w.l.3.png::CompressedTexture2D::1129291515987643415::1742456999::1742457108::1::::<><>::
-w.r.1.png::CompressedTexture2D::1710316569187225056::1742456999::1742457108::1::::<><>::
-w.r.2.png::CompressedTexture2D::5157483833605668868::1742456999::1742457108::1::::<><>::
-w.r.3.png::CompressedTexture2D::8744304091121485364::1742456999::1742457108::1::::<><>::
-::res://Assets/Sprites/Characters/enemy/attack/::1742457108
-at.b.1.png::CompressedTexture2D::2272676752217103542::1742456998::1742457107::1::::<><>::
-at.b.2.png::CompressedTexture2D::8526956604148722057::1742456998::1742457108::1::::<><>::
-at.b.3.png::CompressedTexture2D::839092936219383190::1742456998::1742457108::1::::<><>::
-at.f.1.png::CompressedTexture2D::4690187405074262786::1742456999::1742457108::1::::<><>::
-at.f.2.png::CompressedTexture2D::4262784751823219075::1742456999::1742457108::1::::<><>::
-at.f.3.png::CompressedTexture2D::2386651361708233328::1742456999::1742457108::1::::<><>::
-at.f.4.png::CompressedTexture2D::8696239737150836591::1742456999::1742457108::1::::<><>::
-at.l.1.png::CompressedTexture2D::2512023287365305807::1742456999::1742457108::1::::<><>::
-at.l.2.png::CompressedTexture2D::3877430785613030830::1742456999::1742457108::1::::<><>::
-at.l.3.png::CompressedTexture2D::1220550351442334454::1742456999::1742457108::1::::<><>::
-at.l.4.png::CompressedTexture2D::4440854766841504182::1742456999::1742457108::1::::<><>::
-at.l.5.png::CompressedTexture2D::7685020018146321857::1742456999::1742457108::1::::<><>::
-at.r.1.png::CompressedTexture2D::3141064748770464658::1742456999::1742457108::1::::<><>::
-at.r.2.png::CompressedTexture2D::2102016094774838618::1742456999::1742457108::1::::<><>::
-at.r.3.png::CompressedTexture2D::8327807562074952335::1742456999::1742457108::1::::<><>::
-at.r.4.png::CompressedTexture2D::7372581604180091939::1742456999::1742457108::1::::<><>::
-at.r.5.png::CompressedTexture2D::8399167884489139130::1742456999::1742457108::1::::<><>::
-::res://Assets/Sprites/Characters/enemy/death/::1742457108
-de.b.1.png::CompressedTexture2D::5898189706936643357::1742456999::1742457108::1::::<><>::
-de.b.2.png::CompressedTexture2D::8982845745255983676::1742456999::1742457107::1::::<><>::
-de.b.3.png::CompressedTexture2D::629727455809595662::1742456999::1742457107::1::::<><>::
-de.b.4.png::CompressedTexture2D::6967838177844853672::1742456999::1742457107::1::::<><>::
-de.b.5.png::CompressedTexture2D::7099597365512538506::1742456999::1742457107::1::::<><>::
-de.b.6.png::CompressedTexture2D::562914677462704253::1742456999::1742457107::1::::<><>::
-de.f.1.png::CompressedTexture2D::738578719955821385::1742456999::1742457107::1::::<><>::
-de.f.2.png::CompressedTexture2D::8463484456285813547::1742456999::1742457107::1::::<><>::
-de.f.3.png::CompressedTexture2D::1872159372679361262::1742456999::1742457107::1::::<><>::
-de.f.4.png::CompressedTexture2D::7756503673898004165::1742456999::1742457107::1::::<><>::
-de.f.5.png::CompressedTexture2D::4929798943197432797::1742456999::1742457107::1::::<><>::
-de.f.6.png::CompressedTexture2D::2618419789863067058::1742456999::1742457107::1::::<><>::
-de.l.1.png::CompressedTexture2D::6656353047769632781::1742456999::1742457107::1::::<><>::
-de.l.2.png::CompressedTexture2D::794372417547383054::1742456999::1742457107::1::::<><>::
-de.l.3.png::CompressedTexture2D::1324049246592648883::1742456999::1742457107::1::::<><>::
-de.l.4.png::CompressedTexture2D::7648575651867107278::1742456999::1742457107::1::::<><>::
-de.r.1.png::CompressedTexture2D::1442207406024306371::1742456999::1742457107::1::::<><>::
-de.r.2.png::CompressedTexture2D::2714372987358191283::1742456999::1742457107::1::::<><>::
-de.r.3.png::CompressedTexture2D::383556900208338431::1742456999::1742457108::1::::<><>::
-de.r.4.png::CompressedTexture2D::1204058565110571841::1742456999::1742457108::1::::<><>::
-::res://Assets/Sprites/Characters/Player/::1742457107
-New Piskel-1.png (2).png::CompressedTexture2D::8038000813711811719::1742456998::1742457106::1::::<><>::
-New Piskel-1.png (5).png::CompressedTexture2D::6401228532442679480::1742456998::1742457106::1::::<><>::
-New Piskel-1.png (14).png::CompressedTexture2D::484254523207731864::1742456998::1742457106::1::::<><>::
-New Piskel-1.png (15).png::CompressedTexture2D::8853519789597207463::1742456998::1742457106::1::::<><>::
-New Piskel-2.png (5).png::CompressedTexture2D::3915731838778747652::1742456998::1742457105::1::::<><>::
-New Piskel-2.png (7).png::CompressedTexture2D::6260884545917589934::1742456998::1742457105::1::::<><>::
-New Piskel-3.png (2).png::CompressedTexture2D::1329663166889764497::1742456998::1742457106::1::::<><>::
-New Piskel-3.png (3).png::CompressedTexture2D::8456031809741958366::1742456998::1742457106::1::::<><>::
-New Piskel-3.png (8).png::CompressedTexture2D::499662400397285018::1742456998::1742457106::1::::<><>::
-New Piskel-3.png (9).png::CompressedTexture2D::118682479247411857::1742456998::1742457105::1::::<><>::
-New Piskel-3.png.png::CompressedTexture2D::5946589493241302826::1742456998::1742457105::1::::<><>::
-New Piskel-4.png (1).png::CompressedTexture2D::2834434394226341622::1742456998::1742457105::1::::<><>::
-r.l.1.png::CompressedTexture2D::2318947358756216763::1742456998::1742457105::1::::<><>::
-r.l.2.png::CompressedTexture2D::2757989924397237806::1742456998::1742457105::1::::<><>::
-r.l.3.png::CompressedTexture2D::297477147722809955::1742456998::1742457105::1::::<><>::
-r.l.4.png::CompressedTexture2D::3381759472634525967::1742456998::1742457105::1::::<><>::
-r.l.5.png::CompressedTexture2D::5172621475589331356::1742456998::1742457107::1::::<><>::
-r.l.6.png::CompressedTexture2D::6540774880015262805::1742456998::1742457107::1::::<><>::
-r.l.7.png::CompressedTexture2D::2462438865484609333::1742456998::1742457107::1::::<><>::
-r.l.8.png::CompressedTexture2D::5540708810596266027::1742456998::1742457107::1::::<><>::
-r.r.1.png::CompressedTexture2D::6737251206957003543::1742456998::1742457107::1::::<><>::
-r.r.2.png::CompressedTexture2D::9161126568155573452::1742456998::1742457107::1::::<><>::
-r.r.3.png::CompressedTexture2D::5207091396977844949::1742456998::1742457107::1::::<><>::
-r.r.4.png::CompressedTexture2D::6141071644341299866::1742456998::1742457107::1::::<><>::
-r.r.5.png::CompressedTexture2D::5830250753167245108::1742456998::1742457107::1::::<><>::
-r.r.6.png::CompressedTexture2D::1129303121140485244::1742456998::1742457107::1::::<><>::
-r.r.7.png::CompressedTexture2D::8990963571042165334::1742456998::1742457107::1::::<><>::
-r.r.8.png::CompressedTexture2D::7410435861629618361::1742456998::1742457107::1::::<><>::
-w.l.1.png::CompressedTexture2D::4680602686252141945::1742456998::1742457107::1::::<><>::
-w.l.2.png::CompressedTexture2D::5308974192878825433::1742456998::1742457107::1::::<><>::
-w.l.3.png::CompressedTexture2D::3783156591221805405::1742456998::1742457107::1::::<><>::
-w.r.1.png::CompressedTexture2D::6430459804756813196::1742456998::1742457107::1::::<><>::
-w.r.2.png::CompressedTexture2D::3348508424907467013::1742456998::1742457107::1::::<><>::
-w.r.3.png::CompressedTexture2D::924665044876844240::1742456998::1742457107::1::::<><>::
-::res://Assets/Sprites/Characters/Player/attack/::1742457108
-att.b.1.png::CompressedTexture2D::2089022166489100172::1742456998::1742457108::1::::<><>::
-att.b.2.png::CompressedTexture2D::8746723303794000609::1742456998::1742457108::1::::<><>::
-att.b.3.png::CompressedTexture2D::6341540274341989023::1742456998::1742457106::1::::<><>::
-att.f.1.png::CompressedTexture2D::3724557242638199340::1742456998::1742457106::1::::<><>::
-att.f.2.png::CompressedTexture2D::776844658605239778::1742456998::1742457106::1::::<><>::
-att.f.3.png::CompressedTexture2D::3630163100387489305::1742456998::1742457106::1::::<><>::
-att.l.1.png::CompressedTexture2D::3867283069484050276::1742456998::1742457106::1::::<><>::
-att.l.2.png::CompressedTexture2D::1378954940347231326::1742456998::1742457106::1::::<><>::
-att.l.3.png::CompressedTexture2D::6977332894601114597::1742456998::1742457106::1::::<><>::
-att.l.4.png::CompressedTexture2D::8640042249650526961::1742456998::1742457106::1::::<><>::
-att.r.1.png::CompressedTexture2D::1272475061856855385::1742456998::1742457106::1::::<><>::
-att.r.2.png::CompressedTexture2D::4172897913901665197::1742456998::1742457106::1::::<><>::
-att.r.3.png::CompressedTexture2D::7621746773575590795::1742456998::1742457106::1::::<><>::
-att.r.4.png::CompressedTexture2D::1921177527640810037::1742456998::1742457106::1::::<><>::
-::res://Assets/Sprites/Characters/Player/death/::1742457106
-dea.b.1.png::CompressedTexture2D::4245433877047665239::1742456998::1742457106::1::::<><>::
-dea.b.2.png::CompressedTexture2D::5977098746210384481::1742456998::1742457106::1::::<><>::
-dea.b.3.png::CompressedTexture2D::6783413371680919609::1742456998::1742457106::1::::<><>::
-dea.b.4.png::CompressedTexture2D::1948340506994753617::1742456998::1742457106::1::::<><>::
-dea.b.5.png::CompressedTexture2D::5867699374774782677::1742456998::1742457106::1::::<><>::
-dea.b.6.png::CompressedTexture2D::4351636030088409792::1742456998::1742457106::1::::<><>::
-dea.f.1.png::CompressedTexture2D::6793363051248697047::1742456998::1742457106::1::::<><>::
-dea.f.2.png::CompressedTexture2D::5492004878508951092::1742456998::1742457106::1::::<><>::
-dea.f.3.png::CompressedTexture2D::2260690670749916698::1742456998::1742457106::1::::<><>::
-dea.f.4.png::CompressedTexture2D::6101744066514287998::1742456998::1742457106::1::::<><>::
-dea.f.5.png::CompressedTexture2D::7310870372800815949::1742456998::1742457106::1::::<><>::
-dea.f.6.png::CompressedTexture2D::860083409194259528::1742456998::1742457106::1::::<><>::
-dea.l.1.png::CompressedTexture2D::7202708546978674968::1742456998::1742457105::1::::<><>::
-dea.l.2.png::CompressedTexture2D::7397404051044945575::1742456998::1742457105::1::::<><>::
-dea.l.3.png::CompressedTexture2D::1858986094677046930::1742456998::1742457105::1::::<><>::
-dea.l.4.png::CompressedTexture2D::1956228516721411645::1742456998::1742457105::1::::<><>::
-dea.r.1.png::CompressedTexture2D::6079166549867554537::1742456998::1742457105::1::::<><>::
-dea.r.2.png::CompressedTexture2D::4395004369578407616::1742456998::1742457105::1::::<><>::
-dea.r.3.png::CompressedTexture2D::601319612503546884::1742456998::1742457106::1::::<><>::
-dea.r.4.png::CompressedTexture2D::8467626079876643587::1742456998::1742457106::1::::<><>::
-::res://Assets/Sprites/Tiles/::1742457198
-Drawing 2.png::CompressedTexture2D::4446555605572139992::1742456999::1742457107::1::::<><>::
-Drawing 3.png::CompressedTexture2D::4601646042806487132::1742456999::1742457107::1::::<><>::
-Drawing 7.png::CompressedTexture2D::8536361060309903427::1742456999::1742457107::1::::<><>::
-h.b.1.png::CompressedTexture2D::2407855363113141854::1742457198::1742457198::1::::<><>::
-h.b.2.png::CompressedTexture2D::1449080252810103319::1742457198::1742457198::1::::<><>::
-h.b.3.png::CompressedTexture2D::472112132573356620::1742457198::1742457198::1::::<><>::
-h.b.4.png::CompressedTexture2D::523875286148191498::1742457198::1742457198::1::::<><>::
-map1.png::CompressedTexture2D::2336567622007177381::1742456999::1742457107::1::::<><>::
-New Piskel-1.png (3).png::CompressedTexture2D::37042740920337887::1742456999::1742457107::1::::<><>::
-New Piskel-2.png (3).png::CompressedTexture2D::4533235188542087880::1742456999::1742457107::1::::<><>::
-photo_2025-02-13_06-36-36.jpg::CompressedTexture2D::1211547279876979376::1742456999::1742457106::1::::<><>::
-Props.png::CompressedTexture2D::6640546377622906013::1742456999::1742457106::1::::<><>::
-Screenshot 2025-02-25 at 03.37.57.png::CompressedTexture2D::6671568034266169946::1742456999::1742457106::1::::<><>::
-Screenshot 2025-02-25 at 03.37.59.png::CompressedTexture2D::2294246902810712475::1742456999::1742457106::1::::<><>::
-tile.1.png::CompressedTexture2D::5482928245630510906::1742456999::1742457106::1::::<><>::
-tile.2.png::CompressedTexture2D::4588006202636904736::1742456999::1742457106::1::::<><>::
-tile.3.png::CompressedTexture2D::3001773169991638268::1742456999::1742457106::1::::<><>::
-tile.4.png::CompressedTexture2D::1285615905414850792::1742456999::1742457106::1::::<><>::
-tile.5.png::CompressedTexture2D::6155594757780279598::1742456999::1742457106::1::::<><>::
-tile.6.png::CompressedTexture2D::7428718259222839646::1742456999::1742457106::1::::<><>::
-tile.7.png::CompressedTexture2D::879708669839484884::1742456999::1742457106::1::::<><>::
-tile.8.png::CompressedTexture2D::4503444215140766840::1742456999::1742457106::1::::<><>::
-tile.9.png::CompressedTexture2D::3542987026130806644::1742456999::1742457106::1::::<><>::
-tile.10.png::CompressedTexture2D::6554470754500994293::1742456999::1742457106::1::::<><>::
-tile.11.png::CompressedTexture2D::1670689503717992976::1742456999::1742457106::1::::<><>::
-tile.12.png::CompressedTexture2D::625649056781980945::1742456999::1742457106::1::::<><>::
-tile.13.png::CompressedTexture2D::6663425273937051090::1742456999::1742457106::1::::<><>::
-tile.14.png::CompressedTexture2D::9101322381022088845::1742456999::1742457106::1::::<><>::
-tile.15.png::CompressedTexture2D::3276043767829635219::1742456999::1742457106::1::::<><>::
-tile.16.png::CompressedTexture2D::5814329265888824918::1742456999::1742457106::1::::<><>::
-tile.17.png::CompressedTexture2D::7194676741825201479::1742456999::1742457106::1::::<><>::
-tile.18.png::CompressedTexture2D::5214753752834820475::1742456999::1742457106::1::::<><>::
-tile.19.png::CompressedTexture2D::9143983197584140531::1742456999::1742457106::1::::<><>::
-::res://Godot-Game/::1742456999
-::res://Scenes/::1742456999
-::res://Scenes/Levels/::1742456999
-intro_ui.tscn::PackedScene::8659900962438994922::1742456999::0::1::::<><>::res://Scripts/intro_ui.gd<>uid://dd3r50p0wmkxi::::res://Assets/Sprites/Tiles/tile.6.png<>uid://bj1hdioalkekl::::res://Assets/Musics/action-music.mp3
-level_2.tscn::PackedScene::6415986084678339293::1742456999::0::1::::<><>::uid://lpu8kdgb4v7s::::res://Assets/Musics/MMD.mp3<>uid://b5frck5746n5a::::res://Assets/Sprites/Tiles/tile.8.png<>uid://bmw67yldpm8ip::::res://Assets/Sprites/Tiles/tile.15.png<>uid://dd3r50p0wmkxi::::res://Assets/Sprites/Tiles/tile.6.png<>res://Scripts/tile_map_layer.gd<>res://Scripts/path_drawer.gd<>uid://d3jocj2u3v1oh::::res://Assets/Sprites/Tiles/tile.19.png<>uid://r7dalvdcab4::::res://Assets/Sprites/Tiles/New Piskel-1.png (3).png<>uid://ri5ahy7qwrnc::::res://Assets/Sprites/Tiles/photo_2025-02-13_06-36-36.jpg<>uid://b5t6yr0w1am1e::::res://Assets/Sprites/Tiles/New Piskel-2.png (3).png<>uid://c84l74ckv5wpw::::res://Scenes/Prefabs/player.tscn<>res://Scripts/area_2d.gd<>uid://drkhcf7438sbv::::res://Assets/Musics/Soot sandogh1.mp3<>uid://crbe4xd7wjrmv::::res://Assets/Musics/Success (1).mp3<>uid://bh57wf0npfylg::::res://Scenes/Prefabs/enemy_path_2d.tscn
-world.tscn::PackedScene::7964873378079581642::1742456999::0::1::::<><>::uid://lpu8kdgb4v7s::::res://Assets/Musics/MMD.mp3<>uid://dd3r50p0wmkxi::::res://Assets/Sprites/Tiles/tile.6.png<>uid://b5frck5746n5a::::res://Assets/Sprites/Tiles/tile.8.png<>uid://ri5ahy7qwrnc::::res://Assets/Sprites/Tiles/photo_2025-02-13_06-36-36.jpg<>res://Scripts/tile_map_layer.gd<>res://Scripts/path_drawer.gd<>uid://c84l74ckv5wpw::::res://Scenes/Prefabs/player.tscn<>res://Scripts/area_2d.gd<>uid://r7dalvdcab4::::res://Assets/Sprites/Tiles/New Piskel-1.png (3).png<>uid://drkhcf7438sbv::::res://Assets/Musics/Soot sandogh1.mp3<>uid://b5t6yr0w1am1e::::res://Assets/Sprites/Tiles/New Piskel-2.png (3).png<>uid://crbe4xd7wjrmv::::res://Assets/Musics/Success (1).mp3
-::res://Scenes/Prefabs/::1742456999
-audio_stream_player.tscn::PackedScene::3428276109164341753::1742456999::0::1::::<><>::uid://bj1hdioalkekl::::res://Assets/Musics/action-music.mp3
-enemy.tscn::PackedScene::8898934963977215750::1742456999::0::1::::<><>::uid://bmge0u6qam3x0::::res://Assets/Sprites/Characters/enemy/New Piskel-4.png (2).png<>uid://dtqry2i7ggubh::::res://Assets/Sprites/Characters/enemy/attack/at.b.2.png<>uid://c5epv48kig5by::::res://Assets/Sprites/Characters/enemy/New Piskel-1.png (15).png<>uid://l7p0dg74k7o1::::res://Assets/Sprites/Characters/enemy/attack/at.b.3.png<>uid://dfwaqbxh12ugg::::res://Assets/Sprites/Characters/enemy/New Piskel-5.png (1).png<>uid://bk0s43ne024wk::::res://Assets/Sprites/Characters/enemy/attack/at.r.1.png<>uid://47h5sb6bntdq::::res://Assets/Sprites/Characters/enemy/attack/at.r.2.png<>uid://dqwb1ks8sdajf::::res://Assets/Sprites/Characters/enemy/attack/at.r.3.png<>uid://bcpiymcmvic3v::::res://Assets/Sprites/Characters/enemy/New Piskel-6.png.png<>uid://rhp13h378esq::::res://Assets/Sprites/Characters/enemy/New Piskel-3.png (8).png<>uid://crsewjh833hsr::::res://Assets/Sprites/Characters/enemy/New Piskel-1.png (14).png<>uid://bj4pgdojc45d7::::res://Assets/Sprites/Characters/enemy/New Piskel-5.png.png<>uid://ddbllvg8pqvfv::::res://Assets/Sprites/Characters/enemy/attack/at.r.4.png<>uid://drwvckrw7n5ry::::res://Assets/Sprites/Characters/enemy/attack/at.r.5.png<>uid://beksc1w0ntwcq::::res://Assets/Sprites/Characters/enemy/New Piskel-2.png (15).png<>uid://bb13wk7k7wvw6::::res://Assets/Sprites/Characters/enemy/attack/at.l.1.png<>uid://bviiyovp7vg7o::::res://Assets/Sprites/Characters/enemy/attack/at.l.2.png<>uid://b0r8yxwet8ir6::::res://Assets/Sprites/Characters/enemy/r.l.1.png<>uid://rnijytrqgvas::::res://Assets/Sprites/Characters/enemy/attack/at.l.3.png<>uid://b4jgh17gxulyk::::res://Assets/Sprites/Characters/enemy/attack/at.l.4.png<>uid://c3rng2d7inexm::::res://Assets/Sprites/Characters/enemy/r.l.2.png<>uid://dhqxflm6wheq0::::res://Assets/Sprites/Characters/enemy/attack/at.l.5.png<>uid://d0rg1vt8sqgp6::::res://Assets/Sprites/Characters/enemy/r.l.3.png<>uid://b727x3ysv4su1::::res://Assets/Sprites/Characters/enemy/attack/at.f.1.png<>uid://ckttkbrappn3::::res://Assets/Sprites/Characters/enemy/r.l.4.png<>uid://e6wpfbng3upf::::res://Assets/Sprites/Characters/enemy/r.l.5.png<>uid://b1y6pba2hbgl4::::res://Assets/Sprites/Characters/enemy/attack/at.f.2.png<>uid://baad2f6cdvg1m::::res://Assets/Sprites/Characters/enemy/attack/at.f.3.png<>uid://cm5ov4urjvxrp::::res://Assets/Sprites/Characters/enemy/r.l.6.png<>uid://c2bjtyc0fomub::::res://Assets/Sprites/Characters/enemy/r.l.7.png<>uid://dv5r2eoanolhv::::res://Assets/Sprites/Characters/enemy/attack/at.f.4.png<>uid://wxuiphr3qoaf::::res://Assets/Sprites/Characters/enemy/r.l.8.png<>uid://cqbek8c3876l2::::res://Assets/Sprites/Characters/enemy/death/de.b.1.png<>uid://cwpg8fng3liao::::res://Assets/Sprites/Characters/enemy/w.l.1.png<>uid://d08mflrjx0k1i::::res://Assets/Sprites/Characters/enemy/death/de.b.2.png<>uid://i8brwgmdlpy1::::res://Assets/Sprites/Characters/enemy/death/de.b.3.png<>uid://n36s3vms566m::::res://Assets/Sprites/Characters/enemy/w.l.2.png<>uid://qdbjb20hsqdr::::res://Assets/Sprites/Characters/enemy/w.l.3.png<>uid://c6jjjn7mw4iuy::::res://Assets/Sprites/Characters/enemy/death/de.b.4.png<>uid://c8fdljbhmrgw5::::res://Assets/Sprites/Characters/enemy/death/de.b.5.png<>uid://iaxefusn4g8l::::res://Assets/Sprites/Characters/enemy/death/de.b.6.png<>uid://bym26c0rmn8x8::::res://Assets/Sprites/Characters/enemy/r.r.1.png<>uid://usu7ey21cjap::::res://Assets/Sprites/Characters/enemy/death/de.r.1.png<>uid://bew4ldp2xv1at::::res://Assets/Sprites/Characters/enemy/death/de.r.2.png<>uid://der8k0kipd6u8::::res://Assets/Sprites/Characters/enemy/r.r.2.png<>uid://fp2ej1s0qvn8::::res://Assets/Sprites/Characters/enemy/death/de.r.3.png<>uid://vk7n63s0vy7v::::res://Assets/Sprites/Characters/enemy/r.r.3.png<>uid://4x202jeg0511::::res://Assets/Sprites/Characters/enemy/r.r.4.png<>uid://rfiwy7ya2xh6::::res://Assets/Sprites/Characters/enemy/death/de.r.4.png<>uid://bucm7m5xwowvf::::res://Assets/Sprites/Characters/enemy/r.r.5.png<>uid://c13nfrq1hxu0d::::res://Assets/Sprites/Characters/enemy/death/de.l.1.png<>uid://b0afhcqjfv2b5::::res://Assets/Sprites/Characters/enemy/r.r.6.png<>uid://lk2gyq0fl2go::::res://Assets/Sprites/Characters/enemy/death/de.l.2.png<>uid://dkhx62bue44ft::::res://Assets/Sprites/Characters/enemy/r.r.7.png<>uid://s4m5rxb205gx::::res://Assets/Sprites/Characters/enemy/death/de.l.3.png<>uid://dg8a6nt33dtoo::::res://Assets/Sprites/Characters/enemy/death/de.l.4.png<>uid://behsxn375jp5d::::res://Assets/Sprites/Characters/enemy/r.r.8.png<>uid://ymqwtun8164k::::res://Assets/Sprites/Characters/enemy/w.r.1.png<>uid://kr1jv4ahjrlx::::res://Assets/Sprites/Characters/enemy/death/de.f.1.png<>uid://dst1l8pi71r7x::::res://Assets/Sprites/Characters/enemy/death/de.f.2.png<>uid://cfqlagbh5wibs::::res://Assets/Sprites/Characters/enemy/w.r.2.png<>uid://1w5grgrmolwg::::res://Assets/Sprites/Characters/enemy/death/de.f.3.png<>uid://dwt2n757fxq4s::::res://Assets/Sprites/Characters/enemy/w.r.3.png<>uid://dirkqnrenx7wr::::res://Assets/Sprites/Characters/enemy/death/de.f.4.png<>uid://bklldq5tvcorp::::res://Assets/Musics/Effect-sedaye-Tajoob.mp3<>uid://ccibcladvwwmn::::res://Assets/Sprites/Characters/enemy/death/de.f.5.png<>uid://bdkm8ybk7wtm5::::res://Assets/Sprites/Characters/enemy/death/de.f.6.png
-enemy_path_2d.tscn::PackedScene::2941656454863346900::1742456999::0::1::::<><>::res://Scripts/enemy_path_follow_2d.gd<>uid://dy1yfnp1t85kc::::res://Scenes/Prefabs/enemy.tscn<>res://Scripts/enemy.gd
-gameover.tscn::PackedScene::7442830171268843501::1742456999::0::1::::<><>::res://gameover.gd
-player.tscn::PackedScene::7149666721384777452::1742456999::0::1::::<><>::res://Scripts/player.gd<>uid://4065ixse7n2c::::res://Assets/Sprites/Characters/Player/attack/att.b.1.png<>uid://dwu8iwwvw8oe0::::res://Assets/Sprites/Characters/Player/attack/att.b.2.png<>uid://dmrwx1c46q4hv::::res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png<>uid://s7dmf7p3rboj::::res://Assets/Sprites/Characters/Player/New Piskel-3.png (2).png<>uid://cqytpv6t1r58i::::res://Assets/Sprites/Characters/Player/New Piskel-3.png.png<>uid://cwl5ihsapfkgt::::res://Assets/Sprites/Characters/Player/attack/att.b.3.png<>uid://cxg2kfkbcsriu::::res://Assets/Sprites/Characters/Player/New Piskel-1.png (5).png<>uid://bvdlt7y3xax2c::::res://Assets/Sprites/Characters/Player/attack/att.l.1.png<>uid://senqi8m2x4nd::::res://Assets/Sprites/Characters/Player/attack/att.r.1.png<>uid://dsqfuxndlraw1::::res://Assets/Sprites/Characters/Player/New Piskel-3.png (3).png<>uid://cvg24a6tvds0m::::res://Assets/Sprites/Characters/Player/New Piskel-2.png (7).png<>uid://b0pnav60tilyb::::res://Assets/Sprites/Characters/Player/attack/att.r.2.png<>uid://tv8glqiur7py::::res://Assets/Sprites/Characters/Player/attack/att.l.2.png<>uid://c6n4whkf3xcjt::::res://Assets/Sprites/Characters/Player/attack/att.l.3.png<>uid://bv12scf10y47a::::res://Assets/Sprites/Characters/Player/New Piskel-2.png (5).png<>uid://dgubb5rspeggx::::res://Assets/Sprites/Characters/Player/attack/att.r.3.png<>uid://dvdkh67q5sewf::::res://Assets/Sprites/Characters/Player/attack/att.l.4.png<>uid://2mvrpir4w2bh::::res://Assets/Sprites/Characters/Player/attack/att.r.4.png<>uid://bgnayqy52myf3::::res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png<>uid://bfuyme3c1hnjh::::res://Assets/Musics/صدای پوتین.mp3<>uid://8bkyvf2snik6::::res://Assets/Sprites/Characters/Player/r.l.1.png<>uid://bfj8xq6j1di43::::res://Assets/Sprites/Characters/Player/r.l.2.png<>uid://eidn1mpju732::::res://Assets/Sprites/Characters/Player/r.l.3.png<>uid://bogfc4us6l2tv::::res://Assets/Sprites/Characters/Player/r.l.4.png<>uid://cfxwk45idw7q3::::res://Assets/Sprites/Characters/Player/r.l.5.png<>uid://btcg6ce8qbesq::::res://Assets/Sprites/Characters/Player/attack/att.f.1.png<>uid://c0gnuvj7qxqin::::res://Assets/Sprites/Characters/Player/r.l.6.png<>uid://lckru3usk4pa::::res://Assets/Sprites/Characters/Player/attack/att.f.2.png<>uid://bbc3ajwdl1qpx::::res://Assets/Sprites/Characters/Player/r.l.7.png<>uid://bryqix2q52is4::::res://Assets/Sprites/Characters/Player/attack/att.f.3.png<>uid://ck67wujsxqgt4::::res://Assets/Sprites/Characters/Player/r.l.8.png<>uid://b1qrw8dj748tf::::res://Assets/Sprites/Characters/Player/death/dea.b.1.png<>uid://b7xk3v2uytyu0::::res://Assets/Sprites/Characters/Player/w.l.1.png<>uid://chvya843q73bh::::res://Assets/Sprites/Characters/Player/w.l.2.png<>uid://crfl7chaqf6hp::::res://Assets/Sprites/Characters/Player/death/dea.b.2.png<>uid://c3v63eg2amcov::::res://Assets/Sprites/Characters/Player/death/dea.b.3.png<>uid://bt5ubh874juun::::res://Assets/Sprites/Characters/Player/w.l.3.png<>uid://c28tsp1gopwix::::res://Assets/Sprites/Characters/Player/r.r.1.png<>uid://2015bk37ypkb::::res://Assets/Sprites/Characters/Player/death/dea.b.4.png<>uid://d3ryofbgm2qhg::::res://Assets/Sprites/Characters/Player/r.r.2.png<>uid://cpumffbpikgcj::::res://Assets/Sprites/Characters/Player/death/dea.b.5.png<>uid://cggmbf6wt83uf::::res://Assets/Sprites/Characters/Player/r.r.3.png<>uid://ctq1s18x06qja::::res://Assets/Sprites/Characters/Player/r.r.4.png<>uid://b2872r63q1p1a::::res://Assets/Sprites/Characters/Player/death/dea.b.6.png<>uid://cpchm4cvd8avs::::res://Assets/Sprites/Characters/Player/r.r.5.png<>uid://csu18qsp7knlp::::res://Assets/Sprites/Characters/Player/death/dea.r.1.png<>uid://qdbps1ebd44g::::res://Assets/Sprites/Characters/Player/r.r.6.png<>uid://b3u8cykm2i3r5::::res://Assets/Sprites/Characters/Player/death/dea.r.2.png<>uid://d1dj4eaxlo5vu::::res://Assets/Sprites/Characters/Player/r.r.7.png<>uid://itjv773jcgvc::::res://Assets/Sprites/Characters/Player/death/dea.r.3.png<>uid://ddtw2cer017m8::::res://Assets/Sprites/Characters/Player/r.r.8.png<>uid://dsv1tgpf6psdn::::res://Assets/Sprites/Characters/Player/death/dea.r.4.png<>uid://davbs7nu67gj5::::res://Assets/Sprites/Characters/Player/death/dea.l.1.png<>uid://ddnmftr0st2t4::::res://Assets/Sprites/Characters/Player/death/dea.l.2.png<>uid://1qrh2fqftlne::::res://Assets/Sprites/Characters/Player/death/dea.l.3.png<>uid://24u2elfq6obl::::res://Assets/Sprites/Characters/Player/death/dea.l.4.png<>uid://cxu7y6517jbwu::::res://Assets/Sprites/Characters/Player/w.r.1.png<>uid://c310xxwgniiv4::::res://Assets/Sprites/Characters/Player/death/dea.f.1.png<>uid://bnybpd5afh1tp::::res://Assets/Sprites/Characters/Player/w.r.2.png<>uid://nf6dlroaaxdo::::res://Assets/Sprites/Characters/Player/w.r.3.png<>uid://ckimru01x5oxo::::res://Assets/Sprites/Characters/Player/death/dea.f.2.png<>uid://7hdiljxo3ha5::::res://Assets/Sprites/Characters/Player/death/dea.f.3.png<>uid://cs6y3lkafiwl7::::res://Assets/Sprites/Characters/Player/death/dea.f.4.png<>uid://dcfo740mvxesr::::res://Assets/Sprites/Characters/Player/death/dea.f.5.png<>uid://mivph8ymgeea::::res://Assets/Sprites/Characters/Player/death/dea.f.6.png
-::res://Scripts/::1742456999
-area_2d.gd::GDScript::-1::1742456999::0::1::::<>Area2D<>::
-enemy.gd::GDScript::-1::1742456999::0::1::::<>CharacterBody2D<>::
-enemy_path_follow_2d.gd::GDScript::-1::1742456999::0::1::::<>PathFollow2D<>::
-intro_ui.gd::GDScript::-1::1742456999::0::1::::<>Node2D<>::
-path_drawer.gd::GDScript::-1::1742456999::0::1::::<>Node2D<>::
-player.gd::GDScript::-1::1742456999::0::1::::<>CharacterBody2D<>::
-tile_map_layer.gd::GDScript::-1::1742456999::0::1::::<>TileMapLayer<>::
+::res://::1742482019
+icon.svg::CompressedTexture2D::6591016406112388207::1740605648::1742476587::1::::<><>::
+player_runnig.tscn::PackedScene::5126665353439965769::1741951906::0::1::::<><>::uid://cxg2kfkbcsriu::::res://Assets/Sprites/Characters/Player/New Piskel-1.png (5).png<>uid://s7dmf7p3rboj::::res://Assets/Sprites/Characters/Player/New Piskel-3.png (2).png<>uid://dmrwx1c46q4hv::::res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png<>uid://cqytpv6t1r58i::::res://Assets/Sprites/Characters/Player/New Piskel-3.png.png<>uid://cvg24a6tvds0m::::res://Assets/Sprites/Characters/Player/New Piskel-2.png (7).png<>uid://dsqfuxndlraw1::::res://Assets/Sprites/Characters/Player/New Piskel-3.png (3).png<>uid://8bkyvf2snik6::::res://Assets/Sprites/Characters/Player/r.l.1.png<>uid://bfj8xq6j1di43::::res://Assets/Sprites/Characters/Player/r.l.2.png<>uid://eidn1mpju732::::res://Assets/Sprites/Characters/Player/r.l.3.png<>uid://bogfc4us6l2tv::::res://Assets/Sprites/Characters/Player/r.l.4.png<>uid://cfxwk45idw7q3::::res://Assets/Sprites/Characters/Player/r.l.5.png<>uid://c0gnuvj7qxqin::::res://Assets/Sprites/Characters/Player/r.l.6.png<>uid://bbc3ajwdl1qpx::::res://Assets/Sprites/Characters/Player/r.l.7.png<>uid://ck67wujsxqgt4::::res://Assets/Sprites/Characters/Player/r.l.8.png<>uid://c28tsp1gopwix::::res://Assets/Sprites/Characters/Player/r.r.1.png<>uid://d3ryofbgm2qhg::::res://Assets/Sprites/Characters/Player/r.r.2.png<>uid://cggmbf6wt83uf::::res://Assets/Sprites/Characters/Player/r.r.3.png<>uid://ctq1s18x06qja::::res://Assets/Sprites/Characters/Player/r.r.4.png<>uid://cpchm4cvd8avs::::res://Assets/Sprites/Characters/Player/r.r.5.png<>uid://qdbps1ebd44g::::res://Assets/Sprites/Characters/Player/r.r.6.png<>uid://d1dj4eaxlo5vu::::res://Assets/Sprites/Characters/Player/r.r.7.png<>uid://ddtw2cer017m8::::res://Assets/Sprites/Characters/Player/r.r.8.png<>uid://bv12scf10y47a::::res://Assets/Sprites/Characters/Player/New Piskel-2.png (5).png<>uid://bgnayqy52myf3::::res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png<>uid://bfuyme3c1hnjh::::res://Assets/Musics/صدای پوتین.mp3
+README.MD::TextFile::-1::1740605648::0::1::::<><>::
+::res://addons/::1740605648
+::res://addons/godot-git-plugin/::1740605648
+git_plugin.gdextension::GDExtension::-1::1740605648::0::1::::<><>::
+plugin.cfg::TextFile::-1::1740605648::0::1::::<><>::
+THIRDPARTY.md::TextFile::-1::1740605648::0::1::::<><>::
+::res://addons/godot-git-plugin/linux/::1740605648
+::res://addons/godot-git-plugin/macos/::1740605648
+::res://addons/godot-git-plugin/win64/::1742482005
+::res://Assets/::1740605648
+::res://Assets/Musics/::1742476592
+02-CARPET_2.WAV::AudioStreamWAV::1368781890440554274::1740605648::1742476591::1::::<><>::
+03-FOREST.WAV::AudioStreamWAV::2701882528518186755::1740605648::1742476591::1::::<><>::
+04-GRAVEL_1.WAV::AudioStreamWAV::5949832293644833621::1740605648::1742476591::1::::<><>::
+05-GRAVEL_2.WAV::AudioStreamWAV::9081046995942874726::1740605648::1742476591::1::::<><>::
+06-METAL.WAV::AudioStreamWAV::3273770035926239685::1740605648::1742476591::1::::<><>::
+07-PAVEMNT1.WAV::AudioStreamWAV::6762190322352625717::1740605648::1742476591::1::::<><>::
+08-PAVEMNT2.WAV::AudioStreamWAV::4381317505032880874::1740605648::1742476591::1::::<><>::
+09-PAVEMNT3.WAV::AudioStreamWAV::6811507526695912202::1740605648::1742476591::1::::<><>::
+10-SKIBOOTS.WAV::AudioStreamWAV::3078979363331646886::1740605648::1742476591::1::::<><>::
+11-SNOW.WAV::AudioStreamWAV::3914184862137785197::1740605648::1742476591::1::::<><>::
+12-SNOW_ICE.WAV::AudioStreamWAV::9156422472948688314::1740605648::1742476591::1::::<><>::
+13-STAIRS_1.WAV::AudioStreamWAV::1524689808856349917::1740605648::1742476591::1::::<><>::
+14-STAIRS_2.WAV::AudioStreamWAV::5234552968921860062::1740605648::1742476591::1::::<><>::
+15-STAIRS_3.WAV::AudioStreamWAV::2875950031966524330::1740605648::1742476591::1::::<><>::
+16-TONE_1.WAV::AudioStreamWAV::2663747920576726492::1740605648::1742476591::1::::<><>::
+17-TONE_2.WAV::AudioStreamWAV::8328603993329150676::1740605648::1742476591::1::::<><>::
+18-WATER.WAV::AudioStreamWAV::2999693829465625396::1740605648::1742476591::1::::<><>::
+19-WETGRASS.WAV::AudioStreamWAV::4089612100711729130::1740605648::1742476591::1::::<><>::
+20-WETRUBBR.WAV::AudioStreamWAV::3978027682594846916::1740605648::1742476591::1::::<><>::
+21-WETSHOES.WAV::AudioStreamWAV::8970477151529103634::1740605648::1742476591::1::::<><>::
+22-WOOD_1.WAV::AudioStreamWAV::6670577017233208218::1740605648::1742476592::1::::<><>::
+23-WOOD_2.WAV::AudioStreamWAV::5912833127231125255::1740605648::1742476591::1::::<><>::
+24-WOOD_3.WAV::AudioStreamWAV::768672707323232526::1740605648::1742476591::1::::<><>::
+162_68309343471937.mp3::AudioStreamMP3::6269435264771561265::1740605648::1742476585::1::::<><>::
+action-music.mp3::AudioStreamMP3::3072224916201187311::1740691204::1742476585::1::::<><>::
+chagho-zadan-Sound-Effect.mp3::AudioStreamMP3::2310322271430568595::1741345165::1742476585::1::::<><>::
+Effect-sedaye-Tajoob.mp3::AudioStreamMP3::3111691407279394505::1741345165::1742476585::1::::<><>::
+MMD.mp3::AudioStreamMP3::804316747526472478::1740605648::1742476585::1::::<><>::
+shlik.mp3::AudioStreamMP3::4208527791584564130::1741345165::1742476585::1::::<><>::
+Soot sandogh1.mp3::AudioStreamMP3::8373545074410481127::1740605648::1742476585::1::::<><>::
+Soot sandogh2.mp3::AudioStreamMP3::9055565677869401856::1740605648::1742476585::1::::<><>::
+Success (1).mp3::AudioStreamMP3::5968411957136293593::1740605648::1742476585::1::::<><>::
+taviz-kheshab.mp3::AudioStreamMP3::8770599939880124287::1741345165::1742476585::1::::<><>::
+صدای پوتین.mp3::AudioStreamMP3::2780131347791542661::1740605648::1742476585::1::::<><>::
+::res://Assets/Sprites/::1740605648
+::res://Assets/Sprites/Characters/::1742476554
+::res://Assets/Sprites/Characters/blood/::1742476589
+b.1.png::CompressedTexture2D::4134826625692814493::1742476554::1742476589::1::::<><>::
+b.2.png::CompressedTexture2D::3477240268434679400::1742476554::1742476589::1::::<><>::
+b.3.png::CompressedTexture2D::4799953366804517710::1742476554::1742476589::1::::<><>::
+b.4.png::CompressedTexture2D::3637754268485833886::1742476554::1742476589::1::::<><>::
+b.5.png::CompressedTexture2D::5743573153593374221::1742476554::1742476589::1::::<><>::
+b.6.png::CompressedTexture2D::6681702945447301391::1742476554::1742476589::1::::<><>::
+blood.1.png::CompressedTexture2D::5462510275612269824::1742476554::1742476589::1::::<><>::
+blood.2.png::CompressedTexture2D::20930226079613551::1742476554::1742476589::1::::<><>::
+blood.3.png::CompressedTexture2D::3339420696388398631::1742476554::1742476589::1::::<><>::
+blood.4.png::CompressedTexture2D::7874790003588868387::1742476554::1742476589::1::::<><>::
+blood.5.png::CompressedTexture2D::139342623690427546::1742476554::1742476589::1::::<><>::
+blood.6.png::CompressedTexture2D::4718426230610866925::1742476554::1742476589::1::::<><>::
+blood.7.png::CompressedTexture2D::5353683073380845382::1742476554::1742476589::1::::<><>::
+blood.8.png::CompressedTexture2D::5878034867894414268::1742476554::1742476589::1::::<><>::
+::res://Assets/Sprites/Characters/enemy/::1742476591
+New Piskel-1.png (14).png::CompressedTexture2D::6003493149304480017::1741560375::1742476591::1::::<><>::
+New Piskel-1.png (15).png::CompressedTexture2D::6887714018727927906::1741560375::1742476591::1::::<><>::
+New Piskel-2.png (15).png::CompressedTexture2D::2688917713990265652::1741560375::1742476591::1::::<><>::
+New Piskel-2.png (16).png::CompressedTexture2D::5899891098445122418::1741560375::1742476591::1::::<><>::
+New Piskel-3.png (8).png::CompressedTexture2D::1208619654441685068::1741560375::1742476591::1::::<><>::
+New Piskel-3.png (9).png::CompressedTexture2D::2575929191589876965::1741560375::1742476591::1::::<><>::
+New Piskel-4.png (2).png::CompressedTexture2D::3241361685775947959::1741560375::1742476591::1::::<><>::
+New Piskel-4.png (3).png::CompressedTexture2D::697730734165107150::1741560375::1742476591::1::::<><>::
+New Piskel-5.png (1).png::CompressedTexture2D::7555651240968987450::1741560375::1742476591::1::::<><>::
+New Piskel-5.png.png::CompressedTexture2D::3078908880568130726::1741560375::1742476591::1::::<><>::
+New Piskel-6.png (1).png::CompressedTexture2D::5064909619938555771::1741560375::1742476591::1::::<><>::
+New Piskel-6.png.png::CompressedTexture2D::2558293266219328101::1741560375::1742476590::1::::<><>::
+r.l.1.png::CompressedTexture2D::4178283958509127097::1742155177::1742476590::1::::<><>::
+r.l.2.png::CompressedTexture2D::6774024870969526226::1742155177::1742476590::1::::<><>::
+r.l.3.png::CompressedTexture2D::8949489430312951349::1742155177::1742476590::1::::<><>::
+r.l.4.png::CompressedTexture2D::162209545314733802::1742155177::1742476590::1::::<><>::
+r.l.5.png::CompressedTexture2D::346113910438776051::1742155177::1742476590::1::::<><>::
+r.l.6.png::CompressedTexture2D::5677927918093641605::1742155177::1742476590::1::::<><>::
+r.l.7.png::CompressedTexture2D::6670586171179371833::1742155177::1742476590::1::::<><>::
+r.l.8.png::CompressedTexture2D::1592864674061003485::1742155177::1742476590::1::::<><>::
+r.r.1.png::CompressedTexture2D::4097420326926140731::1742155177::1742476590::1::::<><>::
+r.r.2.png::CompressedTexture2D::7477134695066271821::1742155177::1742476590::1::::<><>::
+r.r.3.png::CompressedTexture2D::1496577325359046701::1742155177::1742476590::1::::<><>::
+r.r.4.png::CompressedTexture2D::2084642589723102446::1742155177::1742476590::1::::<><>::
+r.r.5.png::CompressedTexture2D::3795112738979347287::1742155177::1742476590::1::::<><>::
+r.r.6.png::CompressedTexture2D::4141457990345105348::1742155177::1742476590::1::::<><>::
+r.r.7.png::CompressedTexture2D::7877054402773211545::1742155177::1742476590::1::::<><>::
+r.r.8.png::CompressedTexture2D::2682761409205729251::1742155177::1742476590::1::::<><>::
+w.l.1.png::CompressedTexture2D::6348385109898951238::1742155177::1742476590::1::::<><>::
+w.l.2.png::CompressedTexture2D::972173419139335158::1742155177::1742476590::1::::<><>::
+w.l.3.png::CompressedTexture2D::1129291515987643415::1742155177::1742476590::1::::<><>::
+w.r.1.png::CompressedTexture2D::1710316569187225056::1742155177::1742476586::1::::<><>::
+w.r.2.png::CompressedTexture2D::5157483833605668868::1742155177::1742476586::1::::<><>::
+w.r.3.png::CompressedTexture2D::8744304091121485364::1742155177::1742476586::1::::<><>::
+::res://Assets/Sprites/Characters/enemy/attack/::1742476590
+at.b.1.png::CompressedTexture2D::2272676752217103542::1742396022::1742476589::1::::<><>::
+at.b.2.png::CompressedTexture2D::8526956604148722057::1742396022::1742476589::1::::<><>::
+at.b.3.png::CompressedTexture2D::839092936219383190::1742396022::1742476589::1::::<><>::
+at.f.1.png::CompressedTexture2D::4690187405074262786::1742396022::1742476589::1::::<><>::
+at.f.2.png::CompressedTexture2D::4262784751823219075::1742396022::1742476590::1::::<><>::
+at.f.3.png::CompressedTexture2D::2386651361708233328::1742396022::1742476590::1::::<><>::
+at.f.4.png::CompressedTexture2D::8696239737150836591::1742396022::1742476590::1::::<><>::
+at.l.1.png::CompressedTexture2D::2512023287365305807::1742396022::1742476588::1::::<><>::
+at.l.2.png::CompressedTexture2D::3877430785613030830::1742396022::1742476588::1::::<><>::
+at.l.3.png::CompressedTexture2D::1220550351442334454::1742396022::1742476588::1::::<><>::
+at.l.4.png::CompressedTexture2D::4440854766841504182::1742396022::1742476588::1::::<><>::
+at.l.5.png::CompressedTexture2D::7685020018146321857::1742396022::1742476588::1::::<><>::
+at.r.1.png::CompressedTexture2D::3141064748770464658::1742396022::1742476588::1::::<><>::
+at.r.2.png::CompressedTexture2D::2102016094774838618::1742396022::1742476588::1::::<><>::
+at.r.3.png::CompressedTexture2D::8327807562074952335::1742396022::1742476588::1::::<><>::
+at.r.4.png::CompressedTexture2D::7372581604180091939::1742396022::1742476588::1::::<><>::
+at.r.5.png::CompressedTexture2D::8399167884489139130::1742396022::1742476588::1::::<><>::
+::res://Assets/Sprites/Characters/enemy/death/::1742476591
+de.b.1.png::CompressedTexture2D::5898189706936643357::1742396022::1742476588::1::::<><>::
+de.b.2.png::CompressedTexture2D::8982845745255983676::1742396022::1742476588::1::::<><>::
+de.b.3.png::CompressedTexture2D::629727455809595662::1742396022::1742476589::1::::<><>::
+de.b.4.png::CompressedTexture2D::6967838177844853672::1742396022::1742476589::1::::<><>::
+de.b.5.png::CompressedTexture2D::7099597365512538506::1742396022::1742476589::1::::<><>::
+de.b.6.png::CompressedTexture2D::562914677462704253::1742396022::1742476589::1::::<><>::
+de.f.1.png::CompressedTexture2D::738578719955821385::1742396022::1742476589::1::::<><>::
+de.f.2.png::CompressedTexture2D::8463484456285813547::1742396022::1742476589::1::::<><>::
+de.f.3.png::CompressedTexture2D::1872159372679361262::1742396022::1742476589::1::::<><>::
+de.f.4.png::CompressedTexture2D::7756503673898004165::1742396022::1742476589::1::::<><>::
+de.f.5.png::CompressedTexture2D::4929798943197432797::1742396022::1742476590::1::::<><>::
+de.f.6.png::CompressedTexture2D::2618419789863067058::1742396022::1742476590::1::::<><>::
+de.l.1.png::CompressedTexture2D::6656353047769632781::1742396022::1742476591::1::::<><>::
+de.l.2.png::CompressedTexture2D::794372417547383054::1742396022::1742476591::1::::<><>::
+de.l.3.png::CompressedTexture2D::1324049246592648883::1742396022::1742476591::1::::<><>::
+de.l.4.png::CompressedTexture2D::7648575651867107278::1742396022::1742476591::1::::<><>::
+de.r.1.png::CompressedTexture2D::1442207406024306371::1742396022::1742476591::1::::<><>::
+de.r.2.png::CompressedTexture2D::2714372987358191283::1742396022::1742476591::1::::<><>::
+de.r.3.png::CompressedTexture2D::383556900208338431::1742396022::1742476591::1::::<><>::
+de.r.4.png::CompressedTexture2D::1204058565110571841::1742396022::1742476591::1::::<><>::
+::res://Assets/Sprites/Characters/Player/::1742476588
+New Piskel-1.png (2).png::CompressedTexture2D::8038000813711811719::1740605648::1742476586::1::::<><>::
+New Piskel-1.png (5).png::CompressedTexture2D::6401228532442679480::1740605648::1742476586::1::::<><>::
+New Piskel-1.png (14).png::CompressedTexture2D::484254523207731864::1741384731::1742476586::1::::<><>::
+New Piskel-1.png (15).png::CompressedTexture2D::8853519789597207463::1741547901::1742476586::1::::<><>::
+New Piskel-2.png (5).png::CompressedTexture2D::3915731838778747652::1740605648::1742476586::1::::<><>::
+New Piskel-2.png (7).png::CompressedTexture2D::6260884545917589934::1740688110::1742476585::1::::<><>::
+New Piskel-3.png (2).png::CompressedTexture2D::1329663166889764497::1740605648::1742476586::1::::<><>::
+New Piskel-3.png (3).png::CompressedTexture2D::8456031809741958366::1740605648::1742476585::1::::<><>::
+New Piskel-3.png (8).png::CompressedTexture2D::499662400397285018::1741384731::1742476585::1::::<><>::
+New Piskel-3.png (9).png::CompressedTexture2D::118682479247411857::1741547901::1742476585::1::::<><>::
+New Piskel-3.png.png::CompressedTexture2D::5946589493241302826::1740605648::1742476585::1::::<><>::
+New Piskel-4.png (1).png::CompressedTexture2D::2834434394226341622::1740605648::1742476585::1::::<><>::
+r.l.1.png::CompressedTexture2D::2318947358756216763::1741900367::1742476585::1::::<><>::
+r.l.2.png::CompressedTexture2D::2757989924397237806::1741900367::1742476585::1::::<><>::
+r.l.3.png::CompressedTexture2D::297477147722809955::1741900367::1742476585::1::::<><>::
+r.l.4.png::CompressedTexture2D::3381759472634525967::1741900367::1742476587::1::::<><>::
+r.l.5.png::CompressedTexture2D::5172621475589331356::1741900367::1742476587::1::::<><>::
+r.l.6.png::CompressedTexture2D::6540774880015262805::1741900367::1742476587::1::::<><>::
+r.l.7.png::CompressedTexture2D::2462438865484609333::1741900367::1742476587::1::::<><>::
+r.l.8.png::CompressedTexture2D::5540708810596266027::1741900367::1742476587::1::::<><>::
+r.r.1.png::CompressedTexture2D::6737251206957003543::1741900367::1742476587::1::::<><>::
+r.r.2.png::CompressedTexture2D::9161126568155573452::1741900367::1742476587::1::::<><>::
+r.r.3.png::CompressedTexture2D::5207091396977844949::1741900367::1742476588::1::::<><>::
+r.r.4.png::CompressedTexture2D::6141071644341299866::1741900367::1742476588::1::::<><>::
+r.r.5.png::CompressedTexture2D::5830250753167245108::1741900367::1742476588::1::::<><>::
+r.r.6.png::CompressedTexture2D::1129303121140485244::1741900367::1742476588::1::::<><>::
+r.r.7.png::CompressedTexture2D::8990963571042165334::1741900367::1742476588::1::::<><>::
+r.r.8.png::CompressedTexture2D::7410435861629618361::1741900367::1742476588::1::::<><>::
+w.l.1.png::CompressedTexture2D::4680602686252141945::1742155177::1742476588::1::::<><>::
+w.l.2.png::CompressedTexture2D::5308974192878825433::1742155177::1742476588::1::::<><>::
+w.l.3.png::CompressedTexture2D::3783156591221805405::1742155177::1742476588::1::::<><>::
+w.r.1.png::CompressedTexture2D::6430459804756813196::1742155177::1742476588::1::::<><>::
+w.r.2.png::CompressedTexture2D::3348508424907467013::1742155177::1742476588::1::::<><>::
+w.r.3.png::CompressedTexture2D::924665044876844240::1742155177::1742476588::1::::<><>::
+::res://Assets/Sprites/Characters/Player/attack/::1742476587
+att.b.1.png::CompressedTexture2D::2089022166489100172::1742396022::1742476586::1::::<><>::
+att.b.2.png::CompressedTexture2D::8746723303794000609::1742396022::1742476586::1::::<><>::
+att.b.3.png::CompressedTexture2D::6341540274341989023::1742396022::1742476586::1::::<><>::
+att.f.1.png::CompressedTexture2D::3724557242638199340::1742396022::1742476586::1::::<><>::
+att.f.2.png::CompressedTexture2D::776844658605239778::1742396022::1742476586::1::::<><>::
+att.f.3.png::CompressedTexture2D::3630163100387489305::1742396022::1742476586::1::::<><>::
+att.l.1.png::CompressedTexture2D::3867283069484050276::1742396022::1742476586::1::::<><>::
+att.l.2.png::CompressedTexture2D::1378954940347231326::1742396022::1742476586::1::::<><>::
+att.l.3.png::CompressedTexture2D::6977332894601114597::1742396022::1742476586::1::::<><>::
+att.l.4.png::CompressedTexture2D::8640042249650526961::1742396022::1742476586::1::::<><>::
+att.r.1.png::CompressedTexture2D::1272475061856855385::1742396022::1742476586::1::::<><>::
+att.r.2.png::CompressedTexture2D::4172897913901665197::1742396022::1742476586::1::::<><>::
+att.r.3.png::CompressedTexture2D::7621746773575590795::1742396022::1742476587::1::::<><>::
+att.r.4.png::CompressedTexture2D::1921177527640810037::1742396022::1742476587::1::::<><>::
+::res://Assets/Sprites/Characters/Player/death/::1742476587
+dea.b.1.png::CompressedTexture2D::4245433877047665239::1742396022::1742476587::1::::<><>::
+dea.b.2.png::CompressedTexture2D::5977098746210384481::1742396022::1742476587::1::::<><>::
+dea.b.3.png::CompressedTexture2D::6783413371680919609::1742396022::1742476587::1::::<><>::
+dea.b.4.png::CompressedTexture2D::1948340506994753617::1742396022::1742476587::1::::<><>::
+dea.b.5.png::CompressedTexture2D::5867699374774782677::1742396022::1742476587::1::::<><>::
+dea.b.6.png::CompressedTexture2D::4351636030088409792::1742396022::1742476587::1::::<><>::
+dea.f.1.png::CompressedTexture2D::6793363051248697047::1742396022::1742476587::1::::<><>::
+dea.f.2.png::CompressedTexture2D::5492004878508951092::1742396022::1742476587::1::::<><>::
+dea.f.3.png::CompressedTexture2D::2260690670749916698::1742396022::1742476587::1::::<><>::
+dea.f.4.png::CompressedTexture2D::6101744066514287998::1742396022::1742476585::1::::<><>::
+dea.f.5.png::CompressedTexture2D::7310870372800815949::1742396022::1742476585::1::::<><>::
+dea.f.6.png::CompressedTexture2D::860083409194259528::1742396022::1742476585::1::::<><>::
+dea.l.1.png::CompressedTexture2D::7202708546978674968::1742396022::1742476585::1::::<><>::
+dea.l.2.png::CompressedTexture2D::7397404051044945575::1742396022::1742476585::1::::<><>::
+dea.l.3.png::CompressedTexture2D::1858986094677046930::1742396022::1742476585::1::::<><>::
+dea.l.4.png::CompressedTexture2D::1956228516721411645::1742396022::1742476585::1::::<><>::
+dea.r.1.png::CompressedTexture2D::6079166549867554537::1742396022::1742476586::1::::<><>::
+dea.r.2.png::CompressedTexture2D::4395004369578407616::1742396022::1742476586::1::::<><>::
+dea.r.3.png::CompressedTexture2D::601319612503546884::1742396022::1742476586::1::::<><>::
+dea.r.4.png::CompressedTexture2D::8467626079876643587::1742396022::1742476586::1::::<><>::
+::res://Assets/Sprites/Tiles/::1742476588
+Drawing 2.png::CompressedTexture2D::4446555605572139992::1740605648::1742476588::1::::<><>::
+Drawing 3.png::CompressedTexture2D::4601646042806487132::1740605648::1742476588::1::::<><>::
+Drawing 7.png::CompressedTexture2D::8536361060309903427::1740605648::1742476588::1::::<><>::
+h.b.1.png::CompressedTexture2D::2407855363113141854::1742476554::1742476588::1::::<><>::
+h.b.2.png::CompressedTexture2D::1449080252810103319::1742476554::1742476588::1::::<><>::
+h.b.3.png::CompressedTexture2D::472112132573356620::1742476554::1742476588::1::::<><>::
+h.b.4.png::CompressedTexture2D::523875286148191498::1742476554::1742476588::1::::<><>::
+map1.png::CompressedTexture2D::2336567622007177381::1740605648::1742476588::1::::<><>::
+New Piskel-1.png (3).png::CompressedTexture2D::37042740920337887::1740605648::1742476587::1::::<><>::
+New Piskel-2.png (3).png::CompressedTexture2D::4533235188542087880::1740605648::1742476587::1::::<><>::
+photo_2025-02-13_06-36-36.jpg::CompressedTexture2D::1211547279876979376::1740605648::1742476587::1::::<><>::
+Props.png::CompressedTexture2D::6640546377622906013::1740605648::1742476587::1::::<><>::
+Screenshot 2025-02-25 at 03.37.57.png::CompressedTexture2D::6671568034266169946::1740605648::1742476587::1::::<><>::
+Screenshot 2025-02-25 at 03.37.59.png::CompressedTexture2D::2294246902810712475::1740605648::1742476587::1::::<><>::
+tile.1.png::CompressedTexture2D::5482928245630510906::1742330561::1742476587::1::::<><>::
+tile.2.png::CompressedTexture2D::4588006202636904736::1742330561::1742476587::1::::<><>::
+tile.3.png::CompressedTexture2D::3001773169991638268::1742330561::1742476587::1::::<><>::
+tile.4.png::CompressedTexture2D::1285615905414850792::1742330561::1742476587::1::::<><>::
+tile.5.png::CompressedTexture2D::6155594757780279598::1742330561::1742476587::1::::<><>::
+tile.6.png::CompressedTexture2D::7428718259222839646::1742330561::1742476587::1::::<><>::
+tile.7.png::CompressedTexture2D::879708669839484884::1742330561::1742476587::1::::<><>::
+tile.8.png::CompressedTexture2D::4503444215140766840::1742330561::1742476587::1::::<><>::
+tile.9.png::CompressedTexture2D::3542987026130806644::1742330561::1742476587::1::::<><>::
+tile.10.png::CompressedTexture2D::6554470754500994293::1742330561::1742476587::1::::<><>::
+tile.11.png::CompressedTexture2D::1670689503717992976::1742330561::1742476587::1::::<><>::
+tile.12.png::CompressedTexture2D::625649056781980945::1742330561::1742476587::1::::<><>::
+tile.13.png::CompressedTexture2D::6663425273937051090::1742330561::1742476587::1::::<><>::
+tile.14.png::CompressedTexture2D::9101322381022088845::1742330561::1742476587::1::::<><>::
+tile.15.png::CompressedTexture2D::3276043767829635219::1742330561::1742476587::1::::<><>::
+tile.16.png::CompressedTexture2D::5814329265888824918::1742330561::1742476587::1::::<><>::
+tile.17.png::CompressedTexture2D::7194676741825201479::1742330561::1742476587::1::::<><>::
+tile.18.png::CompressedTexture2D::5214753752834820475::1742330561::1742476587::1::::<><>::
+tile.19.png::CompressedTexture2D::9143983197584140531::1742330561::1742476587::1::::<><>::
+::res://Godot-Game/::1740615958
+::res://Scenes/::1740605648
+::res://Scenes/Levels/::1742476930
+intro_ui.tscn::PackedScene::8659900962438994922::1742476554::0::1::::<><>::res://Scripts/intro_ui.gd<>uid://dd3r50p0wmkxi::::res://Assets/Sprites/Tiles/tile.6.png<>uid://bj1hdioalkekl::::res://Assets/Musics/action-music.mp3
+level_2.tscn::PackedScene::6415986084678339293::1742476811::0::1::::<><>::uid://lpu8kdgb4v7s::::res://Assets/Musics/MMD.mp3<>uid://b5frck5746n5a::::res://Assets/Sprites/Tiles/tile.8.png<>uid://bmw67yldpm8ip::::res://Assets/Sprites/Tiles/tile.15.png<>uid://dd3r50p0wmkxi::::res://Assets/Sprites/Tiles/tile.6.png<>res://Scripts/tile_map_layer.gd<>res://Scripts/path_drawer.gd<>uid://d3jocj2u3v1oh::::res://Assets/Sprites/Tiles/tile.19.png<>uid://r7dalvdcab4::::res://Assets/Sprites/Tiles/New Piskel-1.png (3).png<>uid://ri5ahy7qwrnc::::res://Assets/Sprites/Tiles/photo_2025-02-13_06-36-36.jpg<>uid://b5t6yr0w1am1e::::res://Assets/Sprites/Tiles/New Piskel-2.png (3).png<>uid://c84l74ckv5wpw::::res://Scenes/Prefabs/player.tscn<>res://Scripts/area_2d.gd<>uid://drkhcf7438sbv::::res://Assets/Musics/Soot sandogh1.mp3<>uid://crbe4xd7wjrmv::::res://Assets/Musics/Success (1).mp3<>uid://bh57wf0npfylg::::res://Scenes/Prefabs/enemy_path_2d.tscn
+world.tscn::PackedScene::7964873378079581642::1742476930::0::1::::<><>::uid://lpu8kdgb4v7s::::res://Assets/Musics/MMD.mp3<>uid://dd3r50p0wmkxi::::res://Assets/Sprites/Tiles/tile.6.png<>uid://b5frck5746n5a::::res://Assets/Sprites/Tiles/tile.8.png<>uid://ri5ahy7qwrnc::::res://Assets/Sprites/Tiles/photo_2025-02-13_06-36-36.jpg<>res://Scripts/tile_map_layer.gd<>res://Scripts/path_drawer.gd<>uid://c84l74ckv5wpw::::res://Scenes/Prefabs/player.tscn<>res://Scripts/area_2d.gd<>uid://r7dalvdcab4::::res://Assets/Sprites/Tiles/New Piskel-1.png (3).png<>uid://drkhcf7438sbv::::res://Assets/Musics/Soot sandogh1.mp3<>uid://b5t6yr0w1am1e::::res://Assets/Sprites/Tiles/New Piskel-2.png (3).png<>uid://crbe4xd7wjrmv::::res://Assets/Musics/Success (1).mp3
+::res://Scenes/Prefabs/::1742476554
+audio_stream_player.tscn::PackedScene::3428276109164341753::1740775297::0::1::::<><>::uid://bj1hdioalkekl::::res://Assets/Musics/action-music.mp3
+enemy.tscn::PackedScene::8898934963977215750::1742476554::0::1::::<><>::uid://bmge0u6qam3x0::::res://Assets/Sprites/Characters/enemy/New Piskel-4.png (2).png<>uid://dtqry2i7ggubh::::res://Assets/Sprites/Characters/enemy/attack/at.b.2.png<>uid://c5epv48kig5by::::res://Assets/Sprites/Characters/enemy/New Piskel-1.png (15).png<>uid://l7p0dg74k7o1::::res://Assets/Sprites/Characters/enemy/attack/at.b.3.png<>uid://dfwaqbxh12ugg::::res://Assets/Sprites/Characters/enemy/New Piskel-5.png (1).png<>uid://bk0s43ne024wk::::res://Assets/Sprites/Characters/enemy/attack/at.r.1.png<>uid://47h5sb6bntdq::::res://Assets/Sprites/Characters/enemy/attack/at.r.2.png<>uid://dqwb1ks8sdajf::::res://Assets/Sprites/Characters/enemy/attack/at.r.3.png<>uid://bcpiymcmvic3v::::res://Assets/Sprites/Characters/enemy/New Piskel-6.png.png<>uid://rhp13h378esq::::res://Assets/Sprites/Characters/enemy/New Piskel-3.png (8).png<>uid://crsewjh833hsr::::res://Assets/Sprites/Characters/enemy/New Piskel-1.png (14).png<>uid://bj4pgdojc45d7::::res://Assets/Sprites/Characters/enemy/New Piskel-5.png.png<>uid://ddbllvg8pqvfv::::res://Assets/Sprites/Characters/enemy/attack/at.r.4.png<>uid://drwvckrw7n5ry::::res://Assets/Sprites/Characters/enemy/attack/at.r.5.png<>uid://beksc1w0ntwcq::::res://Assets/Sprites/Characters/enemy/New Piskel-2.png (15).png<>uid://bb13wk7k7wvw6::::res://Assets/Sprites/Characters/enemy/attack/at.l.1.png<>uid://bviiyovp7vg7o::::res://Assets/Sprites/Characters/enemy/attack/at.l.2.png<>uid://b0r8yxwet8ir6::::res://Assets/Sprites/Characters/enemy/r.l.1.png<>uid://rnijytrqgvas::::res://Assets/Sprites/Characters/enemy/attack/at.l.3.png<>uid://b4jgh17gxulyk::::res://Assets/Sprites/Characters/enemy/attack/at.l.4.png<>uid://c3rng2d7inexm::::res://Assets/Sprites/Characters/enemy/r.l.2.png<>uid://dhqxflm6wheq0::::res://Assets/Sprites/Characters/enemy/attack/at.l.5.png<>uid://d0rg1vt8sqgp6::::res://Assets/Sprites/Characters/enemy/r.l.3.png<>uid://b727x3ysv4su1::::res://Assets/Sprites/Characters/enemy/attack/at.f.1.png<>uid://ckttkbrappn3::::res://Assets/Sprites/Characters/enemy/r.l.4.png<>uid://e6wpfbng3upf::::res://Assets/Sprites/Characters/enemy/r.l.5.png<>uid://b1y6pba2hbgl4::::res://Assets/Sprites/Characters/enemy/attack/at.f.2.png<>uid://baad2f6cdvg1m::::res://Assets/Sprites/Characters/enemy/attack/at.f.3.png<>uid://cm5ov4urjvxrp::::res://Assets/Sprites/Characters/enemy/r.l.6.png<>uid://c2bjtyc0fomub::::res://Assets/Sprites/Characters/enemy/r.l.7.png<>uid://dv5r2eoanolhv::::res://Assets/Sprites/Characters/enemy/attack/at.f.4.png<>uid://wxuiphr3qoaf::::res://Assets/Sprites/Characters/enemy/r.l.8.png<>uid://cqbek8c3876l2::::res://Assets/Sprites/Characters/enemy/death/de.b.1.png<>uid://cwpg8fng3liao::::res://Assets/Sprites/Characters/enemy/w.l.1.png<>uid://d08mflrjx0k1i::::res://Assets/Sprites/Characters/enemy/death/de.b.2.png<>uid://i8brwgmdlpy1::::res://Assets/Sprites/Characters/enemy/death/de.b.3.png<>uid://n36s3vms566m::::res://Assets/Sprites/Characters/enemy/w.l.2.png<>uid://qdbjb20hsqdr::::res://Assets/Sprites/Characters/enemy/w.l.3.png<>uid://c6jjjn7mw4iuy::::res://Assets/Sprites/Characters/enemy/death/de.b.4.png<>uid://c8fdljbhmrgw5::::res://Assets/Sprites/Characters/enemy/death/de.b.5.png<>uid://iaxefusn4g8l::::res://Assets/Sprites/Characters/enemy/death/de.b.6.png<>uid://bym26c0rmn8x8::::res://Assets/Sprites/Characters/enemy/r.r.1.png<>uid://usu7ey21cjap::::res://Assets/Sprites/Characters/enemy/death/de.r.1.png<>uid://bew4ldp2xv1at::::res://Assets/Sprites/Characters/enemy/death/de.r.2.png<>uid://der8k0kipd6u8::::res://Assets/Sprites/Characters/enemy/r.r.2.png<>uid://fp2ej1s0qvn8::::res://Assets/Sprites/Characters/enemy/death/de.r.3.png<>uid://vk7n63s0vy7v::::res://Assets/Sprites/Characters/enemy/r.r.3.png<>uid://4x202jeg0511::::res://Assets/Sprites/Characters/enemy/r.r.4.png<>uid://rfiwy7ya2xh6::::res://Assets/Sprites/Characters/enemy/death/de.r.4.png<>uid://bucm7m5xwowvf::::res://Assets/Sprites/Characters/enemy/r.r.5.png<>uid://c13nfrq1hxu0d::::res://Assets/Sprites/Characters/enemy/death/de.l.1.png<>uid://b0afhcqjfv2b5::::res://Assets/Sprites/Characters/enemy/r.r.6.png<>uid://lk2gyq0fl2go::::res://Assets/Sprites/Characters/enemy/death/de.l.2.png<>uid://dkhx62bue44ft::::res://Assets/Sprites/Characters/enemy/r.r.7.png<>uid://s4m5rxb205gx::::res://Assets/Sprites/Characters/enemy/death/de.l.3.png<>uid://dg8a6nt33dtoo::::res://Assets/Sprites/Characters/enemy/death/de.l.4.png<>uid://behsxn375jp5d::::res://Assets/Sprites/Characters/enemy/r.r.8.png<>uid://ymqwtun8164k::::res://Assets/Sprites/Characters/enemy/w.r.1.png<>uid://kr1jv4ahjrlx::::res://Assets/Sprites/Characters/enemy/death/de.f.1.png<>uid://dst1l8pi71r7x::::res://Assets/Sprites/Characters/enemy/death/de.f.2.png<>uid://cfqlagbh5wibs::::res://Assets/Sprites/Characters/enemy/w.r.2.png<>uid://1w5grgrmolwg::::res://Assets/Sprites/Characters/enemy/death/de.f.3.png<>uid://dwt2n757fxq4s::::res://Assets/Sprites/Characters/enemy/w.r.3.png<>uid://dirkqnrenx7wr::::res://Assets/Sprites/Characters/enemy/death/de.f.4.png<>uid://bklldq5tvcorp::::res://Assets/Musics/Effect-sedaye-Tajoob.mp3<>uid://ccibcladvwwmn::::res://Assets/Sprites/Characters/enemy/death/de.f.5.png<>uid://bdkm8ybk7wtm5::::res://Assets/Sprites/Characters/enemy/death/de.f.6.png
+enemy_path_2d.tscn::PackedScene::2941656454863346900::1742476554::0::1::::<><>::res://Scripts/enemy_path_follow_2d.gd<>uid://dy1yfnp1t85kc::::res://Scenes/Prefabs/enemy.tscn<>res://Scripts/enemy.gd
+gameover.tscn::PackedScene::7442830171268843501::1740605648::0::1::::<><>::res://gameover.gd
+player.tscn::PackedScene::7149666721384777452::1742476554::0::1::::<><>::res://Scripts/player.gd<>uid://4065ixse7n2c::::res://Assets/Sprites/Characters/Player/attack/att.b.1.png<>uid://dwu8iwwvw8oe0::::res://Assets/Sprites/Characters/Player/attack/att.b.2.png<>uid://dmrwx1c46q4hv::::res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png<>uid://s7dmf7p3rboj::::res://Assets/Sprites/Characters/Player/New Piskel-3.png (2).png<>uid://cqytpv6t1r58i::::res://Assets/Sprites/Characters/Player/New Piskel-3.png.png<>uid://cwl5ihsapfkgt::::res://Assets/Sprites/Characters/Player/attack/att.b.3.png<>uid://cxg2kfkbcsriu::::res://Assets/Sprites/Characters/Player/New Piskel-1.png (5).png<>uid://bvdlt7y3xax2c::::res://Assets/Sprites/Characters/Player/attack/att.l.1.png<>uid://senqi8m2x4nd::::res://Assets/Sprites/Characters/Player/attack/att.r.1.png<>uid://dsqfuxndlraw1::::res://Assets/Sprites/Characters/Player/New Piskel-3.png (3).png<>uid://cvg24a6tvds0m::::res://Assets/Sprites/Characters/Player/New Piskel-2.png (7).png<>uid://b0pnav60tilyb::::res://Assets/Sprites/Characters/Player/attack/att.r.2.png<>uid://tv8glqiur7py::::res://Assets/Sprites/Characters/Player/attack/att.l.2.png<>uid://c6n4whkf3xcjt::::res://Assets/Sprites/Characters/Player/attack/att.l.3.png<>uid://bv12scf10y47a::::res://Assets/Sprites/Characters/Player/New Piskel-2.png (5).png<>uid://dgubb5rspeggx::::res://Assets/Sprites/Characters/Player/attack/att.r.3.png<>uid://dvdkh67q5sewf::::res://Assets/Sprites/Characters/Player/attack/att.l.4.png<>uid://2mvrpir4w2bh::::res://Assets/Sprites/Characters/Player/attack/att.r.4.png<>uid://bgnayqy52myf3::::res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png<>uid://bfuyme3c1hnjh::::res://Assets/Musics/صدای پوتین.mp3<>uid://8bkyvf2snik6::::res://Assets/Sprites/Characters/Player/r.l.1.png<>uid://bfj8xq6j1di43::::res://Assets/Sprites/Characters/Player/r.l.2.png<>uid://eidn1mpju732::::res://Assets/Sprites/Characters/Player/r.l.3.png<>uid://bogfc4us6l2tv::::res://Assets/Sprites/Characters/Player/r.l.4.png<>uid://cfxwk45idw7q3::::res://Assets/Sprites/Characters/Player/r.l.5.png<>uid://btcg6ce8qbesq::::res://Assets/Sprites/Characters/Player/attack/att.f.1.png<>uid://c0gnuvj7qxqin::::res://Assets/Sprites/Characters/Player/r.l.6.png<>uid://lckru3usk4pa::::res://Assets/Sprites/Characters/Player/attack/att.f.2.png<>uid://bbc3ajwdl1qpx::::res://Assets/Sprites/Characters/Player/r.l.7.png<>uid://bryqix2q52is4::::res://Assets/Sprites/Characters/Player/attack/att.f.3.png<>uid://ck67wujsxqgt4::::res://Assets/Sprites/Characters/Player/r.l.8.png<>uid://b1qrw8dj748tf::::res://Assets/Sprites/Characters/Player/death/dea.b.1.png<>uid://b7xk3v2uytyu0::::res://Assets/Sprites/Characters/Player/w.l.1.png<>uid://chvya843q73bh::::res://Assets/Sprites/Characters/Player/w.l.2.png<>uid://crfl7chaqf6hp::::res://Assets/Sprites/Characters/Player/death/dea.b.2.png<>uid://c3v63eg2amcov::::res://Assets/Sprites/Characters/Player/death/dea.b.3.png<>uid://bt5ubh874juun::::res://Assets/Sprites/Characters/Player/w.l.3.png<>uid://c28tsp1gopwix::::res://Assets/Sprites/Characters/Player/r.r.1.png<>uid://2015bk37ypkb::::res://Assets/Sprites/Characters/Player/death/dea.b.4.png<>uid://d3ryofbgm2qhg::::res://Assets/Sprites/Characters/Player/r.r.2.png<>uid://cpumffbpikgcj::::res://Assets/Sprites/Characters/Player/death/dea.b.5.png<>uid://cggmbf6wt83uf::::res://Assets/Sprites/Characters/Player/r.r.3.png<>uid://ctq1s18x06qja::::res://Assets/Sprites/Characters/Player/r.r.4.png<>uid://b2872r63q1p1a::::res://Assets/Sprites/Characters/Player/death/dea.b.6.png<>uid://cpchm4cvd8avs::::res://Assets/Sprites/Characters/Player/r.r.5.png<>uid://csu18qsp7knlp::::res://Assets/Sprites/Characters/Player/death/dea.r.1.png<>uid://qdbps1ebd44g::::res://Assets/Sprites/Characters/Player/r.r.6.png<>uid://b3u8cykm2i3r5::::res://Assets/Sprites/Characters/Player/death/dea.r.2.png<>uid://d1dj4eaxlo5vu::::res://Assets/Sprites/Characters/Player/r.r.7.png<>uid://itjv773jcgvc::::res://Assets/Sprites/Characters/Player/death/dea.r.3.png<>uid://ddtw2cer017m8::::res://Assets/Sprites/Characters/Player/r.r.8.png<>uid://dsv1tgpf6psdn::::res://Assets/Sprites/Characters/Player/death/dea.r.4.png<>uid://davbs7nu67gj5::::res://Assets/Sprites/Characters/Player/death/dea.l.1.png<>uid://ddnmftr0st2t4::::res://Assets/Sprites/Characters/Player/death/dea.l.2.png<>uid://1qrh2fqftlne::::res://Assets/Sprites/Characters/Player/death/dea.l.3.png<>uid://24u2elfq6obl::::res://Assets/Sprites/Characters/Player/death/dea.l.4.png<>uid://cxu7y6517jbwu::::res://Assets/Sprites/Characters/Player/w.r.1.png<>uid://c310xxwgniiv4::::res://Assets/Sprites/Characters/Player/death/dea.f.1.png<>uid://bnybpd5afh1tp::::res://Assets/Sprites/Characters/Player/w.r.2.png<>uid://nf6dlroaaxdo::::res://Assets/Sprites/Characters/Player/w.r.3.png<>uid://ckimru01x5oxo::::res://Assets/Sprites/Characters/Player/death/dea.f.2.png<>uid://7hdiljxo3ha5::::res://Assets/Sprites/Characters/Player/death/dea.f.3.png<>uid://cs6y3lkafiwl7::::res://Assets/Sprites/Characters/Player/death/dea.f.4.png<>uid://dcfo740mvxesr::::res://Assets/Sprites/Characters/Player/death/dea.f.5.png<>uid://mivph8ymgeea::::res://Assets/Sprites/Characters/Player/death/dea.f.6.png
+::res://Scripts/::1742476554
+area_2d.gd::GDScript::-1::1741775843::0::1::::<>Area2D<>::
+enemy.gd::GDScript::-1::1742476554::0::1::::<>CharacterBody2D<>::
+enemy_path_follow_2d.gd::GDScript::-1::1742476554::0::1::::<>PathFollow2D<>::
+intro_ui.gd::GDScript::-1::1740741867::0::1::::<>Node2D<>::
+path_drawer.gd::GDScript::-1::1740688110::0::1::::<>Node2D<>::
+player.gd::GDScript::-1::1742476554::0::1::::<>CharacterBody2D<>::
+tile_map_layer.gd::GDScript::-1::1741775843::0::1::::<>TileMapLayer<>::

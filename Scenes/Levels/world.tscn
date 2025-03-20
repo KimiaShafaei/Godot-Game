@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dlqikh11tsanq"]
+[gd_scene load_steps=22 format=4 uid="uid://dlqikh11tsanq"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_xrb6k"]
 [ext_resource type="Texture2D" uid="uid://dd3r50p0wmkxi" path="res://Assets/Sprites/Tiles/tile.6.png" id="3_y2mmb"]
@@ -3632,18 +3632,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qkhiw"]
 size = Vector2(1117.09, 668.735)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vygsc"]
-size = Vector2(930.635, 23.7021)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_whp0r"]
-size = Vector2(922.543, 31.6028)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vi4jt"]
-size = Vector2(29.2774, 450.339)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yipdr"]
-size = Vector2(24.2775, 450.339)
-
 [node name="World" type="Node2D"]
 scale = Vector2(0.988572, 1.01257)
 
@@ -3700,23 +3688,5 @@ autoplay = true
 
 [node name="success" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_p5ejj")
-
-[node name="walls2d" type="StaticBody2D" parent="."]
-
-[node name="wall1" type="CollisionShape2D" parent="walls2d"]
-position = Vector2(400.578, 470.091)
-shape = SubResource("RectangleShape2D_vygsc")
-
-[node name="wall2" type="CollisionShape2D" parent="walls2d"]
-position = Vector2(396.532, -15.8014)
-shape = SubResource("RectangleShape2D_whp0r")
-
-[node name="wall3" type="CollisionShape2D" parent="walls2d"]
-position = Vector2(-47.0086, 225.17)
-shape = SubResource("RectangleShape2D_vi4jt")
-
-[node name="wall4" type="CollisionShape2D" parent="walls2d"]
-position = Vector2(845.664, 225.17)
-shape = SubResource("RectangleShape2D_yipdr")
 
 [connection signal="body_entered" from="box/Area2D" to="box/Area2D" method="_on_body_entered"]

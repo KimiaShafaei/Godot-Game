@@ -1,9 +1,9 @@
+CollisionShape2D
+AnimatedSprite2D
 Timer
 RayCast2D
-CollisionShape2D
 StaticBody2D
 AudioStreamPlayer2D
-AnimatedSprite2D
 CharacterBody2D
 Sprite2D
 Area2D
