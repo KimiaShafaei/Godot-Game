@@ -21,7 +21,7 @@ rotation = -2.46019
 rotates = false
 script = ExtResource("1_kr3jc")
 
-[node name="Enemy" parent="EnemyPathFollow2D" instance=ExtResource("2_m8vvn")]
+[node name="Enemy" parent="EnemyPathFollow2D" groups=["enemy"] instance=ExtResource("2_m8vvn")]
 position = Vector2(-43.553, -30.5799)
 rotation = 2.46091
 scale = Vector2(0.5, 0.5)

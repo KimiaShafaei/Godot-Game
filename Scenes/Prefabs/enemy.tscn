@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://dy1yfnp1t85kc"]
+[gd_scene load_steps=71 format=3 uid="uid://dy1yfnp1t85kc"]
 
 [ext_resource type="Texture2D" uid="uid://bmge0u6qam3x0" path="res://Assets/Sprites/Characters/enemy/New Piskel-4.png (2).png" id="1_6n5kn"]
 [ext_resource type="Texture2D" uid="uid://dtqry2i7ggubh" path="res://Assets/Sprites/Characters/enemy/attack/at.b.2.png" id="1_ttyqe"]
@@ -7,17 +7,13 @@
 [ext_resource type="Texture2D" uid="uid://dfwaqbxh12ugg" path="res://Assets/Sprites/Characters/enemy/New Piskel-5.png (1).png" id="3_2ck7p"]
 [ext_resource type="Texture2D" uid="uid://bk0s43ne024wk" path="res://Assets/Sprites/Characters/enemy/attack/at.r.1.png" id="3_swl0h"]
 [ext_resource type="Texture2D" uid="uid://47h5sb6bntdq" path="res://Assets/Sprites/Characters/enemy/attack/at.r.2.png" id="4_av8uv"]
-[ext_resource type="Texture2D" uid="uid://cefqk6ugkrwq2" path="res://Assets/Sprites/Characters/enemy/New Piskel-6.png (1).png" id="4_giqoo"]
 [ext_resource type="Texture2D" uid="uid://dqwb1ks8sdajf" path="res://Assets/Sprites/Characters/enemy/attack/at.r.3.png" id="5_6hqir"]
 [ext_resource type="Texture2D" uid="uid://bcpiymcmvic3v" path="res://Assets/Sprites/Characters/enemy/New Piskel-6.png.png" id="5_08c0o"]
-[ext_resource type="Texture2D" uid="uid://j68r145o2sy5" path="res://Assets/Sprites/Characters/enemy/New Piskel-4.png (3).png" id="5_k2xaq"]
 [ext_resource type="Texture2D" uid="uid://rhp13h378esq" path="res://Assets/Sprites/Characters/enemy/New Piskel-3.png (8).png" id="5_ymi2d"]
-[ext_resource type="Texture2D" uid="uid://bcx2gbeae8b54" path="res://Assets/Sprites/Characters/enemy/New Piskel-3.png (9).png" id="6_a3fna"]
 [ext_resource type="Texture2D" uid="uid://crsewjh833hsr" path="res://Assets/Sprites/Characters/enemy/New Piskel-1.png (14).png" id="6_ayjf6"]
 [ext_resource type="Texture2D" uid="uid://bj4pgdojc45d7" path="res://Assets/Sprites/Characters/enemy/New Piskel-5.png.png" id="6_nm7kt"]
 [ext_resource type="Texture2D" uid="uid://ddbllvg8pqvfv" path="res://Assets/Sprites/Characters/enemy/attack/at.r.4.png" id="6_ra4hx"]
 [ext_resource type="Texture2D" uid="uid://drwvckrw7n5ry" path="res://Assets/Sprites/Characters/enemy/attack/at.r.5.png" id="7_0x2hr"]
-[ext_resource type="Texture2D" uid="uid://cqb7lyes28vqg" path="res://Assets/Sprites/Characters/enemy/New Piskel-2.png (16).png" id="7_g4xnb"]
 [ext_resource type="Texture2D" uid="uid://beksc1w0ntwcq" path="res://Assets/Sprites/Characters/enemy/New Piskel-2.png (15).png" id="7_yq8rp"]
 [ext_resource type="Texture2D" uid="uid://bb13wk7k7wvw6" path="res://Assets/Sprites/Characters/enemy/attack/at.l.1.png" id="8_6p3qn"]
 [ext_resource type="Texture2D" uid="uid://bviiyovp7vg7o" path="res://Assets/Sprites/Characters/enemy/attack/at.l.2.png" id="9_ttrll"]
@@ -355,40 +351,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_0awg4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_0dphk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_ri4vk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_1s06q")
-}],
-"loop": true,
-"name": &"W_left",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_2ck7p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_1jsl8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_exv8i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_vbya6")
-}],
-"loop": true,
-"name": &"W_right",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": ExtResource("5_ymi2d")
 }, {
 "duration": 1.0,
@@ -406,10 +368,13 @@ animations = [{
 "texture": ExtResource("2_0awg4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_a3fna")
+"texture": ExtResource("18_0dphk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_g4xnb")
+"texture": ExtResource("19_ri4vk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1s06q")
 }],
 "loop": true,
 "name": &"Walk_left",
@@ -420,10 +385,13 @@ animations = [{
 "texture": ExtResource("3_2ck7p")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_giqoo")
+"texture": ExtResource("31_1jsl8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_k2xaq")
+"texture": ExtResource("32_exv8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_vbya6")
 }],
 "loop": true,
 "name": &"Walk_right",
@@ -447,7 +415,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_fghf7"]
 radius = 100.0
 
-[node name="Enemy" type="CharacterBody2D"]
+[node name="Enemy" type="CharacterBody2D" groups=["enemy"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_rk7jn")
@@ -455,9 +423,7 @@ shape = SubResource("CapsuleShape2D_rk7jn")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
-animation = &"Attack_left"
-frame = 2
-frame_progress = 0.467728
+animation = &"Death_left"
 
 [node name="RayCast2D2_Front" type="RayCast2D" parent="."]
 target_position = Vector2(0, 272)
@@ -483,6 +449,7 @@ stream = ExtResource("35_lxvne")
 
 [node name="ShootingRayCast2D" type="RayCast2D" parent="."]
 enabled = false
+target_position = Vector2(300, 0)
 collision_mask = 2
 
 [node name="ChasingTimer" type="Timer" parent="."]

@@ -21,7 +21,12 @@ func _ready():
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
 		var click_position = tile_map.round_local_position(get_global_mouse_position())
-
+		
+		var click_enemy = get_click_enemy(click_position)
+		if click_enemy:
+			attack_to_enemy(click_enemy)
+			return
+			
 		if tile_map.is_point_walkable(click_position):
 			_path = tile_map.find_path(global_position, click_position)
 			_current_index = 0
@@ -108,22 +113,44 @@ func _play_idle():
 		walking_sound.stop()
 
 func start_running():
-	print("start running...")
-	start_chasing = true
-	speed = runnig_speed
+	if not start_chasing:
+		print("start running...")
+		start_chasing = true
+		speed = runnig_speed
 
+func get_click_enemy(click_position):
+	for enemy in get_tree().get_nodes_in_group("enemy"):
+		if enemy.global_position.distance_to(click_position) < 30:
+			return enemy
+	return null
+	
+func attack_to_enemy(enemy):
+	if global_position.distance_to(enemy.global_position) < 40:
+		print("player attacks to enemy")
+		anim.play("Attack_" + _last_side)
+		print("play attack to enemy")
+		await anim.animation_finished
+		enemy.die_enemy()
+	
 func take_damage():
 	healths -= 1
 	print("decrease 1 helth", healths)
 	if healths > 0:
-		print("platy hit player animation")
-		anim.play("Hit")
+		print("play hit player animation")
 	else:
 		print("play die player animation")
-		die()
+		die_player()
 
-func die():
-	anim.play("Die")
+func die_player():
+	if velocity.y >0:
+		anim.play("Death_up")
+	elif velocity.y < 0:
+		anim.play("Death_down")
+	elif velocity.x > 0:
+		anim.play("Death_right")
+	elif velocity.x < 0:
+		anim.play("Death_left")
+		
 	await anim.animation_finished
 	print("Game over so play this level again")
 	get_tree().change_scene_to_file("res://Scenes/Levels/level_2.tscn")

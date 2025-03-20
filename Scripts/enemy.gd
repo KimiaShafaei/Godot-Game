@@ -47,9 +47,8 @@ func shoot():
 	print("shoot function call")
 	print("Raycast enabled?", shooting_raycast.enabled)
 	if shooting_raycast.is_colliding():
+		print("shooting_raycast.is_colliding")
 		var player = shooting_raycast.get_collider()
-		print("raycast hit: ", player.name)
-		print("shooting")
 		if player and player.is_in_group("player"):
 			print("player detected and damage")
 			player.take_damage()
@@ -71,10 +70,22 @@ func _update_animation(direction:  Vector2):
 	
 func _get_shooting_anim():
 	if raycast_front.is_colliding():
-		return "Shoot_down"
+		return "Attack_down"
 	elif raycast_left.is_colliding():
-		return "Shoot_left"
+		return "Attack_left"
 	if raycast_right.is_colliding():
-		return "Shoot_right"
+		return "Attack_right"
 	else:
-		return "Shoot_up"
+		return "Attack_up"
+
+func die_enemy():
+	if velocity.y >0:
+		enemy_anim.play("Death_up")
+	elif velocity.y < 0:
+		enemy_anim.play("Death_down")
+	elif velocity.x > 0:
+		enemy_anim.play("Death_right")
+	elif velocity.x < 0:
+		enemy_anim.play("Death_left")
+	await enemy_anim.animation_finished
+	queue_free()

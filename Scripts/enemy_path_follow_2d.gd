@@ -3,7 +3,7 @@ extends PathFollow2D
 @export var speed: float = 50
 @export var chase_speed:float = 80
 @export var chase_range_multiple:float = 5
-@export var shooting_distance:float = 300
+@export var shooting_distance:float = 100
 
 @onready var enemy = $Enemy
 @onready var detect_sound = $Enemy/HearingArea2D/understanding
@@ -21,21 +21,19 @@ func _ready() :
 func _process(delta: float) -> void:
 	if player:
 		if not chasing and enemy.detect_player():
-			print("player go to visibility detect range")
 			start_chasing()
 			player.start_running()
 
 	if player and chasing:
 		var distance_to_player = global_position.distance_to(player.global_position)
-		var direction = (player.global_position - global_position).normalized()
+		var direction = (player.global_position - global_position).normalized()	
 		global_position += direction * chase_speed * delta
 		enemy._update_animation(direction)
-		
 		if distance_to_player <= shooting_distance and enemy.detect_player():
 			start_shooting()
-		elif  distance_to_player > shooting_distance and not enemy.detect_player():
+		elif distance_to_player > shooting_distance and not enemy.detect_player():
 			print("lost player and back to circle")
-			stop_chasing()
+			stop_chasing()		
 	else :
 		progress += speed * delta
 		enemy._update_animation(global_position - last_position)
