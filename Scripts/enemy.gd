@@ -7,6 +7,7 @@ extends CharacterBody2D
 @onready var enemy_anim = $AnimatedSprite2D
 @onready var haering_area = $HearingArea2D
 @onready var shooting_timer = $ShootingTimer
+@onready var blood_anim = $Blood
 
 var shooting = false
 var chasing = false
@@ -15,6 +16,7 @@ var player_in_sight = false
 func _ready():
 	haering_area.body_entered.connect(enter_hearing_area)
 	shooting_timer.timeout.connect(shoot)
+	blood_anim.visible = false
 		
 func increase_raycast(multiplier: float):
 	raycast_front.target_position *= multiplier
@@ -79,6 +81,10 @@ func _get_shooting_anim():
 		return "Attack_up"
 
 func die_enemy():
+	blood_anim.visible = true
+	blood_anim.play("Blood2")
+	print("play blood for die enemy")
+	
 	if velocity.y >0:
 		enemy_anim.play("Death_up")
 	elif velocity.y < 0:

@@ -8,6 +8,7 @@ extends CharacterBody2D
 @onready var tile_map = $"../TileMapLayer"
 @onready var walking_sound = $walking
 @onready var background_sound = $"../background"
+@onready var blood_anim = $Blood
 
 var _path : Array = []
 var _current_index = 0
@@ -17,6 +18,7 @@ var start_chasing = false
 func _ready():
 	anim.play("Idle_down")
 	background_sound.play()
+	blood_anim.visible = false
 	
 func _input(event):
 	if event is InputEventMouseButton and event.pressed:
@@ -135,6 +137,11 @@ func attack_to_enemy(enemy):
 func take_damage():
 	healths -= 1
 	print("decrease 1 helth", healths)
+	
+	blood_anim.visible = true
+	blood_anim.play("Blood2")
+	print("play blood animation for shot player" )
+	
 	if healths > 0:
 		print("play hit player animation")
 	else:
@@ -142,6 +149,10 @@ func take_damage():
 		die_player()
 
 func die_player():
+	blood_anim.visible = true
+	blood_anim.play("Blood1")
+	print("play blood animation dor die player")
+	
 	if velocity.y >0:
 		anim.play("Death_up")
 	elif velocity.y < 0:

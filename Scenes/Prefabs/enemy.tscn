@@ -530,11 +530,11 @@ collision_mask = 2
 [node name="ShootingTimer" type="Timer" parent="."]
 
 [node name="Blood" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(208, -24)
 scale = Vector2(0.078125, 0.046875)
 sprite_frames = SubResource("SpriteFrames_ckgfi")
 animation = &"Blood2"
-frame_progress = 0.00464152
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(216, -24)
