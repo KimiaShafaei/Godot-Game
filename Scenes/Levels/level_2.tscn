@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=4 uid="uid://cxn7matdxw82d"]
+[gd_scene load_steps=37 format=4 uid="uid://cxn7matdxw82d"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="2_8374t"]
@@ -15,6 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="10_8c7mm"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
 [ext_resource type="PackedScene" uid="uid://bh57wf0npfylg" path="res://Scenes/Prefabs/enemy_path_2d.tscn" id="13_lr1w7"]
+[ext_resource type="Texture2D" uid="uid://bakna5dob3y11" path="res://Assets/Sprites/Tiles/h.b.1.png" id="16_yxf76"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_okilr"]
 
@@ -6262,6 +6263,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tmhtp"]
 size = Vector2(984.689, 698.302)
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ia1lp"]
+texture = ExtResource("16_yxf76")
+
 [node name="Level_2" type="Node2D"]
 
 [node name="background" type="AudioStreamPlayer2D" parent="."]
@@ -6321,5 +6325,24 @@ stream = ExtResource("11_x6a6w")
 [node name="Path2D" parent="." instance=ExtResource("13_lr1w7")]
 position = Vector2(-24, 16)
 scale = Vector2(0.907357, 0.749598)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -464.0
+offset_top = 168.0
+offset_right = -432.0
+offset_bottom = 195.0
+theme_override_styles/fill = SubResource("StyleBoxTexture_ia1lp")
+value = 100.0
+show_percentage = false
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="ProgressBar"]
+layout_mode = 0
+offset_left = 1248.0
+offset_top = -168.0
+offset_right = 1280.0
+offset_bottom = -136.0
+value = 100.0
+texture_progress = ExtResource("16_yxf76")
+texture_progress_offset = Vector2(1, 1)
 
 [connection signal="body_entered" from="box/Area2D" to="box/Area2D" method="_on_body_entered"]

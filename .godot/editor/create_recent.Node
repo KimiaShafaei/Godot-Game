@@ -1,3 +1,5 @@
+TextureProgressBar
+ProgressBar
 CollisionShape2D
 AnimatedSprite2D
 Timer
@@ -10,5 +12,3 @@ Area2D
 Path2D
 ShapeCast2D
 PathFollow2D
-AudioListener2D
-Camera2D
