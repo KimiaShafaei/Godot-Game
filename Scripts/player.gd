@@ -150,8 +150,10 @@ func take_damage():
 
 func die_player():
 	blood_anim.visible = true
-	blood_anim.play("Blood1")
+	blood_anim.play("Blood")
 	print("play blood animation dor die player")
+	await blood_anim.animation_finished
+	blood_anim.visible = false
 	
 	if velocity.y >0:
 		anim.play("Death_up")

@@ -13,10 +13,13 @@ var shooting = false
 var chasing = false
 var player_in_sight = false
 
+var tile_map
+
 func _ready():
 	haering_area.body_entered.connect(enter_hearing_area)
 	shooting_timer.timeout.connect(shoot)
 	blood_anim.visible = false
+	tile_map = get_tree().get_root().get_node("Level_2/TileMapLayer")
 		
 func increase_raycast(multiplier: float):
 	raycast_front.target_position *= multiplier
@@ -33,6 +36,7 @@ func enter_hearing_area(body):
 
 func start_shooting():
 	print("start shooting")
+	get_shooting_anim()
 	if not shooting:
 		shooting = true
 		shooting_timer.start(1.0)
@@ -54,7 +58,7 @@ func shoot():
 		if player and player.is_in_group("player"):
 			print("player detected and damage")
 			player.take_damage()
-			enemy_anim.play(_get_shooting_anim())
+			enemy_anim.play(get_shooting_anim())
 		else:
 			print("Raycast didn't detect the player!")
 		
@@ -70,7 +74,7 @@ func _update_animation(direction:  Vector2):
 		else :
 			enemy_anim.play("Walk_up")
 	
-func _get_shooting_anim():
+func get_shooting_anim():
 	if raycast_front.is_colliding():
 		return "Attack_down"
 	elif raycast_left.is_colliding():

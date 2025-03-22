@@ -449,7 +449,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("74_gte1j")
 }],
-"loop": true,
+"loop": false,
 "name": &"Blood",
 "speed": 5.0
 }, {
@@ -472,7 +472,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("80_yvch3")
 }],
-"loop": true,
+"loop": false,
 "name": &"Blood2",
 "speed": 5.0
 }]
@@ -506,7 +506,7 @@ visible = false
 position = Vector2(0, 9.53674e-07)
 scale = Vector2(0.0390625, 0.0390625)
 sprite_frames = SubResource("SpriteFrames_b005l")
-animation = &"Blood2"
+animation = &"Blood"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ab0jv")
