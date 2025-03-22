@@ -1,4 +1,13 @@
+HEAD
 res://Scenes/Levels/level_2.tscn
 res://Scenes/Levels/intro_ui.tscn
 res://Scenes/Prefabs/player.tscn
 res://Scenes/Prefabs/enemy.tscn
+res://Scenes/Levels/intro_ui.tscn
+res://Scenes/Levels/level_2.tscn
+res://Scenes/Prefabs/player.tscn
+res://Scenes/Prefabs/enemy.tscn
+res://Scenes/Levels/world.tscn
+res://Scripts/enemy.gd
+res://Scripts/enemy_path_follow_2d.gd
+14a57cdfbde19e3216950196176dddff770b27f6
