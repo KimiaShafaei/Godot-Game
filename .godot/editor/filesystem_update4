@@ -1,6 +1,1 @@
-res://Scenes/Levels/intro_ui.tscn
-res://Scenes/Levels/world.tscn
-res://Scenes/Levels/level_2.tscn
-res://Scenes/Prefabs/player.tscn
-res://Scripts/player.gd
 res://Scenes/Prefabs/enemy.tscn
