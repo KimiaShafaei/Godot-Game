@@ -548,7 +548,6 @@ animations = [{
 size = Vector2(1117.09, 668.735)
 
 [node name="World" type="Node2D"]
-scale = Vector2(0.988572, 1.01257)
 
 [node name="background" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("1_xrb6k")
