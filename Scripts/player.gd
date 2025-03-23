@@ -9,6 +9,7 @@ extends CharacterBody2D
 @onready var walking_sound = $walking
 @onready var background_sound = $"../background"
 @onready var blood_anim = $Blood
+@onready var health_bar = $"../ProgressBar/HealthBar"
 
 var _path : Array = []
 var _current_index = 0
@@ -137,6 +138,7 @@ func attack_to_enemy(enemy):
 func take_damage():
 	healths -= 1
 	print("decrease 1 helth", healths)
+	health_bar.value = healths
 	
 	blood_anim.visible = true
 	blood_anim.play("Blood2")
