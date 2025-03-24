@@ -1,7 +1,4 @@
-HEAD
-[gd_scene load_steps=37 format=4 uid="uid://cxn7matdxw82d"]
-[gd_scene load_steps=24 format=4 uid="uid://cxn7matdxw82d"]
-14a57cdfbde19e3216950196176dddff770b27f6
+[gd_scene load_steps=28 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="2_8374t"]
@@ -18,7 +15,9 @@ HEAD
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="10_8c7mm"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
 [ext_resource type="PackedScene" uid="uid://bh57wf0npfylg" path="res://Scenes/Prefabs/enemy_path_2d.tscn" id="13_lr1w7"]
-[ext_resource type="Texture2D" uid="uid://bakna5dob3y11" path="res://Assets/Sprites/Tiles/h.b.1.png" id="16_yxf76"]
+[ext_resource type="Texture2D" uid="uid://ckl24joojuaq2" path="res://Assets/Sprites/Tiles/g.f.png" id="16_5buja"]
+[ext_resource type="Texture2D" uid="uid://c7vvd2u4l50rh" path="res://Assets/Sprites/Tiles/g.e.png" id="17_wyygt"]
+[ext_resource type="Texture2D" uid="uid://cveyt52vfa6kv" path="res://Assets/Sprites/Tiles/g.png" id="18_u87on"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1p81t"]
 texture = ExtResource("2_8374t")
@@ -81,8 +80,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tmhtp"]
 size = Vector2(984.689, 698.302)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ia1lp"]
-texture = ExtResource("16_yxf76")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iunut"]
+texture = ExtResource("16_5buja")
 
 [node name="Level_2" type="Node2D"]
 
@@ -145,23 +144,28 @@ position = Vector2(-24, 16)
 scale = Vector2(0.907357, 0.749598)
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = -464.0
-offset_top = 168.0
-offset_right = -432.0
-offset_bottom = 195.0
-theme_override_styles/fill = SubResource("StyleBoxTexture_ia1lp")
+offset_left = -352.0
+offset_top = 96.0
+offset_right = -296.0
+offset_bottom = 123.0
+theme_override_styles/fill = SubResource("StyleBoxTexture_iunut")
 value = 100.0
 show_percentage = false
 
 [node name="HealthBar" type="TextureProgressBar" parent="ProgressBar"]
 layout_mode = 0
-offset_left = 1248.0
-offset_top = -168.0
-offset_right = 1280.0
-offset_bottom = -136.0
+offset_left = 1136.0
+offset_top = -96.0
+offset_right = 1176.0
+offset_bottom = -64.0
 max_value = 3.0
 value = 3.0
-texture_progress = ExtResource("16_yxf76")
-texture_progress_offset = Vector2(1, 1)
+texture_under = ExtResource("17_wyygt")
+texture_progress = ExtResource("16_5buja")
+texture_progress_offset = Vector2(1, 0)
+
+[node name="Heart" type="Sprite2D" parent="ProgressBar"]
+position = Vector2(1136, -80)
+texture = ExtResource("18_u87on")
 
 [connection signal="body_entered" from="box/Area2D" to="box/Area2D" method="_on_body_entered"]
