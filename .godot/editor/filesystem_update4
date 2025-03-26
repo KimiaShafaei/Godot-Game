@@ -1,5 +1,5 @@
+res://Scenes/Levels/level_1.tscn
+res://Scripts/intro_ui.gd
 res://Scenes/Levels/intro_ui.tscn
-res://Scenes/Levels/world.tscn
-res://Scenes/Prefabs/player.tscn
-res://Scenes/Prefabs/enemy.tscn
 res://Scenes/Levels/level_2.tscn
+res://Scenes/Prefabs/Characters/enemy_with_path.tscn

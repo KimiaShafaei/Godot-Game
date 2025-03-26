@@ -7,7 +7,7 @@ extends Node2D
 
 func _on_start_pressed() -> void:
 	start_audio.stop()
-	get_tree().change_scene_to_file("res://Scenes/Levels/world.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Levels/level_1.tscn")
 	
 
 

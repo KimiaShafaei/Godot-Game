@@ -1,6 +1,6 @@
 [gd_scene load_steps=85 format=3 uid="uid://c84l74ckv5wpw"]
 
-[ext_resource type="Script" uid="uid://3pgnqgkea6kq" path="res://Scripts/player.gd" id="1_2tcqa"]
+[ext_resource type="Script" path="res://Scripts/Characters/player.gd" id="1_2tcqa"]
 [ext_resource type="Texture2D" uid="uid://4065ixse7n2c" path="res://Assets/Sprites/Characters/Player/attack/att.b.1.png" id="2_cnmpy"]
 [ext_resource type="Texture2D" uid="uid://dwu8iwwvw8oe0" path="res://Assets/Sprites/Characters/Player/attack/att.b.2.png" id="3_d5yhc"]
 [ext_resource type="Texture2D" uid="uid://dmrwx1c46q4hv" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png" id="3_lep2e"]

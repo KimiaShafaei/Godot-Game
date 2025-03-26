@@ -1,23 +1,21 @@
-[gd_scene load_steps=28 format=4 uid="uid://cs35iobq7t36k"]
+[gd_scene load_steps=25 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="2_8374t"]
 [ext_resource type="Texture2D" uid="uid://bmw67yldpm8ip" path="res://Assets/Sprites/Tiles/tile.15.png" id="4_hq526"]
 [ext_resource type="Texture2D" uid="uid://dd3r50p0wmkxi" path="res://Assets/Sprites/Tiles/tile.6.png" id="5_lktvk"]
-[ext_resource type="Script" uid="uid://c8wnsfm6vm3wg" path="res://Scripts/tile_map_layer.gd" id="5_paps5"]
-[ext_resource type="Script" uid="uid://dbeww61q85okc" path="res://Scripts/path_drawer.gd" id="6_o2037"]
+[ext_resource type="Script" path="res://Scripts/World/tile_map_layer.gd" id="5_paps5"]
+[ext_resource type="Script" path="res://Scripts/World/path_drawer.gd" id="6_o2037"]
 [ext_resource type="Texture2D" uid="uid://d3jocj2u3v1oh" path="res://Assets/Sprites/Tiles/tile.19.png" id="6_raqmy"]
 [ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="7_a0xsu"]
 [ext_resource type="Texture2D" uid="uid://ri5ahy7qwrnc" path="res://Assets/Sprites/Tiles/photo_2025-02-13_06-36-36.jpg" id="8_2ptt4"]
 [ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="8_sqati"]
-[ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/player.tscn" id="9_0tae3"]
-[ext_resource type="Script" uid="uid://cnkh4h3ymi2xx" path="res://Scripts/area_2d.gd" id="9_1toud"]
+[ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/player.tscn" id="9_0tae3"]
+[ext_resource type="Script" path="res://Scripts/UI/area_2d.gd" id="9_1toud"]
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="10_8c7mm"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
-[ext_resource type="PackedScene" uid="uid://bh57wf0npfylg" path="res://Scenes/Prefabs/enemy_path_2d.tscn" id="13_lr1w7"]
-[ext_resource type="Texture2D" uid="uid://ckl24joojuaq2" path="res://Assets/Sprites/Tiles/g.f.png" id="16_5buja"]
-[ext_resource type="Texture2D" uid="uid://c7vvd2u4l50rh" path="res://Assets/Sprites/Tiles/g.e.png" id="17_wyygt"]
-[ext_resource type="Texture2D" uid="uid://cveyt52vfa6kv" path="res://Assets/Sprites/Tiles/g.png" id="18_u87on"]
+[ext_resource type="PackedScene" uid="uid://bh57wf0npfylg" path="res://Scenes/Prefabs/Characters/enemy_with_path.tscn" id="13_lr1w7"]
+[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/progress_bar.tscn" id="16_0imrv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1p81t"]
 texture = ExtResource("2_8374t")
@@ -80,9 +78,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tmhtp"]
 size = Vector2(984.689, 698.302)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iunut"]
-texture = ExtResource("16_5buja")
-
 [node name="Level_2" type="Node2D"]
 
 [node name="background" type="AudioStreamPlayer2D" parent="."]
@@ -143,29 +138,6 @@ stream = ExtResource("11_x6a6w")
 position = Vector2(-24, 16)
 scale = Vector2(0.907357, 0.749598)
 
-[node name="ProgressBar" type="ProgressBar" parent="."]
-offset_left = -352.0
-offset_top = 96.0
-offset_right = -296.0
-offset_bottom = 123.0
-theme_override_styles/fill = SubResource("StyleBoxTexture_iunut")
-value = 100.0
-show_percentage = false
-
-[node name="HealthBar" type="TextureProgressBar" parent="ProgressBar"]
-layout_mode = 0
-offset_left = 1136.0
-offset_top = -96.0
-offset_right = 1176.0
-offset_bottom = -64.0
-max_value = 3.0
-value = 3.0
-texture_under = ExtResource("17_wyygt")
-texture_progress = ExtResource("16_5buja")
-texture_progress_offset = Vector2(1, 0)
-
-[node name="Heart" type="Sprite2D" parent="ProgressBar"]
-position = Vector2(1136, -80)
-texture = ExtResource("18_u87on")
+[node name="ProgressBar" parent="." instance=ExtResource("16_0imrv")]
 
 [connection signal="body_entered" from="box/Area2D" to="box/Area2D" method="_on_body_entered"]
