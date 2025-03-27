@@ -1,3 +1,10 @@
+Node
+Button
+HBoxContainer
+VBoxContainer
+CenterContainer
+ColorRect
+SubViewport
 TextureProgressBar
 ProgressBar
 CollisionShape2D
@@ -5,9 +12,3 @@ AnimatedSprite2D
 Timer
 RayCast2D
 StaticBody2D
-AudioStreamPlayer2D
-CharacterBody2D
-Sprite2D
-Area2D
-Path2D
-PathFollow2D
