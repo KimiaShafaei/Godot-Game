@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://qp1ccm4d26qh"]
 
-[ext_resource type="Script" path="res://Scenes/GUI/button.gd" id="1_3f4wp"]
+[ext_resource type="Script" path="res://Scripts/UI/button.gd" id="1_3f4wp"]
 
 [node name="intro_ui" type="Control"]
 layout_mode = 3
@@ -61,5 +61,8 @@ text = "Setting"
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Quit"
+script = ExtResource("1_3f4wp")
+scene = "exit"
 
 [connection signal="button_up" from="CenterContainer/VBoxContainer/HBoxContainer/start" to="CenterContainer/VBoxContainer/HBoxContainer/start" method="_on_button_button_up"]
+[connection signal="button_up" from="CenterContainer/VBoxContainer/HBoxContainer2/quit" to="CenterContainer/VBoxContainer/HBoxContainer2/quit" method="_on_button_button_up"]
