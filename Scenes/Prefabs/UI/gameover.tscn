@@ -1,9 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://debmlcj3ljmlp"]
 
-[ext_resource type="Script" path="res://gameover.gd" id="1_lbiah"]
+[sub_resource type="Resource" id="Resource_nm1ed"]
+metadata/__load_path__ = "res://gameover.gd"
 
 [node name="gameover" type="CanvasLayer"]
-script = ExtResource("1_lbiah")
+script = SubResource("Resource_nm1ed")
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 15

@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bh57wf0npfylg"]
 
-[ext_resource type="Script" path="res://Scripts/Characters/enemy_path_follow_2d.gd" id="1_kr3jc"]
+[ext_resource type="Script" uid="uid://7rs4ktst0b8m" path="res://Scripts/Characters/enemy_path_follow_2d.gd" id="1_kr3jc"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/Characters/enemy.tscn" id="2_m8vvn"]
-[ext_resource type="Script" path="res://Scripts/Characters/enemy.gd" id="3_48eqp"]
+[ext_resource type="Script" uid="uid://bbu5gto5kxbct" path="res://Scripts/Characters/enemy.gd" id="3_48eqp"]
 
 [sub_resource type="Curve2D" id="Curve2D_k2md1"]
 _data = {

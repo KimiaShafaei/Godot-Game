@@ -1,3 +1,7 @@
+res://Scripts/Characters/Enemy/States
+res://Scripts/Characters/Enemy/States/Combat
+res://Scripts/Characters/Enemy/States/Motion
+res://Scripts/Characters/Enemy
 res://Scripts/Characters/Player/States
 res://Scripts/Characters/Player/States/combat
 res://Scripts/Characters/Player/States/motion
