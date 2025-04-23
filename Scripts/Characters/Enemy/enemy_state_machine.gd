@@ -5,6 +5,7 @@ var current_state: Node = null
 var target_player = null
 
 func init(e):
+	print(e)
 	enemy = e
 	for child in get_children():
 		child.enemy = enemy

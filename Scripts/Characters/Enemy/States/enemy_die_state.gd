@@ -9,8 +9,8 @@ func enter():
 	enemy.collision_mask = 0
 
 func _physics_process(delta):
-	if enemy.animation_finished():
-		enemy.queue_free()
+	await enemy.enemy_anim.animation_finished
+	enemy.queue_free()
 
 func exit():
 	pass

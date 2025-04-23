@@ -5,9 +5,9 @@ extends PathFollow2D
 @export var chase_range_multiple:float = 5
 @export var shooting_distance:float = 100
 
-@onready var enemy = $Enemy
-@onready var detect_sound = $Enemy/HearingArea2D/understanding
-@onready var chase_timer = $Enemy/ChasingTimer
+@onready var enemy = $"./Enemy"
+@onready var detect_sound = $"./Enemy/understanding"
+@onready var chase_timer = $"./Enemy/ChasingTimer"
 
 var player = null
 var chasing = false
@@ -35,11 +35,9 @@ func _process(delta: float) -> void:
 		var next_position = global_position + direction * chase_speed * delta
 		if tile_map.is_point_walkable(next_position):
 			global_position = next_position
-			enemy._update_animation(direction)
 		else:
 			print("enemy block by obstcle")
 			
-		enemy._update_animation(direction)
 		if distance_to_player <= shooting_distance and enemy.detect_player():
 			start_shooting()
 		elif distance_to_player > shooting_distance and not enemy.detect_player():
@@ -47,7 +45,6 @@ func _process(delta: float) -> void:
 			stop_chasing()		
 	else :
 		progress += speed * delta
-		enemy._update_animation(global_position - last_position)
 	last_position = global_position
 
 func start_chasing():

@@ -7,16 +7,16 @@ extends CharacterBody2D
 @export var healths = 1
 
 @onready var enemy_anim = $AnimatedSprite2D
-@onready var tile_map = get_node("../TileMapLayer")
+@onready var tile_map = get_node("../../../TileMapLayer")
 @onready var hearing_area = $HearingArea2D
 @onready var understanding_sonud = $understanding
 @onready var chase_timer = $ChasingTimer
 @onready var blood_anim = $Blood
-@onready var path_follow = $"../EnemyPathFollow2D"
+@onready var path_follow = $".."
 @onready var raycast_front = $RayCast2D2_Front
 @onready var raycast_left = $RayCast2D_Left
 @onready var raycast_right = $RayCast2D_Right
-@onready var state_manager = $StateManager
+@onready var state_manager = $StateManger
 
 var _last_side: String = "down"
 var player = null
@@ -26,6 +26,7 @@ func _ready():
 	enemy_anim.play("Idle_down")
 	blood_anim.visible = false
 	state_manager.init(self)
+	print(state_manager)
 	state_manager.change_state("IdleState")
 	player = get_tree().get_first_node_in_group("player")
 
