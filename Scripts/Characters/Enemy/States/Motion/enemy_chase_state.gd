@@ -2,10 +2,10 @@ extends Node
 
 var enemy
 
+@onready var understanding_sonud = $"../../understanding"
+
 func enter():
-	if not enemy.understanding_sound.playing:
-		enemy.understanding_sound.play()
-		
+	understanding_sonud.play()
 	enemy.start_running()
 	enemy.increase_raycast(enemy.chase_range_multiple)
 

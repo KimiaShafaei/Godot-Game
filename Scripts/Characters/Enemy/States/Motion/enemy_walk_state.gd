@@ -3,7 +3,7 @@ extends Node
 var enemy
 
 func enter():
-	enemy._play_walk_animation(Vector2.ZERO)
+	pass
 
 func _physics_process(delta):
 	if enemy.path_follow:

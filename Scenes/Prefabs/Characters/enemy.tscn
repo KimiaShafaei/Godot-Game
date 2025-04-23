@@ -1,30 +1,30 @@
 [gd_scene load_steps=96 format=3 uid="uid://dy1yfnp1t85kc"]
 
 [ext_resource type="Texture2D" uid="uid://bmge0u6qam3x0" path="res://Assets/Sprites/Characters/enemy/New Piskel-4.png (2).png" id="1_6n5kn"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/enemy_controller.gd" id="1_pf407"]
+[ext_resource type="Script" uid="uid://dhsuvld0sjsxr" path="res://Scripts/Characters/Enemy/enemy_controller.gd" id="1_pf407"]
 [ext_resource type="Texture2D" uid="uid://dtqry2i7ggubh" path="res://Assets/Sprites/Characters/enemy/attack/at.b.2.png" id="1_ttyqe"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/enemy_state_machine.gd" id="1_uvvyh"]
+[ext_resource type="Script" uid="uid://btvfb7xski0a0" path="res://Scripts/Characters/Enemy/enemy_state_machine.gd" id="1_uvvyh"]
 [ext_resource type="Texture2D" uid="uid://c5epv48kig5by" path="res://Assets/Sprites/Characters/enemy/New Piskel-1.png (15).png" id="2_0awg4"]
 [ext_resource type="Texture2D" uid="uid://l7p0dg74k7o1" path="res://Assets/Sprites/Characters/enemy/attack/at.b.3.png" id="2_lav88"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/States/Motion/enemy_idle_state.gd" id="2_t4ie3"]
+[ext_resource type="Script" uid="uid://v8fv5yhvewx0" path="res://Scripts/Characters/Enemy/States/Motion/enemy_idle_state.gd" id="2_t4ie3"]
 [ext_resource type="Texture2D" uid="uid://dfwaqbxh12ugg" path="res://Assets/Sprites/Characters/enemy/New Piskel-5.png (1).png" id="3_2ck7p"]
 [ext_resource type="Texture2D" uid="uid://bk0s43ne024wk" path="res://Assets/Sprites/Characters/enemy/attack/at.r.1.png" id="3_swl0h"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/States/Motion/enemy_walk_state.gd" id="3_vfsgb"]
+[ext_resource type="Script" uid="uid://o2ioug3gaabk" path="res://Scripts/Characters/Enemy/States/Motion/enemy_walk_state.gd" id="3_vfsgb"]
 [ext_resource type="Texture2D" uid="uid://47h5sb6bntdq" path="res://Assets/Sprites/Characters/enemy/attack/at.r.2.png" id="4_av8uv"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/States/Motion/enemy_run_state.gd" id="4_rqmjv"]
+[ext_resource type="Script" uid="uid://buequwuui0tv0" path="res://Scripts/Characters/Enemy/States/Motion/enemy_run_state.gd" id="4_rqmjv"]
 [ext_resource type="Texture2D" uid="uid://dqwb1ks8sdajf" path="res://Assets/Sprites/Characters/enemy/attack/at.r.3.png" id="5_6hqir"]
 [ext_resource type="Texture2D" uid="uid://bcpiymcmvic3v" path="res://Assets/Sprites/Characters/enemy/New Piskel-6.png.png" id="5_08c0o"]
 [ext_resource type="Texture2D" uid="uid://rhp13h378esq" path="res://Assets/Sprites/Characters/enemy/New Piskel-3.png (8).png" id="5_ymi2d"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/States/Motion/enemy_chase_state.gd" id="6_4foif"]
+[ext_resource type="Script" uid="uid://iqccrf328mi4" path="res://Scripts/Characters/Enemy/States/Motion/enemy_chase_state.gd" id="6_4foif"]
 [ext_resource type="Texture2D" uid="uid://crsewjh833hsr" path="res://Assets/Sprites/Characters/enemy/New Piskel-1.png (14).png" id="6_ayjf6"]
 [ext_resource type="Texture2D" uid="uid://bj4pgdojc45d7" path="res://Assets/Sprites/Characters/enemy/New Piskel-5.png.png" id="6_nm7kt"]
 [ext_resource type="Texture2D" uid="uid://ddbllvg8pqvfv" path="res://Assets/Sprites/Characters/enemy/attack/at.r.4.png" id="6_ra4hx"]
 [ext_resource type="Texture2D" uid="uid://drwvckrw7n5ry" path="res://Assets/Sprites/Characters/enemy/attack/at.r.5.png" id="7_0x2hr"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/States/Combat/enemy_hit_state.gd" id="7_v353v"]
+[ext_resource type="Script" uid="uid://clva4w67vrjwm" path="res://Scripts/Characters/Enemy/States/Combat/enemy_hit_state.gd" id="7_v353v"]
 [ext_resource type="Texture2D" uid="uid://beksc1w0ntwcq" path="res://Assets/Sprites/Characters/enemy/New Piskel-2.png (15).png" id="7_yq8rp"]
 [ext_resource type="Texture2D" uid="uid://bb13wk7k7wvw6" path="res://Assets/Sprites/Characters/enemy/attack/at.l.1.png" id="8_6p3qn"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/States/Combat/enemy_attack_state.gd" id="8_llcxt"]
-[ext_resource type="Script" path="res://Scripts/Characters/Enemy/States/enemy_die_state.gd" id="9_t1m23"]
+[ext_resource type="Script" uid="uid://dvuovgejdo824" path="res://Scripts/Characters/Enemy/States/Combat/enemy_attack_state.gd" id="8_llcxt"]
+[ext_resource type="Script" uid="uid://dt72e5kubafry" path="res://Scripts/Characters/Enemy/States/enemy_die_state.gd" id="9_t1m23"]
 [ext_resource type="Texture2D" uid="uid://bviiyovp7vg7o" path="res://Assets/Sprites/Characters/enemy/attack/at.l.2.png" id="9_ttrll"]
 [ext_resource type="Texture2D" uid="uid://b0r8yxwet8ir6" path="res://Assets/Sprites/Characters/enemy/r.l.1.png" id="10_j48q8"]
 [ext_resource type="Texture2D" uid="uid://rnijytrqgvas" path="res://Assets/Sprites/Characters/enemy/attack/at.l.3.png" id="10_m2o0x"]
@@ -530,7 +530,7 @@ shape = SubResource("CapsuleShape2D_rk7jn")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
-animation = &"Death_left"
+animation = &"Attack_up"
 
 [node name="RayCast2D2_Front" type="RayCast2D" parent="."]
 target_position = Vector2(0, 300)

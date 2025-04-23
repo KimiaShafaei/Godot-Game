@@ -1,10 +1,10 @@
-res://Scenes/Levels/level_2.tscn
-res://addons/scene_manager/scene_manager.gd
-res://Scenes/Prefabs/Characters/enemy_with_path.tscn
-res://Scripts/Characters/enemy_path_follow_2d.gd
 res://Scenes/Prefabs/Characters/enemy.tscn
+res://addons/scene_manager/scene_manager.gd
 res://Scripts/Characters/Enemy/enemy_controller.gd
+res://Scenes/Levels/level_2.tscn
 res://Scenes/Prefabs/Characters/player.tscn
-res://Scripts/Characters/Enemy/enemy_state_machine.gd
+res://Scenes/Prefabs/Characters/enemy_with_path.tscn
 res://Scripts/Characters/Enemy/States/Motion/enemy_walk_state.gd
+res://Scripts/Characters/Enemy/States/Motion/enemy_chase_state.gd
 res://Scripts/Characters/Enemy/States/enemy_die_state.gd
+res://Scripts/Characters/Player/player_controller.gd
