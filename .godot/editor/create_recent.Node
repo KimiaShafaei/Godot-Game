@@ -1,3 +1,5 @@
+CollisionShape2D
+Area2D
 Node
 Button
 HBoxContainer
@@ -7,8 +9,6 @@ ColorRect
 SubViewport
 TextureProgressBar
 ProgressBar
-CollisionShape2D
 AnimatedSprite2D
 Timer
 RayCast2D
-StaticBody2D

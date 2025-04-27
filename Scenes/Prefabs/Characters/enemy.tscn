@@ -1,4 +1,4 @@
-[gd_scene load_steps=96 format=3 uid="uid://dy1yfnp1t85kc"]
+[gd_scene load_steps=95 format=3 uid="uid://dy1yfnp1t85kc"]
 
 [ext_resource type="Texture2D" uid="uid://bmge0u6qam3x0" path="res://Assets/Sprites/Characters/enemy/New Piskel-4.png (2).png" id="1_6n5kn"]
 [ext_resource type="Script" uid="uid://dhsuvld0sjsxr" path="res://Scripts/Characters/Enemy/enemy_controller.gd" id="1_pf407"]
@@ -90,6 +90,8 @@
 [ext_resource type="Texture2D" uid="uid://br3fjtg8i0jic" path="res://Assets/Sprites/Characters/blood/b.4.png" id="79_1485f"]
 [ext_resource type="Texture2D" uid="uid://cn3h2tfqoxwgr" path="res://Assets/Sprites/Characters/blood/b.5.png" id="80_2wct8"]
 [ext_resource type="Texture2D" uid="uid://c2gww3a4xxv40" path="res://Assets/Sprites/Characters/blood/b.6.png" id="81_2nr3i"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uvvyh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk7jn"]
 radius = 32.0
@@ -435,9 +437,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_fghf7"]
-radius = 100.0
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_ckgfi"]
 animations = [{
 "frames": [{
@@ -493,10 +492,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uvrwv"]
-radius = 24.0
-height = 48.0
-
 [node name="Enemy" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_pf407")
 
@@ -524,6 +519,12 @@ script = ExtResource("8_llcxt")
 [node name="DieState" type="Node" parent="StateManger"]
 script = ExtResource("9_t1m23")
 
+[node name="DetectArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
+scale = Vector2(20, 20)
+shape = SubResource("CircleShape2D_uvvyh")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_rk7jn")
 
@@ -531,25 +532,6 @@ shape = SubResource("CapsuleShape2D_rk7jn")
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
 animation = &"Attack_up"
-
-[node name="RayCast2D2_Front" type="RayCast2D" parent="."]
-target_position = Vector2(0, 300)
-collision_mask = 2
-
-[node name="RayCast2D_Right" type="RayCast2D" parent="."]
-target_position = Vector2(300, 0)
-collision_mask = 2
-
-[node name="RayCast2D_Left" type="RayCast2D" parent="."]
-target_position = Vector2(-300, 0)
-collision_mask = 2
-
-[node name="HearingArea2D" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="HearingArea2D"]
-shape = SubResource("CircleShape2D_fghf7")
 
 [node name="ShootingRayCast2D" type="RayCast2D" parent="."]
 enabled = false
@@ -569,10 +551,6 @@ sprite_frames = SubResource("SpriteFrames_ckgfi")
 animation = &"Blood2"
 frame = 5
 frame_progress = 1.0
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2(216, -24)
-shape = SubResource("CapsuleShape2D_uvrwv")
 
 [node name="understanding" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("35_lxvne")
