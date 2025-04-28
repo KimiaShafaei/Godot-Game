@@ -525,10 +525,10 @@ script = ExtResource("9_t1m23")
 scale = Vector2(20, 20)
 shape = SubResource("CircleShape2D_uvvyh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="EnemyCollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_rk7jn")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="EnemyAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
 animation = &"Attack_up"
@@ -543,7 +543,7 @@ wait_time = 5.0
 
 [node name="ShootingTimer" type="Timer" parent="."]
 
-[node name="Blood" type="AnimatedSprite2D" parent="."]
+[node name="BloodAnimatedSprite" type="AnimatedSprite2D" parent="."]
 visible = false
 position = Vector2(208, -24)
 scale = Vector2(0.078125, 0.046875)

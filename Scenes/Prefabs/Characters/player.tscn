@@ -519,7 +519,7 @@ script = ExtResource("8_wpk2a")
 scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="PlayerAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2.14577e-06, -4)
 scale = Vector2(0.0625, 0.0703125)
 sprite_frames = SubResource("SpriteFrames_no5v7")

@@ -119,6 +119,8 @@ shape = SubResource("RectangleShape2D_tmhtp")
 position = Vector2(400, 424)
 scale = Vector2(0.608714, 0.634351)
 disable_mode = 2
+collision_layer = 1
+collision_mask = 1
 runnig_speed = 600
 
 [node name="Camera2D" type="Camera2D" parent="."]

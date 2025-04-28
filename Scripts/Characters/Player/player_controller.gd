@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var runnig_speed = 400
 @export var healths = 3
 
-@onready var anim = $AnimatedSprite2D
+@onready var anim = $PlayerAnimatedSprite2D
 @onready var tile_map = get_node("../TileMapLayer")
 @onready var walking_sound = $walking
 @onready var background_sound = get_node("../background")
