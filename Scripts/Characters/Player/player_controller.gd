@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name Player
+
 @export var speed = 200
 @export var runnig_speed = 400
 @export var healths = 3
@@ -92,7 +94,7 @@ func attack_to_enemy(enemy):
 	if global_position.distance_to(enemy.global_position) < 40:
 		anim.play("Attack_%s" % _last_side)
 		await anim.animation_finished
-		enemy.die_enemy()
+		enemy.take_damage()
 
 func take_damage():
 	healths -= 1

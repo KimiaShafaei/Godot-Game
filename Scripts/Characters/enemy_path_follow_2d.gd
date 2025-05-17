@@ -21,7 +21,7 @@ func _process(delta: float) -> void:
 
 func handle_chasing(delta: float) -> void:
 	var distance_to_player = enemy.global_position.distance_to(player.global_position)
-	var direction = (player.global_position - enemy.global_position).normalized()
+	var direction = (enemy.player.global_position - enemy.global_position).normalized()
 	var next_position = enemy.global_position + direction * enemy.running_speed * delta
 	
 	if enemy.tile_map.is_point_walkable(next_position):

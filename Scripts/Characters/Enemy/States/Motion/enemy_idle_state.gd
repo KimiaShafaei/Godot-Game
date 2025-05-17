@@ -3,14 +3,11 @@ extends Node
 var enemy
 
 func enter():
-	enemy._play_idle()
+	enemy._play_idle_animation(enemy.velocity.normalized())
 
 func _physics_process(_delta):
-	enemy.velocity = Vector2.ZERO
-
-	if enemy.detect_player():
+	if enemy.can_see_player():
 		enemy.state_manager.change_state("ChasingState")
 	
-
 func exit():
 	pass
