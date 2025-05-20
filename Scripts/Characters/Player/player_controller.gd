@@ -5,6 +5,7 @@ class_name Player
 @export var speed = 200
 @export var runnig_speed = 400
 @export var healths = 3
+@export var invisibility_color: Color = Color(1, 1, 1, 0.4)
 
 @onready var anim = $PlayerAnimatedSprite2D
 @onready var tile_map = get_node("../TileMapLayer")
@@ -13,6 +14,8 @@ class_name Player
 @onready var blood_anim = $Blood
 @onready var health_bar = get_node("../ProgressBar/HealthBar")
 @onready var state_manager = $StateManager
+@onready var invisible_sound = $InvisibilitySound
+@onready var invisible_timer = $InvisibilityTimer
 
 var _path: Array = []
 var _current_index = 0

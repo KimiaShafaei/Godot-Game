@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=3 uid="uid://c84l74ckv5wpw"]
+[gd_scene load_steps=93 format=3 uid="uid://c84l74ckv5wpw"]
 
 [ext_resource type="Script" uid="uid://ca4ybkm82j5ii" path="res://Scripts/Characters/Player/player_controller.gd" id="1_2tcqa"]
 [ext_resource type="Script" uid="uid://d2lclr86oxua5" path="res://Scripts/Characters/Player/player_state_machine.gd" id="2_aoubu"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://dgubb5rspeggx" path="res://Assets/Sprites/Characters/Player/attack/att.r.3.png" id="8_i2ed7"]
 [ext_resource type="Script" uid="uid://j8j6anltv0w" path="res://Scripts/Characters/Player/States/dead_state.gd" id="8_wpk2a"]
 [ext_resource type="Texture2D" uid="uid://dvdkh67q5sewf" path="res://Assets/Sprites/Characters/Player/attack/att.l.4.png" id="9_cgejy"]
+[ext_resource type="Script" uid="uid://oswryaa8ulho" path="res://Scripts/Characters/Player/States/skill/invisibility_state.gd" id="9_gagi3"]
 [ext_resource type="Texture2D" uid="uid://2mvrpir4w2bh" path="res://Assets/Sprites/Characters/Player/attack/att.r.4.png" id="9_pxrhn"]
 [ext_resource type="Texture2D" uid="uid://bgnayqy52myf3" path="res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png" id="9_s1d1u"]
 [ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/صدای پوتین.mp3" id="10_3pem5"]
@@ -515,6 +516,9 @@ script = ExtResource("7_2hrdj")
 [node name="DieState" type="Node" parent="StateManager"]
 script = ExtResource("8_wpk2a")
 
+[node name="InvisibilityState" type="Node" parent="StateManager"]
+script = ExtResource("9_gagi3")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
@@ -538,3 +542,10 @@ animation = &"Blood"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ab0jv")
+
+[node name="InvisibilitySound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="InvisibilityTimer" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="timeout" from="InvisibilityTimer" to="StateManager/InvisibilityState" method="_on_invisibility_timer_timeout"]

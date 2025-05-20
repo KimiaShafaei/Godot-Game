@@ -15,7 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="10_8c7mm"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
 [ext_resource type="PackedScene" uid="uid://bh57wf0npfylg" path="res://Scenes/Prefabs/Characters/enemy_with_path.tscn" id="13_lr1w7"]
-[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/progress_bar.tscn" id="16_0imrv"]
+[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="16_0imrv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1p81t"]
 texture = ExtResource("2_8374t")
