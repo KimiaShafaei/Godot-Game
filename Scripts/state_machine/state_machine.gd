@@ -1,15 +1,8 @@
 extends Node
-# Base interface for a generic state machine.
-# It handles initializing, setting the machine active or not
-# delegating _physics_process, _input calls to the State nodes,
-# and changing the current/active state.
-# See the PlayerV2 scene for an example on how to use it.
 
 signal state_changed(current_state)
 
-# You should set a starting node from the inspector or on the node that inherits
-# from this state machine interface. If you don't, the game will default to
-# the first state in the state machine's children.
+
 @export var start_state: NodePath
 var states_map = {}
 
@@ -21,8 +14,11 @@ var _active = false:
 		set_active(value)
 
 func _enter_tree():
+	print("StateMachine: Entering tree")
+	print("WHy",start_state.get_name_count())
 	if start_state.is_empty():
 		start_state = get_child(0).get_path()
+		print(start_state)
 	for child in get_children():
 		var err = child.finished.connect(_change_state)
 		if err:

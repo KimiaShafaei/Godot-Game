@@ -1,0 +1,126 @@
+extends CharacterBody2D
+
+@export var FOV: Dictionary = {
+	"PatrollingState": 60.0,
+	"ChasingState": 120.0,
+	"SearchingState": 100.0
+}
+
+@export var SPEED: Dictionary = {
+	"PatrollingState": 60.0,
+	"ChasingState": 100.0,
+	"SearchingState": 80.0
+}
+
+#it should assine to paths node2D (wayponints is in path node)
+@export var patrol_points: NodePath
+@export var enemy_healths: int = 1
+
+#it's a sprite2d node in enemy charecterBody2D node
+@onready var enemy_sprite: Sprite2D = $EnemyAnimatedSprite2D
+@onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
+#It's a node2D thats a raycast2D node in it
+@onready var player_detect = $PlayerDetect
+@onready var detect_raycast = $Raycast2D
+@onready var detect_sound = $understanding
+@onready var chase_timer = $ChasingTimer
+@onready var shoot_timer = $ShootingTimer
+@onready var shoot_sound = $ShootingSound
+@onready var blood_anim = $BloodAnimatedSprite
+@onready var state_manager = $StateManager
+
+var _last_side: String = "down"
+var _waypoints: Array = []
+var curr_waypoint: int = 0
+var _player_ref: Player
+
+func _ready():
+	set_physics_process(false)
+	create_waypoints()
+	_player_ref = get_tree().get_first_node_in_group("player")
+	call_deferred("set_physics_process", true)
+
+	state_manager.init(self)
+	state_manager.change_state("PatrollingState")
+
+func _physics_process(delta: float) -> void:
+	if Input.is_action_just_pressed("set_target"):
+		nav_agent.target_position = get_global_mouse_position()
+	raycast_to_player()
+	update_navigation()
+
+func update_navigation() -> void:
+	if nav_agent.is_navigation_finished() == false:
+		var next_path_position: Vector2 = nav_agent.get_next_path_position()
+		enemy_sprite.look_at(next_path_position)
+
+		var ini_v = global_position.direction_to(next_path_position) * SPEED[state_manager.current_state.name]
+		nav_agent.set_velocity(ini_v)
+
+#make velocity_computed signal on navigation agent node
+func _on_nav_agent_velocity_computed(safe_velocity: Vector2) -> void:
+	velocity = safe_velocity
+	move_and_slide()
+
+#Get the field of view angle
+func get_fov_angle() -> float:
+	var direction = global_position.direction_to(_player_ref.global_position)
+	var dot_p = direction.dot(velocity.normalized())
+	if dot_p >= -1.0 and dot_p <= 1.0:
+		return rad_to_deg(acos(dot_p))
+	return 0.0
+
+func player_in_fov() -> bool:
+	return get_fov_angle() < FOV[state_manager.current_state.name]
+
+func create_waypoints() -> void:
+	for p in get_node(patrol_points).get_children():
+		_waypoints.append(p.global_position)
+
+#Rotate the raycast2D to the player
+func raycast_to_player() -> void:
+	player_detect.look_at(_player_ref.global_position)
+
+func detect_player() -> bool:
+	var i = detect_raycast.get_collider()
+	if i != null:
+		return i.is_in_group("player")
+	return false
+
+func can_see_player() -> bool:
+	return player_in_fov() and detect_player()
+
+func _play_idle_animation(direction: Vector2) -> void:
+	enemy_sprite.flip_h = false
+	enemy_sprite.play("Idle_%s" % _last_side)
+
+func _play_walk_animation(direction: Vector2) -> void:
+	if abs(direction.x) > abs(direction.y):
+		enemy_sprite.flip_h = false
+		_last_side = "right" if direction.x > 0 else "left"
+		enemy_sprite.play("Walk_%s" % _last_side)
+	else:
+		enemy_sprite.flip_h = false
+		_last_side = "down" if direction.y > 0 else "up"
+		enemy_sprite.play("Walk_%s" % _last_side)
+
+func _play_run_animation(direction: Vector2) -> void:
+	if abs(direction.x) > abs(direction.y):
+		enemy_sprite.flip_h = false
+		_last_side = "right" if direction.x > 0 else "left"
+		enemy_sprite.play("Run_%s" % _last_side)
+	else:
+		enemy_sprite.flip_h = false
+		_last_side = "down" if direction.y > 0 else "up"
+		enemy_sprite.play("Run_%s" % _last_side)
+
+func _play_attack_animation() -> void:
+	enemy_sprite.play("Attack_%s" % _last_side)
+	await enemy_sprite.animation_finished()
+
+func die_enemy_animation() -> void:
+	blood_anim.visible = true
+	blood_anim.play("Blood2")
+	await blood_anim.animation_finished()
+	enemy_sprite.play("Die_%s" % _last_side)
+	await enemy_sprite.animation_finished()

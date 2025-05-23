@@ -1,33 +1,28 @@
 extends Node
 
-class_name PlayerState
+class_name EnemyState
 
-# warning-ignore:unused_signal
 signal finished(next_state_name)
 
+var enemy
 
-var player
-
-
-func _init(player_instance):
-	player = player_instance
+func _init(enemy_instance):
+    enemy = enemy_instance
 
 func enter():
-	pass
+    pass
 
 func exit():
-	pass
+    pass
 
 func _input(event):
-	pass
+    pass
 
 func _physics_process(delta):
-	pass
-
+    pass
 
 func update(_delta):
-	pass
-
+    pass
 
 func _on_animation_finished(_anim_name):
-	pass
+    pass
