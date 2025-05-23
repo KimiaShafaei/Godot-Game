@@ -19,6 +19,6 @@ func visible():
 
 func exit():
 	player.invisible_timer.stop()
-	player.invisible_timer.timeout.disconnect(_on_invisibility_timer_timeout)
+	#player.invisible_timer.timeout.disconnect(_on_invisibility_timer_timeout)
 	player.anim.modulate = Color(1, 1, 1, 1)
 	player_collision.disabled = false

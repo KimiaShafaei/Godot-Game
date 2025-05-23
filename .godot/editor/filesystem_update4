@@ -1,11 +1,8 @@
-res://Scenes/Levels/level_1.tscn
-res://addons/scene_manager/scene_manager.gd
-res://Scenes/Prefabs/UI/progress_bar.tscn
-res://Scenes/Levels/level_2.tscn
-res://Scripts/Characters/Enemy/States/Combat/enemy_hit_state.gd
+res://Scripts/Characters/Player/player_controller.gd
 res://Scenes/Prefabs/UI/invisibility_ui.tscn
-res://Scripts/UI/inv_button.gd
-res://Scripts/UI/invs_bar.gd
+res://addons/scene_manager/scene_manager.gd
+res://Scenes/Levels/level_1.tscn
+res://Scenes/Levels/level_2.tscn
 res://Scenes/Prefabs/Characters/enemy.tscn
 res://Scenes/Prefabs/Characters/player.tscn
 res://Scripts/Characters/Player/States/skill/invisibility_state.gd
