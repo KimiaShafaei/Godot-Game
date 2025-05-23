@@ -1,75 +1,41 @@
 extends PathFollow2D
 
-@export var speed: float = 50
-@export var chase_speed:float = 80
-@export var chase_range_multiple:float = 5
-@export var shooting_distance:float = 100
-
-@onready var enemy = $Enemy
-@onready var detect_sound = $Enemy/HearingArea2D/understanding
-@onready var chase_timer = $Enemy/ChasingTimer
+@onready var enemy = $"Enemy"
+@onready var detect_sound = $"Enemy/understanding"
 
 var player = null
-var chasing = false
 var last_position = Vector2.ZERO
-
-var path = []
-var current_index = 0
-var tile_map
 
 func _ready() :
 	player = get_tree().get_first_node_in_group("player")
 	last_position = global_position
-	chase_timer.timeout.connect(start_shooting)
-	tile_map = get_tree().get_root().get_node("Level_2/TileMapLayer")
 	
 func _process(delta: float) -> void:
 	if player:
-		if not chasing and enemy.detect_player():
-			start_chasing()
-			player.start_running()
-
-	if player and chasing:
-		var distance_to_player = global_position.distance_to(player.global_position)
-		var direction = (player.global_position - global_position).normalized()	
-		var next_position = global_position + direction * chase_speed * delta
-		if tile_map.is_point_walkable(next_position):
-			global_position = next_position
-			enemy._update_animation(direction)
+		if not enemy.chasing and enemy.detect_player():
+			enemy.state_manager.change_state("ChasingState")
+		if enemy.chasing:
+			handle_chasing(delta)
 		else:
-			print("enemy block by obstcle")
-			
-		enemy._update_animation(direction)
-		if distance_to_player <= shooting_distance and enemy.detect_player():
-			start_shooting()
-		elif distance_to_player > shooting_distance and not enemy.detect_player():
-			print("lost player and back to circle")
-			stop_chasing()		
-	else :
-		progress += speed * delta
-		enemy._update_animation(global_position - last_position)
+			handle_patrolling(delta)
+
+func handle_chasing(delta: float) -> void:
+	var distance_to_player = enemy.global_position.distance_to(player.global_position)
+	var direction = (enemy.player.global_position - enemy.global_position).normalized()
+	var next_position = enemy.global_position + direction * enemy.running_speed * delta
+	
+	if enemy.tile_map.is_point_walkable(next_position):
+		global_position = next_position
+		enemy._play_run_animation(direction)
+	
+	if distance_to_player <= enemy.attack_distance and enemy.detect_player():
+		enemy.state_manager.change_state("AttackState")
+
+func handle_patrolling(delta: float) -> void:
 	last_position = global_position
+	progress += enemy.speed * delta
+	global_position = enemy.path_follow.global_position
+	var direction = (global_position - last_position).normalized()
 
-func start_chasing():
-	if not chasing:
-		print("start chasing")
-		chasing = true
-		enemy.increase_raycast(chase_range_multiple)
-		if not detect_sound.playing:
-			detect_sound.play()
-		
-		
-		path = tile_map.find_path(global_position, player.global_position)
-		current_index = 0
-
-func stop_chasing():
-	if chasing:
-		print("stop chasing")
-		chasing = false
-		enemy.stop_shooting()
-		set_progress_ratio(0.0)
-
-func start_shooting():
-	if chasing:
-		print("start shooting!")
-		enemy.start_shooting()
+	if direction.length() > 0:
+		enemy._play_walk_animation(direction)	

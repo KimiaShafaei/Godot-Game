@@ -4,15 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://ri5ahy7qwrnc" path="res://Assets/Sprites/Tiles/photo_2025-02-13_06-36-36.jpg" id="2_oxrp0"]
 [ext_resource type="Texture2D" uid="uid://dd3r50p0wmkxi" path="res://Assets/Sprites/Tiles/tile.6.png" id="3_xmlci"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="4_83qhl"]
-[ext_resource type="Script" path="res://Scripts/World/tile_map_layer.gd" id="5_c2qrb"]
-[ext_resource type="Script" path="res://Scripts/World/path_drawer.gd" id="6_x08c3"]
+[ext_resource type="Script" uid="uid://dabao4blkwtbs" path="res://Scripts/World/tile_map_layer.gd" id="5_c2qrb"]
+[ext_resource type="Script" uid="uid://b6vpsga6oksn3" path="res://Scripts/World/path_drawer.gd" id="6_x08c3"]
 [ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="7_3spxp"]
 [ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="8_ed51a"]
-[ext_resource type="Script" path="res://Scripts/UI/area_2d.gd" id="9_88x0d"]
+[ext_resource type="Script" uid="uid://kr205wjtiui3" path="res://Scripts/UI/area_2d.gd" id="9_88x0d"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/player.tscn" id="10_2s4eb"]
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="11_b76ij"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="12_g1g3f"]
-[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/progress_bar.tscn" id="13_48rom"]
+[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="13_48rom"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cqucp"]
 texture = ExtResource("2_oxrp0")
@@ -590,9 +590,6 @@ shape = SubResource("RectangleShape2D_qkhiw")
 [node name="Player" parent="." instance=ExtResource("10_2s4eb")]
 position = Vector2(404.624, 410.836)
 scale = Vector2(0.608714, 0.634351)
-speed = 200
-running_speed = 400
-healths = 3
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(396.532, 221.219)

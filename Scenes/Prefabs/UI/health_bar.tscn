@@ -7,7 +7,7 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iunut"]
 texture = ExtResource("1_5w361")
 
-[node name="ProgressBar" type="ProgressBar"]
+[node name="HealthBar" type="ProgressBar"]
 offset_left = -352.0
 offset_top = 96.0
 offset_right = -296.0

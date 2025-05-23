@@ -1,29 +1,31 @@
-[gd_scene load_steps=91 format=3 uid="uid://c84l74ckv5wpw"]
+[gd_scene load_steps=93 format=3 uid="uid://c84l74ckv5wpw"]
 
-[ext_resource type="Script" path="res://Scripts/Characters/Player/player_controller.gd" id="1_2tcqa"]
-[ext_resource type="Script" path="res://Scripts/Characters/Player/player_state_machine.gd" id="2_aoubu"]
+[ext_resource type="Script" uid="uid://ca4ybkm82j5ii" path="res://Scripts/Characters/Player/player_controller.gd" id="1_2tcqa"]
+[ext_resource type="Script" uid="uid://d2lclr86oxua5" path="res://Scripts/Characters/Player/player_state_machine.gd" id="2_aoubu"]
 [ext_resource type="Texture2D" uid="uid://4065ixse7n2c" path="res://Assets/Sprites/Characters/Player/attack/att.b.1.png" id="2_cnmpy"]
-[ext_resource type="Script" path="res://Scripts/Characters/Player/States/motion/walking_state.gd" id="3_5mlw4"]
+[ext_resource type="Script" uid="uid://bwwp84jq21xc" path="res://Scripts/Characters/Player/States/motion/walking_state.gd" id="3_5mlw4"]
 [ext_resource type="Texture2D" uid="uid://dwu8iwwvw8oe0" path="res://Assets/Sprites/Characters/Player/attack/att.b.2.png" id="3_d5yhc"]
 [ext_resource type="Texture2D" uid="uid://dmrwx1c46q4hv" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (2).png" id="3_lep2e"]
 [ext_resource type="Texture2D" uid="uid://s7dmf7p3rboj" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (2).png" id="3_yjsi3"]
 [ext_resource type="Texture2D" uid="uid://cqytpv6t1r58i" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png.png" id="4_4dm2x"]
-[ext_resource type="Script" path="res://Scripts/Characters/Player/States/motion/running_state.gd" id="4_5oe1x"]
+[ext_resource type="Script" uid="uid://bxwl3vd3wdd8o" path="res://Scripts/Characters/Player/States/motion/running_state.gd" id="4_5oe1x"]
 [ext_resource type="Texture2D" uid="uid://cwl5ihsapfkgt" path="res://Assets/Sprites/Characters/Player/attack/att.b.3.png" id="4_eqcgk"]
-[ext_resource type="Script" path="res://Scripts/Characters/Player/States/motion/idle_state.gd" id="5_qssdl"]
+[ext_resource type="Script" uid="uid://d0d7bcxrd6gbp" path="res://Scripts/Characters/Player/States/motion/idle_state.gd" id="5_qssdl"]
 [ext_resource type="Texture2D" uid="uid://cxg2kfkbcsriu" path="res://Assets/Sprites/Characters/Player/New Piskel-1.png (5).png" id="5_x1jye"]
 [ext_resource type="Texture2D" uid="uid://bvdlt7y3xax2c" path="res://Assets/Sprites/Characters/Player/attack/att.l.1.png" id="6_1ituc"]
 [ext_resource type="Texture2D" uid="uid://senqi8m2x4nd" path="res://Assets/Sprites/Characters/Player/attack/att.r.1.png" id="6_he60f"]
 [ext_resource type="Texture2D" uid="uid://dsqfuxndlraw1" path="res://Assets/Sprites/Characters/Player/New Piskel-3.png (3).png" id="6_q0uq2"]
-[ext_resource type="Script" path="res://Scripts/Characters/Player/States/combat/damaged_state.gd" id="6_x4ws7"]
-[ext_resource type="Script" path="res://Scripts/Characters/Player/States/combat/attacking_state.gd" id="7_2hrdj"]
+[ext_resource type="Script" uid="uid://bc7bqc7qwjwjq" path="res://Scripts/Characters/Player/States/combat/hit_state.gd" id="6_vponp"]
+[ext_resource type="Script" uid="uid://dq0jteq4notow" path="res://Scripts/Characters/Player/States/combat/attacking_state.gd" id="7_2hrdj"]
 [ext_resource type="Texture2D" uid="uid://cvg24a6tvds0m" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (7).png" id="7_7v32m"]
 [ext_resource type="Texture2D" uid="uid://b0pnav60tilyb" path="res://Assets/Sprites/Characters/Player/attack/att.r.2.png" id="7_dbsbi"]
 [ext_resource type="Texture2D" uid="uid://tv8glqiur7py" path="res://Assets/Sprites/Characters/Player/attack/att.l.2.png" id="7_g6i4p"]
 [ext_resource type="Texture2D" uid="uid://c6n4whkf3xcjt" path="res://Assets/Sprites/Characters/Player/attack/att.l.3.png" id="8_aartd"]
 [ext_resource type="Texture2D" uid="uid://bv12scf10y47a" path="res://Assets/Sprites/Characters/Player/New Piskel-2.png (5).png" id="8_g7sfn"]
 [ext_resource type="Texture2D" uid="uid://dgubb5rspeggx" path="res://Assets/Sprites/Characters/Player/attack/att.r.3.png" id="8_i2ed7"]
+[ext_resource type="Script" uid="uid://j8j6anltv0w" path="res://Scripts/Characters/Player/States/dead_state.gd" id="8_wpk2a"]
 [ext_resource type="Texture2D" uid="uid://dvdkh67q5sewf" path="res://Assets/Sprites/Characters/Player/attack/att.l.4.png" id="9_cgejy"]
+[ext_resource type="Script" uid="uid://oswryaa8ulho" path="res://Scripts/Characters/Player/States/skill/invisibility_state.gd" id="9_gagi3"]
 [ext_resource type="Texture2D" uid="uid://2mvrpir4w2bh" path="res://Assets/Sprites/Characters/Player/attack/att.r.4.png" id="9_pxrhn"]
 [ext_resource type="Texture2D" uid="uid://bgnayqy52myf3" path="res://Assets/Sprites/Characters/Player/New Piskel-4.png (1).png" id="9_s1d1u"]
 [ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/صدای پوتین.mp3" id="10_3pem5"]
@@ -487,39 +489,45 @@ animations = [{
 radius = 16.0
 height = 32.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_2tcqa")
 metadata/_edit_horizontal_guides_ = [-107.0]
 
-[node name="StateMachine" type="Node" parent="."]
+[node name="StateManager" type="Node" parent="."]
 script = ExtResource("2_aoubu")
 
-[node name="Idle" type="Node" parent="StateMachine"]
+[node name="IdleState" type="Node" parent="StateManager"]
 script = ExtResource("5_qssdl")
 
-[node name="Walk" type="Node" parent="StateMachine"]
+[node name="WalkingState" type="Node" parent="StateManager"]
 script = ExtResource("3_5mlw4")
 
-[node name="Run" type="Node" parent="StateMachine"]
+[node name="RunnigState" type="Node" parent="StateManager"]
 script = ExtResource("4_5oe1x")
 
-[node name="Stagger" type="Node" parent="StateMachine"]
-script = ExtResource("6_x4ws7")
+[node name="HitState" type="Node" parent="StateManager"]
+script = ExtResource("6_vponp")
 
-[node name="Attack" type="Node" parent="StateMachine"]
+[node name="AttackState" type="Node" parent="StateManager"]
 script = ExtResource("7_2hrdj")
+
+[node name="DieState" type="Node" parent="StateManager"]
+script = ExtResource("8_wpk2a")
+
+[node name="InvisibilityState" type="Node" parent="StateManager"]
+script = ExtResource("9_gagi3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="PlayerAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-2.14577e-06, -4)
 scale = Vector2(0.0625, 0.0703125)
 sprite_frames = SubResource("SpriteFrames_no5v7")
-animation = &"Walk_right"
+animation = &"Attack_down"
 
 [node name="walking" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_3pem5")
@@ -534,3 +542,10 @@ animation = &"Blood"
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ab0jv")
+
+[node name="InvisibilitySound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="InvisibilityTimer" type="Timer" parent="."]
+wait_time = 10.0
+
+[connection signal="timeout" from="InvisibilityTimer" to="StateManager/InvisibilityState" method="_on_invisibility_timer_timeout"]
