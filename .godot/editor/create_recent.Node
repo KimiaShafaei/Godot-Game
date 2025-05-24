@@ -12,4 +12,3 @@ CollisionShape2D
 Label
 CanvasLayer
 ColorRect
-MarginContainer

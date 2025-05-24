@@ -12,16 +12,13 @@ extends CharacterBody2D
 	"SearchingState": 80.0
 }
 
-#it should assine to paths node2D (wayponints is in path node)
 @export var patrol_points: NodePath
 @export var enemy_healths: int = 1
 
-#it's a sprite2d node in enemy charecterBody2D node
-@onready var enemy_sprite: Sprite2D = $EnemyAnimatedSprite2D
+@onready var enemy_sprite: AnimatedSprite2D = $EnemyAnimatedSprite2D
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
-#It's a node2D thats a raycast2D node in it
 @onready var player_detect = $PlayerDetect
-@onready var detect_raycast = $Raycast2D
+@onready var detect_raycast = $PlayerDetect/DetectRayCast2D
 @onready var detect_sound = $understanding
 @onready var chase_timer = $ChasingTimer
 @onready var shoot_timer = $ShootingTimer
@@ -43,7 +40,7 @@ func _ready():
 	state_manager.init(self)
 	state_manager.change_state("PatrollingState")
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("set_target"):
 		nav_agent.target_position = get_global_mouse_position()
 	raycast_to_player()
@@ -54,11 +51,12 @@ func update_navigation() -> void:
 		var next_path_position: Vector2 = nav_agent.get_next_path_position()
 		enemy_sprite.look_at(next_path_position)
 
+		print("Current state name: ", state_manager.current_state.name)
 		var ini_v = global_position.direction_to(next_path_position) * SPEED[state_manager.current_state.name]
 		nav_agent.set_velocity(ini_v)
 
 #make velocity_computed signal on navigation agent node
-func _on_nav_agent_velocity_computed(safe_velocity: Vector2) -> void:
+func _on_navigation_agent_2d_velocity_computed(safe_velocity: Vector2) -> void:
 	velocity = safe_velocity
 	move_and_slide()
 
@@ -75,6 +73,7 @@ func player_in_fov() -> bool:
 
 func create_waypoints() -> void:
 	for p in get_node(patrol_points).get_children():
+		print(p.global_position)
 		_waypoints.append(p.global_position)
 
 #Rotate the raycast2D to the player
@@ -90,7 +89,7 @@ func detect_player() -> bool:
 func can_see_player() -> bool:
 	return player_in_fov() and detect_player()
 
-func _play_idle_animation(direction: Vector2) -> void:
+func _play_idle_animation(_direction: Vector2) -> void:
 	enemy_sprite.flip_h = false
 	enemy_sprite.play("Idle_%s" % _last_side)
 
@@ -116,11 +115,11 @@ func _play_run_animation(direction: Vector2) -> void:
 
 func _play_attack_animation() -> void:
 	enemy_sprite.play("Attack_%s" % _last_side)
-	await enemy_sprite.animation_finished()
+	await enemy_sprite.animation_finished
 
 func die_enemy_animation() -> void:
 	blood_anim.visible = true
 	blood_anim.play("Blood2")
-	await blood_anim.animation_finished()
+	await blood_anim.animation_finished
 	enemy_sprite.play("Die_%s" % _last_side)
-	await enemy_sprite.animation_finished()
+	await enemy_sprite.animation_finished

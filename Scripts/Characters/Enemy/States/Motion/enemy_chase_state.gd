@@ -6,7 +6,7 @@ func enter():
 	enemy.chase_timer.timeout.connect(_on_chasing_timer_timeout)
 	enemy.shoot_timer.timeout.connect(_on_shooting_timer_timeout)
 	
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	enemy.nav_agent.target_position = enemy._player_ref.global_position
 	enemy._play_run_animation(enemy.velocity.normalized())
 

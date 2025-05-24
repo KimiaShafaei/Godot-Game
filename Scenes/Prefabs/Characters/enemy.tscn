@@ -534,16 +534,6 @@ _data = {
 [node name="Enemy" type="CharacterBody2D" groups=["enemy"]]
 self_modulate = Color(0.769228, 0, 0.148934, 1)
 script = ExtResource("1_t4ie3")
-FOV = {
-0: 60.0,
-1: 120.0,
-2: 100.0
-}
-SPEED = {
-0: 60.0,
-1: 100.0,
-2: 80.0
-}
 
 [node name="StateManager" type="Node" parent="."]
 script = ExtResource("1_uvvyh")
@@ -585,14 +575,18 @@ scale = Vector2(0.03125, 0.0234375)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
 animation = &"Attack_down"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="EnemyAnimatedSprite2D"]
+[node name="ShootingSound" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(7.15256e-07, -4)
+scale = Vector2(0.03125, 0.0234375)
 stream = ExtResource("76_t4ie3")
 autoplay = true
 
-[node name="ShootingRayCast2D" type="RayCast2D" parent="."]
+[node name="PlayerDetect" type="Node2D" parent="."]
+
+[node name="DetectRayCast2D" type="RayCast2D" parent="PlayerDetect"]
 enabled = false
 target_position = Vector2(300, 300)
-collision_mask = 2
+collision_mask = 3
 
 [node name="ChasingTimer" type="Timer" parent="."]
 wait_time = 5.0
@@ -621,3 +615,4 @@ stream = ExtResource("35_lxvne")
 
 [connection signal="timeout" from="ChasingTimer" to="." method="_on_chasing_timer_timeout"]
 [connection signal="timeout" from="ShootingTimer" to="." method="_on_shooting_timer_timeout"]
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_velocity_computed"]
