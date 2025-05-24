@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dqgq6dl0ax7pd"]
+
+[node name="Game Ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MC" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Scorelbael" type="Label" parent="MC"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "0/100
+
+"
+
+[node name="Timelabel" type="Label" parent="MC"]
+layout_mode = 2
+text = "1000s"

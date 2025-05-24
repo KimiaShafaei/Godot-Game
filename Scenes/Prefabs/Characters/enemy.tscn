@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=3 uid="uid://dy1yfnp1t85kc"]
+[gd_scene load_steps=99 format=3 uid="uid://dy1yfnp1t85kc"]
 
 [ext_resource type="Texture2D" uid="uid://bmge0u6qam3x0" path="res://Assets/Sprites/Characters/enemy/New Piskel-4.png (2).png" id="1_6n5kn"]
 [ext_resource type="Script" uid="uid://dhsuvld0sjsxr" path="res://Scripts/Characters/Enemy/enemy_controller.gd" id="1_t4ie3"]
@@ -84,6 +84,7 @@
 [ext_resource type="Texture2D" uid="uid://b8hv148uwvtrx" path="res://Assets/Sprites/Characters/blood/blood.6.png" id="73_6spje"]
 [ext_resource type="Texture2D" uid="uid://cijmm4akyflfi" path="res://Assets/Sprites/Characters/blood/blood.7.png" id="74_jcnv3"]
 [ext_resource type="Texture2D" uid="uid://cp0mm1b75gg7u" path="res://Assets/Sprites/Characters/blood/blood.8.png" id="75_r6mny"]
+[ext_resource type="AudioStream" uid="uid://b07v3qtagkjeg" path="res://Assets/Musics/shlik.mp3" id="76_t4ie3"]
 [ext_resource type="Texture2D" uid="uid://by568w6pe0sx6" path="res://Assets/Sprites/Characters/blood/b.1.png" id="76_v2dv6"]
 [ext_resource type="Texture2D" uid="uid://bpsnvy5ys0xmm" path="res://Assets/Sprites/Characters/blood/b.2.png" id="77_a4vva"]
 [ext_resource type="Texture2D" uid="uid://canesbpoq73vu" path="res://Assets/Sprites/Characters/blood/b.3.png" id="78_n5dof"]
@@ -492,7 +493,45 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_uvvyh"]
+resource_name = "alert"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(0.769228, 0, 0.148934, 1), Color(0.661513, 0, 0.122274, 1), Color(0.999999, 0.988252, 0.987234, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_t4ie3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.769228, 0, 0.148934, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vfsgb"]
+_data = {
+&"RESET": SubResource("Animation_t4ie3"),
+&"alert": SubResource("Animation_uvvyh")
+}
+
 [node name="Enemy" type="CharacterBody2D" groups=["enemy"]]
+self_modulate = Color(0.769228, 0, 0.148934, 1)
 script = ExtResource("1_t4ie3")
 FOV = {
 0: 60.0,
@@ -541,7 +580,11 @@ shape = SubResource("CapsuleShape2D_rk7jn")
 [node name="EnemyAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0859375, 0.101562)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
-animation = &"Death_right"
+animation = &"Attack_up"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="EnemyAnimatedSprite2D"]
+stream = ExtResource("76_t4ie3")
+autoplay = true
 
 [node name="ShootingRayCast2D" type="RayCast2D" parent="."]
 enabled = false
@@ -561,6 +604,12 @@ sprite_frames = SubResource("SpriteFrames_ckgfi")
 animation = &"Blood2"
 frame = 5
 frame_progress = 1.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../EnemyAnimatedSprite2D")
+libraries = {
+&"": SubResource("AnimationLibrary_vfsgb")
+}
 
 [node name="understanding" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("35_lxvne")

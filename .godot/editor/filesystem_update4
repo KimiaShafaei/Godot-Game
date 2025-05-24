@@ -1,8 +1,4 @@
-res://Scripts/Characters/Player/player_controller.gd
-res://Scenes/Prefabs/UI/invisibility_ui.tscn
-res://addons/scene_manager/scene_manager.gd
-res://Scenes/Levels/level_1.tscn
-res://Scenes/Levels/level_2.tscn
 res://Scenes/Prefabs/Characters/enemy.tscn
+res://addons/scene_manager/scene_manager.gd
 res://Scenes/Prefabs/Characters/player.tscn
-res://Scripts/Characters/Player/States/skill/invisibility_state.gd
+res://game_ui.tscn

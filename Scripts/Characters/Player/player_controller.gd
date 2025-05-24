@@ -16,6 +16,7 @@ class_name Player
 @onready var state_manager = $StateManager
 @onready var invisible_sound = $InvisibilitySound
 @onready var invisible_timer = $InvisibilityTimer
+@onready var nva_agent: NavigationAgent2D = $NVAagent
 
 var _path: Array = []
 var _current_index = 0

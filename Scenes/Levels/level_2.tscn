@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://cs35iobq7t36k"]
+[gd_scene load_steps=26 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="2_8374t"]
@@ -78,6 +78,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tmhtp"]
 size = Vector2(984.689, 698.302)
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_yxf76"]
+vertices = PackedVector2Array(314.438, 79.6328, 68.9063, 148.242, 1, 26, 317.43, 26, 605.578, 19.0469, 662.68, 67.3594, 477.57, 61.9219, 333.609, 95.0391, 330.969, 142.547, 746.313, 89.8438, 774.672, 135.93, 719.258, 89.0391)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6), PackedInt32Array(7, 4, 6), PackedInt32Array(7, 6, 8), PackedInt32Array(9, 10, 11)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-16, 16, 328, 16, 320, 160, 480, 72, 752, 80, 816, 184, 608, 8, 64, 160)])
+
 [node name="Level_2" type="Node2D"]
 
 [node name="background" type="AudioStreamPlayer2D" parent="."]
@@ -141,5 +146,29 @@ position = Vector2(-24, 16)
 scale = Vector2(0.907357, 0.749598)
 
 [node name="ProgressBar" parent="." instance=ExtResource("16_0imrv")]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_yxf76")
+
+[node name="Polygon2D" type="Polygon2D" parent="NavigationRegion2D"]
+color = Color(0.964503, 0, 0.3518, 1)
+polygon = PackedVector2Array(320, 320, 544, 320, 544, 192, 320, 192)
+
+[node name="Polygon2D2" type="Polygon2D" parent="NavigationRegion2D"]
+color = Color(0.498823, 0.119401, 0.8943, 1)
+polygon = PackedVector2Array(32, 320, 96, 320, 96, 384, 160, 384, 160, 320, 160, 192, 32, 192)
+
+[node name="Polygon2D3" type="Polygon2D" parent="NavigationRegion2D"]
+color = Color(0.22992, 0.466973, 0.158757, 1)
+polygon = PackedVector2Array(672, 320, 832, 320, 832, 192, 672, 192)
+
+[node name="Polygon2D4" type="Polygon2D" parent="NavigationRegion2D"]
+color = Color(0.915134, 0, 0.160188, 1)
+polygon = PackedVector2Array(544, 256, 672, 256, 672, 192, 704, 192, 704, 128, 512, 128, 512, 192, 544, 192)
+
+[node name="NavigationLink2D" type="NavigationLink2D" parent="."]
+position = Vector2(8, 8)
+start_position = Vector2(768, 128)
+end_position = Vector2(0, 24)
 
 [connection signal="body_entered" from="box/Area2D" to="box/Area2D" method="_on_body_entered"]

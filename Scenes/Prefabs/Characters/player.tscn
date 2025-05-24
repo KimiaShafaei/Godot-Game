@@ -527,7 +527,7 @@ shape = SubResource("CapsuleShape2D_maouh")
 position = Vector2(-2.14577e-06, -4)
 scale = Vector2(0.0625, 0.0703125)
 sprite_frames = SubResource("SpriteFrames_no5v7")
-animation = &"Attack_down"
+animation = &"Run_right"
 
 [node name="walking" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_3pem5")
