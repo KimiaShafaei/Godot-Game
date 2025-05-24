@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://c6rkbcmufwp17"]
+[gd_scene load_steps=28 format=4 uid="uid://c6rkbcmufwp17"]
 
 [ext_resource type="Texture2D" uid="uid://dd3r50p0wmkxi" path="res://Assets/Sprites/Tiles/tile.6.png" id="1_8rnd2"]
 [ext_resource type="Texture2D" uid="uid://ctx20m0ii7w51" path="res://Assets/Sprites/Tiles/tile.5.png" id="2_i4hbv"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="10_i5g5g"]
 [ext_resource type="Texture2D" uid="uid://d2w0pkcxxaand" path="res://Assets/Sprites/Tiles/tile.14.png" id="10_slbhm"]
 [ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="11_3osng"]
+[ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/player.tscn" id="13_i5g5g"]
+[ext_resource type="PackedScene" uid="uid://cjk17i4vhqwrg" path="res://enemy_2.tscn" id="14_3osng"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xq0e5"]
 texture = ExtResource("1_8rnd2")
@@ -135,3 +137,9 @@ animation = &"opening_box"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(232, 104)
 shape = SubResource("RectangleShape2D_dnyrp")
+
+[node name="Player" parent="." instance=ExtResource("13_i5g5g")]
+position = Vector2(568, 544)
+
+[node name="Enemy2" parent="." instance=ExtResource("14_3osng")]
+position = Vector2(544, 112)

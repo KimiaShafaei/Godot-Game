@@ -93,10 +93,11 @@
 [ext_resource type="Texture2D" uid="uid://c2gww3a4xxv40" path="res://Assets/Sprites/Characters/blood/b.6.png" id="81_2nr3i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uvvyh"]
+radius = 0.8
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk7jn"]
-radius = 32.0
-height = 96.0
+radius = 24.0
+height = 48.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8cy0i"]
 animations = [{
@@ -493,6 +494,21 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_t4ie3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.769228, 0, 0.148934, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_uvvyh"]
 resource_name = "alert"
 length = 0.8
@@ -507,21 +523,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(0.769228, 0, 0.148934, 1), Color(0.661513, 0, 0.122274, 1), Color(0.999999, 0.988252, 0.987234, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_t4ie3"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("..:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(0.769228, 0, 0.148934, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vfsgb"]
@@ -571,6 +572,7 @@ script = ExtResource("9_t1m23")
 [node name="DetectArea" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
+position = Vector2(4.76837e-07, 0)
 scale = Vector2(20, 20)
 shape = SubResource("CircleShape2D_uvvyh")
 
@@ -578,9 +580,10 @@ shape = SubResource("CircleShape2D_uvvyh")
 shape = SubResource("CapsuleShape2D_rk7jn")
 
 [node name="EnemyAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.0859375, 0.101562)
+position = Vector2(7.15256e-07, -4)
+scale = Vector2(0.03125, 0.0234375)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
-animation = &"Attack_up"
+animation = &"Attack_down"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="EnemyAnimatedSprite2D"]
 stream = ExtResource("76_t4ie3")
@@ -613,6 +616,8 @@ libraries = {
 
 [node name="understanding" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("35_lxvne")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 
 [connection signal="timeout" from="ChasingTimer" to="." method="_on_chasing_timer_timeout"]
 [connection signal="timeout" from="ShootingTimer" to="." method="_on_shooting_timer_timeout"]

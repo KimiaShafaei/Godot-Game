@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://cs35iobq7t36k"]
+[gd_scene load_steps=27 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="2_8374t"]
@@ -16,6 +16,7 @@
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
 [ext_resource type="PackedScene" uid="uid://bh57wf0npfylg" path="res://Scenes/Prefabs/Characters/enemy_with_path.tscn" id="13_lr1w7"]
 [ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="16_0imrv"]
+[ext_resource type="PackedScene" uid="uid://bgv1onbadoxyj" path="res://waypoint.tscn" id="17_ia1lp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1p81t"]
 texture = ExtResource("2_8374t")
@@ -170,5 +171,28 @@ polygon = PackedVector2Array(544, 256, 672, 256, 672, 192, 704, 192, 704, 128, 5
 position = Vector2(8, 8)
 start_position = Vector2(768, 128)
 end_position = Vector2(0, 24)
+
+[node name="Path1" type="Node2D" parent="."]
+
+[node name="Waypoint" parent="Path1" instance=ExtResource("17_ia1lp")]
+position = Vector2(48, 56)
+
+[node name="Waypoint2" parent="Path1" instance=ExtResource("17_ia1lp")]
+position = Vector2(288, 48)
+
+[node name="Waypoint3" parent="Path1" instance=ExtResource("17_ia1lp")]
+position = Vector2(72, 136)
+
+[node name="Waypoint4" parent="Path1" instance=ExtResource("17_ia1lp")]
+position = Vector2(272, 80)
+
+[node name="Waypoint5" parent="Path1" instance=ExtResource("17_ia1lp")]
+position = Vector2(344, 120)
+
+[node name="Waypoint6" parent="Path1" instance=ExtResource("17_ia1lp")]
+position = Vector2(584, 48)
+
+[node name="Waypoint7" parent="Path1" instance=ExtResource("17_ia1lp")]
+position = Vector2(744, 104)
 
 [connection signal="body_entered" from="box/Area2D" to="box/Area2D" method="_on_body_entered"]

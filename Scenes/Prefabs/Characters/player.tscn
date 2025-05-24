@@ -524,8 +524,8 @@ scale = Vector2(-63.6494, 87.3512)
 shape = SubResource("CapsuleShape2D_maouh")
 
 [node name="PlayerAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2.14577e-06, -4)
-scale = Vector2(0.0625, 0.0703125)
+position = Vector2(-2.38421e-07, -8)
+scale = Vector2(0.0625, 0.046875)
 sprite_frames = SubResource("SpriteFrames_no5v7")
 animation = &"Run_right"
 
