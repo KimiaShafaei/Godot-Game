@@ -3,8 +3,10 @@ var enemy
 
 func enter():
 	enemy.detect_sound.play()
-	enemy.chase_timer.timeout.connect(_on_chasing_timer_timeout)
-	enemy.shoot_timer.timeout.connect(_on_shooting_timer_timeout)
+	if not enemy.chase_timer.timeout.is_connected(_on_chasing_timer_timeout):
+		enemy.chase_timer.timeout.connect(_on_chasing_timer_timeout)
+	if not enemy.shoot_timer.timeout.is_connected(_on_shooting_timer_timeout):
+		enemy.shoot_timer.timeout.connect(_on_shooting_timer_timeout)
 	
 func _physics_process(_delta: float) -> void:
 	enemy.nav_agent.target_position = enemy._player_ref.global_position

@@ -34,6 +34,7 @@ var _player_ref: Player
 func _ready():
 	set_physics_process(false)
 	create_waypoints()
+	#nav_agent.velocity_computed.connect(_on_navigation_agent_2d_velocity_computed)
 	_player_ref = get_tree().get_first_node_in_group("player")
 	call_deferred("set_physics_process", true)
 
@@ -49,12 +50,16 @@ func _physics_process(_delta: float) -> void:
 func update_navigation() -> void:
 	if nav_agent.is_navigation_finished() == false:
 		var next_path_position: Vector2 = nav_agent.get_next_path_position()
-		enemy_sprite.look_at(next_path_position)
+		# enemy_sprite.look_at(next_path_position)
 
+		var direction = global_position.direction_to(next_path_position)
+		var speed = SPEED[state_manager.current_state.name]
 		print("Current state name: ", state_manager.current_state.name)
-		var ini_v = global_position.direction_to(next_path_position) * SPEED[state_manager.current_state.name]
-		nav_agent.set_velocity(ini_v)
-
+		print(speed)
+		velocity  = direction * speed
+	
+	move_and_slide()
+	
 #make velocity_computed signal on navigation agent node
 func _on_navigation_agent_2d_velocity_computed(safe_velocity: Vector2) -> void:
 	velocity = safe_velocity
@@ -75,6 +80,7 @@ func create_waypoints() -> void:
 	for p in get_node(patrol_points).get_children():
 		print(p.global_position)
 		_waypoints.append(p.global_position)
+	print("WAY POINTS: ", _waypoints)
 
 #Rotate the raycast2D to the player
 func raycast_to_player() -> void:
