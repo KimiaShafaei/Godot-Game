@@ -573,7 +573,7 @@ shape = SubResource("CapsuleShape2D_rk7jn")
 position = Vector2(7.15256e-07, -4)
 scale = Vector2(0.03125, 0.0234375)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
-animation = &"Attack_down"
+animation = &"Attack_left"
 
 [node name="ShootingSound" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(7.15256e-07, -4)

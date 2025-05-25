@@ -16,7 +16,7 @@
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="11_x6a6w"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/Characters/enemy.tscn" id="13_5buja"]
 [ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="16_0imrv"]
-[ext_resource type="PackedScene" path="res://waypoint.tscn" id="17_ia1lp"]
+[ext_resource type="PackedScene" uid="uid://bgv1onbadoxyj" path="res://waypoint.tscn" id="17_ia1lp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1p81t"]
 texture = ExtResource("2_8374t")
@@ -153,19 +153,19 @@ stream = ExtResource("11_x6a6w")
 navigation_polygon = SubResource("NavigationPolygon_yxf76")
 
 [node name="Polygon2D" type="Polygon2D" parent="NavigationRegion2D"]
-color = Color(0.964503, 0, 0.3518, 1)
+color = Color(1, 1, 1, 0.0666667)
 polygon = PackedVector2Array(320, 320, 544, 320, 544, 192, 320, 192)
 
 [node name="Polygon2D2" type="Polygon2D" parent="NavigationRegion2D"]
-color = Color(0.498823, 0.119401, 0.8943, 1)
+color = Color(1, 1, 1, 0)
 polygon = PackedVector2Array(32, 320, 96, 320, 96, 384, 160, 384, 160, 320, 160, 192, 32, 192)
 
 [node name="Polygon2D3" type="Polygon2D" parent="NavigationRegion2D"]
-color = Color(0.22992, 0.466973, 0.158757, 1)
+color = Color(0.231373, 0.466667, 0.156863, 0)
 polygon = PackedVector2Array(672, 320, 832, 320, 832, 192, 672, 192)
 
 [node name="Polygon2D4" type="Polygon2D" parent="NavigationRegion2D"]
-color = Color(0.915134, 0, 0.160188, 1)
+color = Color(0.913725, 0, 0.160784, 0)
 polygon = PackedVector2Array(544, 256, 672, 256, 672, 192, 704, 192, 704, 128, 512, 128, 512, 192, 544, 192)
 
 [node name="NavigationLink2D" type="NavigationLink2D" parent="."]

@@ -1,4 +1,5 @@
 res://
+res://Scenes/Levels
 res://Scripts/UI
 res://Scenes/Prefabs/UI
 res://Scripts/Characters/Enemy
@@ -13,6 +14,5 @@ res://Scripts/Characters/Player
 res://Scenes/GUI
 res://Scenes
 res://Scenes/Prefabs
-res://Scenes/Levels
 /Users/kimia/Godot-Game/Scripts
 /Users/kimia/Godot-Game

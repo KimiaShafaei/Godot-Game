@@ -70,22 +70,34 @@ height = 48.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8cy0i"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_px2nv")
+}],
 "loop": true,
 "name": &"Attack_down",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_fptxi")
+}],
 "loop": true,
 "name": &"Attack_left",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_dxdpp")
+}],
 "loop": true,
 "name": &"Attack_right",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_ksv88")
+}],
 "loop": true,
 "name": &"Attack_up",
 "speed": 5.0
@@ -432,7 +444,7 @@ shape = SubResource("CapsuleShape2D_rk7jn")
 position = Vector2(9.53674e-07, 0)
 scale = Vector2(0.0234375, 0.015625)
 sprite_frames = SubResource("SpriteFrames_8cy0i")
-animation = &"Attack_down"
+animation = &"Attack_up"
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="EnemyAnimatedSprite2D"]
 position = Vector2(0, -341.333)
