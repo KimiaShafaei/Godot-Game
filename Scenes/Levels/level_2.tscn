@@ -80,7 +80,7 @@ animations = [{
 size = Vector2(984.689, 698.302)
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_yxf76"]
-vertices = PackedVector2Array(314.438, 79.6328, 68.9062, 148.242, 1, 26, 317.43, 26, 605.578, 19.0469, 662.68, 67.3594, 477.57, 61.9219, 333.609, 95.0391, 330.969, 142.547, 746.312, 89.8438, 774.672, 135.93, 719.258, 89.0391)
+vertices = PackedVector2Array(314.867, 71.9375, 16.0703, 147.641, -4.20312, 26, 317.43, 26, 605.461, 18.9531, 662.68, 67.3594, 477.57, 61.9219, 334.023, 87.7109, 330.969, 142.539, 746.312, 89.8438, 774.672, 135.93, 719.258, 89.0391)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6), PackedInt32Array(7, 4, 6), PackedInt32Array(7, 6, 8), PackedInt32Array(9, 10, 11)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(-16, 16, 328, 16, 320, 160, 480, 72, 752, 80, 816, 184, 608, 8, 64, 160)])
 
@@ -170,7 +170,8 @@ polygon = PackedVector2Array(544, 256, 672, 256, 672, 192, 704, 192, 704, 128, 5
 
 [node name="NavigationLink2D" type="NavigationLink2D" parent="."]
 position = Vector2(48, 32)
-start_position = Vector2(768, 128)
+navigation_layers = 3
+start_position = Vector2(200, 200)
 end_position = Vector2(0, 24)
 
 [node name="Path1" type="Node2D" parent="."]

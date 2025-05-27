@@ -2,18 +2,14 @@ extends Node
 
 var enemy
 
-var frames_since_start = 0
-
 func enter():
-	print("now in patrol state")
-
+	pass
+	
 func _physics_process(_delta):
-	frames_since_start += 1
-
-	if enemy.nav_agent.is_navigation_finished() == true:
+	if enemy.nav_agent.is_navigation_finished():
 		navigate_waypoints()
 	enemy._play_walk_animation(enemy.velocity.normalized())
-	if frames_since_start > 30 and enemy.can_see_player():
+	if enemy.can_see_player():
 		enemy.state_manager.change_state("ChasingState")
 
 func navigate_waypoints() -> void:

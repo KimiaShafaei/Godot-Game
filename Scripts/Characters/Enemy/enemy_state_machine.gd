@@ -10,6 +10,7 @@ func init(e):
 		child.enemy = enemy
 
 func change_state(state_name: String):
+	print("Changing state to: ", state_name)
 	if current_state:
 		current_state.exit()
 	current_state = get_node(state_name)

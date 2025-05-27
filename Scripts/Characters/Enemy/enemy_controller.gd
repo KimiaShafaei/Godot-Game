@@ -54,8 +54,8 @@ func update_navigation() -> void:
 
 		var direction = global_position.direction_to(next_path_position)
 		var speed = SPEED[state_manager.current_state.name]
-		print("Current state name: ", state_manager.current_state.name)
-		print(speed)
+		#print("Current state name: ", state_manager.current_state.name)
+		#print(speed)
 		velocity  = direction * speed
 	
 	move_and_slide()

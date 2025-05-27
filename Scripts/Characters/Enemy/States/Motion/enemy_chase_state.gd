@@ -7,13 +7,17 @@ func enter():
 		enemy.chase_timer.timeout.connect(_on_chasing_timer_timeout)
 	if not enemy.shoot_timer.timeout.is_connected(_on_shooting_timer_timeout):
 		enemy.shoot_timer.timeout.connect(_on_shooting_timer_timeout)
+
+	enemy.chase_timer.start()
 	
 func _physics_process(_delta: float) -> void:
-	enemy.nav_agent.target_position = enemy._player_ref.global_position
-	enemy._play_run_animation(enemy.velocity.normalized())
-
+	set_nav_to_player()
 	if not enemy.can_see_player():
 		enemy.state_manager.change_state("SearchingState")
+
+func set_nav_to_player() -> void:
+	enemy.nav_agent.target_position = enemy._player_ref.global_position
+	enemy._play_run_animation(enemy.velocity.normalized())
 
 func _on_chasing_timer_timeout() -> void:
 	enemy.shoot_timer.start()
