@@ -40,7 +40,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Start"
 script = ExtResource("1_3f4wp")
-scene = "level_1"
 
 [node name="menu" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -62,7 +61,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 script = ExtResource("1_3f4wp")
-scene = "exit"
 
 [connection signal="button_up" from="CenterContainer/VBoxContainer/HBoxContainer/start" to="CenterContainer/VBoxContainer/HBoxContainer/start" method="_on_button_button_up"]
 [connection signal="button_up" from="CenterContainer/VBoxContainer/HBoxContainer2/quit" to="CenterContainer/VBoxContainer/HBoxContainer2/quit" method="_on_button_button_up"]

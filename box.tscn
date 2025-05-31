@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="1_bqn3j"]
 [ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="2_3n43a"]
-[ext_resource type="Script" uid="uid://kr205wjtiui3" path="res://Scripts/UI/area_2d.gd" id="3_jjbh2"]
+[ext_resource type="Script" uid="uid://kr205wjtiui3" path="res://GameComponants/Box/box.gd" id="3_jjbh2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_amiuo"]
 animations = [{

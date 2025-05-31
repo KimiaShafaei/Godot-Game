@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ctx20m0ii7w51" path="res://Assets/Sprites/Tiles/tile.5.png" id="3_wakwf"]
 [ext_resource type="PackedScene" uid="uid://bo4245nyp8p2h" path="res://box.tscn" id="4_wakwf"]
 [ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="8_reooa"]
-[ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/player.tscn" id="9_doouk"]
+[ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/Player/player.tscn" id="9_doouk"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/Characters/enemy.tscn" id="10_0fyhm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sanrf"]

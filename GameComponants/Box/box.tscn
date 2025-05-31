@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://cd4fei02j1xf2"]
+
+[ext_resource type="Script" uid="uid://kr205wjtiui3" path="res://GameComponants/Box/box.gd" id="1_1novp"]
+[ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="2_24qir"]
+[ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="3_c638v"]
+[ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="4_n74b0"]
+[ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="5_kxvns"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kdr0v"]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("4_n74b0")
+}, {
+"duration": 0.5,
+"texture": ExtResource("5_kxvns")
+}],
+"loop": false,
+"name": &"opening_box",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qkhiw"]
+size = Vector2(1117.09, 668.735)
+
+[node name="Box" type="Area2D"]
+scale = Vector2(0.0543319, 0.0472575)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("1_1novp")
+
+[node name="success" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-7335.56, -167.184)
+scale = Vector2(18.4054, 21.1607)
+stream = ExtResource("2_24qir")
+
+[node name="open_box" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-7335.56, -167.184)
+scale = Vector2(18.4054, 21.1607)
+stream = ExtResource("3_c638v")
+
+[node name="box" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kdr0v")
+animation = &"opening_box"
+speed_scale = 0.1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.00585938, 167.184)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_qkhiw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
