@@ -15,14 +15,9 @@ var _astar = AStarGrid2D.new()
 var _start_point = Vector2i()
 var _end_point = Vector2i()
 
-const GROUP_NAME := "map"
-func _enter_tree() -> void:
-	if not is_in_group(GROUP_NAME):
-		add_to_group(GROUP_NAME)
-
 func _ready():
 	update_astar_pathfinder()
-	set_point_in_pathfinder()
+	set_points_in_pathfinder()
 
 
 func round_local_position(local_position):
@@ -43,16 +38,17 @@ func set_custom_data(tile_coords: Vector2i, layer_name: String, value):
 	if tile_data:
 		tile_data.set_custom_data(layer_name, value)
 		
-func find_path(local_start_point, local_end_point):
+func find_path(local_start_point, local_end_point, player: bool= true):
 	clear_path()
 
 	_start_point = local_to_map(local_start_point)
 	_end_point = local_to_map(local_end_point)
 	var _path = _astar.get_id_path(_start_point, _end_point)
-	if not _path.is_empty():
-		path_drawer.update_path(PackedVector2Array(_path.map(func(p): return map_to_local(p))))
-	
-	queue_redraw()
+	if player:
+		if not _path.is_empty():
+			path_drawer.update_path(PackedVector2Array(_path.map(func(p): return map_to_local(p))))
+		
+		queue_redraw()
 	return _path.duplicate()
 	
 func get_tile_type(tile_map: TileMapLayer, tile_coords: Vector2i) -> String:
@@ -72,7 +68,7 @@ func update_astar_pathfinder() -> void:
 	_astar.diagonal_mode = AStarGrid2D.DIAGONAL_MODE_NEVER
 	_astar.update()
 
-func set_point_in_pathfinder() -> void:
+func set_points_in_pathfinder() -> void:
 	for i in range(_astar.region.position.x, _astar.region.end.x):
 		for j in range(_astar.region.position.y, _astar.region.end.y):
 			var pos = Vector2i(i, j)

@@ -1,5 +1,10 @@
-Control
+PathFollow2D
+Path2D
+CollisionShape2D
+CollisionPolygon2D
+Area2D
 Sprite2D
+Control
 Polygon2D
 NavigationRegion2D
 AnimatedSprite2D
@@ -8,8 +13,3 @@ Camera2D
 Node2D
 Marker2D
 CharacterBody2D
-ProgressBar
-NavigationAgent2D
-NavigationLink2D
-CollisionShape2D
-Label

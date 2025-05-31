@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://7bq84adsigqi"]
+
+[ext_resource type="Script" uid="uid://bsbvr1lrb6hwy" path="res://GameComponants/Path/path_2d.gd" id="1_gelhk"]
+
+[sub_resource type="Curve2D" id="Curve2D_tfa5f"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 248, 0, 0, 0, 0, 0, 248, 144, 0, 0, 0, 0, 0, 144, 0, 0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_tfa5f")
+script = ExtResource("1_gelhk")

@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bo3xha42gbhvl"]
-
-[ext_resource type="AudioStream" uid="uid://bj1hdioalkekl" path="res://Assets/Musics/action-music.mp3" id="1_ne3mp"]
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
-stream = ExtResource("1_ne3mp")
-volume_db = -1.6
