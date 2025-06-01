@@ -30,13 +30,17 @@ func _ready():
 	state_manager.init(self)
 
 #region InputHandling
+
 func _input(event):
 	if event.is_action_pressed("set_target"):
 		var click_position = tile_map.round_local_position(get_global_mouse_position())
-		var click_enemy = get_click_enemy(click_position)
+		var target_enemy = get_click_enemy(get_global_mouse_position())
 
-		if click_enemy:
+		if target_enemy:
 			state_manager.change_state("AttackState")
+			reset_path()
+			_path = tile_map.find_path(global_position, target_enemy.position)
+			
 		elif tile_map.is_point_walkable(click_position):
 			_path = tile_map.find_path(global_position, click_position)
 			_current_index = 0
@@ -56,16 +60,53 @@ func _physics_process(_delta):
 		_current_index += 1
 
 	if _current_index >= _path.size():
-		tile_map.clear_path()
-		_path.clear()
-		_current_index = 0
+		reset_path()
 
 	var prev_position = global_position
 	move_and_slide()
 
 	if global_position.distance_to(prev_position) < 1:
 		_play_idle()
+		
+		
+func reset_path() -> void:
+	tile_map.clear_path()
+	_path.clear()
+	_current_index = 0
 #endregion
+
+#region IntractionHandling
+
+
+
+func take_damage():
+	healths -= 1
+	health_bar.value = healths
+
+	blood_anim.visible = true
+	blood_anim.play("Blood2")
+
+	if healths > 0:
+		state_manager.change_state("HitState")
+	else:
+		state_manager.change_state("DieState")
+
+func get_click_enemy(click_position):
+	for enemy in world.enemies:
+		if enemy:
+			if enemy.position.distance_to(click_position) < 30:
+				return enemy
+		
+	return
+
+func attack_to_enemy(enemy):
+	if global_position.distance_to(enemy.global_position) < 40:
+		anim.play("Attack_%s" % _last_side)
+		await anim.animation_finished
+		enemy.take_damage()
+
+#endregion
+
 #region AnimationHandling
 func _update_animation(direction):
 	if direction.length() > 0:
@@ -108,27 +149,3 @@ func start_running():
 	if not start_chasing:
 		start_chasing = true
 		speed = runnig_speed
-
-func get_click_enemy(click_position):
-	for enemy in world.enemies:
-		if enemy.global_position.distance_to(click_position) < 30:
-			return enemy
-	return null
-
-func attack_to_enemy(enemy):
-	if global_position.distance_to(enemy.global_position) < 40:
-		anim.play("Attack_%s" % _last_side)
-		await anim.animation_finished
-		enemy.take_damage()
-
-func take_damage():
-	healths -= 1
-	health_bar.value = healths
-
-	blood_anim.visible = true
-	blood_anim.play("Blood2")
-
-	if healths > 0:
-		state_manager.change_state("HitState")
-	else:
-		state_manager.change_state("DieState")

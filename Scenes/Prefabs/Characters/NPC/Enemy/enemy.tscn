@@ -1,4 +1,4 @@
-[gd_scene load_steps=97 format=3 uid="uid://dy1yfnp1t85kc"]
+[gd_scene load_steps=98 format=3 uid="uid://dy1yfnp1t85kc"]
 
 [ext_resource type="Script" uid="uid://dhsuvld0sjsxr" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy_controller.gd" id="1_tfa5f"]
 [ext_resource type="Script" uid="uid://btvfb7xski0a0" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy_state_machine.gd" id="2_dwnbv"]
@@ -91,12 +91,17 @@
 [ext_resource type="Texture2D" uid="uid://c2gww3a4xxv40" path="res://Assets/Sprites/Characters/blood/b.6.png" id="89_lmlyh"]
 [ext_resource type="AudioStream" uid="uid://bklldq5tvcorp" path="res://Assets/Musics/Effect-sedaye-Tajoob.mp3" id="90_4kp5n"]
 [ext_resource type="AudioStream" uid="uid://b07v3qtagkjeg" path="res://Assets/Musics/shlik.mp3" id="91_c2ir5"]
+[ext_resource type="PackedScene" uid="uid://7bq84adsigqi" path="res://GameComponants/Path/path_2d.tscn" id="92_dwnbv"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rk7jn"]
-radius = 24.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jeas2"]
+radius = 40.0
+height = 80.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wnff0"]
+radius = 16.0
 height = 48.0
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_8cy0i"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_fv1ej"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -108,7 +113,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_nxh0y")
 }],
-"loop": true,
+"loop": false,
 "name": &"Attack_down",
 "speed": 5.0
 }, {
@@ -128,7 +133,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("16_rec2a")
 }],
-"loop": true,
+"loop": false,
 "name": &"Attack_left",
 "speed": 5.0
 }, {
@@ -148,7 +153,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_2h8fq")
 }],
-"loop": true,
+"loop": false,
 "name": &"Attack_right",
 "speed": 5.0
 }, {
@@ -165,7 +170,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("25_ksmcf")
 }],
-"loop": true,
+"loop": false,
 "name": &"Attack_up",
 "speed": 5.0
 }, {
@@ -188,7 +193,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("31_yu7k7")
 }],
-"loop": true,
+"loop": false,
 "name": &"Death_down",
 "speed": 5.0
 }, {
@@ -205,7 +210,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("35_wf6yy")
 }],
-"loop": true,
+"loop": false,
 "name": &"Death_left",
 "speed": 5.0
 }, {
@@ -222,7 +227,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("39_rtbd0")
 }],
-"loop": true,
+"loop": false,
 "name": &"Death_right",
 "speed": 5.0
 }, {
@@ -245,7 +250,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("45_qhra2")
 }],
-"loop": true,
+"loop": false,
 "name": &"Death_up",
 "speed": 5.0
 }, {
@@ -436,7 +441,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ckgfi"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_hgpnc"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -491,14 +496,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_tfa5f"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_lw8lf"]
 radius = 50.0
-
-[sub_resource type="Curve2D" id="Curve2D_tfa5f"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 248, 0, 0, 0, 0, 0, 248, 168, 0, 0, 0, 0, 0, 168, 0, 0, 0, 0, 0, 0)
-}
-point_count = 5
 
 [node name="Enemy" type="CharacterBody2D"]
 self_modulate = Color(0.769228, 0, 0.148934, 1)
@@ -528,22 +527,25 @@ script = ExtResource("8_wmgn1")
 [node name="DieState" type="Node" parent="StateManager"]
 script = ExtResource("9_nwdvt")
 
+[node name="HitZone" type="Area2D" parent="."]
+
+[node name="EnemyCollisionShape2D" type="CollisionShape2D" parent="HitZone"]
+shape = SubResource("CapsuleShape2D_jeas2")
+debug_color = Color(0, 0.976471, 0.164706, 0.886275)
+
 [node name="EnemyCollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_rk7jn")
+shape = SubResource("CapsuleShape2D_wnff0")
 
 [node name="EnemyAnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.0399985, 0.0399985)
-sprite_frames = SubResource("SpriteFrames_8cy0i")
-animation = &"Idle_down"
+sprite_frames = SubResource("SpriteFrames_fv1ej")
+animation = &"Death_left"
 
 [node name="BloodAnimatedSprite" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(208, -24)
 scale = Vector2(0.078125, 0.046875)
-sprite_frames = SubResource("SpriteFrames_ckgfi")
+sprite_frames = SubResource("SpriteFrames_hgpnc")
 animation = &"Blood2"
-frame = 5
-frame_progress = 1.0
 
 [node name="PlayerDetect" type="Node2D" parent="."]
 
@@ -555,7 +557,7 @@ polygon = PackedVector2Array(16, 16, 48, 112, 0, 128, -48, 112, -16, 16)
 [node name="DetectAreaHearing" type="Area2D" parent="PlayerDetect"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetect/DetectAreaHearing"]
-shape = SubResource("CircleShape2D_tfa5f")
+shape = SubResource("CircleShape2D_lw8lf")
 
 [node name="DetectSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("90_4kp5n")
@@ -565,8 +567,8 @@ position = Vector2(7.15256e-07, -4)
 scale = Vector2(0.03125, 0.0234375)
 stream = ExtResource("91_c2ir5")
 
-[node name="Path2D" type="Path2D" parent="."]
-curve = SubResource("Curve2D_tfa5f")
+[node name="Path2D" parent="." instance=ExtResource("92_dwnbv")]
 
+[connection signal="body_entered" from="HitZone" to="." method="_on_hit_zone_body_entered"]
 [connection signal="body_entered" from="PlayerDetect/DetectAreaEyeSight" to="." method="_on_detect_area_body_entered"]
 [connection signal="body_entered" from="PlayerDetect/DetectAreaHearing" to="." method="_on_detect_area_body_entered"]

@@ -61,7 +61,7 @@ next_level = ExtResource("5_xgxfi")
 
 [node name="Player" parent="." instance=ExtResource("10_2s4eb")]
 position = Vector2(404.624, 410.836)
-scale = Vector2(0.608714, 0.634351)
+scale = Vector2(0.385, 0.4)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(396.532, 221.219)
