@@ -1,7 +1,5 @@
-res://Scenes/Levels/level_2.tscn
-res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd
-res://Scenes/Prefabs/Characters/NPC/Enemy/enemy_controller.gd
-res://Scenes/GUI/intro_ui.tscn
-res://Scenes/Prefabs/Characters/NPC/Enemy/States/enemy_die_state.gd
-res://Scenes/Prefabs/Characters/NPC/Enemy/States/Combat/enemy_hit_state.gd
 res://Scenes/Prefabs/Characters/NPC/Enemy/enemy.tscn
+res://Scenes/Prefabs/Characters/NPC/Enemy/enemy_controller.gd
+res://Scenes/Levels/level_2.tscn
+res://Scenes/Prefabs/Characters/Playable/Player/player.tscn
+res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd

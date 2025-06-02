@@ -4,8 +4,9 @@ class_name Player
 
 var world
 var tile_map
+var speed
 
-@export var speed = 200
+@export var normal_speed = 200
 @export var runnig_speed = 400
 @export var healths = 3
 @export var invisibility_color: Color = Color(1, 1, 1, 0.4)
@@ -24,6 +25,7 @@ var start_chasing = false
 
 func _ready():
 	anim.play("Idle_down")
+	set_speed(normal_speed)
 	blood_anim.visible = false
 	world = get_parent()
 	tile_map = world.map
@@ -43,6 +45,12 @@ func _input(event):
 			
 		elif tile_map.is_point_walkable(click_position):
 			_path = tile_map.find_path(global_position, click_position)
+			
+			
+			# Check if mouse event is double click
+			if event.is_double_click():
+				set_speed(runnig_speed)
+
 			_current_index = 0
 			state_manager.change_state("WalkingState")
 
@@ -61,10 +69,12 @@ func _physics_process(_delta):
 
 	if _current_index >= _path.size():
 		reset_path()
+		# Reseting speed
+		set_speed(normal_speed)
 
 	var prev_position = global_position
 	move_and_slide()
-
+	
 	if global_position.distance_to(prev_position) < 1:
 		_play_idle()
 		
@@ -73,6 +83,9 @@ func reset_path() -> void:
 	tile_map.clear_path()
 	_path.clear()
 	_current_index = 0
+	
+func set_speed(value):
+	speed = value
 #endregion
 
 #region IntractionHandling
@@ -110,7 +123,7 @@ func attack_to_enemy(enemy):
 #region AnimationHandling
 func _update_animation(direction):
 	if direction.length() > 0:
-		if start_chasing:
+		if start_chasing or speed == runnig_speed:
 			_play_run_animation(direction)
 		else:
 			_play_walk_animation(direction)

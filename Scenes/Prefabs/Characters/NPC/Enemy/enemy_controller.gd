@@ -34,6 +34,7 @@ func _ready():
 func _process(_delta: float) -> void:
 	if player_detected and global_position.distance_to(world.player.position) < distance_to_shoot:
 		state_manager.change_state("AttackState")
+		#TODO: attack to player and playing attack animation
 		
 	if !player_detected:
 		state_manager.change_state("PatrollingState")
@@ -159,6 +160,7 @@ func _play_enemy_die() -> float:
 func _play_blood() -> void:
 	blood_anim.visible = true
 	blood_anim.play("Blood2")
+	await  blood_anim.animation_finished
 	blood_anim.visible = false
 	
 	
