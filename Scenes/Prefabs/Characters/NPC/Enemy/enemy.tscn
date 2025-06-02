@@ -1,4 +1,4 @@
-[gd_scene load_steps=98 format=3 uid="uid://dy1yfnp1t85kc"]
+[gd_scene load_steps=99 format=3 uid="uid://dy1yfnp1t85kc"]
 
 [ext_resource type="Script" uid="uid://dhsuvld0sjsxr" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy_controller.gd" id="1_tfa5f"]
 [ext_resource type="Script" uid="uid://btvfb7xski0a0" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy_state_machine.gd" id="2_dwnbv"]
@@ -499,6 +499,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_lw8lf"]
 radius = 50.0
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_dwnbv"]
+polygon = PackedVector2Array(0, -24, 8, -16, 8, 16, 0, 24, -8, 8, -8, -16)
+
 [node name="Enemy" type="CharacterBody2D"]
 self_modulate = Color(0.769228, 0, 0.148934, 1)
 script = ExtResource("1_tfa5f")
@@ -568,6 +571,9 @@ scale = Vector2(0.03125, 0.0234375)
 stream = ExtResource("91_c2ir5")
 
 [node name="Path2D" parent="." instance=ExtResource("92_dwnbv")]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_dwnbv")
 
 [connection signal="body_entered" from="HitZone" to="." method="_on_hit_zone_body_entered"]
 [connection signal="body_entered" from="PlayerDetect/DetectAreaEyeSight" to="." method="_on_detect_area_body_entered"]

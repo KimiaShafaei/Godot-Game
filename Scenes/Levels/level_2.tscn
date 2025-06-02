@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://cs35iobq7t36k"]
+[gd_scene load_steps=17 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_u40f0"]
@@ -10,12 +10,17 @@
 [ext_resource type="Script" uid="uid://b6vpsga6oksn3" path="res://GameComponants/Map/path_drawer.gd" id="6_o2037"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/Playable/Player/player.tscn" id="9_0tae3"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy.tscn" id="9_1jlnc"]
+[ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="11_u40f0"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1jlnc"]
+polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pirix"]
 resource_name = "Obstacle"
 texture = ExtResource("4_hq526")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
+0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1jlnc")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_175wv"]
 resource_name = "Surronding"
@@ -32,6 +37,8 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_x8g4x"]
 tile_size = Vector2i(32, 32)
+occlusion_layer_0/light_mask = 1
+occlusion_layer_0/sdf_collision = true
 custom_data_layer_0/name = "type"
 custom_data_layer_0/type = 4
 sources/4 = SubResource("TileSetAtlasSource_175wv")
@@ -78,3 +85,9 @@ position = Vector2(408, 224)
 rotation = 3.14159
 scale = Vector2(0.213871, -5.42438)
 zoom = Vector2(1.17, 1.064)
+
+[node name="Lighting" type="Node2D" parent="."]
+
+[node name="PointLight2D" parent="Lighting" instance=ExtResource("11_u40f0")]
+position = Vector2(192, 96)
+texture_scale = 1.57

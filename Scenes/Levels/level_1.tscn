@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://dlqikh11tsanq"]
+[gd_scene load_steps=14 format=4 uid="uid://dlqikh11tsanq"]
 
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_cyadu"]
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_tc3c1"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://b6vpsga6oksn3" path="res://GameComponants/Map/path_drawer.gd" id="6_afv7b"]
 [ext_resource type="PackedScene" uid="uid://cd4fei02j1xf2" path="res://GameComponants/Box/box.tscn" id="6_jv26f"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/Playable/Player/player.tscn" id="10_2s4eb"]
+[ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="10_u5ghp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_175wv"]
 texture = ExtResource("3_rb0md")
@@ -32,6 +33,8 @@ sources/5 = SubResource("TileSetAtlasSource_cpn7y")
 script = ExtResource("1_cyadu")
 player = NodePath("Player")
 map = NodePath("Map")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -155.0
@@ -61,10 +64,14 @@ next_level = ExtResource("5_xgxfi")
 
 [node name="Player" parent="." instance=ExtResource("10_2s4eb")]
 position = Vector2(404.624, 410.836)
-scale = Vector2(0.385, 0.4)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(396.532, 221.219)
 rotation = 3.14159
 scale = Vector2(0.213871, -5.42438)
 zoom = Vector2(1.17, 1.064)
+
+[node name="Lightings" type="Node2D" parent="."]
+
+[node name="PointLight2D" parent="Lightings" instance=ExtResource("10_u5ghp")]
+position = Vector2(240, 276)

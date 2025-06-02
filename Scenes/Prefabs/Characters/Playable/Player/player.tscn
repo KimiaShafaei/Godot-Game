@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://c84l74ckv5wpw"]
+[gd_scene load_steps=94 format=3 uid="uid://c84l74ckv5wpw"]
 
 [ext_resource type="Script" uid="uid://ca4ybkm82j5ii" path="res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd" id="1_2tcqa"]
 [ext_resource type="Script" uid="uid://d2lclr86oxua5" path="res://Scenes/Prefabs/Characters/Playable/Player/player_state_machine.gd" id="2_aoubu"]
@@ -486,6 +486,9 @@ animations = [{
 radius = 0.366337
 height = 0.732675
 
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_rg7j4"]
+polygon = PackedVector2Array(16, -24, 0, -32, -8, -24, -16, -8, -8, 8, -8, 16, 8, 16, 16, 0)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_2tcqa")
 metadata/_edit_horizontal_guides_ = [-107.0]
@@ -546,5 +549,8 @@ offset_top = -496.312
 offset_right = -1186.99
 offset_bottom = -469.312
 mouse_filter = 1
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_rg7j4")
 
 [connection signal="timeout" from="InvisibilityTimer" to="StateManager/InvisibilityState" method="_on_invisibility_timer_timeout"]
