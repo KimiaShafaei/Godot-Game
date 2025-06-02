@@ -1,7 +1,4 @@
-res://Scenes/Prefabs/Characters/NPC/Enemy/enemy.tscn
-res://Scenes/Prefabs/Characters/NPC/Enemy/enemy_controller.gd
-res://Scenes/Levels/level_2.tscn
-res://Scenes/Prefabs/Characters/Playable/Player/player.tscn
-res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd
+res://GameComponants/Map/map.tscn
+res://GameComponants/Map/path_drawer.gd
 res://Scenes/Levels/level_1.tscn
-res://GameComponants/Box/box.tscn
+res://Scenes/Levels/level_2.tscn
