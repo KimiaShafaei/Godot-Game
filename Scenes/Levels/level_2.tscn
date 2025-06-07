@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://cs35iobq7t36k"]
+[gd_scene load_steps=19 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_u40f0"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/Playable/Player/player.tscn" id="9_0tae3"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy.tscn" id="9_1jlnc"]
 [ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="11_u40f0"]
+[ext_resource type="PackedScene" uid="uid://bw4nolarc8tct" path="res://Scenes/Prefabs/UI/Throwable_option/options_ui.tscn" id="12_uqiic"]
+[ext_resource type="PackedScene" uid="uid://cv4nhkkca05th" path="res://Scenes/Prefabs/UI/Throwable_option/throw_noises.tscn" id="13_eopvx"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1jlnc"]
 polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
@@ -79,6 +81,7 @@ position = Vector2(368, 8)
 [node name="Player" parent="." instance=ExtResource("9_0tae3")]
 position = Vector2(416, 408)
 scale = Vector2(0.8, 0.8)
+throw_radius = 100
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(408, 224)
@@ -91,3 +94,12 @@ zoom = Vector2(1.17, 1.064)
 [node name="PointLight2D" parent="Lighting" instance=ExtResource("11_u40f0")]
 position = Vector2(192, 96)
 texture_scale = 1.57
+
+[node name="OptionsUI" parent="." instance=ExtResource("12_uqiic")]
+offset_left = 752.0
+offset_top = 488.0
+offset_right = 752.0
+offset_bottom = 488.0
+
+[node name="ThrowNoises" parent="." instance=ExtResource("13_eopvx")]
+visible = false

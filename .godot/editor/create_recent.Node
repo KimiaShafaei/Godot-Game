@@ -1,7 +1,10 @@
+AudioStreamPlayer2D
+Sprite2D
+AnimatedSprite2D
+Button
 LightOccluder2D
 Node2D
 CanvasModulate
-Sprite2D
 PointLight2D
 AudioListener2D
 Area2D
@@ -9,6 +12,3 @@ PathFollow2D
 Path2D
 CollisionShape2D
 CollisionPolygon2D
-Control
-Polygon2D
-NavigationRegion2D

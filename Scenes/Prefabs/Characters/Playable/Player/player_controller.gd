@@ -10,6 +10,7 @@ var speed
 @export var runnig_speed = 400
 @export var healths = 3
 @export var invisibility_color: Color = Color(1, 1, 1, 0.4)
+@export var throw_radius = 10
 
 
 @onready var anim = $PlayerAnimatedSprite2D
@@ -17,6 +18,8 @@ var speed
 @onready var blood_anim = $Blood
 @onready var health_bar = $ProgressBar
 @onready var state_manager = $StateManager
+@onready var options_UI = $"../OptionsUI"
+@onready var throw_noises = $"../ThrowNoises"
 
 var _path: Array = []
 var _current_index = 0
@@ -30,6 +33,7 @@ func _ready():
 	world = get_parent()
 	tile_map = world.map
 	state_manager.init(self)
+	options_UI.connect("choose_option", Callable(self, "throw_noise_option"))
 
 #region InputHandling
 
@@ -118,6 +122,40 @@ func attack_to_enemy(enemy):
 		await anim.animation_finished
 		enemy.take_damage()
 
+func throw_noise_option(thing_name):
+	var thing_scene = ""
+	var throw_sound: AudioStreamPlayer2D = null
+	match thing_name:
+		"Bottle":
+			thing_scene = "res://Scenes/Prefabs/UI/Throwable_option/Bottle.tscn"
+			throw_sound = throw_noises.get_node("BottleThrowSound")
+			
+		"Stone":
+			thing_scene = "res://Scenes/Prefabs/UI/Throwable_option/Stone.tscn"
+			throw_sound = throw_noises.get_node("StoneThrowSound")
+		_:
+			return
+
+	if throw_sound and not throw_sound.playing:
+		throw_sound.play()
+		
+	var thing = load(thing_scene).instantiate()
+	var radius = Vector2.ZERO
+	match _last_side:
+		"up": radius = Vector2(0, -throw_radius)
+		"down": radius = Vector2(0, throw_radius)
+		"left": radius = Vector2(-throw_radius, 0)
+		"right": radius = Vector2(throw_radius, 0)
+	thing.global_position = global_position + radius
+
+	world.add_child(thing)
+	print("last side:", _last_side)
+	print("global position:", global_position)
+	print("Throwing noise at: ", thing.global_position)
+	throw_noises.emit_noise(thing.global_position)
+	await get_tree().create_timer(2.0).timeout
+	thing.queue_free()
+	
 #endregion
 
 #region AnimationHandling
