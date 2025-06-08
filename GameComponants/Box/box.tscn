@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://kr205wjtiui3" path="res://GameComponants/Box/box.gd" id="1_1novp"]
 [ext_resource type="AudioStream" uid="uid://crbe4xd7wjrmv" path="res://Assets/Musics/Success (1).mp3" id="2_24qir"]
 [ext_resource type="AudioStream" uid="uid://drkhcf7438sbv" path="res://Assets/Musics/Soot sandogh1.mp3" id="3_c638v"]
-[ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/Tiles/New Piskel-1.png (3).png" id="4_n74b0"]
-[ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/Tiles/New Piskel-2.png (3).png" id="5_kxvns"]
+[ext_resource type="Texture2D" uid="uid://r7dalvdcab4" path="res://Assets/Sprites/tools/New Piskel-1.png (3).png" id="4_n74b0"]
+[ext_resource type="Texture2D" uid="uid://b5t6yr0w1am1e" path="res://Assets/Sprites/tools/New Piskel-2.png (3).png" id="5_kxvns"]
+
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kdr0v"]
 animations = [{

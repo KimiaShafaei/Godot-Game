@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=3 uid="uid://dsbohs4o1mkff"]
 
-[ext_resource type="Texture2D" uid="uid://ckl24joojuaq2" path="res://Assets/Sprites/Tiles/g.f.png" id="1_5w361"]
-[ext_resource type="Texture2D" uid="uid://c7vvd2u4l50rh" path="res://Assets/Sprites/Tiles/g.e.png" id="2_02oxi"]
-[ext_resource type="Texture2D" uid="uid://cveyt52vfa6kv" path="res://Assets/Sprites/Tiles/g.png" id="3_34mah"]
+[ext_resource type="Texture2D" uid="uid://ckl24joojuaq2" path="res://Assets/Sprites/tools/g.f.png" id="1_5w361"]
+[ext_resource type="Texture2D" uid="uid://c7vvd2u4l50rh" path="res://Assets/Sprites/tools/g.e.png" id="2_02oxi"]
+[ext_resource type="Texture2D" uid="uid://cveyt52vfa6kv" path="res://Assets/Sprites/tools/g.png" id="3_34mah"]
+
 
 [node name="HealthBar" type="Control"]
 layout_mode = 3
