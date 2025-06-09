@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bw4nolarc8tct"]
 
-[ext_resource type="Script" uid="uid://cvshq4hk52bp0" path="res://Scenes/Prefabs/UI/Throwable_option/options_ui.gd" id="1_y5j8i"]
+[ext_resource type="Script" uid="uid://cvshq4hk52bp0" path="res://Scenes/Prefabs/Throwable_option/options_ui.gd" id="1_y5j8i"]
 
 [node name="OptionsUI" type="Control"]
 layout_mode = 3
@@ -23,3 +23,10 @@ offset_left = 56.0
 offset_right = 109.0
 offset_bottom = 31.0
 text = "Stone"
+
+[node name="MetalCan" type="Button" parent="."]
+layout_mode = 0
+offset_left = 112.0
+offset_right = 197.0
+offset_bottom = 31.0
+text = "metal can"

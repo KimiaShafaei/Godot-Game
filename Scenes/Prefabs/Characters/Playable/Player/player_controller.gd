@@ -20,6 +20,7 @@ var speed
 @onready var state_manager = $StateManager
 @onready var options_UI = $"../OptionsUI"
 @onready var throw_noises = $"../ThrowNoises"
+@onready var throw_effect_anim = get_node("../ThrowNoises/ThrowEffectAnimated")
 
 var _path: Array = []
 var _current_index = 0
@@ -123,16 +124,19 @@ func attack_to_enemy(enemy):
 		enemy.take_damage()
 
 func throw_noise_option(thing_name):
+	_play_throw_animation()
 	var thing_scene = ""
 	var throw_sound: AudioStreamPlayer2D = null
 	match thing_name:
 		"Bottle":
-			thing_scene = "res://Scenes/Prefabs/UI/Throwable_option/Bottle.tscn"
+			thing_scene = "res://Scenes/Prefabs/Throwable_option/Bottle.tscn"
 			throw_sound = throw_noises.get_node("BottleThrowSound")
-			
 		"Stone":
-			thing_scene = "res://Scenes/Prefabs/UI/Throwable_option/Stone.tscn"
+			thing_scene = "res://Scenes/Prefabs/Throwable_option/Stone.tscn"
 			throw_sound = throw_noises.get_node("StoneThrowSound")
+		"MetalCan":
+			thing_scene = "res://Scenes/Prefabs/Throwable_option/metal_can.tscn"
+			throw_sound = throw_noises.get_node("MetalCanThrowSound")
 		_:
 			return
 
@@ -149,9 +153,13 @@ func throw_noise_option(thing_name):
 	thing.global_position = global_position + radius
 
 	world.add_child(thing)
-	print("last side:", _last_side)
-	print("global position:", global_position)
-	print("Throwing noise at: ", thing.global_position)
+	if throw_effect_anim:
+		throw_noises.visible = true
+		throw_effect_anim.global_position = thing.global_position
+		throw_effect_anim.play("Throw")
+		await throw_effect_anim.animation_finished
+		throw_noises.visible = false
+
 	throw_noises.emit_noise(thing.global_position)
 	await get_tree().create_timer(2.0).timeout
 	thing.queue_free()
@@ -190,6 +198,13 @@ func _play_run_animation(direction):
 func _play_idle():
 	anim.flip_h = false
 	anim.play("Idle_%s" % _last_side)
+
+	if walking_sound.playing:
+		walking_sound.stop()
+
+func _play_throw_animation():
+	anim.play("Throw_%s" % _last_side)
+	await anim.animation_finished
 
 	if walking_sound.playing:
 		walking_sound.stop()

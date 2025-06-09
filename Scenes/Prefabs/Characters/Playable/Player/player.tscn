@@ -364,6 +364,26 @@ animations = [{
 "name": &"Run_up",
 "speed": 5.0
 }, {
+"frames": [],
+"loop": true,
+"name": &"Throw_down",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"Throw_left",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"Throw_right",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Throw_up",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("5_x1jye")
@@ -521,7 +541,7 @@ script = ExtResource("9_gagi3")
 position = Vector2(-2.38421e-07, -8)
 scale = Vector2(0.0625, 0.046875)
 sprite_frames = SubResource("SpriteFrames_no5v7")
-animation = &"Run_right"
+animation = &"Throw_up"
 
 [node name="Blood" type="AnimatedSprite2D" parent="."]
 visible = false

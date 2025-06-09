@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cv4nhkkca05th"]
+
+[ext_resource type="Script" uid="uid://c78h0qkfckm3o" path="res://Scenes/Prefabs/Throwable_option/throw_noises.gd" id="1_sf18o"]
+[ext_resource type="PackedScene" uid="uid://nxvy63jm3es" path="res://Scenes/Prefabs/Throwable_option/Bottle.tscn" id="2_6elai"]
+[ext_resource type="PackedScene" uid="uid://dx1v528cpkhw8" path="res://Scenes/Prefabs/Throwable_option/Stone.tscn" id="3_adqkh"]
+[ext_resource type="PackedScene" uid="uid://bgmmyjum7e845" path="res://Scenes/Prefabs/Throwable_option/metal_can.tscn" id="4_wmgbs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sf18o"]
+animations = [{
+"frames": [],
+"loop": false,
+"name": &"Throw",
+"speed": 5.0
+}]
+
+[node name="ThrowNoises" type="Node2D"]
+script = ExtResource("1_sf18o")
+
+[node name="Bottle" parent="." instance=ExtResource("2_6elai")]
+
+[node name="Stone" parent="." instance=ExtResource("3_adqkh")]
+
+[node name="MetalCan" parent="." instance=ExtResource("4_wmgbs")]
+
+[node name="BottleThrowSound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="StoneThrowSound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="MetalCanThrowSound" type="AudioStreamPlayer2D" parent="."]
+
+[node name="ThrowEffectAnimated" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.875, 1.875)
+sprite_frames = SubResource("SpriteFrames_sf18o")
+animation = &"Throw"
