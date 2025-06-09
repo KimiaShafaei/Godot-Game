@@ -11,8 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/Playable/Player/player.tscn" id="9_0tae3"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy.tscn" id="9_1jlnc"]
 [ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="11_u40f0"]
-[ext_resource type="PackedScene" uid="uid://bw4nolarc8tct" path="res://Scenes/Prefabs/UI/Throwable_option/options_ui.tscn" id="12_uqiic"]
-[ext_resource type="PackedScene" uid="uid://cv4nhkkca05th" path="res://Scenes/Prefabs/UI/Throwable_option/throw_noises.tscn" id="13_eopvx"]
+[ext_resource type="PackedScene" uid="uid://bw4nolarc8tct" path="res://Scenes/Prefabs/Throwable_option/options_ui.tscn" id="12_uqiic"]
+[ext_resource type="PackedScene" uid="uid://cv4nhkkca05th" path="res://Scenes/Prefabs/Throwable_option/throw_noises.tscn" id="13_eopvx"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1jlnc"]
 polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
@@ -96,9 +96,9 @@ position = Vector2(192, 96)
 texture_scale = 1.57
 
 [node name="OptionsUI" parent="." instance=ExtResource("12_uqiic")]
-offset_left = 752.0
+offset_left = 648.0
 offset_top = 488.0
-offset_right = 752.0
+offset_right = 648.0
 offset_bottom = 488.0
 
 [node name="ThrowNoises" parent="." instance=ExtResource("13_eopvx")]

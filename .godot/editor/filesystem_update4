@@ -1,1 +1,4 @@
 res://Scenes/Prefabs/UI/Throwable_option/throw_noises.tscn
+res://Scenes/Levels/level_2.tscn
+res://Scenes/Prefabs/Characters/Playable/Player/player.tscn
+res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd

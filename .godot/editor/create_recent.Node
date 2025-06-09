@@ -1,7 +1,7 @@
 AudioStreamPlayer2D
 Sprite2D
-AnimatedSprite2D
 Button
+AnimatedSprite2D
 LightOccluder2D
 Node2D
 CanvasModulate
