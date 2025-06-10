@@ -18,9 +18,9 @@ var speed
 @onready var blood_anim = $Blood
 @onready var health_bar = $ProgressBar
 @onready var state_manager = $StateManager
-@onready var options_UI = $"../OptionsUI"
-@onready var throw_noises = $"../ThrowNoises"
-@onready var throw_effect_anim = get_node("../ThrowNoises/ThrowEffectAnimated")
+@onready var options_UI = get_node_or_null("../OptionsUI")
+@onready var throw_noises = get_node_or_null("../ThrowNoises")
+@onready var throw_effect_anim = get_node_or_null("../ThrowNoises/ThrowEffectAnimated")
 
 var _path: Array = []
 var _current_index = 0
@@ -34,7 +34,8 @@ func _ready():
 	world = get_parent()
 	tile_map = world.map
 	state_manager.init(self)
-	options_UI.connect("choose_option", Callable(self, "throw_noise_option"))
+	if options_UI:
+		options_UI.connect("choose_option", Callable(self, "throw_noise_option"))
 
 #region InputHandling
 
@@ -154,11 +155,11 @@ func throw_noise_option(thing_name):
 
 	world.add_child(thing)
 	if throw_effect_anim:
-		throw_noises.visible = true
+		throw_effect_anim.visible = true
 		throw_effect_anim.global_position = thing.global_position
 		throw_effect_anim.play("Throw")
 		await throw_effect_anim.animation_finished
-		throw_noises.visible = false
+		throw_effect_anim.visible = false
 
 	throw_noises.emit_noise(thing.global_position)
 	await get_tree().create_timer(2.0).timeout

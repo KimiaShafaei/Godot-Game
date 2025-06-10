@@ -17,10 +17,13 @@ animations = [{
 script = ExtResource("1_sf18o")
 
 [node name="Bottle" parent="." instance=ExtResource("2_6elai")]
+visible = false
 
 [node name="Stone" parent="." instance=ExtResource("3_adqkh")]
+visible = false
 
 [node name="MetalCan" parent="." instance=ExtResource("4_wmgbs")]
+visible = false
 
 [node name="BottleThrowSound" type="AudioStreamPlayer2D" parent="."]
 
@@ -29,6 +32,8 @@ script = ExtResource("1_sf18o")
 [node name="MetalCanThrowSound" type="AudioStreamPlayer2D" parent="."]
 
 [node name="ThrowEffectAnimated" type="AnimatedSprite2D" parent="."]
+visible = false
 scale = Vector2(1.875, 1.875)
 sprite_frames = SubResource("SpriteFrames_sf18o")
 animation = &"Throw"
+frame_progress = 1.0

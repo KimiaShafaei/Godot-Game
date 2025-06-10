@@ -90,7 +90,6 @@
 [ext_resource type="Texture2D" uid="uid://c2gww3a4xxv40" path="res://Assets/Sprites/Characters/blood/b.6.png" id="80_yvch3"]
 [ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="89_urtvo"]
 
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
 animations = [{
 "frames": [{
