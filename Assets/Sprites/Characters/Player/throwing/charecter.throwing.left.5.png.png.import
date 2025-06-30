@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cl5nqm6pn6den"
-path="res://.godot/imported/throwing-4.png-89413cd8add1139b8d657dc8170b2a36.ctex"
+uid="uid://4dgycrc08m18"
+path="res://.godot/imported/charecter.throwing.left.5.png.png-38dc6cb10f642daf08a2bdb3b8e6f8b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Characters/Player/throwing/throwing-4.png"
-dest_files=["res://.godot/imported/throwing-4.png-89413cd8add1139b8d657dc8170b2a36.ctex"]
+source_file="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.left.5.png.png"
+dest_files=["res://.godot/imported/charecter.throwing.left.5.png.png-38dc6cb10f642daf08a2bdb3b8e6f8b2.ctex"]
 
 [params]
 

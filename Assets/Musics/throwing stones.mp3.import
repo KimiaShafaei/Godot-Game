@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://m3ta6e88i1es"
+path="res://.godot/imported/throwing stones.mp3-41a9bdecec6b42d0bac4981c5de99831.mp3str"
+
+[deps]
+
+source_file="res://Assets/Musics/throwing stones.mp3"
+dest_files=["res://.godot/imported/throwing stones.mp3-41a9bdecec6b42d0bac4981c5de99831.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
