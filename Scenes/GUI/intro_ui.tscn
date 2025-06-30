@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://qp1ccm4d26qh"]
 
-[ext_resource type="Script" uid="uid://b0wuv0a6ywvjn" path="res://Scenes/GUI/intro_ui.gd" id="1_rom62"]
+[ext_resource type="Script" path="res://Scenes/GUI/intro_ui.gd" id="1_rom62"]
 
 [node name="intro_ui" type="Control"]
 layout_mode = 3

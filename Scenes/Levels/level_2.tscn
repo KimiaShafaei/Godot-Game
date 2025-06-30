@@ -1,28 +1,24 @@
-[gd_scene load_steps=19 format=4 uid="uid://cs35iobq7t36k"]
+[gd_scene load_steps=18 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
-[ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_u40f0"]
+[ext_resource type="Script" path="res://Scenes/Levels/world.gd" id="1_u40f0"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="2_8374t"]
 [ext_resource type="PackedScene" uid="uid://cd4fei02j1xf2" path="res://GameComponants/Box/box.tscn" id="3_0x4y1"]
 [ext_resource type="Texture2D" uid="uid://bmw67yldpm8ip" path="res://Assets/Sprites/Tiles/tile.15.png" id="4_hq526"]
 [ext_resource type="Texture2D" uid="uid://dd3r50p0wmkxi" path="res://Assets/Sprites/Tiles/tile.6.png" id="5_lktvk"]
-[ext_resource type="Script" uid="uid://dabao4blkwtbs" path="res://GameComponants/Map/map.gd" id="5_paps5"]
-[ext_resource type="Script" uid="uid://b6vpsga6oksn3" path="res://GameComponants/Map/path_drawer.gd" id="6_o2037"]
+[ext_resource type="Script" path="res://GameComponants/Map/map.gd" id="5_paps5"]
+[ext_resource type="Script" path="res://GameComponants/Map/path_drawer.gd" id="6_o2037"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/Playable/Player/player.tscn" id="9_0tae3"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy.tscn" id="9_1jlnc"]
 [ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="11_u40f0"]
 [ext_resource type="PackedScene" uid="uid://bw4nolarc8tct" path="res://Scenes/Prefabs/Throwable_option/options_ui.tscn" id="12_uqiic"]
 [ext_resource type="PackedScene" uid="uid://cv4nhkkca05th" path="res://Scenes/Prefabs/Throwable_option/throw_noises.tscn" id="13_eopvx"]
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1jlnc"]
-polygon = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pirix"]
 resource_name = "Obstacle"
 texture = ExtResource("4_hq526")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
-0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_1jlnc")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_175wv"]
 resource_name = "Surronding"
