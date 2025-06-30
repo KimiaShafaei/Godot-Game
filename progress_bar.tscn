@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c46m0d8k3f8ls"]
+
+[ext_resource type="Texture2D" uid="uid://mav3unwetvye" path="res://Assets/Sprites/tools/bar/New Piskel-8.png.png" id="1_chwcf"]
+[ext_resource type="Texture2D" uid="uid://cg0pr5qvlq25j" path="res://Assets/Sprites/tools/bar/New Piskel-7.png.png" id="1_q0tf5"]
+
+[node name="skillbar" type="ProgressBar"]
+offset_left = -154.0
+offset_top = 55.0
+offset_right = -101.0
+offset_bottom = 82.0
+max_value = 3.0
+
+[node name="skills" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 1144.0
+offset_top = -34.0
+offset_right = 1208.0
+offset_bottom = 30.0
+max_value = 3.0
+texture_under = ExtResource("1_chwcf")
+texture_over = ExtResource("1_q0tf5")

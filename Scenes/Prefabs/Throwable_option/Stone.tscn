@@ -1,5 +1,24 @@
-[gd_scene format=3 uid="uid://dx1v528cpkhw8"]
+[gd_scene load_steps=4 format=3 uid="uid://dx1v528cpkhw8"]
+
+[ext_resource type="Texture2D" uid="uid://6vkckrgwnnpm" path="res://Assets/Sprites/tools/stone/stone-1.png.png" id="1_bomx4"]
+[ext_resource type="Texture2D" uid="uid://dx2myt61gyul1" path="res://Assets/Sprites/tools/stone/stone-2.png.png" id="2_jdau8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2d01g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bomx4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jdau8")
+}],
+"loop": true,
+"name": &"Stone",
+"speed": 5.0
+}]
 
 [node name="Stone" type="Node2D"]
 
-[node name="StoneSprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2d01g")
+animation = &"Stone"

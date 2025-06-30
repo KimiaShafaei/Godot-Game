@@ -1,5 +1,38 @@
-[gd_scene format=3 uid="uid://nxvy63jm3es"]
+[gd_scene load_steps=7 format=3 uid="uid://nxvy63jm3es"]
+
+[ext_resource type="Texture2D" uid="uid://dwo4t51ncxtbn" path="res://Assets/Sprites/tools/bottle/bottle-1.png.png" id="1_lhrwp"]
+[ext_resource type="Texture2D" uid="uid://b6aparyxili8y" path="res://Assets/Sprites/tools/bottle/bottle-2.png.png" id="2_0ntdc"]
+[ext_resource type="Texture2D" uid="uid://djmg1ohqgvqba" path="res://Assets/Sprites/tools/bottle/bottle-3.png.png" id="3_fujkq"]
+[ext_resource type="Texture2D" uid="uid://dqupt7uvfb3s5" path="res://Assets/Sprites/tools/bottle/bottle-4.png.png" id="4_3y180"]
+[ext_resource type="Texture2D" uid="uid://ddueu0agitdlc" path="res://Assets/Sprites/tools/bottle/bottle-5.png.png" id="5_x4voy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cqpes"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lhrwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0ntdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fujkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3y180")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x4voy")
+}],
+"loop": true,
+"name": &"Buttle",
+"speed": 5.0
+}]
 
 [node name="Bottle" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cqpes")
+animation = &"Buttle"
+frame = 1
+frame_progress = 0.912415

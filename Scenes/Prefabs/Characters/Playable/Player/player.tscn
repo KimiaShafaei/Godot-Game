@@ -1,31 +1,31 @@
-[gd_scene load_steps=94 format=3 uid="uid://c84l74ckv5wpw"]
+[gd_scene load_steps=114 format=3 uid="uid://c84l74ckv5wpw"]
 
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd" id="1_2tcqa"]
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/player_state_machine.gd" id="2_aoubu"]
+[ext_resource type="Script" uid="uid://ca4ybkm82j5ii" path="res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd" id="1_2tcqa"]
+[ext_resource type="Script" uid="uid://d2lclr86oxua5" path="res://Scenes/Prefabs/Characters/Playable/Player/player_state_machine.gd" id="2_aoubu"]
 [ext_resource type="Texture2D" uid="uid://4065ixse7n2c" path="res://Assets/Sprites/Characters/Player/attack/attack.back.1.png" id="2_cnmpy"]
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/States/motion/walking_state.gd" id="3_5mlw4"]
+[ext_resource type="Script" uid="uid://bwwp84jq21xc" path="res://Scenes/Prefabs/Characters/Playable/Player/States/motion/walking_state.gd" id="3_5mlw4"]
 [ext_resource type="Texture2D" uid="uid://dwu8iwwvw8oe0" path="res://Assets/Sprites/Characters/Player/attack/attack.back.2.png" id="3_d5yhc"]
 [ext_resource type="Texture2D" uid="uid://dmrwx1c46q4hv" path="res://Assets/Sprites/Characters/Player/right.png" id="3_lep2e"]
 [ext_resource type="Texture2D" uid="uid://s7dmf7p3rboj" path="res://Assets/Sprites/Characters/Player/left.png" id="3_yjsi3"]
 [ext_resource type="Texture2D" uid="uid://cqytpv6t1r58i" path="res://Assets/Sprites/Characters/Player/back.png" id="4_4dm2x"]
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/States/motion/running_state.gd" id="4_5oe1x"]
+[ext_resource type="Script" uid="uid://bxwl3vd3wdd8o" path="res://Scenes/Prefabs/Characters/Playable/Player/States/motion/running_state.gd" id="4_5oe1x"]
 [ext_resource type="Texture2D" uid="uid://cwl5ihsapfkgt" path="res://Assets/Sprites/Characters/Player/attack/attack.back.3.png" id="4_eqcgk"]
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/States/motion/idle_state.gd" id="5_qssdl"]
+[ext_resource type="Script" uid="uid://d0d7bcxrd6gbp" path="res://Scenes/Prefabs/Characters/Playable/Player/States/motion/idle_state.gd" id="5_qssdl"]
 [ext_resource type="Texture2D" uid="uid://cxg2kfkbcsriu" path="res://Assets/Sprites/Characters/Player/front.png" id="5_x1jye"]
 [ext_resource type="Texture2D" uid="uid://bvdlt7y3xax2c" path="res://Assets/Sprites/Characters/Player/attack/attack.left.1.png" id="6_1ituc"]
 [ext_resource type="Texture2D" uid="uid://senqi8m2x4nd" path="res://Assets/Sprites/Characters/Player/attack/attack.right.1.png" id="6_he60f"]
 [ext_resource type="Texture2D" uid="uid://dsqfuxndlraw1" path="res://Assets/Sprites/Characters/Player/walk/walk.front.2.png" id="6_q0uq2"]
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/States/combat/hit_state.gd" id="6_vponp"]
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/States/combat/attacking_state.gd" id="7_2hrdj"]
+[ext_resource type="Script" uid="uid://bc7bqc7qwjwjq" path="res://Scenes/Prefabs/Characters/Playable/Player/States/combat/hit_state.gd" id="6_vponp"]
+[ext_resource type="Script" uid="uid://dq0jteq4notow" path="res://Scenes/Prefabs/Characters/Playable/Player/States/combat/attacking_state.gd" id="7_2hrdj"]
 [ext_resource type="Texture2D" uid="uid://cvg24a6tvds0m" path="res://Assets/Sprites/Characters/Player/walk/walk.front.1.png" id="7_7v32m"]
 [ext_resource type="Texture2D" uid="uid://b0pnav60tilyb" path="res://Assets/Sprites/Characters/Player/attack/attack.right.2.png" id="7_dbsbi"]
 [ext_resource type="Texture2D" uid="uid://tv8glqiur7py" path="res://Assets/Sprites/Characters/Player/attack/attack.left.2.png" id="7_g6i4p"]
 [ext_resource type="Texture2D" uid="uid://c6n4whkf3xcjt" path="res://Assets/Sprites/Characters/Player/attack/attack.left.3.png" id="8_aartd"]
 [ext_resource type="Texture2D" uid="uid://bv12scf10y47a" path="res://Assets/Sprites/Characters/Player/walk/walk.back.2.png" id="8_g7sfn"]
 [ext_resource type="Texture2D" uid="uid://dgubb5rspeggx" path="res://Assets/Sprites/Characters/Player/attack/attack.right.3.png" id="8_i2ed7"]
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/States/dead_state.gd" id="8_wpk2a"]
+[ext_resource type="Script" uid="uid://j8j6anltv0w" path="res://Scenes/Prefabs/Characters/Playable/Player/States/dead_state.gd" id="8_wpk2a"]
 [ext_resource type="Texture2D" uid="uid://dvdkh67q5sewf" path="res://Assets/Sprites/Characters/Player/attack/attack.left.4.png" id="9_cgejy"]
-[ext_resource type="Script" path="res://Scenes/Prefabs/Characters/Playable/Player/States/skill/invisibility_state.gd" id="9_gagi3"]
+[ext_resource type="Script" uid="uid://oswryaa8ulho" path="res://Scenes/Prefabs/Characters/Playable/Player/States/skill/invisibility_state.gd" id="9_gagi3"]
 [ext_resource type="Texture2D" uid="uid://2mvrpir4w2bh" path="res://Assets/Sprites/Characters/Player/attack/attack.right.4.png" id="9_pxrhn"]
 [ext_resource type="Texture2D" uid="uid://bgnayqy52myf3" path="res://Assets/Sprites/Characters/Player/walk/walk.back.1.png" id="9_s1d1u"]
 [ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/صدای پوتین.mp3" id="10_3pem5"]
@@ -76,18 +76,38 @@
 [ext_resource type="Texture2D" uid="uid://mivph8ymgeea" path="res://Assets/Sprites/Characters/Player/death/death.front.6.png" id="37_u1rul"]
 [ext_resource type="Texture2D" uid="uid://cj3c0ms66ixl5" path="res://Assets/Sprites/Characters/blood/blood.1.png" id="67_wduf8"]
 [ext_resource type="Texture2D" uid="uid://keyn0b81l5h" path="res://Assets/Sprites/Characters/blood/blood.2.png" id="68_aera5"]
+[ext_resource type="Texture2D" uid="uid://cn8kid6vjagix" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.back.1.png.png" id="68_my4x3"]
+[ext_resource type="Texture2D" uid="uid://c408v5bk88u3g" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.back.2.png.png" id="69_fkr1s"]
 [ext_resource type="Texture2D" uid="uid://bntv1himmyxnr" path="res://Assets/Sprites/Characters/blood/blood.3.png" id="69_qesqy"]
 [ext_resource type="Texture2D" uid="uid://dkguv12q0i75x" path="res://Assets/Sprites/Characters/blood/blood.4.png" id="70_57ycm"]
+[ext_resource type="Texture2D" uid="uid://1kxdskpl6mc4" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.back.3.png.png" id="70_rawnl"]
+[ext_resource type="Texture2D" uid="uid://c4bavx7ech633" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.back.4.png.png" id="71_evqpq"]
 [ext_resource type="Texture2D" uid="uid://b8q7njd2aule" path="res://Assets/Sprites/Characters/blood/blood.5.png" id="71_jnlp3"]
+[ext_resource type="Texture2D" uid="uid://d2e1gwycsvhhe" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.back.5.png.png" id="72_1xckq"]
 [ext_resource type="Texture2D" uid="uid://b8hv148uwvtrx" path="res://Assets/Sprites/Characters/blood/blood.6.png" id="72_73ior"]
 [ext_resource type="Texture2D" uid="uid://cijmm4akyflfi" path="res://Assets/Sprites/Characters/blood/blood.7.png" id="73_03t5v"]
+[ext_resource type="Texture2D" uid="uid://dahn1kuyvl8t0" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.left.1.png.png" id="73_mtry0"]
 [ext_resource type="Texture2D" uid="uid://cp0mm1b75gg7u" path="res://Assets/Sprites/Characters/blood/blood.8.png" id="74_gte1j"]
+[ext_resource type="Texture2D" uid="uid://cmjfi1g7dchq4" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.left.2.png.png" id="74_oleu2"]
+[ext_resource type="Texture2D" uid="uid://bnsgkv55bl3mo" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.left.3.png.png" id="75_a4ox4"]
 [ext_resource type="Texture2D" uid="uid://by568w6pe0sx6" path="res://Assets/Sprites/Characters/blood/b.1.png" id="75_xkg7u"]
+[ext_resource type="Texture2D" uid="uid://chvsek3gm1ngq" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.left.4.png.png" id="76_cfph7"]
 [ext_resource type="Texture2D" uid="uid://bpsnvy5ys0xmm" path="res://Assets/Sprites/Characters/blood/b.2.png" id="76_mvr4d"]
+[ext_resource type="Texture2D" uid="uid://4dgycrc08m18" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.left.5.png.png" id="77_oa58f"]
 [ext_resource type="Texture2D" uid="uid://canesbpoq73vu" path="res://Assets/Sprites/Characters/blood/b.3.png" id="77_xxtuj"]
+[ext_resource type="Texture2D" uid="uid://8mpxyfwkfaqs" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.right.1.png.png" id="78_5sw63"]
 [ext_resource type="Texture2D" uid="uid://br3fjtg8i0jic" path="res://Assets/Sprites/Characters/blood/b.4.png" id="78_dlbfr"]
 [ext_resource type="Texture2D" uid="uid://cn3h2tfqoxwgr" path="res://Assets/Sprites/Characters/blood/b.5.png" id="79_1fnl5"]
+[ext_resource type="Texture2D" uid="uid://dgs6sa6ftuu87" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.right.2.png.png" id="79_uhtp0"]
+[ext_resource type="Texture2D" uid="uid://c1mat8c3lgsct" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.right.3png.png" id="80_pkg7b"]
 [ext_resource type="Texture2D" uid="uid://c2gww3a4xxv40" path="res://Assets/Sprites/Characters/blood/b.6.png" id="80_yvch3"]
+[ext_resource type="Texture2D" uid="uid://bdwjhj66xejha" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.right.4.png.png" id="81_lu7vh"]
+[ext_resource type="Texture2D" uid="uid://dlllkblnfuxay" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.right.5.png.png" id="82_cn5ty"]
+[ext_resource type="Texture2D" uid="uid://b2wajliucqia8" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.front.1.png.png" id="83_i2qs5"]
+[ext_resource type="Texture2D" uid="uid://cwx80rcee6aon" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.front.2.png.png" id="84_s1dc0"]
+[ext_resource type="Texture2D" uid="uid://roc1onxy3p4p" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.front.3.png.png" id="85_tq0wq"]
+[ext_resource type="Texture2D" uid="uid://b5pbiuv7bhqpm" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.front.4.png.png" id="86_stws6"]
+[ext_resource type="Texture2D" uid="uid://b0yyb87cx0dsu" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.front.5.png.png" id="87_mu558"]
 [ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="89_urtvo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
@@ -364,22 +384,82 @@ animations = [{
 "name": &"Run_up",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("68_my4x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_fkr1s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_rawnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_evqpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_1xckq")
+}],
 "loop": true,
 "name": &"Throw_down",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("73_mtry0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_oleu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_a4ox4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_cfph7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_oa58f")
+}],
 "loop": false,
 "name": &"Throw_left",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("78_5sw63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_uhtp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_pkg7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_lu7vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_cn5ty")
+}],
 "loop": false,
 "name": &"Throw_right",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("83_i2qs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_s1dc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_tq0wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_stws6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_mu558")
+}],
 "loop": true,
 "name": &"Throw_up",
 "speed": 5.0
@@ -541,7 +621,7 @@ script = ExtResource("9_gagi3")
 position = Vector2(-2.38421e-07, -8)
 scale = Vector2(0.0625, 0.046875)
 sprite_frames = SubResource("SpriteFrames_no5v7")
-animation = &"Throw_up"
+animation = &"Throw_right"
 
 [node name="Blood" type="AnimatedSprite2D" parent="."]
 visible = false

@@ -93,7 +93,6 @@
 [ext_resource type="AudioStream" uid="uid://b07v3qtagkjeg" path="res://Assets/Musics/shlik.mp3" id="91_c2ir5"]
 [ext_resource type="PackedScene" uid="uid://7bq84adsigqi" path="res://GameComponants/Path/path_2d.tscn" id="92_dwnbv"]
 
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jeas2"]
 radius = 40.0
 height = 80.0

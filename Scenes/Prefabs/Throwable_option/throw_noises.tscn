@@ -1,17 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://cv4nhkkca05th"]
+[gd_scene load_steps=9 format=3 uid="uid://cv4nhkkca05th"]
 
 [ext_resource type="Script" uid="uid://c78h0qkfckm3o" path="res://Scenes/Prefabs/Throwable_option/throw_noises.gd" id="1_sf18o"]
 [ext_resource type="PackedScene" uid="uid://nxvy63jm3es" path="res://Scenes/Prefabs/Throwable_option/Bottle.tscn" id="2_6elai"]
 [ext_resource type="PackedScene" uid="uid://dx1v528cpkhw8" path="res://Scenes/Prefabs/Throwable_option/Stone.tscn" id="3_adqkh"]
 [ext_resource type="PackedScene" uid="uid://bgmmyjum7e845" path="res://Scenes/Prefabs/Throwable_option/metal_can.tscn" id="4_wmgbs"]
+[ext_resource type="AudioStream" uid="uid://m3ta6e88i1es" path="res://Assets/Musics/throwing stones.mp3" id="5_qwred"]
+[ext_resource type="AudioStream" uid="uid://c8afbacpmcygb" path="res://Assets/Musics/smashing-glass.mp3" id="5_vivph"]
+[ext_resource type="AudioStream" uid="uid://bmv3rqnv3a0q8" path="res://Assets/Musics/06-METAL.WAV" id="6_vivph"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sf18o"]
-animations = [{
-"frames": [],
-"loop": false,
-"name": &"Throw",
-"speed": 5.0
-}]
+animations = []
 
 [node name="ThrowNoises" type="Node2D"]
 script = ExtResource("1_sf18o")
@@ -26,14 +24,16 @@ visible = false
 visible = false
 
 [node name="BottleThrowSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_vivph")
 
 [node name="StoneThrowSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_qwred")
 
 [node name="MetalCanThrowSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_vivph")
 
 [node name="ThrowEffectAnimated" type="AnimatedSprite2D" parent="."]
 visible = false
 scale = Vector2(1.875, 1.875)
 sprite_frames = SubResource("SpriteFrames_sf18o")
-animation = &"Throw"
-frame_progress = 1.0
+animation = &""
