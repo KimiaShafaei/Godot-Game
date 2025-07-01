@@ -1,6 +1,6 @@
 extends Control
 
-signal choose_option(option_name)
+signal choose_option(thing_name)
 
 func _ready() -> void:
 	var bottle_button = $Bottle

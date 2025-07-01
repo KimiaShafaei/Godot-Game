@@ -8,8 +8,13 @@
 [ext_resource type="AudioStream" uid="uid://c8afbacpmcygb" path="res://Assets/Musics/smashing-glass.mp3" id="5_vivph"]
 [ext_resource type="AudioStream" uid="uid://bmv3rqnv3a0q8" path="res://Assets/Musics/06-METAL.WAV" id="6_vivph"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_sf18o"]
-animations = []
+[sub_resource type="SpriteFrames" id="SpriteFrames_v81tu"]
+animations = [{
+"frames": [],
+"loop": false,
+"name": &"Throw",
+"speed": 5.0
+}]
 
 [node name="ThrowNoises" type="Node2D"]
 script = ExtResource("1_sf18o")
@@ -35,5 +40,5 @@ stream = ExtResource("6_vivph")
 [node name="ThrowEffectAnimated" type="AnimatedSprite2D" parent="."]
 visible = false
 scale = Vector2(1.875, 1.875)
-sprite_frames = SubResource("SpriteFrames_sf18o")
-animation = &""
+sprite_frames = SubResource("SpriteFrames_v81tu")
+animation = &"Throw"

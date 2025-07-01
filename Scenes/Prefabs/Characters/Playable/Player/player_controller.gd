@@ -26,6 +26,7 @@ var _path: Array = []
 var _current_index = 0
 var _last_side: String = "down"
 var start_chasing = false
+var is_throwing = false
 
 func _ready():
 	anim.play("Idle_down")
@@ -61,6 +62,11 @@ func _input(event):
 			state_manager.change_state("WalkingState")
 
 func _physics_process(_delta):
+	if is_throwing:
+		velocity = Vector2.ZERO
+		move_and_slide()
+		return
+
 	if _path.is_empty() or _current_index >= _path.size():
 		state_manager.change_state("IdleState")
 		return
@@ -154,6 +160,12 @@ func throw_noise_option(thing_name):
 	thing.global_position = global_position + radius
 
 	world.add_child(thing)
+	if thing.has_node("AnimatedSprite2D"):
+		var thing_anim = thing.get_node("AnimatedSprite2D")
+		thing_anim.play()
+		await get_tree().create_timer(2.0).timeout
+		thing_anim.queue_free()
+
 	if throw_effect_anim:
 		throw_effect_anim.visible = true
 		throw_effect_anim.global_position = thing.global_position
@@ -162,8 +174,6 @@ func throw_noise_option(thing_name):
 		throw_effect_anim.visible = false
 
 	throw_noises.emit_noise(thing.global_position)
-	await get_tree().create_timer(2.0).timeout
-	thing.queue_free()
 	
 #endregion
 
@@ -203,14 +213,12 @@ func _play_idle():
 	if walking_sound.playing:
 		walking_sound.stop()
 
-func _play_throw_animation():
+func _play_throw_animation() -> void:
+	is_throwing = true
 	anim.play("Throw_%s" % _last_side)
 	await anim.animation_finished
-
-	if walking_sound.playing:
-		walking_sound.stop()
+	is_throwing = false
 #endregion
-
 
 func start_running():
 	if not start_chasing:

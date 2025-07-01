@@ -28,7 +28,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_uugfa")
 }],
-"loop": true,
+"loop": false,
 "name": &"Metallcan",
 "speed": 5.0
 }]
@@ -38,5 +38,5 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_w77e4")
 animation = &"Metallcan"
-frame = 1
-frame_progress = 0.460437
+frame = 5
+frame_progress = 1.0

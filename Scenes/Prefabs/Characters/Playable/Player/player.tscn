@@ -386,21 +386,21 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("68_my4x3")
+"texture": ExtResource("83_i2qs5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("69_fkr1s")
+"texture": ExtResource("84_s1dc0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("70_rawnl")
+"texture": ExtResource("85_tq0wq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("71_evqpq")
+"texture": ExtResource("86_stws6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("72_1xckq")
+"texture": ExtResource("87_mu558")
 }],
-"loop": true,
+"loop": false,
 "name": &"Throw_down",
 "speed": 5.0
 }, {
@@ -446,21 +446,21 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("83_i2qs5")
+"texture": ExtResource("68_my4x3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("84_s1dc0")
+"texture": ExtResource("69_fkr1s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("85_tq0wq")
+"texture": ExtResource("70_rawnl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("86_stws6")
+"texture": ExtResource("71_evqpq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("87_mu558")
+"texture": ExtResource("72_1xckq")
 }],
-"loop": true,
+"loop": false,
 "name": &"Throw_up",
 "speed": 5.0
 }, {
@@ -622,6 +622,8 @@ position = Vector2(-2.38421e-07, -8)
 scale = Vector2(0.0625, 0.046875)
 sprite_frames = SubResource("SpriteFrames_no5v7")
 animation = &"Throw_right"
+frame = 4
+frame_progress = 1.0
 
 [node name="Blood" type="AnimatedSprite2D" parent="."]
 visible = false
