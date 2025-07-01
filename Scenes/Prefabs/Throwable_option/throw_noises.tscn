@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://nxvy63jm3es" path="res://Scenes/Prefabs/Throwable_option/Bottle.tscn" id="2_6elai"]
 [ext_resource type="PackedScene" uid="uid://dx1v528cpkhw8" path="res://Scenes/Prefabs/Throwable_option/Stone.tscn" id="3_adqkh"]
 [ext_resource type="PackedScene" uid="uid://bgmmyjum7e845" path="res://Scenes/Prefabs/Throwable_option/metal_can.tscn" id="4_wmgbs"]
-[ext_resource type="AudioStream" uid="uid://m3ta6e88i1es" path="res://Assets/Musics/throwing stones.mp3" id="5_qwred"]
-[ext_resource type="AudioStream" uid="uid://c8afbacpmcygb" path="res://Assets/Musics/smashing-glass.mp3" id="5_vivph"]
-[ext_resource type="AudioStream" uid="uid://bmv3rqnv3a0q8" path="res://Assets/Musics/06-METAL.WAV" id="6_vivph"]
+[ext_resource type="AudioStream" uid="uid://m3ta6e88i1es" path="res://Assets/Musics/Throw Things/throwing stones.mp3" id="5_qwred"]
+[ext_resource type="AudioStream" uid="uid://c8afbacpmcygb" path="res://Assets/Musics/Throw Things/smashing-glass.mp3" id="5_vivph"]
+[ext_resource type="AudioStream" uid="uid://bmv3rqnv3a0q8" path="res://Assets/Musics/Walk Sounds/06-METAL.WAV" id="6_vivph"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v81tu"]
 animations = [{

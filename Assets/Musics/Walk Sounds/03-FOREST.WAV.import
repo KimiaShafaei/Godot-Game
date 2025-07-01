@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://beq2u0y5ckqxf"
+path="res://.godot/imported/03-FOREST.WAV-3ef108d966d88847c4c00ab1f2e9fbf0.sample"
+
+[deps]
+
+source_file="res://Assets/Musics/Walk Sounds/03-FOREST.WAV"
+dest_files=["res://.godot/imported/03-FOREST.WAV-3ef108d966d88847c4c00ab1f2e9fbf0.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

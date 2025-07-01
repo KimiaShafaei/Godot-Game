@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bi0crwded0eky"
+path="res://.godot/imported/18-WATER.WAV-560ac0dc5e4e5d51a17fac707fdf5ba4.sample"
+
+[deps]
+
+source_file="res://Assets/Musics/Walk Sounds/18-WATER.WAV"
+dest_files=["res://.godot/imported/18-WATER.WAV-560ac0dc5e4e5d51a17fac707fdf5ba4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -132,6 +132,8 @@ func attack_to_enemy(enemy):
 
 func throw_noise_option(thing_name):
 	_play_throw_animation()
+
+	#Determine which object to throw and its sound
 	var thing_scene = ""
 	var throw_sound: AudioStreamPlayer2D = null
 	match thing_name:
@@ -146,11 +148,11 @@ func throw_noise_option(thing_name):
 			throw_sound = throw_noises.get_node("MetalCanThrowSound")
 		_:
 			return
-
 	if throw_sound and not throw_sound.playing:
 		throw_sound.play()
 		
 	var thing = load(thing_scene).instantiate()
+	# Calculate the position to throw the thing
 	var radius = Vector2.ZERO
 	match _last_side:
 		"up": radius = Vector2(0, -throw_radius)
@@ -158,21 +160,22 @@ func throw_noise_option(thing_name):
 		"left": radius = Vector2(-throw_radius, 0)
 		"right": radius = Vector2(throw_radius, 0)
 	thing.global_position = global_position + radius
-
 	world.add_child(thing)
+
+	#Play the thing's animation
 	if thing.has_node("AnimatedSprite2D"):
 		var thing_anim = thing.get_node("AnimatedSprite2D")
 		thing_anim.play()
 		await get_tree().create_timer(2.0).timeout
 		thing_anim.queue_free()
-
+	#Show the throw effect animation
 	if throw_effect_anim:
 		throw_effect_anim.visible = true
 		throw_effect_anim.global_position = thing.global_position
 		throw_effect_anim.play("Throw")
 		await throw_effect_anim.animation_finished
 		throw_effect_anim.visible = false
-
+	#Emit noise signal so enemy can react
 	throw_noises.emit_noise(thing.global_position)
 	
 #endregion

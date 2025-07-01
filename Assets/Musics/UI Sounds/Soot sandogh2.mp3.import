@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2at3xj8xxtue"
+path="res://.godot/imported/Soot sandogh2.mp3-7039b9f30302b67d76d00a1b36b957db.mp3str"
+
+[deps]
+
+source_file="res://Assets/Musics/UI Sounds/Soot sandogh2.mp3"
+dest_files=["res://.godot/imported/Soot sandogh2.mp3-7039b9f30302b67d76d00a1b36b957db.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d02mph8o4tk87"
+path="res://.godot/imported/21-WETSHOES.WAV-e66d78c760eb236882feb4eb1065d716.sample"
+
+[deps]
+
+source_file="res://Assets/Musics/Walk Sounds/21-WETSHOES.WAV"
+dest_files=["res://.godot/imported/21-WETSHOES.WAV-e66d78c760eb236882feb4eb1065d716.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

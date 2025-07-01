@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://qyhut3lgrgan"
+path="res://.godot/imported/haiajani.mp3-0cdbe0bc70e6a47175742e21e379ff1c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Musics/Background Sounds/haiajani.mp3"
+dest_files=["res://.godot/imported/haiajani.mp3-0cdbe0bc70e6a47175742e21e379ff1c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

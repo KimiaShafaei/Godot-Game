@@ -1,7 +1,7 @@
 [gd_scene load_steps=113 format=4 uid="uid://dckliyh83wds0"]
 
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_0y5vq"]
-[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_keqdx"]
+[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/Background Sounds/MMD.mp3" id="1_keqdx"]
 [ext_resource type="PackedScene" uid="uid://ch46huvvjkxyt" path="res://GameComponants/Map/map.tscn" id="2_0q0s6"]
 [ext_resource type="PackedScene" uid="uid://cd4fei02j1xf2" path="res://GameComponants/Box/box.tscn" id="3_0q0s6"]
 [ext_resource type="Script" uid="uid://dhsuvld0sjsxr" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy_controller.gd" id="5_mndid"]
@@ -94,8 +94,8 @@
 [ext_resource type="Texture2D" uid="uid://br3fjtg8i0jic" path="res://Assets/Sprites/Characters/blood/b.4.png" id="91_oo2hg"]
 [ext_resource type="Texture2D" uid="uid://cn3h2tfqoxwgr" path="res://Assets/Sprites/Characters/blood/b.5.png" id="92_5s0vc"]
 [ext_resource type="Texture2D" uid="uid://c2gww3a4xxv40" path="res://Assets/Sprites/Characters/blood/b.6.png" id="93_j5p45"]
-[ext_resource type="AudioStream" uid="uid://bklldq5tvcorp" path="res://Assets/Musics/Effect-sedaye-Tajoob.mp3" id="94_1tegh"]
-[ext_resource type="AudioStream" uid="uid://b07v3qtagkjeg" path="res://Assets/Musics/shlik.mp3" id="95_8tu66"]
+[ext_resource type="AudioStream" uid="uid://bklldq5tvcorp" path="res://Assets/Musics/Reaction Sounds/Effect-sedaye-Tajoob.mp3" id="94_1tegh"]
+[ext_resource type="AudioStream" uid="uid://b07v3qtagkjeg" path="res://Assets/Musics/Attack Sounds/shlik.mp3" id="95_8tu66"]
 [ext_resource type="Script" uid="uid://bsbvr1lrb6hwy" path="res://GameComponants/Path/path_2d.gd" id="96_mndid"]
 [ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="98_i878n"]
 

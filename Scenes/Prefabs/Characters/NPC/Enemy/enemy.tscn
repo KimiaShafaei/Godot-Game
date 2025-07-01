@@ -89,8 +89,8 @@
 [ext_resource type="Texture2D" uid="uid://br3fjtg8i0jic" path="res://Assets/Sprites/Characters/blood/b.4.png" id="87_itfqp"]
 [ext_resource type="Texture2D" uid="uid://cn3h2tfqoxwgr" path="res://Assets/Sprites/Characters/blood/b.5.png" id="88_eute0"]
 [ext_resource type="Texture2D" uid="uid://c2gww3a4xxv40" path="res://Assets/Sprites/Characters/blood/b.6.png" id="89_lmlyh"]
-[ext_resource type="AudioStream" uid="uid://bklldq5tvcorp" path="res://Assets/Musics/Effect-sedaye-Tajoob.mp3" id="90_4kp5n"]
-[ext_resource type="AudioStream" uid="uid://b07v3qtagkjeg" path="res://Assets/Musics/shlik.mp3" id="91_c2ir5"]
+[ext_resource type="AudioStream" uid="uid://bklldq5tvcorp" path="res://Assets/Musics/Reaction Sounds/Effect-sedaye-Tajoob.mp3" id="90_4kp5n"]
+[ext_resource type="AudioStream" uid="uid://b07v3qtagkjeg" path="res://Assets/Musics/Attack Sounds/shlik.mp3" id="91_c2ir5"]
 [ext_resource type="PackedScene" uid="uid://7bq84adsigqi" path="res://GameComponants/Path/path_2d.tscn" id="92_dwnbv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jeas2"]

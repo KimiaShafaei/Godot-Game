@@ -28,7 +28,7 @@
 [ext_resource type="Script" uid="uid://oswryaa8ulho" path="res://Scenes/Prefabs/Characters/Playable/Player/States/skill/invisibility_state.gd" id="9_gagi3"]
 [ext_resource type="Texture2D" uid="uid://2mvrpir4w2bh" path="res://Assets/Sprites/Characters/Player/attack/attack.right.4.png" id="9_pxrhn"]
 [ext_resource type="Texture2D" uid="uid://bgnayqy52myf3" path="res://Assets/Sprites/Characters/Player/walk/walk.back.1.png" id="9_s1d1u"]
-[ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/صدای پوتین.mp3" id="10_3pem5"]
+[ext_resource type="AudioStream" uid="uid://bfuyme3c1hnjh" path="res://Assets/Musics/Walk Sounds/صدای پوتین.mp3" id="10_3pem5"]
 [ext_resource type="Texture2D" uid="uid://8bkyvf2snik6" path="res://Assets/Sprites/Characters/Player/run/run.left.1.png" id="10_ssbvl"]
 [ext_resource type="Texture2D" uid="uid://bfj8xq6j1di43" path="res://Assets/Sprites/Characters/Player/run/run.left.2.png" id="11_6qvfr"]
 [ext_resource type="Texture2D" uid="uid://eidn1mpju732" path="res://Assets/Sprites/Characters/Player/run/run.left.3.png" id="12_cdk7s"]

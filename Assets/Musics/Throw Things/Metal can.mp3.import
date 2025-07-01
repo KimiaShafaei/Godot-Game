@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chqmw3dbvxqad"
+path="res://.godot/imported/Metal can.mp3-e1caa8010570af7d1dce15efe59b3094.mp3str"
+
+[deps]
+
+source_file="res://Assets/Musics/Throw Things/Metal can.mp3"
+dest_files=["res://.godot/imported/Metal can.mp3-e1caa8010570af7d1dce15efe59b3094.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

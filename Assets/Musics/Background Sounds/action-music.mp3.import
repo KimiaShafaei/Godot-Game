@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bj1hdioalkekl"
+path="res://.godot/imported/action-music.mp3-4dc376970ba5868bb62aef904013e865.mp3str"
+
+[deps]
+
+source_file="res://Assets/Musics/Background Sounds/action-music.mp3"
+dest_files=["res://.godot/imported/action-music.mp3-4dc376970ba5868bb62aef904013e865.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

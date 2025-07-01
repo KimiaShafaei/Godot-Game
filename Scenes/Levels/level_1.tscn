@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=4 uid="uid://dlqikh11tsanq"]
 
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_cyadu"]
-[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_tc3c1"]
+[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/Background Sounds/MMD.mp3" id="1_tc3c1"]
 [ext_resource type="Texture2D" uid="uid://dd3r50p0wmkxi" path="res://Assets/Sprites/Tiles/tile.6.png" id="3_rb0md"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="4_u5ghp"]
 [ext_resource type="Script" uid="uid://dabao4blkwtbs" path="res://GameComponants/Map/map.gd" id="5_hwvp3"]

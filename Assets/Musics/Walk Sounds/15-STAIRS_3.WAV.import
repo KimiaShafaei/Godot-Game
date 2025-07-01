@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bg8eqhh6buina"
+path="res://.godot/imported/15-STAIRS_3.WAV-134e86d88d6ede236a82929a6a7c6afb.sample"
+
+[deps]
+
+source_file="res://Assets/Musics/Walk Sounds/15-STAIRS_3.WAV"
+dest_files=["res://.godot/imported/15-STAIRS_3.WAV-134e86d88d6ede236a82929a6a7c6afb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

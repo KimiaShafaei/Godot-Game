@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://76ew13hp0ck6"
+path="res://.godot/imported/chagho-zadan-Sound-Effect.mp3-c7405886a92afdc432e37ce78a43f5ef.mp3str"
+
+[deps]
+
+source_file="res://Assets/Musics/Attack Sounds/chagho-zadan-Sound-Effect.mp3"
+dest_files=["res://.godot/imported/chagho-zadan-Sound-Effect.mp3-c7405886a92afdc432e37ce78a43f5ef.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

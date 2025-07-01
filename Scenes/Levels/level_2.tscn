@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=4 uid="uid://cs35iobq7t36k"]
 
-[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/MMD.mp3" id="1_bebog"]
+[ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/Background Sounds/MMD.mp3" id="1_bebog"]
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_u40f0"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="2_8374t"]
 [ext_resource type="PackedScene" uid="uid://cd4fei02j1xf2" path="res://GameComponants/Box/box.tscn" id="3_0x4y1"]

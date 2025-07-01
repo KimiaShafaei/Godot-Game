@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c3lwj0menipsf"
+path="res://.godot/imported/07-PAVEMNT1.WAV-3c8d83771594b00f071f7a959da89995.sample"
+
+[deps]
+
+source_file="res://Assets/Musics/Walk Sounds/07-PAVEMNT1.WAV"
+dest_files=["res://.godot/imported/07-PAVEMNT1.WAV-3c8d83771594b00f071f7a959da89995.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
