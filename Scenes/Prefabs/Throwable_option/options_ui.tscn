@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bw4nolarc8tct"]
+[gd_scene load_steps=5 format=3 uid="uid://bw4nolarc8tct"]
 
 [ext_resource type="Script" uid="uid://cvshq4hk52bp0" path="res://Scenes/Prefabs/Throwable_option/options_ui.gd" id="1_y5j8i"]
+[ext_resource type="Texture2D" uid="uid://dwo4t51ncxtbn" path="res://Assets/Sprites/tools/bottle/bottle-1.png.png" id="2_gxc76"]
+[ext_resource type="Texture2D" uid="uid://6vkckrgwnnpm" path="res://Assets/Sprites/tools/stone/stone-1.png.png" id="3_0gv8p"]
+[ext_resource type="Texture2D" uid="uid://bapx047ulqeho" path="res://Assets/Sprites/tools/metal can/metal can1.png" id="4_ah5fw"]
 
 [node name="OptionsUI" type="Control"]
 layout_mode = 3
@@ -12,21 +15,25 @@ grow_vertical = 2
 script = ExtResource("1_y5j8i")
 
 [node name="Bottle" type="Button" parent="."]
+modulate = Color(0, 1, 1, 1)
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-text = "Bottle"
+offset_left = 16.0
+offset_right = 56.0
+offset_bottom = 40.0
+icon = ExtResource("2_gxc76")
+vertical_icon_alignment = 2
 
 [node name="Stone" type="Button" parent="."]
+self_modulate = Color(0.612507, 0.528377, 0.321029, 1)
 layout_mode = 0
-offset_left = 56.0
-offset_right = 109.0
-offset_bottom = 31.0
-text = "Stone"
+offset_left = 80.0
+offset_right = 120.0
+offset_bottom = 40.0
+icon = ExtResource("3_0gv8p")
 
 [node name="MetalCan" type="Button" parent="."]
 layout_mode = 0
-offset_left = 112.0
-offset_right = 197.0
-offset_bottom = 31.0
-text = "metal can"
+offset_left = 136.0
+offset_right = 176.0
+offset_bottom = 40.0
+icon = ExtResource("4_ah5fw")
