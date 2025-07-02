@@ -1,10 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkquqgm22yqm6"]
-
-[sub_resource type="Resource" id="Resource_upymv"]
-metadata/__load_path__ = "res://Scripts/UI/inv_button.gd"
-
-[sub_resource type="Resource" id="Resource_y64an"]
-metadata/__load_path__ = "res://Scripts/UI/invs_bar.gd"
+[gd_scene format=3 uid="uid://bkquqgm22yqm6"]
 
 [node name="Invisibility UI" type="Control"]
 layout_mode = 3
@@ -18,12 +12,10 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 8.0
 offset_bottom = 8.0
-script = SubResource("Resource_upymv")
 
 [node name="Invs Bar" type="ProgressBar" parent="."]
 layout_mode = 0
 offset_right = 4.0
 offset_bottom = 27.0
-script = SubResource("Resource_y64an")
 
 [connection signal="pressed" from="Invs Button" to="Invs Button" method="_on_inv_button_pressed"]

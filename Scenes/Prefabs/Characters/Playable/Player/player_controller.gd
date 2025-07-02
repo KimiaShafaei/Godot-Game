@@ -163,18 +163,19 @@ func throw_noise_option(thing_name):
 	world.add_child(thing)
 
 	#Play the thing's animation
-	if thing.has_node("AnimatedSprite2D"):
-		var thing_anim = thing.get_node("AnimatedSprite2D")
-		thing_anim.play()
-		await get_tree().create_timer(2.0).timeout
-		thing_anim.queue_free()
+	#if thing.has_node("AnimatedSprite2D"):
+	var thing_anim = thing.get_node("AnimatedSprite2D")
+	thing_anim.play()
 	#Show the throw effect animation
 	if throw_effect_anim:
 		throw_effect_anim.visible = true
 		throw_effect_anim.global_position = thing.global_position
 		throw_effect_anim.play("Throw")
-		await throw_effect_anim.animation_finished
+		await get_tree().create_timer(2.0).timeout
 		throw_effect_anim.visible = false
+		
+	await get_tree().create_timer(1.5).timeout
+	thing_anim.queue_free()
 	#Emit noise signal so enemy can react
 	throw_noises.emit_noise(thing.global_position)
 	
