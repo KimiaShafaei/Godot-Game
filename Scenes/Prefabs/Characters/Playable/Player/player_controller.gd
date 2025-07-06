@@ -10,7 +10,7 @@ var speed
 @export var runnig_speed = 400
 @export var healths = 3
 @export var invisibility_color: Color = Color(1, 1, 1, 0.4)
-@export var throw_radius = 10
+@export var throw_radius = 100
 
 
 @onready var anim = $PlayerAnimatedSprite2D
@@ -162,8 +162,9 @@ func throw_noise_option(thing_name):
 	thing.global_position = global_position + radius
 	world.add_child(thing)
 
+	throw_noises.emit_noise(thing.global_position)
+	
 	#Play the thing's animation
-	#if thing.has_node("AnimatedSprite2D"):
 	var thing_anim = thing.get_node("AnimatedSprite2D")
 	thing_anim.play()
 	#Show the throw effect animation
@@ -176,9 +177,6 @@ func throw_noise_option(thing_name):
 		
 	await get_tree().create_timer(1.5).timeout
 	thing_anim.queue_free()
-	#Emit noise signal so enemy can react
-	throw_noises.emit_noise(thing.global_position)
-	
 #endregion
 
 #region AnimationHandling
