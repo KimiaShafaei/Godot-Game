@@ -12,6 +12,8 @@ extends Node2D
 @export var enemies: Array[Enemy]
 
 func _ready() -> void:
-	
 	if music and not music.playing:
 		music.play()
+
+	for enemy in enemies:
+		$ThrowNoises.connect("noise_emitted", Callable(enemy, "on_noise_emitted"))

@@ -2,6 +2,8 @@ res://Scenes/Prefabs/Throwable_option/options_ui.tscn
 res://Scenes/Levels/level_1.tscn
 res://Scenes/Levels/level_2.tscn
 res://Scenes/Prefabs/Characters/Playable/Player/player.tscn
+res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd
+res://Scenes/Levels/level_1.tscn
 res://Scenes/Prefabs/Throwable_option/throw_noises.tscn
 res://Scenes/Prefabs/Throwable_option/Bottle.tscn
 res://Scenes/Prefabs/Throwable_option/Stone.tscn

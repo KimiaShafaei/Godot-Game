@@ -9,6 +9,7 @@ var tile_map
 
 @export var enemy_healths: int = 1
 @export var speed: int = 100
+@export var noise_react_distance = 200
 
 @onready var enemy_sprite: AnimatedSprite2D = $EnemyAnimatedSprite2D
 @onready var detect_sound = $DetectSound
@@ -21,6 +22,8 @@ var _path: Array = []
 var _current_index = 0
 var _last_side: String = "down"
 var player_detected = false
+var patrol_position: Vector2
+var is_investigating_noise := false
 
 func _ready():
 	enemy_sprite.play("Idle_down")
@@ -41,10 +44,16 @@ func _process(_delta: float) -> void:
 
 func _physics_process(_delta: float) -> void:
 	if _path.is_empty():
+		if is_investigating_noise and state_manager.get_current_state_name() == "ChasingState" and not player_detected:
+			is_investigating_noise = false
+			go_to_position(patrol_position)
+			state_manager.change_state("PatrollingState")
+			return
+
 		await set_timer(5)
 		state_manager.change_state("IdleState")
 		return
-		
+
 	move_in_tileset()
 		
 func go_to_player_position() -> void:
@@ -113,6 +122,16 @@ func take_damage():
 		await set_timer(death_animation_duration)
 		queue_free()
 
+func on_noise_emitted(noise_position: Vector2) -> void:
+	var noise_distance = global_position.distance_to(noise_position)
+
+	if noise_distance < noise_react_distance and not player_detected:
+		patrol_position = global_position
+		is_investigating_noise = true
+		state_manager.change_state("ChasingState")
+		reset_path()
+		go_to_position(noise_position)
+		
 		
 	
 #endregion

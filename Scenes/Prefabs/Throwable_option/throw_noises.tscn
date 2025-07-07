@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cv4nhkkca05th"]
+[gd_scene load_steps=13 format=3 uid="uid://cv4nhkkca05th"]
 
 [ext_resource type="Script" uid="uid://c78h0qkfckm3o" path="res://Scenes/Prefabs/Throwable_option/throw_noises.gd" id="1_sf18o"]
 [ext_resource type="PackedScene" uid="uid://nxvy63jm3es" path="res://Scenes/Prefabs/Throwable_option/Bottle.tscn" id="2_6elai"]
@@ -7,10 +7,26 @@
 [ext_resource type="AudioStream" uid="uid://m3ta6e88i1es" path="res://Assets/Musics/Throw Things/throwing stones.mp3" id="5_qwred"]
 [ext_resource type="AudioStream" uid="uid://c8afbacpmcygb" path="res://Assets/Musics/Throw Things/smashing-glass.mp3" id="5_vivph"]
 [ext_resource type="AudioStream" uid="uid://chqmw3dbvxqad" path="res://Assets/Musics/Throw Things/Metal can.mp3" id="7_vivph"]
+[ext_resource type="Texture2D" uid="uid://wkikx72mjaag" path="res://Assets/Sprites/tools/sound/sound-1.png.png" id="8_jif3x"]
+[ext_resource type="Texture2D" uid="uid://6dvoleu2bghd" path="res://Assets/Sprites/tools/sound/sound-2.png.png" id="9_7ycvt"]
+[ext_resource type="Texture2D" uid="uid://ux5ot37h55rd" path="res://Assets/Sprites/tools/sound/sound-3.png.png" id="10_48el3"]
+[ext_resource type="Texture2D" uid="uid://4q3upv1oysl5" path="res://Assets/Sprites/tools/sound/sound-4.png.png" id="11_jwr8u"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v81tu"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 2.0,
+"texture": ExtResource("8_jif3x")
+}, {
+"duration": 2.0,
+"texture": ExtResource("9_7ycvt")
+}, {
+"duration": 2.0,
+"texture": ExtResource("10_48el3")
+}, {
+"duration": 2.0,
+"texture": ExtResource("11_jwr8u")
+}],
 "loop": false,
 "name": &"Throw",
 "speed": 5.0
@@ -39,6 +55,8 @@ stream = ExtResource("7_vivph")
 
 [node name="ThrowEffectAnimated" type="AnimatedSprite2D" parent="."]
 visible = false
-scale = Vector2(1.875, 1.875)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_v81tu")
 animation = &"Throw"
+frame = 3
+frame_progress = 1.0
