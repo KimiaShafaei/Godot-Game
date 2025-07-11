@@ -13,6 +13,7 @@ var tile_map
 
 @onready var enemy_sprite: AnimatedSprite2D = $EnemyAnimatedSprite2D
 @onready var detect_sound = $DetectSound
+@onready var detecting_sprite = $DetectSprite
 @onready var shoot_sound = $ShootingSound
 @onready var blood_anim = $BloodAnimatedSprite
 @onready var state_manager = $StateManager
@@ -95,12 +96,13 @@ func _on_detect_area_body_entered(body: Node2D) -> void:
 		player_detected = true
 		reset_path()
 		go_to_player_position()
-		
+		detecting_sprite.visible = true
 		if detect_sound and not detect_sound.playing and player_detected:
 			detect_sound.play()
-			await set_timer(5.0)
-			player_detected = false
-			state_manager.change_state("SearchingState")
+		await set_timer(5.0)
+		detecting_sprite.visible = false
+		player_detected = false
+		state_manager.change_state("SearchingState")
 
 func _on_hit_zone_body_entered(body: Node2D) -> void:
 	if body.name == "Player":

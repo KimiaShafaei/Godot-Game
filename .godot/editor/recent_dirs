@@ -1,3 +1,4 @@
+res://Scenes
 res://GameComponants/BasicLight/
 res://GameComponants/Path/
 res://Assets/Sprites/Tiles
@@ -8,7 +9,6 @@ res://GameComponants/Box
 res://
 res://Scenes/Prefabs/UI
 res://Scenes/GUI
-res://Scenes
 res://Scenes/Prefabs
 /Users/kimia/Godot-Game/Scripts
 /Users/kimia/Godot-Game

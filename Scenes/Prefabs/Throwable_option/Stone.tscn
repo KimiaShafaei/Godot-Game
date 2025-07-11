@@ -17,9 +17,11 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Stone" type="Node2D"]
+[node name="Stone" type="RigidBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.38419e-07, 2.38419e-07)
+scale = Vector2(1.25, 1.25)
 sprite_frames = SubResource("SpriteFrames_2d01g")
 animation = &"Stone"
 frame = 1

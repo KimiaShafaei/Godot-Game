@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://nxvy63jm3es"]
+[gd_scene load_steps=8 format=3 uid="uid://nxvy63jm3es"]
 
 [ext_resource type="Texture2D" uid="uid://dwo4t51ncxtbn" path="res://Assets/Sprites/tools/bottle/bottle-1.png.png" id="1_lhrwp"]
 [ext_resource type="Texture2D" uid="uid://b6aparyxili8y" path="res://Assets/Sprites/tools/bottle/bottle-2.png.png" id="2_0ntdc"]
@@ -25,14 +25,21 @@ animations = [{
 "texture": ExtResource("5_x4voy")
 }],
 "loop": false,
-"name": &"Buttle",
+"name": &"Bottle",
 "speed": 5.0
 }]
 
-[node name="Bottle" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5d53f"]
+radius = 8.0
+height = 32.0
+
+[node name="Bottle" type="RigidBody2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cqpes")
-animation = &"Buttle"
-frame = 4
-frame_progress = 1.0
+animation = &"Bottle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.559999, 0.76)
+shape = SubResource("CapsuleShape2D_5d53f")
+disabled = true

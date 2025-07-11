@@ -11,7 +11,8 @@ var speed
 @export var healths = 3
 @export var invisibility_color: Color = Color(1, 1, 1, 0.4)
 @export var throw_radius = 100
-
+@export var impulse_mult: float = 20.0
+@export var impulse_max: float = 1000.0
 
 @onready var anim = $PlayerAnimatedSprite2D
 @onready var walking_sound = $walking
@@ -26,7 +27,19 @@ var _path: Array = []
 var _current_index = 0
 var _last_side: String = "down"
 var start_chasing = false
-var is_throwing = false
+
+#for drag and release part
+var throw_sound: AudioStreamPlayer2D = null
+var selected_thing_name: String = ""
+var drag_lim_max: Vector2
+var drag_lim_min: Vector2
+var dragging: bool = false
+var curr_thing: RigidBody2D = null
+var _drag_start: Vector2 = Vector2.ZERO
+var _dragged_vector: Vector2 = Vector2.ZERO
+var _start: Vector2 = Vector2.ZERO
+var _thing_scale_x: float = 0.0
+var is_throwing: bool = false
 
 func _ready():
 	anim.play("Idle_down")
@@ -36,11 +49,25 @@ func _ready():
 	tile_map = world.map
 	state_manager.init(self)
 	if options_UI:
-		options_UI.connect("choose_option", Callable(self, "throw_noise_option"))
+		options_UI.connect("choose_option", Callable(self, "start_dragging"))
 
 #region InputHandling
 
 func _input(event):
+	if dragging:
+		if event is InputEventMouseMotion:
+			handle_dragging()
+		elif event.is_action_released("drag"):
+			start_releasing_thing()
+			await _play_throw_animation()
+		return
+
+	if event.is_action_pressed("drag") and selected_thing_name != "":
+		if global_position.distance_to(get_global_mouse_position()) < 32:
+			instantiate_dragged_thing(selected_thing_name)
+			selected_thing_name = ""
+		return
+
 	if event.is_action_pressed("set_target"):
 		var click_position = tile_map.round_local_position(get_global_mouse_position())
 		var target_enemy = get_click_enemy(get_global_mouse_position())
@@ -53,7 +80,6 @@ func _input(event):
 		elif tile_map.is_point_walkable(click_position):
 			_path = tile_map.find_path(global_position, click_position)
 			
-			
 			# Check if mouse event is double click
 			if event.is_double_click():
 				set_speed(runnig_speed)
@@ -62,7 +88,7 @@ func _input(event):
 			state_manager.change_state("WalkingState")
 
 func _physics_process(_delta):
-	if is_throwing:
+	if dragging:
 		velocity = Vector2.ZERO
 		move_and_slide()
 		return
@@ -102,8 +128,6 @@ func set_speed(value):
 
 #region IntractionHandling
 
-
-
 func take_damage():
 	healths -= 1
 	health_bar.value = healths
@@ -130,12 +154,12 @@ func attack_to_enemy(enemy):
 		await anim.animation_finished
 		enemy.take_damage()
 
-func throw_noise_option(thing_name):
-	_play_throw_animation()
+#Dragging thing part
+func start_dragging(thing_name: String) -> void:
+	selected_thing_name = thing_name
 
-	#Determine which object to throw and its sound
+func instantiate_dragged_thing(thing_name: String) -> void:
 	var thing_scene = ""
-	var throw_sound: AudioStreamPlayer2D = null
 	match thing_name:
 		"Bottle":
 			thing_scene = "res://Scenes/Prefabs/Throwable_option/Bottle.tscn"
@@ -148,35 +172,71 @@ func throw_noise_option(thing_name):
 			throw_sound = throw_noises.get_node("MetalCanThrowSound")
 		_:
 			return
+
+	curr_thing = load(thing_scene).instantiate()
+	curr_thing.global_position = global_position
+	curr_thing.visible = true
+
+	curr_thing.freeze = true
+
+	world.add_child(curr_thing)
+
+	update_drag_limits()
+
+	_start = global_position
+	_drag_start = get_global_mouse_position()
+	_thing_scale_x = curr_thing.scale.x
+	dragging = true
+
+#for setting drag limits based on the last side
+func update_drag_limits():
+	match _last_side:
+		"right":
+			drag_lim_max = Vector2(0, 60)
+			drag_lim_min = Vector2(-60, -60)
+		"left":
+			drag_lim_max = Vector2(60, 60)
+			drag_lim_min = Vector2(0, -60)
+		"down":
+			drag_lim_max = Vector2(60, 0)
+			drag_lim_min = Vector2(-60, -60)
+		"up":
+			drag_lim_max = Vector2(60, 60)
+			drag_lim_min = Vector2(-60, 0)
+
+func handle_dragging() -> void:
+	if not dragging or curr_thing == null:
+		return
+	var new_drag_vector: Vector2 = get_global_mouse_position() - _drag_start
+	new_drag_vector = new_drag_vector.clamp(drag_lim_min, drag_lim_max)
+	_dragged_vector = new_drag_vector
+	# var diff: Vector2 = new_drag_vector - _dragged_vector
+	curr_thing.position = _start + _dragged_vector
+	update_thing_scale()
+
+func update_thing_scale() -> void:
+	var impulse_len: float = calculate_impulse_().length()
+	var perc: float = clamp(impulse_len / impulse_max, 0.0, 1.0)
+	curr_thing.scale.x = lerp(_thing_scale_x, _thing_scale_x * 2, perc)
+	curr_thing.rotation = (_start - curr_thing.position).angle()
+
+#Releasing thing part
+func start_releasing_thing() -> void:
+	if not dragging or curr_thing == null:
+		return
+	dragging = false
+
+	curr_thing.freeze = false
+	curr_thing.apply_central_impulse(calculate_impulse_())
 	if throw_sound and not throw_sound.playing:
 		throw_sound.play()
-		
-	var thing = load(thing_scene).instantiate()
-	# Calculate the position to throw the thing
-	var radius = Vector2.ZERO
-	match _last_side:
-		"up": radius = Vector2(0, -throw_radius)
-		"down": radius = Vector2(0, throw_radius)
-		"left": radius = Vector2(-throw_radius, 0)
-		"right": radius = Vector2(throw_radius, 0)
-	thing.global_position = global_position + radius
-	world.add_child(thing)
 
-	throw_noises.emit_noise(thing.global_position)
-	
-	#Play the thing's animation
-	var thing_anim = thing.get_node("AnimatedSprite2D")
-	thing_anim.play()
-	#Show the throw effect animation
-	if throw_effect_anim:
-		throw_effect_anim.visible = true
-		throw_effect_anim.global_position = thing.global_position
-		throw_effect_anim.play("Throw")
-		await get_tree().create_timer(2.0).timeout
-		throw_effect_anim.visible = false
-		
-	await get_tree().create_timer(1.5).timeout
-	thing_anim.queue_free()
+	if throw_noises:
+		throw_noises.emit_noise(curr_thing.position)
+	curr_thing = null
+
+func calculate_impulse_() -> Vector2:
+	return _dragged_vector * -impulse_mult
 #endregion
 
 #region AnimationHandling
