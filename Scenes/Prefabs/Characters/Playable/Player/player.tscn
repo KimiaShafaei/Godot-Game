@@ -1,4 +1,4 @@
-[gd_scene load_steps=114 format=3 uid="uid://c84l74ckv5wpw"]
+[gd_scene load_steps=113 format=3 uid="uid://c84l74ckv5wpw"]
 
 [ext_resource type="Script" uid="uid://ca4ybkm82j5ii" path="res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd" id="1_2tcqa"]
 [ext_resource type="Script" uid="uid://d2lclr86oxua5" path="res://Scenes/Prefabs/Characters/Playable/Player/player_state_machine.gd" id="2_aoubu"]
@@ -108,7 +108,6 @@
 [ext_resource type="Texture2D" uid="uid://roc1onxy3p4p" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.front.3.png.png" id="85_tq0wq"]
 [ext_resource type="Texture2D" uid="uid://b5pbiuv7bhqpm" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.front.4.png.png" id="86_stws6"]
 [ext_resource type="Texture2D" uid="uid://b0yyb87cx0dsu" path="res://Assets/Sprites/Characters/Player/throwing/charecter.throwing.front.5.png.png" id="87_mu558"]
-[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="89_urtvo"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_no5v7"]
 animations = [{
@@ -644,13 +643,6 @@ autoplay = true
 
 [node name="InvisibilityTimer" type="Timer" parent="."]
 wait_time = 10.0
-
-[node name="ProgressBar" parent="." instance=ExtResource("89_urtvo")]
-offset_left = -1242.99
-offset_top = -496.312
-offset_right = -1186.99
-offset_bottom = -469.312
-mouse_filter = 1
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
 occluder = SubResource("OccluderPolygon2D_rg7j4")

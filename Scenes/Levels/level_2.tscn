@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=4 uid="uid://cs35iobq7t36k"]
+[gd_scene load_steps=19 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/Background Sounds/MMD.mp3" id="1_bebog"]
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_u40f0"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="11_u40f0"]
 [ext_resource type="PackedScene" uid="uid://bw4nolarc8tct" path="res://Scenes/Prefabs/Throwable_option/options_ui.tscn" id="12_uqiic"]
 [ext_resource type="PackedScene" uid="uid://cv4nhkkca05th" path="res://Scenes/Prefabs/Throwable_option/throw_noises.tscn" id="13_eopvx"]
+[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="14_eopvx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pirix"]
 resource_name = "Obstacle"
@@ -75,7 +76,7 @@ position = Vector2(368, 8)
 [node name="Enemy" parent="." instance=ExtResource("9_1jlnc")]
 
 [node name="Player" parent="." instance=ExtResource("9_0tae3")]
-position = Vector2(416, 408)
+position = Vector2(456, 424)
 scale = Vector2(0.8, 0.8)
 throw_radius = 200
 impulse_mult = 10.0
@@ -101,3 +102,10 @@ offset_left = 648.0
 offset_top = 488.0
 offset_right = 648.0
 offset_bottom = 488.0
+
+[node name="ProgressBar" parent="." instance=ExtResource("14_eopvx")]
+offset_left = -296.0
+offset_top = 24.0
+offset_right = -240.0
+offset_bottom = 51.0
+mouse_filter = 1
