@@ -1,7 +1,1 @@
-res://Scenes/Levels/level_2.tscn
-res://Scenes/Prefabs/Characters/Playable/Player/player.tscn
 res://Scenes/Levels/level_1.tscn
-res://Scenes/Prefabs/Characters/NPC/Enemy/enemy.tscn
-res://Scenes/Prefabs/Throwable_option/options_ui.tscn
-res://Scenes/GUI/intro_ui.tscn
-res://Scenes/Prefabs/UI/health_bar.tscn
