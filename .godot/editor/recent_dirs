@@ -1,3 +1,5 @@
+res://Scenes/Prefabs/Throwable_option
+res://
 res://Scenes
 res://GameComponants/BasicLight/
 res://GameComponants/Path/
@@ -6,7 +8,6 @@ res://Scenes/Levels
 res://GameComponants/Map/
 res://Globals
 res://GameComponants/Box
-res://
 res://Scenes/Prefabs/UI
 res://Scenes/GUI
 res://Scenes/Prefabs

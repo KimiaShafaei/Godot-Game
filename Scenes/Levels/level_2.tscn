@@ -80,7 +80,6 @@ position = Vector2(456, 424)
 scale = Vector2(0.8, 0.8)
 throw_radius = 200
 impulse_mult = 10.0
-impulse_max = 100.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(408, 224)

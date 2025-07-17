@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=3 uid="uid://bgmmyjum7e845"]
+
+[ext_resource type="Texture2D" uid="uid://bapx047ulqeho" path="res://Assets/Sprites/tools/metal can/metal can1.png" id="1_fw3eg"]
+[ext_resource type="Texture2D" uid="uid://fvs6te4s0y2w" path="res://Assets/Sprites/tools/metal can/metal can2.png" id="2_d38gt"]
+[ext_resource type="Texture2D" uid="uid://debnxkhoxhjsi" path="res://Assets/Sprites/tools/metal can/metal can3.png" id="3_wiec0"]
+[ext_resource type="Texture2D" uid="uid://ccspthqkr837n" path="res://Assets/Sprites/tools/metal can/metal can4.png" id="4_upf8n"]
+[ext_resource type="Texture2D" uid="uid://fnmrknssld1q" path="res://Assets/Sprites/tools/metal can/metal can5.png" id="5_u6qf8"]
+[ext_resource type="Texture2D" uid="uid://bjsv3eknwey4x" path="res://Assets/Sprites/tools/metal can/metal can6.png" id="6_nxtjs"]
+[ext_resource type="AudioStream" uid="uid://chqmw3dbvxqad" path="res://Assets/Musics/Throw Things/Metal can.mp3" id="7_d38gt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w77e4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fw3eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_d38gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wiec0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_upf8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u6qf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_nxtjs")
+}],
+"loop": false,
+"name": &"Metallcan",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d38gt"]
+size = Vector2(20, 12.5)
+
+[node name="MetalCan" type="RigidBody2D"]
+collision_layer = 4
+collision_mask = 4
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_w77e4")
+animation = &"Metallcan"
+frame = 5
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+scale = Vector2(0.559999, 0.44)
+shape = SubResource("RectangleShape2D_d38gt")
+
+[node name="MetalCanThrowSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_d38gt")

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5tc7pkqsupk3"]
+
+[ext_resource type="Script" uid="uid://1ttqx7m4c0w8" path="res://Scenes/Prefabs/Throwable_option/target_area.gd" id="1_5xyon"]
+[ext_resource type="Texture2D" uid="uid://cgkch5xgy7jn4" path="res://Assets/Sprites/tools/tile.18.png" id="1_utqk2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xyon"]
+size = Vector2(210, 114)
+
+[node name="TargetArea2D" type="Area2D"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_5xyon")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 4
+visibility_layer = 4
+scale = Vector2(0.1, 0.1)
+shape = SubResource("RectangleShape2D_5xyon")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 8)
+scale = Vector2(0.25, 1.105)
+texture = ExtResource("1_utqk2")

@@ -1,15 +1,14 @@
-[gd_scene load_steps=13 format=3 uid="uid://cv4nhkkca05th"]
+[gd_scene load_steps=12 format=3 uid="uid://cv4nhkkca05th"]
 
 [ext_resource type="Script" uid="uid://c78h0qkfckm3o" path="res://Scenes/Prefabs/Throwable_option/throw_noises.gd" id="1_sf18o"]
 [ext_resource type="PackedScene" uid="uid://nxvy63jm3es" path="res://Scenes/Prefabs/Throwable_option/Bottle.tscn" id="2_6elai"]
+[ext_resource type="Script" uid="uid://isk7lkrsgnxk" path="res://Scenes/Prefabs/Throwable_option/drag_items.gd" id="2_cldb2"]
 [ext_resource type="PackedScene" uid="uid://dx1v528cpkhw8" path="res://Scenes/Prefabs/Throwable_option/Stone.tscn" id="3_adqkh"]
-[ext_resource type="PackedScene" uid="uid://bgmmyjum7e845" path="res://Scenes/Prefabs/Throwable_option/metal_can.tscn" id="4_wmgbs"]
-[ext_resource type="AudioStream" uid="uid://m3ta6e88i1es" path="res://Assets/Musics/Throw Things/throwing stones.mp3" id="5_qwred"]
-[ext_resource type="AudioStream" uid="uid://c8afbacpmcygb" path="res://Assets/Musics/Throw Things/smashing-glass.mp3" id="5_vivph"]
-[ext_resource type="AudioStream" uid="uid://chqmw3dbvxqad" path="res://Assets/Musics/Throw Things/Metal can.mp3" id="7_vivph"]
+[ext_resource type="PackedScene" uid="uid://bgmmyjum7e845" path="res://Scenes/Prefabs/Throwable_option/MetalCan.tscn" id="4_wmgbs"]
 [ext_resource type="Texture2D" uid="uid://wkikx72mjaag" path="res://Assets/Sprites/tools/sound/sound-1.png.png" id="8_jif3x"]
 [ext_resource type="Texture2D" uid="uid://6dvoleu2bghd" path="res://Assets/Sprites/tools/sound/sound-2.png.png" id="9_7ycvt"]
 [ext_resource type="Texture2D" uid="uid://ux5ot37h55rd" path="res://Assets/Sprites/tools/sound/sound-3.png.png" id="10_48el3"]
+[ext_resource type="PackedScene" uid="uid://c5tc7pkqsupk3" path="res://Scenes/Prefabs/Throwable_option/target_area.tscn" id="10_cldb2"]
 [ext_resource type="Texture2D" uid="uid://4q3upv1oysl5" path="res://Assets/Sprites/tools/sound/sound-4.png.png" id="11_jwr8u"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v81tu"]
@@ -33,25 +32,23 @@ animations = [{
 }]
 
 [node name="ThrowNoises" type="Node2D"]
+light_mask = 4
+visibility_layer = 4
 script = ExtResource("1_sf18o")
 
-[node name="Bottle" parent="." instance=ExtResource("2_6elai")]
+[node name="DragItems" type="Node2D" parent="."]
+script = ExtResource("2_cldb2")
+
+[node name="Bottle" parent="DragItems" instance=ExtResource("2_6elai")]
+visible = false
+light_mask = 4
+visibility_layer = 4
+
+[node name="Stone" parent="DragItems" instance=ExtResource("3_adqkh")]
 visible = false
 
-[node name="Stone" parent="." instance=ExtResource("3_adqkh")]
+[node name="MetalCan" parent="DragItems" instance=ExtResource("4_wmgbs")]
 visible = false
-
-[node name="MetalCan" parent="." instance=ExtResource("4_wmgbs")]
-visible = false
-
-[node name="BottleThrowSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("5_vivph")
-
-[node name="StoneThrowSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("5_qwred")
-
-[node name="MetalCanThrowSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("7_vivph")
 
 [node name="ThrowEffectAnimated" type="AnimatedSprite2D" parent="."]
 visible = false
@@ -60,3 +57,7 @@ sprite_frames = SubResource("SpriteFrames_v81tu")
 animation = &"Throw"
 frame = 3
 frame_progress = 1.0
+
+[node name="TargetArea2D" parent="." instance=ExtResource("10_cldb2")]
+collision_layer = 1
+collision_mask = 1
