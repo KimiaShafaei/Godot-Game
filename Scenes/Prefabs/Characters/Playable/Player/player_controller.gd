@@ -17,9 +17,9 @@ var speed
 @onready var anim = $PlayerAnimatedSprite2D
 @onready var walking_sound = $walking
 @onready var blood_anim = $Blood
-@onready var health_bar = $ProgressBar
+@onready var health_bar = $"../CanvasLayer/HUD/MarginContainer/HealthBar"
 @onready var state_manager = $StateManager
-@onready var options_UI = get_node_or_null("../OptionsUI")
+@onready var options_UI = $"../CanvasLayer/HUD/MarginContainer/OptionsUI"
 @onready var throw_noises = get_node_or_null("../ThrowNoises")
 @onready var throw_effect_anim = get_node_or_null("../ThrowNoises/ThrowEffectAnimated")
 @onready var drag_items = get_node_or_null("../ThrowNoises/DragItems")

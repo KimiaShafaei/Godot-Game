@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 GameManager="*res://Globals/GameManager.gd"
 SignalHub="*res://Globals/SignalHub.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"

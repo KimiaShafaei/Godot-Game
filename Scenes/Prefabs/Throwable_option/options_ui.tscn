@@ -10,21 +10,21 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_y5j8i")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = 88.0
-offset_right = 240.0
+offset_right = 152.0
 offset_bottom = 40.0
 
 [node name="Bottle" type="Button" parent="."]
 modulate = Color(0.303964, 1, 0.899544, 1)
 layout_mode = 0
-offset_left = 88.0
-offset_right = 128.0
+offset_right = 40.0
 offset_bottom = 40.0
 icon = ExtResource("2_gxc76")
 vertical_icon_alignment = 2
@@ -32,14 +32,14 @@ vertical_icon_alignment = 2
 [node name="Stone" type="Button" parent="."]
 self_modulate = Color(0.612507, 0.528377, 0.321029, 1)
 layout_mode = 0
-offset_left = 144.0
-offset_right = 184.0
+offset_left = 56.0
+offset_right = 96.0
 offset_bottom = 40.0
 icon = ExtResource("3_0gv8p")
 
 [node name="MetalCan" type="Button" parent="."]
 layout_mode = 0
-offset_left = 200.0
-offset_right = 240.0
+offset_left = 112.0
+offset_right = 152.0
 offset_bottom = 40.0
 icon = ExtResource("4_ah5fw")

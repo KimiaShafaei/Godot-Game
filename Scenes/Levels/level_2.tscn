@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://cs35iobq7t36k"]
+[gd_scene load_steps=18 format=4 uid="uid://cs35iobq7t36k"]
 
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/Background Sounds/MMD.mp3" id="1_bebog"]
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_u40f0"]
@@ -11,9 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/Playable/Player/player.tscn" id="9_0tae3"]
 [ext_resource type="PackedScene" uid="uid://dy1yfnp1t85kc" path="res://Scenes/Prefabs/Characters/NPC/Enemy/enemy.tscn" id="9_1jlnc"]
 [ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="11_u40f0"]
-[ext_resource type="PackedScene" uid="uid://bw4nolarc8tct" path="res://Scenes/Prefabs/Throwable_option/options_ui.tscn" id="12_uqiic"]
 [ext_resource type="PackedScene" uid="uid://cv4nhkkca05th" path="res://Scenes/Prefabs/Throwable_option/throw_noises.tscn" id="13_eopvx"]
-[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="14_eopvx"]
+[ext_resource type="PackedScene" uid="uid://doxtsidvlicvd" path="res://Scenes/GUI/HUD.tscn" id="15_t27xo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pirix"]
 resource_name = "Obstacle"
@@ -96,15 +95,4 @@ texture_scale = 1.57
 [node name="ThrowNoises" parent="." instance=ExtResource("13_eopvx")]
 position = Vector2(648, 488)
 
-[node name="OptionsUI" parent="." instance=ExtResource("12_uqiic")]
-offset_left = 648.0
-offset_top = 488.0
-offset_right = 648.0
-offset_bottom = 488.0
-
-[node name="ProgressBar" parent="." instance=ExtResource("14_eopvx")]
-offset_left = -296.0
-offset_top = 24.0
-offset_right = -240.0
-offset_bottom = 51.0
-mouse_filter = 1
+[node name="CanvasLayer" parent="." instance=ExtResource("15_t27xo")]

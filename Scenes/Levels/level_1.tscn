@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=4 uid="uid://dlqikh11tsanq"]
+[gd_scene load_steps=16 format=4 uid="uid://dlqikh11tsanq"]
 
 [ext_resource type="Script" uid="uid://cldstdlk8ryfw" path="res://Scenes/Levels/world.gd" id="1_cyadu"]
 [ext_resource type="AudioStream" uid="uid://lpu8kdgb4v7s" path="res://Assets/Musics/Background Sounds/MMD.mp3" id="1_tc3c1"]
+[ext_resource type="PackedScene" uid="uid://doxtsidvlicvd" path="res://Scenes/GUI/HUD.tscn" id="2_hwvp3"]
 [ext_resource type="Texture2D" uid="uid://dd3r50p0wmkxi" path="res://Assets/Sprites/Tiles/tile.6.png" id="3_rb0md"]
 [ext_resource type="Texture2D" uid="uid://b5frck5746n5a" path="res://Assets/Sprites/Tiles/tile.8.png" id="4_u5ghp"]
 [ext_resource type="Script" uid="uid://dabao4blkwtbs" path="res://GameComponants/Map/map.gd" id="5_hwvp3"]
@@ -9,8 +10,8 @@
 [ext_resource type="Script" uid="uid://b6vpsga6oksn3" path="res://GameComponants/Map/path_drawer.gd" id="6_afv7b"]
 [ext_resource type="PackedScene" uid="uid://cd4fei02j1xf2" path="res://GameComponants/Box/box.tscn" id="6_jv26f"]
 [ext_resource type="PackedScene" uid="uid://c84l74ckv5wpw" path="res://Scenes/Prefabs/Characters/Playable/Player/player.tscn" id="10_2s4eb"]
+[ext_resource type="PackedScene" uid="uid://cv4nhkkca05th" path="res://Scenes/Prefabs/Throwable_option/throw_noises.tscn" id="10_afv7b"]
 [ext_resource type="PackedScene" uid="uid://cmestindlo3c4" path="res://GameComponants/BasicLight/point_light_2d.tscn" id="10_u5ghp"]
-[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="11_hwvp3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_175wv"]
 texture = ExtResource("3_rb0md")
@@ -70,14 +71,11 @@ rotation = 3.14159
 scale = Vector2(0.213871, -5.42438)
 zoom = Vector2(1.17, 1.064)
 
+[node name="ThrowNoises" parent="." instance=ExtResource("10_afv7b")]
+
 [node name="Lightings" type="Node2D" parent="."]
 
 [node name="PointLight2D" parent="Lightings" instance=ExtResource("10_u5ghp")]
 position = Vector2(240, 276)
 
-[node name="ProgressBar" parent="." instance=ExtResource("11_hwvp3")]
-offset_left = -296.0
-offset_top = 24.0
-offset_right = -240.0
-offset_bottom = 51.0
-mouse_filter = 1
+[node name="CanvasLayer" parent="." instance=ExtResource("2_hwvp3")]

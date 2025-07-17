@@ -7,15 +7,13 @@
 [node name="HealthBar" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 4.0
-offset_bottom = 4.0
 
 [node name="HealthBar" type="TextureProgressBar" parent="."]
 layout_mode = 0
-offset_left = 1136.0
-offset_top = -96.0
-offset_right = 1176.0
-offset_bottom = -64.0
+offset_left = 8.0
+offset_top = -16.0
+offset_right = 40.0
+offset_bottom = 16.0
 max_value = 3.0
 value = 3.0
 texture_under = ExtResource("2_02oxi")
@@ -23,5 +21,4 @@ texture_progress = ExtResource("1_5w361")
 texture_progress_offset = Vector2(1, 0)
 
 [node name="Heart" type="Sprite2D" parent="."]
-position = Vector2(1136, -80)
 texture = ExtResource("3_34mah")

@@ -1,3 +1,5 @@
+res://Scenes/GUI/
+res://Scenes/GUI
 res://Scenes/Prefabs/Throwable_option
 res://
 res://Scenes
@@ -9,7 +11,6 @@ res://GameComponants/Map/
 res://Globals
 res://GameComponants/Box
 res://Scenes/Prefabs/UI
-res://Scenes/GUI
 res://Scenes/Prefabs
 /Users/kimia/Godot-Game/Scripts
 /Users/kimia/Godot-Game

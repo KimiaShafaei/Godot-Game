@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://doxtsidvlicvd"]
+
+[ext_resource type="PackedScene" uid="uid://bw4nolarc8tct" path="res://Scenes/Prefabs/Throwable_option/options_ui.tscn" id="1_e3oty"]
+[ext_resource type="PackedScene" uid="uid://dsbohs4o1mkff" path="res://Scenes/Prefabs/UI/health_bar.tscn" id="2_6xim5"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="HUD" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HUD"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBar" parent="HUD/MarginContainer" instance=ExtResource("2_6xim5")]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+
+[node name="OptionsUI" parent="HUD/MarginContainer" instance=ExtResource("1_e3oty")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8

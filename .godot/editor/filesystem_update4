@@ -1,1 +1,8 @@
+res://Scenes/Prefabs/Throwable_option/options_ui.tscn
 res://Scenes/Levels/level_1.tscn
+res://Scenes/Prefabs/UI/health_bar.tscn
+res://Scenes/Levels/level_2.tscn
+res://Scenes/GUI/GameUI.tscn
+res://Scenes/Prefabs/Characters/Playable/Player/player_controller.gd
+res://Scenes/GUI/HUD.tscn
+res://Scenes/Prefabs/Characters/Playable/Player/player.tscn
